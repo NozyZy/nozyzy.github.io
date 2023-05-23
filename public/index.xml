@@ -1,0 +1,10 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>NozyZy</title>
+        <link>https://nozyzy.github.io/</link>
+        <description>Cybersecurity student and CTF enjoyer.</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster>
+            <atom:link href="https://nozyzy.github.io/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>
