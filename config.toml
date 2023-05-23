@@ -1,7 +1,7 @@
 baseURL = "https://nozyzy.github.io/"
 theme = "LoveIt"
 title = "NozyZy"
-
+publishDir = "docs"
 
 languageCode = "en-us"
 languageName = "English"
