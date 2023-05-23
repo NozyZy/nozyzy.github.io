@@ -2,6 +2,12 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://nozyzy.github.io/categories/</loc></url><url>
-            <loc>https://nozyzy.github.io/</loc></url><url>
-            <loc>https://nozyzy.github.io/tags/</loc></url></urlset>
+            <loc>https://nozyzy.github.io/categories/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/posts/emd/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/categories/heroctfv5/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/images/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/posts/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/steganography/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/categories/writeups/</loc><lastmod>2023-05-23T23:22:43&#43;02:00</lastmod></url></urlset>

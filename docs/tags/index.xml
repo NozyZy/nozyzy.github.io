@@ -4,5 +4,21 @@
         <link>https://nozyzy.github.io/tags/</link>
         <description>Tags - Tag - NozyZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 23 May 2023 23:22:43 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Images</title>
+    <link>https://nozyzy.github.io/tags/images/</link>
+    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/images/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Steganography</title>
+    <link>https://nozyzy.github.io/tags/steganography/</link>
+    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/steganography/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

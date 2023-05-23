@@ -4,5 +4,21 @@
         <link>https://nozyzy.github.io/categories/</link>
         <description>Categories - Category - NozyZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><atom:link href="https://nozyzy.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 23 May 2023 23:22:43 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>HeroCTFv5</title>
+    <link>https://nozyzy.github.io/categories/heroctfv5/</link>
+    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/heroctfv5/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Writeups</title>
+    <link>https://nozyzy.github.io/categories/writeups/</link>
+    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/writeups/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
