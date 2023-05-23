@@ -2,6 +2,7 @@ baseURL = "https://nozyzy.github.io/"
 theme = "LoveIt"
 title = "NozyZy"
 publishDir = "docs"
+enableEmoji = true
 
 languageCode = "en-us"
 languageName = "English"
@@ -21,13 +22,13 @@ paginate = 10
 [menu]
   [[menu.main]]
     weight = 1
-    identifier = "wu"
+    identifier = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "Writeups"
-    url = "/WU/"
+    url = "/posts/"
     # title will be shown when you hover on this menu link
     title = "Writeups"
   [[menu.main]]
@@ -59,10 +60,11 @@ paginate = 10
   defaultTheme = "auto"
   gitRepo = ""
   fingerprint = "sha256"
-  dateFormat = "dd-mm-yyyy"
+  dateFormat = "02-01-2006"
   title = "NozZy"
   description = "Cybersecurity student and CTF enjoyer."
   images = ["assets/nozzy.png"]
+
 
 # Header config
 [params.header]
