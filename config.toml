@@ -62,7 +62,7 @@ paginate = 10
   fingerprint = "sha256"
   dateFormat = "02-01-2006"
   title = "NozZy"
-  description = "Cybersecurity student and CTF enjoyer."
+  description = "French Cybersecurity student and CTF enjoyer."
   images = ["assets/nozzy.png"]
 
 

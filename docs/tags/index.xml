@@ -4,20 +4,44 @@
         <link>https://nozyzy.github.io/tags/</link>
         <description>Tags - Tag - NozyZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 23 May 2023 23:22:43 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Images</title>
-    <link>https://nozyzy.github.io/tags/images/</link>
-    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>OSINt</title>
+    <link>https://nozyzy.github.io/tags/osint/</link>
+    <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate>
     <author>NozZy</author>
-    <guid>https://nozyzy.github.io/tags/images/</guid>
+    <guid>https://nozyzy.github.io/tags/osint/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Radio-frequency</title>
+    <link>https://nozyzy.github.io/tags/radio-frequency/</link>
+    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/radio-frequency/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Steganography</title>
     <link>https://nozyzy.github.io/tags/steganography/</link>
-    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/tags/steganography/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Forensics</title>
+    <link>https://nozyzy.github.io/tags/forensics/</link>
+    <pubDate>Wed, 24 May 2023 00:48:44 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/forensics/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Images</title>
+    <link>https://nozyzy.github.io/tags/images/</link>
+    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/images/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
