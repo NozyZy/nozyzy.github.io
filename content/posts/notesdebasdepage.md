@@ -93,6 +93,6 @@ The script takes few minutes to recover data, and find the resolution of the ima
 {{< image src="/notesdebasdepage/recovered.png" caption="Recovered image" title="Recovered image" alt="Recovered image" >}}
 
 {{< admonition type=success title="Flag" open=false >}}
-:triangular_flag_on_post: `404CTF{L3_f0rM1d@bl3_p09re35_d3s_lUm13re5}}`
+:triangular_flag_on_post: `404CTF{L3_f0rM1d@bl3_p09re35_d3s_lUm13re5}`
 {{< /admonition >}}
 
