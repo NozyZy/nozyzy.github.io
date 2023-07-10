@@ -4,7 +4,17 @@
         <link>https://nozyzy.github.io/categories/writeups/</link>
         <description>Writeups - Category - NozyZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/writeups/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/writeups/" rel="self" type="application/rss+xml" /><item>
+    <title>Stranger Case 2023</title>
+    <link>https://nozyzy.github.io/posts/stranger-case-2023/</link>
+    <pubDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/stranger-case-2023/</guid>
+    <description><![CDATA[Stranger Case 2023 Category OSINT Hunt
+Description Stranger Case is a special CTF in two parts - one online and one in presence - only targeting OSINT and that consists of a big investigation. There are no flag to submit, but reports to submit at the end of each phase.
+The first phase was online qualifications, in teams up to 4 people, going over 16h straight - 10am to 02am.]]></description>
+</item>
+<item>
     <title>404CTF - OSINTABLES</title>
     <link>https://nozyzy.github.io/posts/osintables/</link>
     <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate>
@@ -14,7 +24,7 @@
 Part 1/3 Description En pleine discussion au Procope, Cosette vous raconte autour d&rsquo;une part de fraisier la première fois qu&rsquo;elle a essayé d&rsquo;envoyer une lettre à son bienfaiteur : Jean Valjean. Débutante dans la démarche postale, elle s&rsquo;est trompée sur les informations nécessaires, elle en a même oublié l&rsquo;adresse du destinataire, n&rsquo;écrivant que la sienne. Elle vous montre la photo ci-jointe et vous met au défi de trouver d&rsquo;où elle l&rsquo;a écrite.]]></description>
 </item>
 <item>
-    <title>Avez-vous vu les cascades du hérisson ?</title>
+    <title>404CTF - Avez-vous vu les cascades du hérisson ?</title>
     <link>https://nozyzy.github.io/posts/cascades_herisson/</link>
     <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
     <author>NozZy</author>

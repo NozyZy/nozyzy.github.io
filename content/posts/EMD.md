@@ -11,11 +11,11 @@ categories:
 # HeroCTF v5 - EMD
 ---
 
-### Category
+## Category
 
 > Steganography
 
-### Description
+## Description
 
 Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group.
 Some information to help you:
@@ -29,12 +29,12 @@ This challenge uses the most basic "Exploiting Modification Direction" technique
 
 Format : **Hero[]** WARNING : For this challenge, square brackets [] are used and not braces {}.
 
-### Files
+## Files
 
 {{< image src="/EMD/vannesHidden.png" caption="Embedded image" title="Embedded image" alt="Embedded image" >}}
 
 
-### Difficulty
+## Difficulty
 
 **HARD** - 500 points
 
