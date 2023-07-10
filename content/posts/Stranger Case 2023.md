@@ -24,7 +24,7 @@ The first phase was online qualifications, in teams up to 4 people, going over 1
 
 The second one was the end of the investigation, in a form of Hunt in Paris. The 10 best teams of the qualifications had to continue the investigation by interacting with actors and evidences places in the city.
 
-In this article, I will give the report of my team for the first phase, and try to explain what we discovered during the second phase.?
+In this article, I will give the report of my team for the first phase, and try to explain what we discovered during the second phase.
 
 ## Write up
 
