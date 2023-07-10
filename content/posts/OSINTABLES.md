@@ -11,7 +11,7 @@ categories:
 # 404CTF - OSINTABLES
 ---
 
-### Category
+## Category
 
 > OSINT
 
@@ -43,7 +43,7 @@ exemple : 404CTF{36_quai_des_orfevres_paris}
 
 {{< image src="/osintables/screenshot.png" caption="Chall screenshot" title="Chall screenshot" alt="Chall screenshot" >}}
 
-## Write up
+### Write up
 
 We got a letter written on it
 
@@ -102,7 +102,7 @@ exemple : 404CTF{36_quai_des_orfevres}
 
 {{< image src="/osintables/screenshot2.png" caption="Chall screenshot" title="Chall screenshot" alt="Chall screenshot" >}}
 
-## Write up
+### Write up
 
 We need to find him now.
 Having a gmail address, we know we can find intersting things with tools like Ghunt or [Epieos](https://epieos.com/)

@@ -11,19 +11,19 @@ categories:
 # xxxCTF - {{ replace .Name "-" " " | title }}
 ---
 
-### Category
+## Category
 
 > Category
 
-### Description
+## Description
 
 blabla
 
-### Files
+## Files
 
 [...](xxx.png)
 
-### Difficulty
+## Difficulty
 
 **HARD** - x points
 
@@ -33,3 +33,7 @@ blabla
 [screenshot](screen.png)
 
 ## Write up
+
+### Part 1
+
+### Part 2

@@ -11,11 +11,11 @@ categories:
 # 404CTF - Notes de bas de page
 ---
 
-### Category
+## Category
 
 > Forensics
 
-### Description
+## Description
 
 En tendant l'oreille dans le salon, votre attention est captée par une conversation particulière. Là où les alentours dissertent sur des sujets de procédés littéraires toujours plus avancés, celle-ci semble en effet plutôt porter sur la philosophie naturelle. Vous vous approchez par curiosité, lorsque la marquise du Châtelet, alors en pleine explication des travaux d'un certain Leibniz, s’interrompt et vous interpelle :
 
@@ -24,11 +24,11 @@ En tendant l'oreille dans le salon, votre attention est captée par une conversa
 
 Aidez la marquise à retrouver la note qu'elle a perdue grâce à une sauvegarde de ses correspondances.
 
-### Files
+## Files
 
 [backup.pst](/notesdebasdepage/backup.pst)
 
-### Difficulty
+## Difficulty
 
 **HARD** - 1000 points
 

@@ -2,14 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://nozyzy.github.io/categories/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/hunt/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/osint/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/posts/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/social-engineering/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/categories/stranger-case/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/posts/stranger-case-2023/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/categories/writeups/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/404ctf/</loc><lastmod>2023-06-04T23:34:58&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/osintables/</loc><lastmod>2023-06-04T23:34:58&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/categories/</loc><lastmod>2023-06-04T23:34:58&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/</loc><lastmod>2023-06-04T23:34:58&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/tags/osint/</loc><lastmod>2023-06-04T23:34:58&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/posts/</loc><lastmod>2023-06-04T23:34:58&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/tags/</loc><lastmod>2023-06-04T23:34:58&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/categories/writeups/</loc><lastmod>2023-06-04T23:34:58&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/cascades_herisson/</loc><lastmod>2023-05-31T19:09:23&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/radio-frequency/</loc><lastmod>2023-05-31T19:09:23&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/steganography/</loc><lastmod>2023-05-31T19:09:23&#43;02:00</lastmod></url><url>
