@@ -2,7 +2,7 @@
 title: "404CTF - OSINTABLES"
 date: 2023-06-04T23:34:58+02:00
 draft: false
-tags: ['OSINt']
+tags: ['OSINT']
 categories:
   - 'Writeups'
   - '404CTF'
