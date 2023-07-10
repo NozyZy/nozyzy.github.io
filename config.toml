@@ -33,6 +33,17 @@ paginate = 10
     title = "Writeups"
   [[menu.main]]
     weight = 2
+    identifier = "articles"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Articles"
+    url = "/articles/"
+    # title will be shown when you hover on this menu link
+    title = "Articles"
+  [[menu.main]]
+    weight = 3
     identifier = "tags"
     pre = ""
     post = ""
@@ -40,7 +51,7 @@ paginate = 10
     url = "/tags/"
     title = ""
   [[menu.main]]
-    weight = 3
+    weight = 4
     identifier = "categories"
     pre = ""
     post = ""
@@ -140,7 +151,7 @@ paginate = 10
     gravatarEmail = ""
     avatarURL = "/images/nozzy.png"
     title = "NozZy"
-    subtitle = "Cybersecurity student and CTF enjoyer."
+    subtitle = "French Cybersecurity student and CTF enjoyer."
     typeit = true
     social = true
 
