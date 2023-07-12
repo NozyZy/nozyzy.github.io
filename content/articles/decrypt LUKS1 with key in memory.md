@@ -106,7 +106,18 @@ It asks us for a **64 bytes** key. Or, if we check, both our keys are **32 bytes
 
 {{< image src="/LUKS/size.png" height="50%" caption="32 bytes key" title="32 bytes key" alt="32 bytes key" >}}
 
-When that error appears, you have to **concatenate both your keys**. Do not ask me why, it appears that LUKS1 works like this. Maybe this is related to the fact that there are two lvm - root and swap - but I do not really understand that point myself.
+
+What happens here, is that LUKS uses a special cipher mode of AES. We can dump the cipher info with the following command : 
+
+{{< image src="/LUKS/xts.png" height="50%" caption="XTS Cipher mode" title="XTS Cipher mode" alt="XTS Cipher mode" >}}
+
+The mode used here is **XTS**, not the common GCM, CBC or ECB. It is a stronger algorithm than the other, because it needs **2 keys**.
+
+{{< image src="/LUKS/scheme.png" height="50%" caption="Because an image is worth a thousand words" title="Because an image is worth a thousand words" alt="Because an image is worth a thousand words" >}}
+
+I will not go deep in the theory, but that explains the fact that the first key is following the second one in memory.
+
+The master key file does need both keys. You have to **concatenate both your keys**.
 By doing so, you can try your news keys.  
 
 {{< image src="/LUKS/decrypt.png" height="50%" caption="Decrypt with new key" title="Decrypt with new key" alt="Decrypt with new key" >}}
