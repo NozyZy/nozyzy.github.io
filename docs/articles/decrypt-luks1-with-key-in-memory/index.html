@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/nozyzy.github.io\/articles\/decrypt-luks1-with-key-in-memory\/"
-        },"genre": "articles","keywords": "Forensics","wordcount":  731 ,
+        },"genre": "articles","keywords": "Forensics","wordcount":  782 ,
         "url": "https:\/\/nozyzy.github.io\/articles\/decrypt-luks1-with-key-in-memory\/","datePublished": "2023-07-10T17:15:29+02:00","dateModified": "2023-07-10T17:15:29+02:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -243,7 +243,30 @@ First paste them in a txt file</p>
             alt="32 bytes key" height="50%" />
     </a><figcaption class="image-caption">32 bytes key</figcaption>
     </figure>
-<p>When that error appears, you have to <strong>concatenate both your keys</strong>. Do not ask me why, it appears that LUKS1 works like this. Maybe this is related to the fact that there are two lvm - root and swap - but I do not really understand that point myself.
+<p>What happens here, is that LUKS uses a special cipher mode of AES. We can dump the cipher info with the following command :</p>
+<figure><a class="lightgallery" href="/LUKS/xts.png" title="XTS Cipher mode" data-thumbnail="/LUKS/xts.png" data-sub-html="<h2>XTS Cipher mode</h2><p>XTS Cipher mode</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/xts.png"
+            data-srcset="/LUKS/xts.png, /LUKS/xts.png 1.5x, /LUKS/xts.png 2x"
+            data-sizes="auto"
+            alt="XTS Cipher mode" height="50%" />
+    </a><figcaption class="image-caption">XTS Cipher mode</figcaption>
+    </figure>
+<p>The mode used here is <strong>XTS</strong>, not the common GCM, CBC or ECB. It is a stronger algorithm than the other, because it needs <strong>2 keys</strong>.</p>
+<figure><a class="lightgallery" href="/LUKS/scheme.png" title="Because an image is worth a thousand words" data-thumbnail="/LUKS/scheme.png" data-sub-html="<h2>Because an image is worth a thousand words</h2><p>Because an image is worth a thousand words</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/scheme.png"
+            data-srcset="/LUKS/scheme.png, /LUKS/scheme.png 1.5x, /LUKS/scheme.png 2x"
+            data-sizes="auto"
+            alt="Because an image is worth a thousand words" height="50%" />
+    </a><figcaption class="image-caption">Because an image is worth a thousand words</figcaption>
+    </figure>
+<p>I will not go deep in the theory, but that explains the fact that the first key is following the second one in memory.</p>
+<p>The master key file does need both keys. You have to <strong>concatenate both your keys</strong>.
 By doing so, you can try your news keys.</p>
 <figure><a class="lightgallery" href="/LUKS/decrypt.png" title="Decrypt with new key" data-thumbnail="/LUKS/decrypt.png" data-sub-html="<h2>Decrypt with new key</h2><p>Decrypt with new key</p>">
         <img
