@@ -64,6 +64,7 @@ Enchantments
 We got : ``_eAsilY_but_``, `For3ns1c_St4r7` and a hint about *HEAD*.
 
 Maybe the file ``datapacks/AllMobHeads_V5.5+1.16.zip`` will be useful? spoiler: yes
+
 It refers to a public mod. Once extracted, we have a bunch of directories and ``.json`` files, and `grep` does not give anything.
 
 But it is a public mod, what if it was altered? Download the [original file](https://www.curseforge.com/minecraft/customization/all-mob-heads-fr/files/3077877) and compare.
@@ -85,7 +86,7 @@ We got 4 json files that differ. Check one of them:
 
 {{< image src="/HeadShot/diff.png" caption="Difference !" alt="Difference !" >}}
 
-The differences appear the same way for the 4 files. They all give:
+The differences appear the same way for the 4 files. They all give, once base64 decoded:
 
 - ``{textures:{SKIN:{url:_w1Th_tr0lls}``
 - https://soundcloud.com/mad-core/darktek-ta-geule

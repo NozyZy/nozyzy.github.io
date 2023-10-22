@@ -27,7 +27,7 @@ https://gishadb.flag4all.sh
 
 ## Difficulty
 
-**EASY** - 495 points
+**EASY** - 481 points
 
 - Author: **Penthium2 (BZHack)**
 ---
@@ -164,14 +164,17 @@ Then plan now is to connect to the server, and access the local database (not ac
 
 This program is impossible to leave, just have to close the terminal.
 
-But anyway, we will go through an SSH tunnel, using ``-L`` flag, that allow us to forward one port on the server to our machine. We'll look for MySql port, **3306**
+But anyway, we will go through an **SSH tunnel**, using ``-L`` flag,
+that allows us to forward one port of the server to our machine.
+
+We'll look for MySql port, **3306**
 Using ``-N`` will also not prompt the green binary disaster.
 
 Command is: ``ssh -N gishadb@gishadb.flag4all.sh -p 222 -L 3306:localhost:3306``
 
 We can now, in another terminal, connect to the remote MySql server using ``app:db_Super_P4$$``:
 
-```
+```bash
 $ mysql -u app -p -h 127.0.0.1
 Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
@@ -209,7 +212,7 @@ MariaDB [app]> select * from hand;
 +----+-----------------------------+----------+
 |  1 | pouce                       | Penthium |
 |  2 | index                       | Penthium |
-|  3 | FLAG{TAK3_Care_Of_SSH_POWA} | Penthium |
+|  3 | FLAG{REDACTED}              | Penthium |
 |  4 | anulaire                    | Penthium |
 |  5 | oriculaire                  | Penthium |
 +----+-----------------------------+----------+
