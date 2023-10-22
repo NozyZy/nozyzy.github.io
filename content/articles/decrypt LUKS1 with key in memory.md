@@ -5,6 +5,10 @@ draft: false
 tags: ['Forensics']
 categories:
   - 'Articles'
+  
+toc:
+  enable: true
+  auto: true
 ---
 
 # How to decrypt LUKS1 with key in memory
