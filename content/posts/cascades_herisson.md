@@ -6,6 +6,9 @@ tags: ['Radio-frequency', 'Steganography']
 categories:
   - 'Writeups'
   - '404CTF'
+  
+lightgallery: false
+
 ---
 
 # 404CTF - Avez-vous vu les cascades du hérisson ?

@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Articles - Category - NozyZy</title>
+        <title>Articles - Category - NozZy</title>
         <link>https://nozyzy.github.io/categories/articles/</link>
-        <description>Articles - Category - NozyZy</description>
+        <description>Articles - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/articles/" rel="self" type="application/rss+xml" /><item>
     <title>How to decrypt LUKS1 with key in memory</title>

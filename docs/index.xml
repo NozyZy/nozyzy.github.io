@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>NozyZy</title>
+        <title>NozZy</title>
         <link>https://nozyzy.github.io/</link>
         <description>French Cybersecurity student and CTF enjoyer.</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
@@ -51,7 +51,7 @@ Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecra
 Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
 This server listen on two ports: 443 and 222. Find a way to get the flag.
 Link https://gishadb.flag4all.sh
-Difficulty EASY - 495 points
+Difficulty EASY - 481 points
 Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
 </item>
 <item>

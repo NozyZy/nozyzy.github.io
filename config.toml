@@ -1,6 +1,6 @@
 baseURL = "https://nozyzy.github.io/"
 theme = "LoveIt"
-title = "NozyZy"
+title = "NozZy"
 publishDir = "docs"
 enableEmoji = true
 
@@ -57,6 +57,14 @@ paginate = 10
     post = ""
     name = "Categories"
     url = "/categories/"
+    title = ""
+  [[menu.main]]
+    weight = 5
+    identifier = "aboutme"
+    pre = ""
+    post = ""
+    name = "./aboutme"
+    url = "/aboutme"
     title = ""
 
 
@@ -166,7 +174,7 @@ paginate = 10
   GitHub = "NozyZy"
   Linkedin = ""
   Twitter = "Nozzouille"
-  Discord = "NozZy#3432"
+  Discord = "nozyzy"
   RootMe= "NozZy"
   HackTheBox = "NozyZy"
   Email = "nozzy@club-rezo.net"
@@ -185,7 +193,7 @@ paginate = 10
 
 [params.page.toc]
   enable = true
-  keepStatic = true
+  keepStatic = false
   auto = true
 
 [params.page.math]
@@ -345,7 +353,7 @@ logoUrl = ""
 [params.typeit]
   speed = 100
   cursorSpeed = 1000
-  cursorChar = "█"
+  cursorChar = "🌭"
   # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
   duration = -1
 

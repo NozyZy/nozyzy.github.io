@@ -35,15 +35,15 @@ Format du flag : FLAG{nom de l'entreprise/nom de l'entreprise/nom de l'entrepris
 
 ### The Story
 
-This challenges needs a lot of understanding of the story beneath. Beginning is tough, because we do not have clear information. Just go and Google dork: "Bundeswehr" "son of a People's Liberation Army officer"
+This challenges needs a lot of understanding of the story beneath. The beginning is tough, because we do not have clear information. Just go and Google dork: ``"Bundeswehr" "son of a People's Liberation Army officer"``
 
 We then find this [article](https://www.spiegel.de/international/germany/suspicious-activity-what-are-german-fighter-pilots-doing-in-china-a-25ac852d-887d-454b-8d73-02a595c83c32) on fist link
 
 To recap:
-- Su Bin, a chinese businessman, has employed three ex Bundeswehr for its own business in China.
+- Su Bin, a chinese businessman, has employed three ex-Bundeswehr pilots for its own business in China.
 - The pilots are accused of spying for China.
 - This story comes from 2013.
-- This was written by two german journals: spiegel.de and zdf.de
+- This was written by two german journals: [spiegel.de](https://www.spiegel.de/international/germany/suspicious-activity-what-are-german-fighter-pilots-doing-in-china-a-25ac852d-887d-454b-8d73-02a595c83c32) and [zdf.de](https://www.zdf.de/nachrichten/politik/china-bundeswehr-piloten-kampfflieger-ausbildung-100.html)
 
 The three men are not fully identified, but they are called:
 - Alexander "Limey" H.
@@ -56,10 +56,11 @@ We could probably find their companies in those data.
 
 ### Panama Papers
 
-The first article specifies that it is in the **Panama Papers - Mossack Fonseca** that the leak provides, and that their compagnies were base in the **Seychelles**.
+The first article specifies that it is in the **Panama Papers - Mossack Fonseca** that the leak provides,
+and that their companies were based in the **Seychelles**.
 
-This [link](https://offshoreleaks.icij.org/search?c=&cat=1&d=pp&j=&q=Dirk+J) is were this database can be found. Here with filters to fin our Dirk.
-I couldn't apply more filters, because the site refuses to exapnt the menus, so I had to Ctrl+F a lot in those results.
+This [link](https://offshoreleaks.icij.org/search?c=&cat=1&d=pp&j=&q=Dirk+J) is where this database can be found. Here with filters to find our Dirk.
+I couldn't apply more filters, because the site refuses to expand the menus, so I had to Ctrl+F a lot in those results.
 
 I was searching for:
 - **Dirk J**
@@ -78,7 +79,7 @@ Its company was also in this [article](https://www.spiegel.de/international/germ
 
 **Peter S.** gave too many results. So I had to Google dork, using his previous camarades pages: ``"peter" "PANAMA PAPERS - MOSSACK FONSECA" "Hong Kong" "26-AUG-2013"``
 
-This gives us only on, and good result: **[Peter Helmut Schmitt](https://offshoreleaks.icij.org/nodes/12189467)** and its company **[FlyHi Consulting LTD](https://offshoreleaks.icij.org/nodes/10032671)**
+This gives us only one, and good result: **[Peter Helmut Schmitt](https://offshoreleaks.icij.org/nodes/12189467)** and its company **[FlyHi Consulting LTD](https://offshoreleaks.icij.org/nodes/10032671)**
 
 {{< admonition type=success title="Flag" open=false >}}
 :triangular_flag_on_post: `FLAG{flyhi consulting ltd/gator consulting ltd/phamivity consult ltd}`
