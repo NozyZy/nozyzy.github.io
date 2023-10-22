@@ -4,7 +4,32 @@
         <link>https://nozyzy.github.io/tags/forensics/</link>
         <description>Forensics - Tag - NozyZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 22 Oct 2023 13:58:04 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
+    <title>HeadShot</title>
+    <link>https://nozyzy.github.io/posts/headshot/</link>
+    <pubDate>Sun, 22 Oct 2023 13:58:04 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/headshot/</guid>
+    <description><![CDATA[Flag4All - HeadShot Category Forensics
+Description Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.
+Files headShot.tar
+Difficulty Medium - 497 points
+Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the .]]></description>
+</item>
+<item>
+    <title>Gishadb</title>
+    <link>https://nozyzy.github.io/posts/gishadb/</link>
+    <pubDate>Sun, 22 Oct 2023 03:13:42 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/gishadb/</guid>
+    <description><![CDATA[Flag4All - Gishadb Category Realistic
+Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
+This server listen on two ports: 443 and 222. Find a way to get the flag.
+Link https://gishadb.flag4all.sh
+Difficulty EASY - 495 points
+Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
+</item>
+<item>
     <title>How to decrypt LUKS1 with key in memory</title>
     <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
     <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate>
