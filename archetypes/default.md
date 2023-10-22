@@ -27,7 +27,7 @@ blabla
 
 **HARD** - x points
 
-- Author : **NAME**
+- Author: **NAME**
 ---
 
 [screenshot](screen.png)
@@ -37,3 +37,7 @@ blabla
 ### Part 1
 
 ### Part 2
+
+{{< admonition type=success title="Flag" open=false >}}
+:triangular_flag_on_post: `FLAg`
+{{< /admonition >}}

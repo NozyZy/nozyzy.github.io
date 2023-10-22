@@ -1,7 +1,7 @@
 ---
 title: "DumpCyber"
 date: 2023-10-13T19:51:18+02:00
-draft: false
+draft: true
 tags: ['forensics', 'dump']
 categories:
   - 'Writeups'
@@ -29,8 +29,8 @@ Challenge made by: Yogosha
 
 - Author: **SemahBA**
 ---
+{{< image src="/DumpCyber/screen.png" caption="Screenshot" title="Screenshot" alt="Screenshot" >}}
 
-[screenshot](screen.png)
 
 ## Write up
 
