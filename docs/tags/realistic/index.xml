@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Realistic - Tag - NozyZy</title>
+        <link>https://nozyzy.github.io/tags/realistic/</link>
+        <description>Realistic - Tag - NozyZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 22 Oct 2023 03:13:42 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/realistic/" rel="self" type="application/rss+xml" /><item>
+    <title>Gishadb</title>
+    <link>https://nozyzy.github.io/posts/gishadb/</link>
+    <pubDate>Sun, 22 Oct 2023 03:13:42 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/gishadb/</guid>
+    <description><![CDATA[Flag4All - Gishadb Category Realistic
+Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
+This server listen on two ports: 443 and 222. Find a way to get the flag.
+Link https://gishadb.flag4all.sh
+Difficulty EASY - 495 points
+Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
+</item>
+</channel>
+</rss>

