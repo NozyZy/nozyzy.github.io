@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>404CTF - Category - NozyZy</title>
+        <title>404CTF - Category - NozZy</title>
         <link>https://nozyzy.github.io/categories/404ctf/</link>
-        <description>404CTF - Category - NozyZy</description>
+        <description>404CTF - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/404ctf/" rel="self" type="application/rss+xml" /><item>
     <title>404CTF - OSINTABLES</title>
