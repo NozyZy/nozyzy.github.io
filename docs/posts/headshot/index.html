@@ -37,7 +37,7 @@ Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecra
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/nozyzy.github.io\/posts\/headshot\/"
-        },"genre": "posts","keywords": "Forensics","wordcount":  303 ,
+        },"genre": "posts","keywords": "Forensics","wordcount":  306 ,
         "url": "https:\/\/nozyzy.github.io\/posts\/headshot\/","datePublished": "2023-10-22T13:58:04+02:00","dateModified": "2023-10-22T13:58:04+02:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -125,7 +125,7 @@ Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecra
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">HeadShot</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/flag4all/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Flag4All</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="22-10-2023">22-10-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;303 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="22-10-2023">22-10-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;306 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -192,8 +192,8 @@ And that are the files that will interest us first. Each of <code>level.dat</cod
 </span></span><span class="line"><span class="cl"><span class="o">{</span><span class="s2">&#34;text&#34;</span>:<span class="s2">&#34;For3ns1c_St4r7&#34;</span><span class="o">}</span>
 </span></span><span class="line"><span class="cl">Enchantments
 </span></span></code></pre></div><p>We got : <code>_eAsilY_but_</code>, <code>For3ns1c_St4r7</code> and a hint about <em>HEAD</em>.</p>
-<p>Maybe the file <code>datapacks/AllMobHeads_V5.5+1.16.zip</code> will be useful? spoiler: yes
-It refers to a public mod. Once extracted, we have a bunch of directories and <code>.json</code> files, and <code>grep</code> does not give anything.</p>
+<p>Maybe the file <code>datapacks/AllMobHeads_V5.5+1.16.zip</code> will be useful? spoiler: yes</p>
+<p>It refers to a public mod. Once extracted, we have a bunch of directories and <code>.json</code> files, and <code>grep</code> does not give anything.</p>
 <p>But it is a public mod, what if it was altered? Download the <a href="https://www.curseforge.com/minecraft/customization/all-mob-heads-fr/files/3077877" target="_blank" rel="noopener noreffer ">original file</a> and compare.</p>
 <figure><a class="lightgallery" href="/HeadShot/headmod.png" title="Both &#34;True&#34; and fake files" data-thumbnail="/HeadShot/headmod.png" data-sub-html="<h2>Both &ldquo;True&rdquo; and fake files</h2><p>Both &#34;True&#34; and fake files</p>">
         <img
@@ -230,7 +230,7 @@ It refers to a public mod. Once extracted, we have a bunch of directories and <c
             alt="Difference !" />
     </a><figcaption class="image-caption">Difference !</figcaption>
     </figure>
-<p>The differences appear the same way for the 4 files. They all give:</p>
+<p>The differences appear the same way for the 4 files. They all give, once base64 decoded:</p>
 <ul>
 <li><code>{textures:{SKIN:{url:_w1Th_tr0lls}</code></li>
 <li><a href="https://soundcloud.com/mad-core/darktek-ta-geule" target="_blank" rel="noopener noreffer ">https://soundcloud.com/mad-core/darktek-ta-geule</a></li>

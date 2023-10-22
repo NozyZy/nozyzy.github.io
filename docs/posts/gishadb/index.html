@@ -9,7 +9,7 @@
 Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
 This server listen on two ports: 443 and 222. Find a way to get the flag.
 Link https://gishadb.flag4all.sh
-Difficulty EASY - 495 points
+Difficulty EASY - 481 points
 Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://nozyzy.github.io/posts/gishadb/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png"/><meta property="article:section" content="posts" />
@@ -23,7 +23,7 @@ Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you 
 Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
 This server listen on two ports: 443 and 222. Find a way to get the flag.
 Link https://gishadb.flag4all.sh
-Difficulty EASY - 495 points
+Difficulty EASY - 481 points
 Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a ."/>
 <meta name="application-name" content="NozZy">
 <meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -160,7 +160,7 @@ Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you 
 <h2 id="link">Link</h2>
 <p><a href="https://gishadb.flag4all.sh" target="_blank" rel="noopener noreffer ">https://gishadb.flag4all.sh</a></p>
 <h2 id="difficulty">Difficulty</h2>
-<p><strong>EASY</strong> - 495 points</p>
+<p><strong>EASY</strong> - 481 points</p>
 <ul>
 <li>Author: <strong>Penthium2 (BZHack)</strong></li>
 </ul>
@@ -331,16 +331,18 @@ It automatically checks for you if a <strong>.git directory is exposed</strong>.
         alt="/Gishadb/fuckssh.gif"
         title="Fuck" /></p>
 <p>This program is impossible to leave, just have to close the terminal.</p>
-<p>But anyway, we will go through an SSH tunnel, using <code>-L</code> flag, that allow us to forward one port on the server to our machine. We&rsquo;ll look for MySql port, <strong>3306</strong>
+<p>But anyway, we will go through an <strong>SSH tunnel</strong>, using <code>-L</code> flag,
+that allows us to forward one port of the server to our machine.</p>
+<p>We&rsquo;ll look for MySql port, <strong>3306</strong>
 Using <code>-N</code> will also not prompt the green binary disaster.</p>
 <p>Command is: <code>ssh -N gishadb@gishadb.flag4all.sh -p 222 -L 3306:localhost:3306</code></p>
 <p>We can now, in another terminal, connect to the remote MySql server using <code>app:db_Super_P4$$</code>:</p>
-<pre tabindex="0"><code>$ mysql -u app -p -h 127.0.0.1
-Enter password:
-Welcome to the MariaDB monitor.  Commands end with ; or \g.
-Your MariaDB connection id is 100238
-Server version: 10.5.21-MariaDB-0+deb11u1 Debian 11
-</code></pre><p>Now, need to show the databases, its tables, and then its content :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ mysql -u app -p -h 127.0.0.1
+</span></span><span class="line"><span class="cl">Enter password:
+</span></span><span class="line"><span class="cl">Welcome to the MariaDB monitor.  Commands end with <span class="p">;</span> or <span class="se">\g</span>.
+</span></span><span class="line"><span class="cl">Your MariaDB connection id is <span class="m">100238</span>
+</span></span><span class="line"><span class="cl">Server version: 10.5.21-MariaDB-0+deb11u1 Debian <span class="m">11</span>
+</span></span></code></pre></div><p>Now, need to show the databases, its tables, and then its content :</p>
 <pre tabindex="0"><code>MariaDB [(none)]&gt; show databases;
 +--------------------+
 | Database           |
@@ -368,7 +370,7 @@ MariaDB [app]&gt; select * from hand;
 +----+-----------------------------+----------+
 |  1 | pouce                       | Penthium |
 |  2 | index                       | Penthium |
-|  3 | FLAG{TAK3_Care_Of_SSH_POWA} | Penthium |
+|  3 | FLAG{REDACTED}              | Penthium |
 |  4 | anulaire                    | Penthium |
 |  5 | oriculaire                  | Penthium |
 +----+-----------------------------+----------+
