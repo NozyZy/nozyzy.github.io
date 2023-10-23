@@ -25,7 +25,7 @@ Challenge made by: Yogosha
 
 ## Difficulty
 
-**Medium** - 500 points
+**Medium** - 100 points
 
 - Author: **SemahBA**
 ---

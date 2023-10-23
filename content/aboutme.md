@@ -56,7 +56,7 @@ Table better than talkin', nah ?
 | [Stranger Case](https://strangercase.org/)   | En Légende      |        | 7/60       | 27/05/2023              |
 | [HeroCTF](https://www.heroctf.fr/)           | Petit Ours Brun | 5459   | 30/1602    | 12/05/2023 - 14/05/2023 |
 | [EC2](https://european-cybercup.com/)        | Overflowl       | 488    | 16/25      | 05/04/2023 - 06/04/2023 |
-| Cybernight                                   | J'Hack Sparrow  |        | 3/50       | 11/12/2022              |
+| Cybernight                                   | Lucipher        |        | 3/50       | 11/12/2022              |
 
 
 ## :(fa-regular fa-square-check): TODO
