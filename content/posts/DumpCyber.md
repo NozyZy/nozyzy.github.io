@@ -1,7 +1,7 @@
 ---
 title: "DumpCyber"
 date: 2023-10-13T19:51:18+02:00
-draft: true
+draft: false
 tags: ['forensics', 'dump']
 categories:
   - 'Writeups'
