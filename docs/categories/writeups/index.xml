@@ -4,7 +4,17 @@
         <link>https://nozyzy.github.io/categories/writeups/</link>
         <description>Writeups - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/writeups/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/writeups/" rel="self" type="application/rss+xml" /><item>
+    <title>Dark Side</title>
+    <link>https://nozyzy.github.io/posts/dark_side/</link>
+    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/dark_side/</guid>
+    <description><![CDATA[Flag4All - Dark Side Category Steganography
+Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
+🇬🇧 You are a IT student and a mysterious person send an archive to the classe.]]></description>
+</item>
+<item>
     <title>Projet FOX   Trouble From the East</title>
     <link>https://nozyzy.github.io/posts/projet-fox-trouble-from-the-east/</link>
     <pubDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</pubDate>
@@ -53,6 +63,18 @@ Difficulty EASY - 481 points
 Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
 </item>
 <item>
+    <title>DumpCyber</title>
+    <link>https://nozyzy.github.io/posts/dumpcyber/</link>
+    <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/dumpcyber/</guid>
+    <description><![CDATA[ECW 2023 prequals - DumpCyber Category Forensics
+Description I am lost inside this dump, to escape I think I need my key and IV? The challenge is available here. Note: the flag format for this challenge is flag{...}.
+Challenge made by: Yogosha
+Difficulty Medium - 100 points
+Author: SemahBA ScreenshotWrite up Understanding the context Profile and objective We got a RAM dump on a Windows 7, we&rsquo;ll use volatility for the analysis.]]></description>
+</item>
+<item>
     <title>Stranger Case 2023</title>
     <link>https://nozyzy.github.io/posts/stranger-case-2023/</link>
     <pubDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</pubDate>
@@ -88,16 +110,6 @@ Description Après avoir rencontré Simone, cette dernière vous propose de déc
     <guid>https://nozyzy.github.io/posts/notesdebasdepage/</guid>
     <description><![CDATA[404CTF - Notes de bas de page Category Forensics
 Description En tendant l&rsquo;oreille dans le salon, votre attention est captée par une conversation particulière. Là où les alentours dissertent sur des sujets de procédés littéraires toujours plus avancés, celle-ci semble en effet plutôt porter sur la philosophie naturelle. Vous vous approchez par curiosité, lorsque la marquise du Châtelet, alors en pleine explication des travaux d&rsquo;un certain Leibniz, s’interrompt et vous interpelle :]]></description>
-</item>
-<item>
-    <title>HeroCTF v5 - EMD</title>
-    <link>https://nozyzy.github.io/posts/emd/</link>
-    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/emd/</guid>
-    <description><![CDATA[HeroCTF v5 - EMD Category Steganography
-Description Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group. Some information to help you:
-The size of the pixel groups is 2 The size of the hidden message is 841 characters The image must be divided into groups containing 2 pixels that follow each other on the x-axis.]]></description>
 </item>
 </channel>
 </rss>

@@ -4,10 +4,10 @@
         <link>https://nozyzy.github.io/categories/</link>
         <description>Categories - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Flag4All</title>
     <link>https://nozyzy.github.io/categories/flag4all/</link>
-    <pubDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</pubDate>
+    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/categories/flag4all/</guid>
     <description><![CDATA[]]></description>
@@ -15,9 +15,17 @@
 <item>
     <title>Writeups</title>
     <link>https://nozyzy.github.io/categories/writeups/</link>
-    <pubDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</pubDate>
+    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/categories/writeups/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>ECW 2023</title>
+    <link>https://nozyzy.github.io/categories/ecw-2023/</link>
+    <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/ecw-2023/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -50,6 +58,14 @@
     <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/categories/heroctfv5/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cybernight 2022</title>
+    <link>https://nozyzy.github.io/categories/cybernight-2022/</link>
+    <pubDate>Thu, 03 Nov 2022 23:39:48 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/cybernight-2022/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

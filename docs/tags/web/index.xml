@@ -1,0 +1,49 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Web - Tag - NozZy</title>
+        <link>https://nozyzy.github.io/tags/web/</link>
+        <description>Web - Tag - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 03 Nov 2022 23:39:48 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/web/" rel="self" type="application/rss+xml" /><item>
+    <title>Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</title>
+    <link>https://nozyzy.github.io/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/</link>
+    <pubDate>Thu, 03 Nov 2022 23:39:48 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/</guid>
+    <description><![CDATA[Cybernight 2022 - Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv Category Web
+Description vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Vous avez essayé de vous déconnecter ?
+Difficulty Easy
+Author: MrSheepsheep Write up Le cauchemar de beaucoup, je le conçois. Je vais vous conter comment m&rsquo;est venue l&rsquo;idée à partir de ce titre, si bien trouvé (quoi ?! vous me direz)
+Je discute avec mes mate pendant une pause et je dis
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ca correspond à au aucune chaine de caractères on dirait juste le bruit du roomba qui aspire vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv]]></description>
+</item>
+<item>
+    <title>Leaderboard</title>
+    <link>https://nozyzy.github.io/posts/leaderboard/</link>
+    <pubDate>Thu, 03 Nov 2022 23:39:23 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/leaderboard/</guid>
+    <description><![CDATA[Cybernight - Leaderboard Category Web
+Description vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Soumettez un score Roombaverse Simulator avec votre propre compte
+Note : vous devez télécharger et jouer à Roombaverse Simulator pour ce challenge.
+Files Roombaverse.exe
+Difficulty HARD
+Author: MrSheepSheep Write up Requêtes DNS et HTTPS Alors en jouant au jeu du roomba simulator, on peut collecter 6 billes jaunes, et ce message apparait : Win message(PS : récupérer les 6 billes est déjà un challenge en soi avec son propre flag)]]></description>
+</item>
+<item>
+    <title>Cooking Roomba</title>
+    <link>https://nozyzy.github.io/posts/cooking_roomba/</link>
+    <pubDate>Thu, 03 Nov 2022 23:39:16 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/cooking_roomba/</guid>
+    <description><![CDATA[Cybernight 2022 - Cooking Roomba Category Web
+Description Aucune information.
+Difficulty EASY
+Author: MrSheepSheep Write up On n&rsquo;a aucune info, mais le titre va grandement aider. Web + cooking = cookies
+Donc il faut chercher à se connecter pour avoir des cookies (vide sinon) On se crée un petit compte, et on se connecte
+En ouvrant les Dev-tools (F12 ou Ctrl+Shift+I) &gt; Appli &gt; Cookies CookiesLà deux cookies apparaissent: auth : un-truc-du-style-123456789 et surtout can_i_haz_flag : no]]></description>
+</item>
+</channel>
+</rss>
