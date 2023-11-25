@@ -44,6 +44,8 @@ dump.ram
 
 We got a dump of a Win 10 machine, and we are looking for web artifacts.
 
+I am going to use [volatility3](https://github.com/volatilityfoundation/volatility3) for this WU, it could possibly be done using volatility2.
+
 using the command ``windows.pstree.PsTree``, we see that **firefox** is running.
 ```bash
 $ vol3 -f dump.ram windows.pstree.PsTree
