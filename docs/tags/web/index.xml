@@ -4,7 +4,21 @@
         <link>https://nozyzy.github.io/tags/web/</link>
         <description>Web - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 03 Nov 2022 23:39:48 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/web/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 15:56:22 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/web/" rel="self" type="application/rss+xml" /><item>
+    <title>DoctoLeak</title>
+    <link>https://nozyzy.github.io/posts/doctoleak/</link>
+    <pubDate>Sat, 25 Nov 2023 15:56:22 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/doctoleak/</guid>
+    <description><![CDATA[Cybernight 2023 - DoctoLeak Category Web
+Description Je dois trouver le numéro de sécurité sociale du Patient 0 !
+C&rsquo;est une question de vie ou de mort&hellip;
+Link DoctoLeak
+Difficulty MEDIUM - 100 points
+Author: Sysdream Write up The first interesting thing I found looking to the website was the link as the bottom: Check our API
+Which leads to a /graphql page. At this point, I was sure it was all about exploiting some confidentiality issue in a graphql query.]]></description>
+</item>
+<item>
     <title>Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</title>
     <link>https://nozyzy.github.io/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/</link>
     <pubDate>Thu, 03 Nov 2022 23:39:48 &#43;0100</pubDate>

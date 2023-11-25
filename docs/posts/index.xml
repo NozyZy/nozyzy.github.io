@@ -4,7 +4,59 @@
         <link>https://nozyzy.github.io/posts/</link>
         <description>All Posts | NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>ExitTheCapsule</title>
+    <link>https://nozyzy.github.io/posts/exitthecapsule/</link>
+    <pubDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/exitthecapsule/</guid>
+    <description><![CDATA[Cybernight 2023 - Exit The Capsule Category System
+Description Arriverez-vous à vous échapper du conteneur pour trouver le flag ?
+Link Access to a Docker through Web SSH
+Difficulty EASY - 50 points
+Author: Sysdream Write up NB: I am writing this WU after the CTF was closed, and therefore, and no more access to machines.
+What&rsquo;s a sock ? I already did this kind of Docker Escape/Breakout before, using this Hacktricks book.]]></description>
+</item>
+<item>
+    <title>DoctoLeak</title>
+    <link>https://nozyzy.github.io/posts/doctoleak/</link>
+    <pubDate>Sat, 25 Nov 2023 15:56:22 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/doctoleak/</guid>
+    <description><![CDATA[Cybernight 2023 - DoctoLeak Category Web
+Description Je dois trouver le numéro de sécurité sociale du Patient 0 !
+C&rsquo;est une question de vie ou de mort&hellip;
+Link DoctoLeak
+Difficulty MEDIUM - 100 points
+Author: Sysdream Write up The first interesting thing I found looking to the website was the link as the bottom: Check our API
+Which leads to a /graphql page. At this point, I was sure it was all about exploiting some confidentiality issue in a graphql query.]]></description>
+</item>
+<item>
+    <title>Invest Now !</title>
+    <link>https://nozyzy.github.io/posts/investnow/</link>
+    <pubDate>Sat, 25 Nov 2023 15:17:45 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/investnow/</guid>
+    <description><![CDATA[Cybernight 2023 - Invest Now ! Category OSINT
+Description InvestNow! est une application de gestion de wallet Bitcoin : elle permet d&rsquo;acheter et d&rsquo;échanger des Bitcoins à tout moment pour spéculer sur la montée des cours. De nombreuses personnes sont devenues riches grâce à ce site!
+Vous avez réussi à développer un script pour détecter si une adresse mail est inscrite sur ce site. Après quelques heures de tests avec des bases de données trouvées sur le darknet, une première adresse mail est ressortie : emily.]]></description>
+</item>
+<item>
+    <title>You are mine!</title>
+    <link>https://nozyzy.github.io/posts/youaremine/</link>
+    <pubDate>Sat, 25 Nov 2023 05:38:54 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/youaremine/</guid>
+    <description><![CDATA[Cybernight 2023 - You are mine! Category Forensics
+Description J&rsquo;ai réussi à extraire la RAM d&rsquo;un administrateur de Youaremine !
+Aidez-moi à me loguer, je dois modifier quelque chose dans le panneau d&rsquo;administration !
+Trouvez le nom d&rsquo;utilisateur de l&rsquo;administrateur sur le site web.
+Le flag sera à soumettre sous la forme MALICE{nom_utilisateur}
+Files dump.ram
+Difficulty HARD - 150 points
+Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, and we are looking for web artifacts.]]></description>
+</item>
+<item>
     <title>Dark Side</title>
     <link>https://nozyzy.github.io/posts/dark_side/</link>
     <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
@@ -73,43 +125,6 @@ Description I am lost inside this dump, to escape I think I need my key and IV? 
 Challenge made by: Yogosha
 Difficulty Medium - 100 points
 Author: SemahBA ScreenshotWrite up Understanding the context Profile and objective We got a RAM dump on a Windows 7, we&rsquo;ll use volatility for the analysis.]]></description>
-</item>
-<item>
-    <title>Stranger Case 2023</title>
-    <link>https://nozyzy.github.io/posts/stranger-case-2023/</link>
-    <pubDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/stranger-case-2023/</guid>
-    <description><![CDATA[Stranger Case 2023 Category OSINT Hunt
-Description Stranger Case is a special CTF in two parts - one online and one in presence - only targeting OSINT and that consists of a big investigation. There are no flag to submit, but reports to submit at the end of each phase.
-The first phase was online qualifications, in teams up to 4 people, going over 16h straight - 10am to 02am.]]></description>
-</item>
-<item>
-    <title>404CTF - OSINTABLES</title>
-    <link>https://nozyzy.github.io/posts/osintables/</link>
-    <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/osintables/</guid>
-    <description><![CDATA[404CTF - OSINTABLES Category OSINT
-Part 1/3 Description En pleine discussion au Procope, Cosette vous raconte autour d&rsquo;une part de fraisier la première fois qu&rsquo;elle a essayé d&rsquo;envoyer une lettre à son bienfaiteur : Jean Valjean. Débutante dans la démarche postale, elle s&rsquo;est trompée sur les informations nécessaires, elle en a même oublié l&rsquo;adresse du destinataire, n&rsquo;écrivant que la sienne. Elle vous montre la photo ci-jointe et vous met au défi de trouver d&rsquo;où elle l&rsquo;a écrite.]]></description>
-</item>
-<item>
-    <title>404CTF - Avez-vous vu les cascades du hérisson ?</title>
-    <link>https://nozyzy.github.io/posts/cascades_herisson/</link>
-    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
-    <description><![CDATA[404CTF - Avez-vous vu les cascades du hérisson ? Category Radio-Frequency
-Description Après avoir rencontré Simone, cette dernière vous propose de découvrir une nouvelle personne. Quoi de mieux qu’un cache-cache pour apprendre à mieux se connaître ? Cela vous changera de l&rsquo;air du café littéraire Le Procope. Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.]]></description>
-</item>
-<item>
-    <title>404CTF - Notes de bas de page</title>
-    <link>https://nozyzy.github.io/posts/notesdebasdepage/</link>
-    <pubDate>Wed, 24 May 2023 00:48:44 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/notesdebasdepage/</guid>
-    <description><![CDATA[404CTF - Notes de bas de page Category Forensics
-Description En tendant l&rsquo;oreille dans le salon, votre attention est captée par une conversation particulière. Là où les alentours dissertent sur des sujets de procédés littéraires toujours plus avancés, celle-ci semble en effet plutôt porter sur la philosophie naturelle. Vous vous approchez par curiosité, lorsque la marquise du Châtelet, alors en pleine explication des travaux d&rsquo;un certain Leibniz, s’interrompt et vous interpelle :]]></description>
 </item>
 </channel>
 </rss>

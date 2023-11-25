@@ -4,20 +4,28 @@
         <link>https://nozyzy.github.io/categories/</link>
         <description>Categories - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Flag4All</title>
-    <link>https://nozyzy.github.io/categories/flag4all/</link>
-    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Cybernight 2023</title>
+    <link>https://nozyzy.github.io/categories/cybernight-2023/</link>
+    <pubDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</pubDate>
     <author>NozZy</author>
-    <guid>https://nozyzy.github.io/categories/flag4all/</guid>
+    <guid>https://nozyzy.github.io/categories/cybernight-2023/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Writeups</title>
     <link>https://nozyzy.github.io/categories/writeups/</link>
-    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
+    <pubDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</pubDate>
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/categories/writeups/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Flag4All</title>
+    <link>https://nozyzy.github.io/categories/flag4all/</link>
+    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/flag4all/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
