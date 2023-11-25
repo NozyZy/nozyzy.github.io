@@ -43,7 +43,7 @@ Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, an
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/nozyzy.github.io\/posts\/youaremine\/"
-        },"genre": "posts","keywords": "Forensics","wordcount":  780 ,
+        },"genre": "posts","keywords": "Forensics","wordcount":  796 ,
         "url": "https:\/\/nozyzy.github.io\/posts\/youaremine\/","datePublished": "2023-11-25T05:38:54+01:00","dateModified": "2023-11-25T05:38:54+01:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -131,7 +131,7 @@ Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, an
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">You are mine!</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/cybernight-2023/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cybernight 2023</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="25-11-2023">25-11-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;780 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="25-11-2023">25-11-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;796 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -184,6 +184,7 @@ Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, an
 <h2 id="write-up">Write up</h2>
 <h3 id="the-very-hot-fox">The very hot fox</h3>
 <p>We got a dump of a Win 10 machine, and we are looking for web artifacts.</p>
+<p>I am going to use <a href="https://github.com/volatilityfoundation/volatility3" target="_blank" rel="noopener noreffer ">volatility3</a> for this WU, it could possibly be done using volatility2.</p>
 <p>using the command <code>windows.pstree.PsTree</code>, we see that <strong>firefox</strong> is running.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vol3 -f dump.ram windows.pstree.PsTree
 </span></span><span class="line"><span class="cl">PID     PPID    ImageFileName   Offset<span class="o">(</span>V<span class="o">)</span>       Threads Handles SessionId       Wow64   CreateTime      ExitTime
