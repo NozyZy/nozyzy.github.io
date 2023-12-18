@@ -4,7 +4,20 @@
         <link>https://nozyzy.github.io/posts/</link>
         <description>All Posts | NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>The Shakespearean Mouse</title>
+    <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
+    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
+    <description><![CDATA[BackdoorCTF 2023 - The Shakespearean Mouse Category Forensics
+Description wend f&rsquo;rward with this quest of yours, f&rsquo;r thee shalt findeth the flag at the endeth Attachments: https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip
+Files shakespeareanmouse.zip
+Difficulty 496 points
+Author: cy4n1d3 Write up The Shakespearan Langage Inside the zip file we got two files: out.bmp, and The Backdoor Lore containing only text, at first sight, the script of drama play.
+I rapidly think of a so of esoteric language, like Poetic or Whitespace, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.]]></description>
+</item>
+<item>
     <title>ExitTheCapsule</title>
     <link>https://nozyzy.github.io/posts/exitthecapsule/</link>
     <pubDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</pubDate>
@@ -57,6 +70,17 @@ Difficulty HARD - 150 points
 Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, and we are looking for web artifacts.]]></description>
 </item>
 <item>
+    <title>Disparue(s)</title>
+    <link>https://nozyzy.github.io/posts/disparues/</link>
+    <pubDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/disparues/</guid>
+    <description><![CDATA[Disparue(s) Category OSINT
+Description Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.
+Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.
+Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.]]></description>
+</item>
+<item>
     <title>Dark Side</title>
     <link>https://nozyzy.github.io/posts/dark_side/</link>
     <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
@@ -100,31 +124,6 @@ Description Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils
 Files headShot.tar
 Difficulty Medium - 497 points
 Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the .]]></description>
-</item>
-<item>
-    <title>Gishadb</title>
-    <link>https://nozyzy.github.io/posts/gishadb/</link>
-    <pubDate>Sun, 22 Oct 2023 03:13:42 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/gishadb/</guid>
-    <description><![CDATA[Flag4All - Gishadb Category Realistic
-Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
-This server listen on two ports: 443 and 222. Find a way to get the flag.
-Link https://gishadb.flag4all.sh
-Difficulty EASY - 481 points
-Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
-</item>
-<item>
-    <title>DumpCyber</title>
-    <link>https://nozyzy.github.io/posts/dumpcyber/</link>
-    <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/dumpcyber/</guid>
-    <description><![CDATA[ECW 2023 prequals - DumpCyber Category Forensics
-Description I am lost inside this dump, to escape I think I need my key and IV? The challenge is available here. Note: the flag format for this challenge is flag{...}.
-Challenge made by: Yogosha
-Difficulty Medium - 100 points
-Author: SemahBA ScreenshotWrite up Understanding the context Profile and objective We got a RAM dump on a Windows 7, we&rsquo;ll use volatility for the analysis.]]></description>
 </item>
 </channel>
 </rss>

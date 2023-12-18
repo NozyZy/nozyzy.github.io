@@ -4,7 +4,20 @@
         <link>https://nozyzy.github.io/tags/steganography/</link>
         <description>Steganography - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/steganography/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/steganography/" rel="self" type="application/rss+xml" /><item>
+    <title>The Shakespearean Mouse</title>
+    <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
+    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
+    <description><![CDATA[BackdoorCTF 2023 - The Shakespearean Mouse Category Forensics
+Description wend f&rsquo;rward with this quest of yours, f&rsquo;r thee shalt findeth the flag at the endeth Attachments: https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip
+Files shakespeareanmouse.zip
+Difficulty 496 points
+Author: cy4n1d3 Write up The Shakespearan Langage Inside the zip file we got two files: out.bmp, and The Backdoor Lore containing only text, at first sight, the script of drama play.
+I rapidly think of a so of esoteric language, like Poetic or Whitespace, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.]]></description>
+</item>
+<item>
     <title>Dark Side</title>
     <link>https://nozyzy.github.io/posts/dark_side/</link>
     <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
