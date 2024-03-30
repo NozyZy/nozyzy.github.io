@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Disparue(s) - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Disparue(s)" />
+<meta property="og:description" content="Disparue(s) Category OSINT
+Description Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.
+Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.
+Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/disparues/" /><meta property="og:image" content="https://nozyzy.github.io/posts/disparues/img.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-04T23:05:52+01:00" />
+<meta property="article:modified_time" content="2023-11-04T23:05:52+01:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nozyzy.github.io/posts/disparues/img.png"/>
+<meta name="twitter:title" content="Disparue(s)"/>
+<meta name="twitter:description" content="Disparue(s) Category OSINT
+Description Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.
+Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.
+Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie."/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/disparues/" /><link rel="prev" href="https://nozyzy.github.io/posts/dark_side/" /><link rel="next" href="https://nozyzy.github.io/posts/youaremine/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Disparue(s)",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/disparues\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/nozyzy.github.io\/posts\/disparues\/img.png",
+                            "width":  1000 ,
+                            "height":  598 
+                        }],"genre": "posts","keywords": "OSINT","wordcount":  2203 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/disparues\/","datePublished": "2023-11-04T23:05:52+01:00","dateModified": "2023-11-04T23:05:52+01:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Disparue(s)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/disparues/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Disparue(s)</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="04-11-2023">04-11-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2203 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;11 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/disparues/img.png"
+        data-srcset="/posts/disparues/img.png, /posts/disparues/img.png 1.5x, /posts/disparues/img.png 2x"
+        data-sizes="auto"
+        alt="/posts/disparues/img.png"
+        title="/posts/disparues/img.png" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#dead-man-walking">Dead Man Walking</a></li>
+    <li><a href="#hard-target">Hard Target</a>
+      <ul>
+        <li><a href="#fresh">Fresh</a></li>
+        <li><a href="#killing-zoe">Killing Zoe</a></li>
+        <li><a href="#kiss-of-death">Kiss of Death</a></li>
+        <li><a href="#bad-company">Bad Company</a></li>
+        <li><a href="#nothing-to-lose">Nothing to Lose</a></li>
+      </ul>
+    </li>
+    <li><a href="#city-of-industry">City of Industry</a>
+      <ul>
+        <li><a href="#clear-and-present-danger">Clear and Present Danger</a></li>
+        <li><a href="#judge-dredd">Judge Dredd</a></li>
+        <li><a href="#albino-alligator">Albino Alligator</a></li>
+      </ul>
+    </li>
+    <li><a href="#guilty-as-sin">Guilty as Sin</a>
+      <ul>
+        <li><a href="#psycho">Psycho</a></li>
+      </ul>
+    </li>
+    <li><a href="#faster-pussycat-kill-kill">Faster Pussycat! Kill! Kill!</a>
+      <ul>
+        <li><a href="#captives">Captives</a></li>
+        <li><a href="#heavenly-creatures">Heavenly Creatures</a></li>
+        <li><a href="#donnie-brasco">Donnie Brasco</a></li>
+      </ul>
+    </li>
+    <li><a href="#last-man-standing">Last Man Standing</a>
+      <ul>
+        <li><a href="#tales-from-the-hood">Tales from the Hood</a></li>
+        <li><a href="#true-romance">True Romance</a></li>
+        <li><a href="#touch-of-evil">Touch of Evil</a></li>
+        <li><a href="#basic-instinct">Basic Instinct</a></li>
+        <li><a href="#the-glass-shield">The Glass Shield</a></li>
+      </ul>
+    </li>
+    <li><a href="#swordfish">Swordfish</a>
+      <ul>
+        <li><a href="#wargames">Wargames</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="disparues">Disparue(s)</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>OSINT</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<p>Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.</p>
+<p>Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.</p>
+<ul>
+<li>Author: <strong>Oscar Zulu</strong></li>
+</ul>
+<hr>
+<h2 id="dead-man-walking">Dead Man Walking</h2>
+<blockquote>
+<p>Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.</p>
+<p>Ils sont incapables de vous donner plus de détails sur les circonstances, ce qui explique pourquoi les forces de l&rsquo;ordre n&rsquo;ont pas considéré la disparition comme inquiétante&hellip;</p>
+<p>Le fichier PDF joint rassemble le peu d&rsquo;informations que la famille a pu vous donner.</p>
+<p>Après leur avoir précisé que vous ne pourrez rien leur communiquer sans l&rsquo;accord d&rsquo;Ellen (si vous la retrouvez), mais que vous informerez celle-ci de leur inquiétude, vous acceptez la mission</p>
+<p>Bonne chance !</p>
+<p><strong>Dans quelle école Ellen a t-elle fait sa formation lors de sa reconversion ?</strong></p>
+<p>format du flag : <code>udemy</code></p>
+<p><em><strong>20 points</strong></em></p>
+</blockquote>
+<a class="lightgallery" href="/posts/disparues/img_1.png" title="/posts/disparues/img_1.png" data-thumbnail="/posts/disparues/img_1.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_1.png"
+            data-srcset="/posts/disparues/img_1.png, /posts/disparues/img_1.png 1.5x, /posts/disparues/img_1.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_1.png" width="955" height="955" />
+    </a>
+<p>Début de l&rsquo;histoire !</p>
+<p>On recherche une Ellen, et son école. Son compte <a href="https://www.linkedin.com/in/ellen-gravist-jacoulet-a9924528a/" target="_blank" rel="noopener noreffer ">linkedin</a> est l&rsquo;endroit parfait pour ça.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Dead Man Walking<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>LiveMentor</code></div>
+        </div>
+    </div>
+<h2 id="hard-target">Hard Target</h2>
+<h3 id="fresh">Fresh</h3>
+<blockquote>
+<p>Afin de constituer le profil, vous poursuivez vos recherches. Quel est l&rsquo;intitulé de son nouveau métier, clairement indiqué dans son titre de profil ?</p>
+<p>Format du flag : <code>employée de libre service</code></p>
+<p><em><strong>10 points</strong></em></p>
+</blockquote>
+<p>Sur son compte <a href="https://www.linkedin.com/in/ellen-gravist-jacoulet-a9924528a/" target="_blank" rel="noopener noreffer ">linkedin</a> de même.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Fresh<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Web Content Writer</code></div>
+        </div>
+    </div>
+<h3 id="killing-zoe">Killing Zoe</h3>
+<blockquote>
+<p>Vous commencez à avoir une idée de qui est Ellen, et certaines lectures sont assez claires sur son état d’esprit au moment de sa disparition… Mais elle a clairement été aidée. Quel est le prénom de la personne qui lui permet de prendre un nouveau départ dans sa vie ?</p>
+<p>Format du flag : <code>antonin</code></p>
+<p><em><strong>20 points</strong></em></p>
+</blockquote>
+<p>Ellen partage des articles de son compte <a href="https://medium.com/@ellen.gravist" target="_blank" rel="noopener noreffer ">Medium</a>.</p>
+<p>Ce n&rsquo;est pas dans l&rsquo;un d&rsquo;entre eux que l&rsquo;on trouvera la réponse, bien que l&rsquo;on apprenne l&rsquo;état psychologique dans lequel se trouve Ellen (sa conversion pro et son rapport à la mort)</p>
+<p>Sur cette page par contre, elle donne le lien de son <a href="https://www.wattpad.com/user/EllenGravist" target="_blank" rel="noopener noreffer ">Wattpad</a>, dans lequel on trouve son journal. Au cours des 5 chapitres, elle fait la rencontre de <strong>Marianne</strong>. Cette rencontre va bousculer sa vie.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Killing Zoe<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Marianne</code></div>
+        </div>
+    </div>
+<h3 id="kiss-of-death">Kiss of Death</h3>
+<blockquote>
+<p>Vous avez trouvé son journal, qu’elle rédige avec un certain talent, mais il semble que la piste s’arrête là… Il vous faut maintenant poursuivre votre enquête pour savoir ce qu’il est advenu d’elle.</p>
+<p>De quel peintre du XVIIe siècle a-t-elle partagé une oeuvre ?</p>
+<p>Format du flag : <code>Jean Jacques Picasso</code></p>
+<p><em><strong>50 points</strong></em></p>
+</blockquote>
+<p>Les lectures de son journal nous apprennent deux choses essentielles ici :</p>
+<ul>
+<li>Elle a changé de nom, pour devenir <strong>Perséphonia Aidoneus</strong></li>
+<li>Elle a un récent &ldquo;blog sur cette vieille plateforme à [son] nouveau nom&rdquo;</li>
+</ul>
+<p>Celui-là m&rsquo;a donné du fil à retordre pour pas grand-chose. En herchant des vieux sites de blog on tombe sur Skyblog (qui a fermé la veille de l&rsquo;ouverture de son compte wattpad), Myspace ou encore tumblr.</p>
+<p>Il se trouve qu&rsquo;en cherchant son nom sur Tumblr, on tombe sur son <a href="https://www.tumblr.com/persephonia-aidoneus" target="_blank" rel="noopener noreffer ">profil</a>.</p>
+<p>Dessus, elle partage une peinture de Peter Paul Rubens, datée de 1630-35.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Kiss of Death<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Peter Paul Rubens</code></div>
+        </div>
+    </div>
+<h3 id="bad-company">Bad Company</h3>
+<blockquote>
+<p>Avant de continuer, vous prenez quelques minutes pour faire un point et relire tous les renseignements que vous avez trouvés. Il semble que votre enquête prenne la direction d’une secte dans laquelle Ellen aurait été recrutée. Quel est le nom de cette secte ?</p>
+<p>Format du flag : <code>Les oncles d'elise</code></p>
+<p><em><strong>10 points</strong></em></p>
+</blockquote>
+<p>Le nom est cit sur son Medium et dans son journal : <strong>Les Enfants d&rsquo;Hades</strong></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Bad Company<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Les Enfants d'Hades</code></div>
+        </div>
+    </div>
+<h3 id="nothing-to-lose">Nothing to Lose</h3>
+<blockquote>
+<p>Vous souhaitez en avoir le cœur net. Sans doute pourrez-vous trouver un email parmi les informations disponibles.</p>
+<p>Format du flag : <code>nom.prenom@untrucavantle.com</code></p>
+<p><em><strong>70 points</strong></em></p>
+</blockquote>
+<p>Un compte tumblr permet d&rsquo;archiver des posts. Mais on peut retrouver ces posts en cliquant sur <i class="fa-solid fa-ellipsis" aria-hidden="true"></i>.</p>
+<p>Un de ces posts est une photo nue floutée, probablement la photo dont elle parle dans son journal, prise par un certain G.</p>
+<p>En dessous cette photo, on peut y trouver son mail, avec une incitation à prendre contact avec elle.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Nothing to Lose<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>persephonia.aidoneus@proton.me</code></div>
+        </div>
+    </div>
+<h2 id="city-of-industry">City of Industry</h2>
+<h3 id="clear-and-present-danger">Clear and Present Danger</h3>
+<blockquote>
+<p>Comme toute organisation moderne, la secte doit avoir un canal d’information officiel. Il faudrait l&rsquo;identifier.</p>
+<p>Format du flag : <code>informations.com</code></p>
+<p><em><strong>50 points</strong></em></p>
+</blockquote>
+<p>Sous un de ses posts, on retrouve le hashtag <code>#enfantsdhades.com</code>.</p>
+<p>Il s&rsquo;agit bien de leur site web.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Clear and Present Danger<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>enfantsdhades.com</code></div>
+        </div>
+    </div>
+<h3 id="judge-dredd">Judge Dredd</h3>
+<blockquote>
+<p>Obtenez le pseudo du responsable de la sécurité.</p>
+<p>exemple : <code>mickey</code></p>
+<p><em><strong>150 points</strong></em></p>
+</blockquote>
+<p>Il y a deux façons de faire.</p>
+<p>Ma première trouvaille a été ce commentaire, laissé sous le premier post d&rsquo;Ellen :</p>
+<a class="lightgallery" href="/posts/disparues/img_2.png" title="/posts/disparues/img_2.png" data-thumbnail="/posts/disparues/img_2.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_2.png"
+            data-srcset="/posts/disparues/img_2.png, /posts/disparues/img_2.png 1.5x, /posts/disparues/img_2.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_2.png" width="597" height="154" />
+    </a>
+<p>La page tumblr de cette personne nous renvoie vers son <a href="https://kronosantihades.wordpress.com" target="_blank" rel="noopener noreffer ">blog</a>, où il dénonces les activités de la secte.</p>
+<p>Son dernier poste parle d&rsquo;un certain dénommé <strong>H.</strong>, responsable de la sécurité. Notre cible.</p>
+<figure><a class="lightgallery" href="/posts/disparues/img_3.png" title="H. Responsable Sécurité" data-thumbnail="/posts/disparues/img_3.png" data-sub-html="<h2>H. Responsable Sécurité</h2><p>H. Responsable Sécurité</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_3.png"
+            data-srcset="/posts/disparues/img_3.png, /posts/disparues/img_3.png 1.5x, /posts/disparues/img_3.png 2x"
+            data-sizes="auto"
+            alt="H. Responsable Sécurité" width="1024" height="1024" />
+    </a><figcaption class="image-caption">H. Responsable Sécurité</figcaption>
+    </figure>
+<p>Or si l&rsquo;on clique sur le nom du post, on ouvre le post en entier. Ce dernier porte l&rsquo;url : <code>https://kronosantihades.wordpress.com/2023/09/05/heracles-sans-doute-le-pire-de-tous/</code></p>
+<p>On en déduit qu&rsquo;<strong>Heracles</strong> est son pseudo.</p>
+<p>Mais puisque je ne suis pas quelqu&rsquo;un de simple, j&rsquo;ai d&rsquo;abord trouvé la seconde solution.</p>
+<p>En regardant le <code>/robots.txt</code> du site de la secte, une page en particulier retient notre attention :</p>
+<pre tabindex="0"><code>User-Agent: *
+Sitemap: https://enfantsdhades.com/sitemap.xml
+Disallow: /CHANGELOG.txt
+...
+Disallow: /vfrrghertevb34535lkh2Ohh00hLhkl0iujd39hhkbekzjiceluiquivoitcaestfort909878987
+Allow: /safebrowsing/diagnostic
+...
+Disallow: /nullze/
+</code></pre><p>La page <code>https://enfantsdhades.com/vfrrghertevb34535lkh2Ohh00hLhkl0iujd39hhkbekzjiceluiquivoitcaestfort909878987/</code> permet un directory listing, donc de se ballader dans les sous-dossiers :
+<a class="lightgallery" href="/posts/disparues/img_4.png" title="/posts/disparues/img_4.png" data-thumbnail="/posts/disparues/img_4.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_4.png"
+            data-srcset="/posts/disparues/img_4.png, /posts/disparues/img_4.png 1.5x, /posts/disparues/img_4.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_4.png" width="1288" height="202" />
+    </a></p>
+<p>À l&rsquo;intérieur de <code>/org</code> se trouve comme seul fichier un <code>organigramme.pdf</code>, contenant ces informations :</p>
+<a class="lightgallery" href="/posts/disparues/img_6.png" title="/posts/disparues/img_6.png" data-thumbnail="/posts/disparues/img_6.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_6.png"
+            data-srcset="/posts/disparues/img_6.png, /posts/disparues/img_6.png 1.5x, /posts/disparues/img_6.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_6.png" width="896" height="767" />
+    </a>
+<p>Nous retrouvons bien le pseudo de notre responsable sécurité.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Judge Dredd<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>enfantsdhades.com</code></div>
+        </div>
+    </div>
+<h3 id="albino-alligator">Albino Alligator</h3>
+<blockquote>
+<p>Le responsable de la sécurité doit savoir beaucoup de choses ! Il faut à tout prix l&rsquo;identifier ! Trouvez sa véritable identité.</p>
+<p>format du flag : <code>godefroy salsepareille</code> (prénom nom)</p>
+<p><em><strong>200 points</strong></em></p>
+</blockquote>
+<p>Pour celui-là, il fallait avoir trouvé l&rsquo;organigramme.</p>
+<p>Ce dernier nous apprend que chaque membre de la direction possède un mail de la forme <code>nom@enfantsdhadescom</code>, donc celui d&rsquo;Heracles est <code>heracles@enfantsdhades.com </code></p>
+<p>À l&rsquo;aide d&rsquo;un outil de recherche de ompte en ligne à partir d&rsquo;un email, tel qu&rsquo;<a href="https://epieos.com/" target="_blank" rel="noopener noreffer ">Epieos</a>, on peut trouver que notre bonhomme possède un compte <a href="https://trello.com" target="_blank" rel="noopener noreffer ">Trello</a>.</p>
+<a class="lightgallery" href="/posts/disparues/img_7.png" title="/posts/disparues/img_7.png" data-thumbnail="/posts/disparues/img_7.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_7.png"
+            data-srcset="/posts/disparues/img_7.png, /posts/disparues/img_7.png 1.5x, /posts/disparues/img_7.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_7.png" width="752" height="375" />
+    </a>
+<p>Or, l&rsquo;obtention des détails du compte nécessite un compte payant à Epieos. Mais il y a moyen de faire sans.</p>
+<p>En se créant un compte sur Trello, on peut ajouter des personnes par leur adresse mail à notre espace de travail. Or là, il fallait avoir une astuce technique.</p>
+<p>Puisque Trello auto-détecte le compte en saisissant uniquement l&rsquo;adresse mail, le client effectue donc une requête pour récupérer les infos de ce compte :</p>
+<a class="lightgallery" href="/posts/disparues/img_8.png" title="/posts/disparues/img_8.png" data-thumbnail="/posts/disparues/img_8.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_8.png"
+            data-srcset="/posts/disparues/img_8.png, /posts/disparues/img_8.png 1.5x, /posts/disparues/img_8.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_8.png" width="356" height="180" />
+    </a>
+<p>On peut alors trouver dans les requêtes web envoyées, la réponse au fetch de ce compte :</p>
+<a class="lightgallery" href="/posts/disparues/img_9.png" title="/posts/disparues/img_9.png" data-thumbnail="/posts/disparues/img_9.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_9.png"
+            data-srcset="/posts/disparues/img_9.png, /posts/disparues/img_9.png 1.5x, /posts/disparues/img_9.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_9.png" width="1417" height="420" />
+    </a>
+<p>On apprend, grâce à cela, le nom du compte Trello : <code>heracles34</code>.</p>
+<p>En s&rsquo;inspirant du lien de mon compte public, je peux donc trouver celui d&rsquo;Heracles grâce à son pseudo : <a href="https://trello.com/u/heracles34" target="_blank" rel="noopener noreffer ">https://trello.com/u/heracles34</a></p>
+<p>Ce dernier nous donne accès à son tableau, avec des tâches concernant la secte. L&rsquo;une d&rsquo;elle le concerne directement, puisqu&rsquo;elle contient un lien <a href="https://drive.proton.me/urls/C5AHVF5V04#S6gzfi8xkgcY" target="_blank" rel="noopener noreffer ">Proton Drive</a>, avec un document administratif à son nom dedans :</p>
+<a class="lightgallery" href="/posts/disparues/img_10.png" title="/posts/disparues/img_10.png" data-thumbnail="/posts/disparues/img_10.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_10.png"
+            data-srcset="/posts/disparues/img_10.png, /posts/disparues/img_10.png 1.5x, /posts/disparues/img_10.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_10.png" width="743" height="423" />
+    </a>
+<p>Heracles s&rsquo;appelle en réalité <strong>Guillaume Tacheleron</strong></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Albino Alligator<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Guillaume Tacheleron</code></div>
+        </div>
+    </div>
+<h2 id="guilty-as-sin">Guilty as Sin</h2>
+<h3 id="psycho">Psycho</h3>
+<blockquote>
+<p>En vous basant sur ce que vous avez trouvé jusqu’ici, vous devriez pouvoir ajouter un nouveau chapitre à votre dossier. Quel pseudo utilise le chef de la secte ?</p>
+<p>format du flag : <code>poseidon</code></p>
+<p><em><strong>30 points</strong></em></p>
+</blockquote>
+<p>Tout en haut de l&rsquo;organigramme, on retrouve <strong>Sarapis</strong></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Psycho<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Sarapis</code></div>
+        </div>
+    </div>
+<h2 id="faster-pussycat-kill-kill">Faster Pussycat! Kill! Kill!</h2>
+<h3 id="captives">Captives</h3>
+<blockquote>
+<p>Au vue des informations que vous avez trouvées, nul doute qu’Ellen n’est pas la seule victime. Pourrez-vous découvrir les pseudonymes des autres jeunes femmes sous influence ?</p>
+<p>Format du Flag : <code>alexia siri</code> (ordre alphabetique)</p>
+<p><em><strong>100 points</strong></em></p>
+</blockquote>
+<p>L&rsquo;étape pour y arriver, bien qu&rsquo;assez détachée du challenge à mon sens, eu été <strong>d&rsquo;envoyer un mail à <a href="mailto:persephonia.aidoneus@proton.me" rel="">persephonia.aidoneus@proton.me</a></strong>.</p>
+<p>Voici la réponse que nous obtenons :</p>
+<pre tabindex="0"><code>Es tu prêt à comprendre que notre corps n&#39;est qu&#39;un vaisseau destiné a servir les plaisirs et les souffrances de notre âme ?
+ul23ocgxwgj7wi455ncpiegylrzqmisd7uwh2hxjsmxgy2wjgax35tad.onion
+
+NB : Les éléments créés dans le cadre de cette enquête et dans ce mail sont purement fictifs et strictement interdits aux mineurs.
+</code></pre><p>Un lien tor, qui amène sur une page qui parle des 3 nouvelles recrues qui passeront bientôt, et certainement, la cérémonie pour devenir des filles d&rsquo;Hades.</p>
+<p>Les trois noms sont : <strong>Persephone</strong>, <strong>Demeter</strong> et <strong>Macarie</strong></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Captives<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>demeter macarie</code></div>
+        </div>
+    </div>
+<h3 id="heavenly-creatures">Heavenly Creatures</h3>
+<blockquote>
+<p>Vous avez découvert un site internet terrifiant… comme vous l’imaginiez, ces jeunes filles ne sont pas protégées par la secte, mais au contraire manipulées pour devenir les proies d’hommes prêts à payer pour abuser d’elles. Bien décidé à les sortir de ce piège, vous continuez votre enquête. Quel est l’auteur des photos du site ?</p>
+<p>Format du flag : <code>alain deloin</code></p>
+<p><em><strong>50 points</strong></em></p>
+</blockquote>
+<p>Remonter jusqu&rsquo;au photographe.. On a déjà vu qu&rsquo;il se faisait surnommer <strong>G.</strong> Et si le Gary, Responsable Communication, de l&rsquo;organigramme était ce fameux photographe ?</p>
+<p>Pour en être sûr, on peut regarder les métadonnées d&rsquo;une des trois photos des jeunes filles trouvées sur le lien tor, à l&rsquo;aide de la commande <code>èxiftool</code> par exemple :</p>
+<a class="lightgallery" href="/posts/disparues/img_11.png" title="/posts/disparues/img_11.png" data-thumbnail="/posts/disparues/img_11.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_11.png"
+            data-srcset="/posts/disparues/img_11.png, /posts/disparues/img_11.png 1.5x, /posts/disparues/img_11.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_11.png" width="604" height="517" />
+    </a>
+<p>Notre photographe n&rsquo;est autre que <strong>Gary Durbourg</strong></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Heavenly Creatures<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Gary Durbourg</code></div>
+        </div>
+    </div>
+<h3 id="donnie-brasco">Donnie Brasco</h3>
+<blockquote>
+<p>Son pseudonyme ne vous aide pas beaucoup, mais il pourra vous servir à éventuellement trouver sa véritable identité !</p>
+<p>Format du flag : <code>michel sardine</code></p>
+<p><em><strong>100 points</strong></em></p>
+</blockquote>
+<p>Rien de plus simple qu&rsquo;une petite recherche google ici :</p>
+<a class="lightgallery" href="/posts/disparues/img_12.png" title="/posts/disparues/img_12.png" data-thumbnail="/posts/disparues/img_12.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/disparues/img_12.png"
+            data-srcset="/posts/disparues/img_12.png, /posts/disparues/img_12.png 1.5x, /posts/disparues/img_12.png 2x"
+            data-sizes="auto"
+            alt="/posts/disparues/img_12.png" width="735" height="345" />
+    </a>
+<p>On reconnait deux mots-clés qui nous parlent. Voici donc son profil <a href="https://www.behance.net/garydurbourg13100?tracking_source=search_users%7cGary%20Durbourg" target="_blank" rel="noopener noreffer ">Behance</a>, dans lequel il dit dans sa bio</p>
+<blockquote>
+<p>À PROPOS DE MOI</p>
+<p>De mon vrai nom Gérard Dubourguin, je suis photographe de métier depuis plus de 20 ans.
+blabla</p>
+</blockquote>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Donnie Brasco<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Gérard Dubourguin</code></div>
+        </div>
+    </div>
+<h2 id="last-man-standing">Last Man Standing</h2>
+<h3 id="tales-from-the-hood">Tales from the Hood</h3>
+<blockquote>
+<p>Comme toute secte, les Enfants d’Hades doivent avoir des détracteurs ! Sous quel pseudonyme pourrez-vous en retrouver un ?</p>
+<p>Format du flag : <code>Jason Staham</code></p>
+<p><em><strong>40 points</strong></em></p>
+</blockquote>
+<p>De retour sur le blog de <strong>Kronos Titan</strong>, la personne voulant dénoncer les actes de la secte.</p>
+<p>Le voilà notre détracteur, le &ldquo;Last Man Standing&rdquo;</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Tales from the Hood<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Kronos Titan</code></div>
+        </div>
+    </div>
+<h3 id="true-romance">True Romance</h3>
+<blockquote>
+<p>Vous commencez à en apprendre plus sur le fonctionnement de la secte, et sur comment Ellen a été recrutée et manipulée.</p>
+<p>Ils sont à priori bien organisés !</p>
+<p>Quel rôle occupe Marianne dans la secte ?</p>
+<p>Format du flag : <code>surveillant</code></p>
+<p><em><strong>20 points</strong></em></p>
+</blockquote>
+<p>Ellen en a parlé dans son journal, mais Kronos aussi : Marianne a joué le rôle de <strong>marraine</strong> pour Ellen</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>True Romance<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>marraine</code></div>
+        </div>
+    </div>
+<h3 id="touch-of-evil">Touch of Evil</h3>
+<blockquote>
+<p>Afin d’être le plus efficace possible, il vous faut continuer à obtenir le plus d’informations possible sur les Enfants d’Hades, et en particulier sur les évènements qui pourraient vous permettre de retrouver Ellen. Quel nom est donné aux soirées de cette secte ?</p>
+<p>Format du flag : <code>Mariages de la planète bleue</code></p>
+<p><em><strong>20 points</strong></em></p>
+</blockquote>
+<p>Permis les article de Kronos, <a href="https://kronosantihades.wordpress.com/2023/08/28/les-soirees-de-la-lune-noire-comment-les-enfants-dhades-se-financent-en-exploitant-leurs-jeunes-recrues/" target="_blank" rel="noopener noreffer ">celui-là</a> parle de cette cérémonie sacrée où se retrouvent les membres : la <strong>Céremonie de la lune noire</strong></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Touch of Evil<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Céremonie de la lune noire</code></div>
+        </div>
+    </div>
+<h3 id="basic-instinct">Basic Instinct</h3>
+<blockquote>
+<p>Pour reprendre contact avec Ellen, il vous faudra essayer de savoir les étapes subies pendant son intégration dans la secte. Quelle est la troisième étape initiale dans le processus de recrutement des Enfants d&rsquo;Hades ?</p>
+<p>format du flag : <code>classification des vérités</code></p>
+<p><em><strong>40 points</strong></em></p>
+</blockquote>
+<p>Toujours sur le blog de Kronos, <a href="https://kronosantihades.wordpress.com/2023/08/28/le-piege-des-tenebres-comment-les-enfants-dhades-manipulent-et-recrutent-des-jeunes-femmes-en-difficulte/" target="_blank" rel="noopener noreffer ">cet article</a> nous explique la manière de recruter de la secte.</p>
+<p>Entre deux paragraphes, Kronos donne le lien du <a href="https://kronosantihades.wordpress.com/2023/08/28/le-piege-des-tenebres-comment-les-enfants-dhades-manipulent-et-recrutent-des-jeunes-femmes-en-difficulte/" target="_blank" rel="noopener noreffer ">guide de recrutement</a> des enfants, où sont détaillées les étapes.</p>
+<p>Celle que nous recherchons s&rsquo;appelle la <strong>verification des antécédents</strong>.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Basic Instinct<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>verification des antécédents</code></div>
+        </div>
+    </div>
+<h3 id="the-glass-shield">The Glass Shield</h3>
+<blockquote>
+<p>Bien entendu, l&rsquo;idéal serait de pouvoir identifier cette source précieuse pour votre enquête. Il doit être possible de trouver plus d&rsquo;informations sur lui, afin de trouver son prénom et le lien qu&rsquo;il a avec l&rsquo;actuel chef de la secte.</p>
+<p>format du flag : <code>Hector oncle</code></p>
+<p><em><strong>100 points</strong></em></p>
+</blockquote>
+<p>Honte de sa position, Kronos a supprimé un article de son blog où il se confessait par rapport à son lien intime à la secte.</p>
+<p>On est en capacité de retrouver cet article grâce à <a href="https://web.archive.org/web/20230903085211/https://kronosantihades.wordpress.com/2023/08/24/la-veritable-origine-des-enfants-dhades-mes-confessions/#more-45" target="_blank" rel="noopener noreffer ">Web archive</a>.</p>
+<p>Cet article nous apprend que Kronos s&rsquo;appelle <strong>Georges</strong>, qu&rsquo;il est le fondateur des Enfants d&rsquo;Hades, mais que son <strong>fils</strong> a perverti son organisation, jusqu&rsquo;à en prendre la tête et la transformer en secte malsaine et dangereuse.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>The Glass Shield<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>Georges pere </code></div>
+        </div>
+    </div>
+<h2 id="swordfish">Swordfish</h2>
+<h3 id="wargames">Wargames</h3>
+<blockquote>
+<p>Un membre de la secte possède surement son propre serveur informatique. Pourriez vous vous y connecter ?</p>
+<p>Format du flag : <code>EDH{Ceci_Est_Un_Magnifique_Flag}</code></p>
+<p><em><strong>50 points</strong></em></p>
+</blockquote>
+<p>Parmi les membres de la direction présent sur l&rsquo;organigramme, si nous envoyions un mail au Responsable Evénement Zagreux (<code>zagreus@enfantsdhades.com</code>), ce dernier vous répond cela :</p>
+<pre tabindex="0"><code>Il ne me reste plus beaucoup de temps...
+Si tu souhaites vraiment de me contacter, connecte toi ici :
+
+SSH zagreus@90.84.171.140
+SRm5fowKzC9D6fw9
+
+Je ne sais pas combien de temps ce serveur sera encore disponible.
+
+Zagreus
+</code></pre><p>On peut alors se connecter en SSH à ce serveur, ce qui donne :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp;"
+        data-srcset="https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp;, https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp; 1.5x, https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp; 2x"
+        data-sizes="auto"
+        alt="https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp;"
+        title="gif des enfers" /></p>
+<p>Aucune action n&rsquo;est faisable, mais il nous donne le flag.</p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Wargames<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>EDH{CHilDren_Of_EasTeR_Egg}</code></div>
+        </div>
+    </div>
+<hr>
+<h4 id="ensuite-mon-équipe-et-moi-navons-pas-poursuivi-nos-recherches"><em>Ensuite, mon équipe et moi n&rsquo;avons pas poursuivi nos recherches&hellip;</em></h4>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 04-11-2023</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)" data-via="Nozzouille" data-hashtags="OSINT"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/disparues/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/osint/">OSINT</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/dark_side/" class="prev" rel="prev" title="Dark Side"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Dark Side</a>
+            <a href="/posts/youaremine/" class="next" rel="next" title="You are mine!">You are mine!<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>How to decrypt LUKS1 with key in memory - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="How to decrypt LUKS1 with key in memory" />
+<meta property="og:description" content="How to decrypt LUKS1 with key in memory LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe vulnerability. The master key, used to encrypt and decrypt the whole disk, can be retrieved in the memory of the running machine. This article will show you how to recover that key, and then decrypt the disk." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png"/><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2023-07-10T17:15:29+02:00" />
+<meta property="article:modified_time" content="2023-07-10T17:15:29+02:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png"/>
+
+<meta name="twitter:title" content="How to decrypt LUKS1 with key in memory"/>
+<meta name="twitter:description" content="How to decrypt LUKS1 with key in memory LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe vulnerability. The master key, used to encrypt and decrypt the whole disk, can be retrieved in the memory of the running machine. This article will show you how to recover that key, and then decrypt the disk."/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to decrypt LUKS1 with key in memory",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/articles\/decrypt-luks1-with-key-in-memory\/"
+        },"genre": "articles","keywords": "Forensics","wordcount":  782 ,
+        "url": "https:\/\/nozyzy.github.io\/articles\/decrypt-luks1-with-key-in-memory\/","datePublished": "2023-07-10T17:15:29+02:00","dateModified": "2023-07-10T17:15:29+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">How to decrypt LUKS1 with key in memory</h1><div class="content" id="content"><h1 id="how-to-decrypt-luks1-with-key-in-memory">How to decrypt LUKS1 with key in memory</h1>
+<hr>
+<p>LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe <strong>vulnerability</strong>. The master key, used to encrypt and decrypt the whole disk, <strong>can be retrieved in the memory</strong> of the running machine.
+This article will show you how to <em><strong>recover that key</strong></em>, and then <em><strong>decrypt the disk</strong></em>.</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Educational purpose<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">This is for educational purpose only, do not try this on systems that you do now own, or have been allowed to do so.</div>
+        </div>
+    </div>
+<h3 id="fas-fa-list-fa-fw-requirements"><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;Requirements</h3>
+<p>This can only be done if you have access to :</p>
+<ul>
+<li>The encrypted disk (.img, .vmdk, .qemu, physical one, etc)</li>
+<li>The memory of the decrypted machine.</li>
+<li>A Linux machine.</li>
+</ul>
+<p>The disk can be a raw type, as a virtual or a physical one.</p>
+<p>The memory can be extracted with tools like <a href="https://github.com/microsoft/avml" target="_blank" rel="noopener noreffer ">avml</a>, or from a snapshot (eg. .vmem)</p>
+<p>The Linux machine will be the support for decryption and then access the data.</p>
+<h3 id="fas-fa-key-fa-fw-key-recovering"><i class="fas fa-key fa-fw" aria-hidden="true"></i>&nbsp;Key recovering</h3>
+<p>LUKS1 uses <strong>AES algorithm</strong> for encrypting data. The vulnerability of LUKS1 is that this key is kept in plain text forever in the memory, while the machine is running and decrypted.
+The idea here, is to find the key in the memory.</p>
+<p>I personally used a great tool called <strong><a href="https://sourceforge.net/projects/findaes/" target="_blank" rel="noopener noreffer ">findaes</a></strong>, but others exist with the relative same name.</p>
+<p>We just need to use in our memory/snapshot like this :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-pwsh" data-lang="pwsh"><span class="line"><span class="cl"><span class="p">./</span><span class="n">findaes</span><span class="p">.</span><span class="py">exe</span> <span class="n">path</span><span class="p">/</span><span class="n">to</span><span class="p">/</span><span class="n">memory</span><span class="p">.</span><span class="py">vmem</span>
+</span></span></code></pre></div><p>Result looks like this :</p>
+<figure><a class="lightgallery" href="/LUKS/aes.png" title="Findaes result" data-thumbnail="/LUKS/aes.png" data-sub-html="<h2>Findaes result</h2><p>Findaes result</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/aes.png"
+            data-srcset="/LUKS/aes.png, /LUKS/aes.png 1.5x, /LUKS/aes.png 2x"
+            data-sizes="auto"
+            alt="Findaes result" height="50%" />
+    </a><figcaption class="image-caption">Findaes result</figcaption>
+    </figure>
+<pre tabindex="0"><code>78 ac 5a e3 9b b5 d5 96 fe 69 6f ee 2a 13 17 12 49 69 ce 92 46 56 53 45 02 fa fb 6e 16 43 a0 c9
+ff e7 b8 81 a3 31 40 05 6a 04 0e 9f 93 ed ba e8 56 b8 b5 b9 18 de 4e bb d4 1d 1e 94 ce d8 66 93
+</code></pre><p>Save your result somewhere.</p>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Why two keys ?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Here we have two AES keys found. We&rsquo;ll get back to it later.</div>
+        </div>
+    </div>
+<h3 id="fas-fa-lock-open-fa-fw-decrypt"><i class="fas fa-lock-open fa-fw" aria-hidden="true"></i>&nbsp;Decrypt</h3>
+<p>Next step is to attach and mount the disk. I personally used the .vmdk version in a Kali VM.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Raw disk<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>If you use a raw disk (.raw, .img or equivalent) you can install <code>kpartx</code> and run this command :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ sudo kpartx -av &lt;disk-file&gt;
+</span></span></code></pre></div></div>
+        </div>
+    </div>
+<p>You should then see a result equivalent for the next screenshot, but in loop device.
+Using the <code>lsblk</code> command, you should see your disk, and some lvm partition :</p>
+<figure><a class="lightgallery" href="/LUKS/lvm.png" title="Mounted disk" data-thumbnail="/LUKS/lvm.png" data-sub-html="<h2>Mounted disk</h2><p>Mounted disk</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/lvm.png"
+            data-srcset="/LUKS/lvm.png, /LUKS/lvm.png 1.5x, /LUKS/lvm.png 2x"
+            data-sizes="auto"
+            alt="Mounted disk" height="50%" />
+    </a><figcaption class="image-caption">Mounted disk</figcaption>
+    </figure>
+<p>As you can see, this machine is a centos, but whatever.</p>
+<p>We&rsquo;ll then use the <code>cryptsetup</code> command to gather information and decrypt the disk. This is the common and standard way to encrypt a isk with LUKS.</p>
+<p>We then need the key in binary format. I used <code>xxd</code> for that part.
+First paste them in a txt file</p>
+<figure><a class="lightgallery" href="/LUKS/keytxt.png" title="Paste keys" data-thumbnail="/LUKS/keytxt.png" data-sub-html="<h2>Paste keys</h2><p>Paste keys</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/keytxt.png"
+            data-srcset="/LUKS/keytxt.png, /LUKS/keytxt.png 1.5x, /LUKS/keytxt.png 2x"
+            data-sizes="auto"
+            alt="Paste keys" height="50%" />
+    </a><figcaption class="image-caption">Paste keys</figcaption>
+    </figure>
+<p>Using <code>xxd -r -p file.txt &gt; file.bin</code> we can convert the text file into binary. We&rsquo;ll use this format for decryption.</p>
+<figure><a class="lightgallery" href="/LUKS/keybin.png" title="Convert keys in binary" data-thumbnail="/LUKS/keybin.png" data-sub-html="<h2>Convert keys in binary</h2><p>Convert keys in binary</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/keybin.png"
+            data-srcset="/LUKS/keybin.png, /LUKS/keybin.png 1.5x, /LUKS/keybin.png 2x"
+            data-sizes="auto"
+            alt="Convert keys in binary" height="50%" />
+    </a><figcaption class="image-caption">Convert keys in binary</figcaption>
+    </figure>
+<p>We now can open our LUKS encrypted disk with this command :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ sudo cryptsetup luksOpen /dev/my-device device_name --master-key-file key.bin
+</span></span></code></pre></div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>device_name<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">I chose <code>LUKS</code> as my device_name, this will be available at <code>/dev/mapper/LUKS</code></div>
+        </div>
+    </div>
+<figure><a class="lightgallery" href="/LUKS/failed.png" title="Trying to open disk" data-thumbnail="/LUKS/failed.png" data-sub-html="<h2>Trying to open disk</h2><p>Trying to open disk</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/failed.png"
+            data-srcset="/LUKS/failed.png, /LUKS/failed.png 1.5x, /LUKS/failed.png 2x"
+            data-sizes="auto"
+            alt="Trying to open disk" height="50%" />
+    </a><figcaption class="image-caption">Trying to open disk</figcaption>
+    </figure>
+<p>Either it works fine for you, or this prompts you some kind a key size error.</p>
+<p>It asks us for a <strong>64 bytes</strong> key. Or, if we check, both our keys are <strong>32 bytes</strong> keys.</p>
+<figure><a class="lightgallery" href="/LUKS/size.png" title="32 bytes key" data-thumbnail="/LUKS/size.png" data-sub-html="<h2>32 bytes key</h2><p>32 bytes key</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/size.png"
+            data-srcset="/LUKS/size.png, /LUKS/size.png 1.5x, /LUKS/size.png 2x"
+            data-sizes="auto"
+            alt="32 bytes key" height="50%" />
+    </a><figcaption class="image-caption">32 bytes key</figcaption>
+    </figure>
+<p>What happens here, is that LUKS uses a special cipher mode of AES. We can dump the cipher info with the following command :</p>
+<figure><a class="lightgallery" href="/LUKS/xts.png" title="XTS Cipher mode" data-thumbnail="/LUKS/xts.png" data-sub-html="<h2>XTS Cipher mode</h2><p>XTS Cipher mode</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/xts.png"
+            data-srcset="/LUKS/xts.png, /LUKS/xts.png 1.5x, /LUKS/xts.png 2x"
+            data-sizes="auto"
+            alt="XTS Cipher mode" height="50%" />
+    </a><figcaption class="image-caption">XTS Cipher mode</figcaption>
+    </figure>
+<p>The mode used here is <strong>XTS</strong>, not the common GCM, CBC or ECB. It is a stronger algorithm than the other, because it needs <strong>2 keys</strong>.</p>
+<figure><a class="lightgallery" href="/LUKS/scheme.png" title="Because an image is worth a thousand words" data-thumbnail="/LUKS/scheme.png" data-sub-html="<h2>Because an image is worth a thousand words</h2><p>Because an image is worth a thousand words</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/scheme.png"
+            data-srcset="/LUKS/scheme.png, /LUKS/scheme.png 1.5x, /LUKS/scheme.png 2x"
+            data-sizes="auto"
+            alt="Because an image is worth a thousand words" height="50%" />
+    </a><figcaption class="image-caption">Because an image is worth a thousand words</figcaption>
+    </figure>
+<p>I will not go deep in the theory, but that explains the fact that the first key is following the second one in memory.</p>
+<p>The master key file does need both keys. You have to <strong>concatenate both your keys</strong>.
+By doing so, you can try your news keys.</p>
+<figure><a class="lightgallery" href="/LUKS/decrypt.png" title="Decrypt with new key" data-thumbnail="/LUKS/decrypt.png" data-sub-html="<h2>Decrypt with new key</h2><p>Decrypt with new key</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/decrypt.png"
+            data-srcset="/LUKS/decrypt.png, /LUKS/decrypt.png 1.5x, /LUKS/decrypt.png 2x"
+            data-sizes="auto"
+            alt="Decrypt with new key" height="50%" />
+    </a><figcaption class="image-caption">Decrypt with new key</figcaption>
+    </figure>
+<p>The second key appears to have worked correctly. Let&rsquo;s mount our device and check the content of our mounting point <code>mntLUKS</code> :</p>
+<p>Let&rsquo;s create a folder in your common location. This will be our mounting point.
+I called it <code>mntLUKS</code>.</p>
+<figure><a class="lightgallery" href="/LUKS/mount.png" title="Disk mounted" data-thumbnail="/LUKS/mount.png" data-sub-html="<h2>Disk mounted</h2><p>Disk mounted</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/LUKS/mount.png"
+            data-srcset="/LUKS/mount.png, /LUKS/mount.png 1.5x, /LUKS/mount.png 2x"
+            data-sizes="auto"
+            alt="Disk mounted" height="50%" />
+    </a><figcaption class="image-caption">Disk mounted</figcaption>
+    </figure>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Done<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">We did recover our LUKS1 encrypted disk !</div>
+        </div>
+    </div>
+<hr>
+<h4 id="tags">Tags</h4>
+<p><code>LUKS</code>  <code>LUKS1</code>  <code>LUKS decrypt</code>  <code>LUKS decipher</code>  <code>LUKS open</code>  <code>LUKS key memory</code>  <code>LUKS memory</code>  <code>LUKS decrypt with memory</code>  <code>LUKS open with memory</code>  <code>recover LUKS key</code>  <code>memory</code></p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

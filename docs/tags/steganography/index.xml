@@ -1,0 +1,92 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Steganography - Tag - NozZy</title>
+        <link>https://nozyzy.github.io/tags/steganography/</link>
+        <description>Steganography - Tag - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/steganography/" rel="self" type="application/rss+xml" /><item>
+    <title>The Shakespearean Mouse</title>
+    <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
+    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
+    <description><![CDATA[BackdoorCTF 2023 - The Shakespearean Mouse Category Forensics
+Description wend f&rsquo;rward with this quest of yours, f&rsquo;r thee shalt findeth the flag at the endeth Attachments: https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip
+Files shakespeareanmouse.zip
+Difficulty 496 points
+Author: cy4n1d3 Write up The Shakespearan Langage Inside the zip file we got two files: out.bmp, and The Backdoor Lore containing only text, at first sight, the script of drama play.
+I rapidly think of a so of esoteric language, like Poetic or Whitespace, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.]]></description>
+</item>
+<item>
+    <title>Dark Side</title>
+    <link>https://nozyzy.github.io/posts/dark_side/</link>
+    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/dark_side/</guid>
+    <description><![CDATA[Flag4All - Dark Side Category Steganography
+Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
+🇬🇧 You are a IT student and a mysterious person send an archive to the classe.]]></description>
+</item>
+<item>
+    <title>404CTF - Avez-vous vu les cascades du hérisson ?</title>
+    <link>https://nozyzy.github.io/posts/cascades_herisson/</link>
+    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
+    <description><![CDATA[404CTF - Avez-vous vu les cascades du hérisson ? Category Radio-Frequency
+Description Après avoir rencontré Simone, cette dernière vous propose de découvrir une nouvelle personne. Quoi de mieux qu’un cache-cache pour apprendre à mieux se connaître ? Cela vous changera de l&rsquo;air du café littéraire Le Procope. Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.]]></description>
+</item>
+<item>
+    <title>HeroCTF v5 - EMD</title>
+    <link>https://nozyzy.github.io/posts/emd/</link>
+    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/emd/</guid>
+    <description><![CDATA[HeroCTF v5 - EMD Category Steganography
+Description Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group. Some information to help you:
+The size of the pixel groups is 2 The size of the hidden message is 841 characters The image must be divided into groups containing 2 pixels that follow each other on the x-axis.]]></description>
+</item>
+<item>
+    <title>Spirale</title>
+    <link>https://nozyzy.github.io/posts/spirale/</link>
+    <pubDate>Thu, 03 Nov 2022 23:38:54 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/spirale/</guid>
+    <description><![CDATA[Cybernight 2022 - Spirale Category Steganography
+Description tourne tourne petit moulin frappe frappe petite main
+Files chall_stegano
+Difficulty EASY
+Author: Marie-Jeanne Write up Il fait mal aux yeux celui-là
+En parcourant un peu le texte du fichier, puisque je ne trouvais rien sur https://www.aperisolve.com/, je me dis que ça doit être dans le texte
+En lisant la spirale, on voit que des caractères en majuscule apparaissent, et que ceux-ci commencent par CYBN]]></description>
+</item>
+<item>
+    <title>Pyramide</title>
+    <link>https://nozyzy.github.io/posts/pyramide/</link>
+    <pubDate>Thu, 03 Nov 2022 23:38:48 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/pyramide/</guid>
+    <description><![CDATA[Cybernight 2022 - Pyramide Category Steganography
+Description Il faut parfois extraire la clef pour trouver la solution.
+Retrouvez ici une citation d&rsquo;un personnage de film. Le flag est son nom.
+Format de flag : CYBN{Auteur}
+Files triforce
+Difficulty MEDIUM - x points
+Author: Marie-Jeanne Write up Sois patient, apprends à lire Celui-là m&rsquo;a pris du temps alors qu&rsquo;il n&rsquo;était pas si compliqué
+Comme toujours quand j&rsquo;ai des chall stegano avec image, je l&rsquo;importe dans https://www.]]></description>
+</item>
+<item>
+    <title>Xray</title>
+    <link>https://nozyzy.github.io/posts/xray/</link>
+    <pubDate>Thu, 03 Nov 2022 23:37:49 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/xray/</guid>
+    <description><![CDATA[Cybernight 2022 - Xray Category Forensics
+Description Pouvez-vous voir ce qui se cache derrière ce message ?
+Files XRAY
+Difficulty EASY
+Author: MrSheepSheep Write up On a un pdf avec écrit On cherche donc comment extraire des informations d&rsquo;un pdf, là où le &lsquo;xray pdf&rsquo; ne donne pas grand-chose
+Je tombe sur https://www.pdf-online.com/osa/extract.aspx?o=img en cherchant &lsquo;pdf analyser&rsquo; Celui-ci demande un pdf en input et essaie de sortir du texte et des images]]></description>
+</item>
+</channel>
+</rss>

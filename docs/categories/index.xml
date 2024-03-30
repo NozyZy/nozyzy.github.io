@@ -1,0 +1,88 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - NozZy</title>
+        <link>https://nozyzy.github.io/categories/</link>
+        <description>Categories - Category - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>BackdoorCTF 2023</title>
+    <link>https://nozyzy.github.io/categories/backdoorctf-2023/</link>
+    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/backdoorctf-2023/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Writeups</title>
+    <link>https://nozyzy.github.io/categories/writeups/</link>
+    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/writeups/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cybernight 2023</title>
+    <link>https://nozyzy.github.io/categories/cybernight-2023/</link>
+    <pubDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/cybernight-2023/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Disparue(s)</title>
+    <link>https://nozyzy.github.io/categories/disparues/</link>
+    <pubDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/disparues/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Flag4All</title>
+    <link>https://nozyzy.github.io/categories/flag4all/</link>
+    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/flag4all/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>ECW 2023</title>
+    <link>https://nozyzy.github.io/categories/ecw-2023/</link>
+    <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/ecw-2023/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Stranger Case</title>
+    <link>https://nozyzy.github.io/categories/stranger-case/</link>
+    <pubDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/stranger-case/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Articles</title>
+    <link>https://nozyzy.github.io/categories/articles/</link>
+    <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/articles/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>404CTF</title>
+    <link>https://nozyzy.github.io/categories/404ctf/</link>
+    <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/404ctf/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>HeroCTFv5</title>
+    <link>https://nozyzy.github.io/categories/heroctfv5/</link>
+    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/categories/heroctfv5/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

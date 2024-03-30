@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>HeadShot - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="HeadShot" />
+<meta property="og:description" content="Flag4All - HeadShot Category Forensics
+Description Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.
+Files headShot.tar
+Difficulty Medium - 497 points
+Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/headshot/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-22T13:58:04+02:00" />
+<meta property="article:modified_time" content="2023-10-22T13:58:04+02:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png"/>
+
+<meta name="twitter:title" content="HeadShot"/>
+<meta name="twitter:description" content="Flag4All - HeadShot Category Forensics
+Description Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.
+Files headShot.tar
+Difficulty Medium - 497 points
+Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the ."/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/headshot/" /><link rel="prev" href="https://nozyzy.github.io/posts/gishadb/" /><link rel="next" href="https://nozyzy.github.io/posts/ozint.eu-la-vie-de-claude/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "HeadShot",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/headshot\/"
+        },"genre": "posts","keywords": "Forensics","wordcount":  306 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/headshot\/","datePublished": "2023-10-22T13:58:04+02:00","dateModified": "2023-10-22T13:58:04+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">HeadShot</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/flag4all/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Flag4All</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="22-10-2023">22-10-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;306 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#difficulty">Difficulty</a></li>
+    <li><a href="#write-up">Write up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="flag4all---headshot">Flag4All - HeadShot</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>Forensics</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<p>Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.</p>
+<h2 id="files">Files</h2>
+<p><a href="https://ctfd.flag4all.sh/files/7379772026f7dae22376571d239b5239/headShot.tar.gz?token=eyJ1c2VyX2lkIjoxMTIsInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjMxOH0.ZTUOPw.6FXd_EmJfzC42znDu4PMCy7AEp8" target="_blank" rel="noopener noreffer ">headShot.tar</a></p>
+<h2 id="difficulty">Difficulty</h2>
+<p><strong>Medium</strong> - 497 points</p>
+<ul>
+<li>Author: <strong>Penthium2 (BZHack)</strong></li>
+</ul>
+<hr>
+<figure><a class="lightgallery" href="/HeadShot/screen.png" title="Screenshot" data-thumbnail="/HeadShot/screen.png" data-sub-html="<h2>Screenshot</h2><p>Screenshot</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/HeadShot/screen.png"
+            data-srcset="/HeadShot/screen.png, /HeadShot/screen.png 1.5x, /HeadShot/screen.png 2x"
+            data-sizes="auto"
+            alt="Screenshot" />
+    </a><figcaption class="image-caption">Screenshot</figcaption>
+    </figure>
+<h2 id="write-up">Write up</h2>
+<p>The file consists of some minecraft backup files. To go fast, I just <code>file</code> all files to know exactly what was going on for each of them, and it appears that the <code>.dat</code> files were <strong>gzip archives</strong>.
+And that are the files that will interest us first. Each of <code>level.dat</code> and <code>playerdata/5435ace1-00d5-437c-862f-77d8bacfa86e.dat</code> had the same parts of the flag:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ strings level
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">pages
+</span></span><span class="line"><span class="cl">Welcome,
+</span></span><span class="line"><span class="cl">All parts of the  FLAG should be somewhere, everywhere, hidden !
+</span></span><span class="line"><span class="cl">Look in all you think from your HEAD !
+</span></span><span class="line"><span class="cl">In a box,Book,everry thing,.. JUST SEARCH
+</span></span><span class="line"><span class="cl">And of cours Have fun !!
+</span></span><span class="line"><span class="cl">Slot
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">Name
+</span></span><span class="line"><span class="cl"><span class="o">{</span><span class="s2">&#34;text&#34;</span>:<span class="s2">&#34;_eAsilY_but_&#34;</span><span class="o">}</span>
+</span></span><span class="line"><span class="cl">Slot
+</span></span><span class="line"><span class="cl">minecraft:netherite_sword
+</span></span><span class="line"><span class="cl">Count
+</span></span><span class="line"><span class="cl">RepairCost
+</span></span><span class="line"><span class="cl">Damage
+</span></span><span class="line"><span class="cl">display
+</span></span><span class="line"><span class="cl">Name
+</span></span><span class="line"><span class="cl"><span class="o">{</span><span class="s2">&#34;text&#34;</span>:<span class="s2">&#34;For3ns1c_St4r7&#34;</span><span class="o">}</span>
+</span></span><span class="line"><span class="cl">Enchantments
+</span></span></code></pre></div><p>We got : <code>_eAsilY_but_</code>, <code>For3ns1c_St4r7</code> and a hint about <em>HEAD</em>.</p>
+<p>Maybe the file <code>datapacks/AllMobHeads_V5.5+1.16.zip</code> will be useful? spoiler: yes</p>
+<p>It refers to a public mod. Once extracted, we have a bunch of directories and <code>.json</code> files, and <code>grep</code> does not give anything.</p>
+<p>But it is a public mod, what if it was altered? Download the <a href="https://www.curseforge.com/minecraft/customization/all-mob-heads-fr/files/3077877" target="_blank" rel="noopener noreffer ">original file</a> and compare.</p>
+<figure><a class="lightgallery" href="/HeadShot/headmod.png" title="Both &#34;True&#34; and fake files" data-thumbnail="/HeadShot/headmod.png" data-sub-html="<h2>Both &ldquo;True&rdquo; and fake files</h2><p>Both &#34;True&#34; and fake files</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/HeadShot/headmod.png"
+            data-srcset="/HeadShot/headmod.png, /HeadShot/headmod.png 1.5x, /HeadShot/headmod.png 2x"
+            data-sizes="auto"
+            alt="Both &ldquo;True&rdquo; and fake files" />
+    </a><figcaption class="image-caption">Both &ldquo;True&rdquo; and fake files</figcaption>
+    </figure>
+<p>Then our best <code>diff</code> command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ diff -Nrq AllMobHeads_V5.5+1.16 TrueAllMobHeads_V5.5+1.16
+</span></span><span class="line"><span class="cl">Files AllMobHeads_V5.5+1.16/data/minecraft/loot_tables/entities/creeper.json and TrueAllMobHeads_V5.5+1.16/data/minecraft/loot_tables/entities/creeper.json differ
+</span></span><span class="line"><span class="cl">Files AllMobHeads_V5.5+1.16/data/minecraft/loot_tables/entities/ee/974.json and TrueAllMobHeads_V5.5+1.16/data/minecraft/loot_tables/entities/ee/974.json differ
+</span></span><span class="line"><span class="cl">Files AllMobHeads_V5.5+1.16/data/minecraft/loot_tables/entities/ee/venom.json and TrueAllMobHeads_V5.5+1.16/data/minecraft/loot_tables/entities/ee/venom.json differ
+</span></span><span class="line"><span class="cl">Files AllMobHeads_V5.5+1.16/data/minecraft/loot_tables/entities/pig.json and TrueAllMobHeads_V5.5+1.16/data/minecraft/loot_tables/entities/pig.json differ
+</span></span></code></pre></div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://c.tenor.com/gVHHuzDLos8AAAAC/tenor.gif"
+        data-srcset="https://c.tenor.com/gVHHuzDLos8AAAAC/tenor.gif, https://c.tenor.com/gVHHuzDLos8AAAAC/tenor.gif 1.5x, https://c.tenor.com/gVHHuzDLos8AAAAC/tenor.gif 2x"
+        data-sizes="auto"
+        alt="https://c.tenor.com/gVHHuzDLos8AAAAC/tenor.gif"
+        title="tiens tiens" /></p>
+<p>We got 4 json files that differ. Check one of them:</p>
+<figure><a class="lightgallery" href="/HeadShot/diff.png" title="Difference !" data-thumbnail="/HeadShot/diff.png" data-sub-html="<h2>Difference !</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/HeadShot/diff.png"
+            data-srcset="/HeadShot/diff.png, /HeadShot/diff.png 1.5x, /HeadShot/diff.png 2x"
+            data-sizes="auto"
+            alt="Difference !" />
+    </a><figcaption class="image-caption">Difference !</figcaption>
+    </figure>
+<p>The differences appear the same way for the 4 files. They all give, once base64 decoded:</p>
+<ul>
+<li><code>{textures:{SKIN:{url:_w1Th_tr0lls}</code></li>
+<li><a href="https://soundcloud.com/mad-core/darktek-ta-geule" target="_blank" rel="noopener noreffer ">https://soundcloud.com/mad-core/darktek-ta-geule</a></li>
+<li><code>{&quot;textures&quot;:{&quot;SKIN&quot;:{&quot;url&quot;:&quot;http://textures.minecraft.net/texture/G0_Som3t1me_d33per&quot;}}}</code></li>
+<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreffer ">flag</a></li>
+</ul>
+<p>We gor all our 4 flag parts:</p>
+<ul>
+<li><code>_w1Th_tr0lls</code></li>
+<li><code>G0_Som3t1me_d33per</code></li>
+<li><code>For3ns1c_St4r7</code></li>
+<li><code>_eAsilY_but_</code></li>
+</ul>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>FLAG{For3ns1c_St4r7_eAsilY_but_G0_Som3t1me_d33per_w1Th_tr0lls}</code></div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 22-10-2023</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/headshot/" data-title="HeadShot" data-via="Nozzouille" data-hashtags="Forensics"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/headshot/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/headshot/" data-title="HeadShot"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/headshot/" data-title="HeadShot"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/headshot/" data-title="HeadShot"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/forensics/">Forensics</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/gishadb/" class="prev" rel="prev" title="Gishadb"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Gishadb</a>
+            <a href="/posts/ozint.eu-la-vie-de-claude/" class="next" rel="next" title="OZINT.eu   La Vie De Claude">OZINT.eu   La Vie De Claude<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

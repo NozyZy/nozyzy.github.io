@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Dark Side - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Dark Side" />
+<meta property="og:description" content="Flag4All - Dark Side Category Steganography
+Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
+🇬🇧 You are a IT student and a mysterious person send an archive to the classe." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/dark_side/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-23T18:06:28+02:00" />
+<meta property="article:modified_time" content="2023-10-23T18:06:28+02:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png"/>
+
+<meta name="twitter:title" content="Dark Side"/>
+<meta name="twitter:description" content="Flag4All - Dark Side Category Steganography
+Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
+🇬🇧 You are a IT student and a mysterious person send an archive to the classe."/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/dark_side/" /><link rel="prev" href="https://nozyzy.github.io/posts/projet-fox-trouble-from-the-east/" /><link rel="next" href="https://nozyzy.github.io/posts/disparues/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Dark Side",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/dark_side\/"
+        },"genre": "posts","keywords": "Forensics, Steganography","wordcount":  410 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/dark_side\/","datePublished": "2023-10-23T18:06:28+02:00","dateModified": "2023-10-23T18:06:28+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Dark Side</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/flag4all/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Flag4All</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="23-10-2023">23-10-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;410 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#difficulty">Difficulty</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#zip--tif-">zip ? tif ?</a></li>
+        <li><a href="#password-and-a-bird">Password and a bird</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="flag4all---dark-side">Flag4All - Dark Side</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>Steganography</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<p>🇫🇷
+Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe.
+Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip.
+À vous de retrouver ces réponses sur le compte.</p>
+<p>🇬🇧
+You are a IT student and a mysterious person send an archive to the classe.
+This person tells that all the answers for the following exams are behind an only account. To find this account, you have to follow the hidden hints that the archive will give you.
+Your turn to find this answers!</p>
+<h2 id="files">Files</h2>
+<p>Chall_Dark_Side.zip</p>
+<h2 id="difficulty">Difficulty</h2>
+<p><strong>Medium</strong> - 497 points</p>
+<ul>
+<li>Author: <strong>?</strong></li>
+</ul>
+<hr>
+<h2 id="write-up">Write up</h2>
+<h3 id="zip--tif-">zip ? tif ?</h3>
+<p>Opening the zip with <strong>7z</strong> lets you see that it contains another zip file, which is <strong>encrypted</strong>, and a <strong>tif image</strong>.</p>
+<figure><a class="lightgallery" href="/Darkside/zip.png" title="Zip content" data-thumbnail="/Darkside/zip.png" data-sub-html="<h2>Zip content</h2><p>Zip content</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Darkside/zip.png"
+            data-srcset="/Darkside/zip.png, /Darkside/zip.png 1.5x, /Darkside/zip.png 2x"
+            data-sizes="auto"
+            alt="Zip content" />
+    </a><figcaption class="image-caption">Zip content</figcaption>
+    </figure>
+<p>Maybe the tif image contains the password? But the image looks <strong>corrupted</strong>, I cannot open it.</p>
+<p>What if we check its <strong>file signature</strong>? Using the <code>file</code> command, we learn that this file is considered as a <strong>JPEG</strong> file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ file IMG_20221113_185634.tif
+</span></span><span class="line"><span class="cl">IMG_20221113_185634.tif: JPEG image data
+</span></span></code></pre></div><p>Changing the extension from <code>.tif</code> to <code>.jpeg</code> does not work.</p>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>TIF or JPEG?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Maybe it is <strong>not a real JPEG file</strong>?</div>
+        </div>
+    </div>
+<p>Gotta check the <strong>file signature</strong> with my own eyes.</p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_file_signatures" target="_blank" rel="noopener noreffer ">This page</a> refers a lot of hexadecimal file signatures, and <a href="https://hexed.it/" target="_blank" rel="noopener noreffer ">hexed.it</a> allows us to looks for the hexadecimal writting of our file.</p>
+<p><figure><a class="lightgallery" href="/Darkside/file_header.png" title="Original header" data-thumbnail="/Darkside/file_header.png" data-sub-html="<h2>Original header</h2><p>Original header</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Darkside/file_header.png"
+            data-srcset="/Darkside/file_header.png, /Darkside/file_header.png 1.5x, /Darkside/file_header.png 2x"
+            data-sizes="auto"
+            alt="Original header" />
+    </a><figcaption class="image-caption">Original header</figcaption>
+    </figure>
+This header gives to the file its signature. It is considered as JPEG image data because it begins with the JPEG header, as this screen below shows:</p>
+<p><figure><a class="lightgallery" href="/Darkside/jpeg_headers.png" title="JPEG header" data-thumbnail="/Darkside/jpeg_headers.png" data-sub-html="<h2>JPEG header</h2><p>JPEG header</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Darkside/jpeg_headers.png"
+            data-srcset="/Darkside/jpeg_headers.png, /Darkside/jpeg_headers.png 1.5x, /Darkside/jpeg_headers.png 2x"
+            data-sizes="auto"
+            alt="JPEG header" />
+    </a><figcaption class="image-caption">JPEG header</figcaption>
+    </figure>
+But we&rsquo;ve seen that this image is <strong>not</strong> a proper JPEG file. Maybe it is a <strong>TIF</strong> file, as the extension supposes, and we just need to change the header for a TIF one?</p>
+<p><figure><a class="lightgallery" href="/Darkside/tif.png" title="TIF header" data-thumbnail="/Darkside/tif.png" data-sub-html="<h2>TIF header</h2><p>TIF header</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Darkside/tif.png"
+            data-srcset="/Darkside/tif.png, /Darkside/tif.png 1.5x, /Darkside/tif.png 2x"
+            data-sizes="auto"
+            alt="TIF header" />
+    </a><figcaption class="image-caption">TIF header</figcaption>
+    </figure>
+We just replace <code>FF D8 FF E0</code> in the header by <code>49 49 2A 00</code>, and it should be considered as a real <code>.tif</code> file</p>
+<figure><a class="lightgallery" href="/Darkside/new_header.png" title="New header" data-thumbnail="/Darkside/new_header.png" data-sub-html="<h2>New header</h2><p>New header</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Darkside/new_header.png"
+            data-srcset="/Darkside/new_header.png, /Darkside/new_header.png 1.5x, /Darkside/new_header.png 2x"
+            data-sizes="auto"
+            alt="New header" />
+    </a><figcaption class="image-caption">New header</figcaption>
+    </figure>
+<p>Export the file, and
+<figure><a class="lightgallery" href="/Darkside/new.png" title="Fixed file" data-thumbnail="/Darkside/new.png" data-sub-html="<h2>Fixed file</h2><p>Fixed file</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Darkside/new.png"
+            data-srcset="/Darkside/new.png, /Darkside/new.png 1.5x, /Darkside/new.png 2x"
+            data-sizes="auto"
+            alt="Fixed file" />
+    </a><figcaption class="image-caption">Fixed file</figcaption>
+    </figure>
+<a href="/Darkside/new.tif" rel="">new file</a></p>
+<h3 id="password-and-a-bird">Password and a bird</h3>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>base64 password<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">We got a <strong>base64</strong> encoded string: <code>bW90ZGVwYXNzZXppcA==</code> → <code>motdepassezip</code></div>
+        </div>
+    </div>
+<p>We are now able to unzip the zip (woaw), with inside a little bird inside a QR code:</p>
+<figure><a class="lightgallery" href="/Darkside/qr.png" title="QR" data-thumbnail="/Darkside/qr.png" data-sub-html="<h2>QR</h2><p>QR</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/Darkside/qr.png"
+            data-srcset="/Darkside/qr.png, /Darkside/qr.png 1.5x, /Darkside/qr.png 2x"
+            data-sizes="auto"
+            alt="QR" />
+    </a><figcaption class="image-caption">QR</figcaption>
+    </figure>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>base32 password<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">This time its content is <strong>base32</strong> encoded string: <code>IBCDI4TLL5JTCZDFG43A===</code> → <code>@D4rk_S1de76</code></div>
+        </div>
+    </div>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>FLAG{@D4rk_S1de76}</code></div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 23-10-2023</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/dark_side/" data-title="Dark Side" data-via="Nozzouille" data-hashtags="Forensics,Steganography"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/dark_side/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/dark_side/" data-title="Dark Side"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/dark_side/" data-title="Dark Side"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/dark_side/" data-title="Dark Side"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/forensics/">Forensics</a>,&nbsp;<a href="/tags/steganography/">Steganography</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/projet-fox-trouble-from-the-east/" class="prev" rel="prev" title="Projet FOX   Trouble From the East"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Projet FOX   Trouble From the East</a>
+            <a href="/posts/disparues/" class="next" rel="next" title="Disparue(s)">Disparue(s)<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>
