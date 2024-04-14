@@ -4,7 +4,27 @@
         <link>https://nozyzy.github.io/posts/</link>
         <description>All Posts | NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 11 Apr 2024 09:32:53 -0400</lastBuildDate><atom:link href="https://nozyzy.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>SOC Simulator</title>
+    <link>https://nozyzy.github.io/posts/soc-simulator/</link>
+    <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
+    <description><![CDATA[FCSC 2024 - SOC Simulator Category Forensics
+Description Introduction commune à la série SOC Simulator
+Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
+Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.]]></description>
+</item>
+<item>
+    <title>FCSC prechall 2024</title>
+    <link>https://nozyzy.github.io/posts/fcsc_prechall_2024/</link>
+    <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/fcsc_prechall_2024/</guid>
+    <description><![CDATA[FCSC 2024 - FCSC prechall 2024 Category Intro
+Description Pour vous faire patienter jusqu&rsquo;au 5 avril 2024 à 14h pour le lancement du FCSC 2024, nous vous proposons cette année encore une épreuve de teasing ! Le point de départ est le jeu donné ci-dessous et vous permettra d&rsquo;aboutir à un flag au format FCSC{xxx}. La résolution de ce challenge apportera 1 point symbolique pour le FCSC 2024, et sera matérialisée sur le site par un 🔥 à côté des noms d&rsquo;utilisateur.]]></description>
+</item>
+<item>
     <title>The Shakespearean Mouse</title>
     <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
     <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
@@ -87,43 +107,18 @@ Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/posts/dark_side/</guid>
     <description><![CDATA[Flag4All - Dark Side Category Steganography
-Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
-🇬🇧 You are a IT student and a mysterious person send an archive to the classe.]]></description>
+Description &#x1f1eb;&#x1f1f7; Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
+&#x1f1ec;&#x1f1e7; You are a IT student and a mysterious person send an archive to the classe.]]></description>
 </item>
 <item>
     <title>Projet FOX   Trouble From the East</title>
-    <link>https://nozyzy.github.io/posts/projet-fox-trouble-from-the-east/</link>
+    <link>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</link>
     <pubDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</pubDate>
     <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/projet-fox-trouble-from-the-east/</guid>
+    <guid>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</guid>
     <description><![CDATA[Flag4All - Projet FOX Trouble From the East Category OSINT
 Description Les services de contre-espionnage ont appris que 3 pilotes de la Bundeswehr ont été recrutés par S. B., un homme d&rsquo;affaires chinois et fils d&rsquo;un officier de l&rsquo;Armée Populaire de Libération. Afin d&rsquo;être payés, nous savons qu&rsquo;ils ont chacun établi une société écran. Vous avez pour tâche de retrouver l&rsquo;identité de chacune de ces entreprises.
 Format du flag : FLAG{nom de l&rsquo;entreprise/nom de l&rsquo;entreprise/nom de l&rsquo;entreprise} (par ordre alphabétique)]]></description>
-</item>
-<item>
-    <title>OZINT.eu   La Vie De Claude</title>
-    <link>https://nozyzy.github.io/posts/ozint.eu-la-vie-de-claude/</link>
-    <pubDate>Sun, 22 Oct 2023 14:32:55 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/ozint.eu-la-vie-de-claude/</guid>
-    <description><![CDATA[Flag4All - OZINT.eu La Vie De Claude Category OSINT
-Files énoncéPart 1/2 Description Qui sont les deux auteurs du documentaire ? (on demande les noms de famille dans l&rsquo;ordre alphabétique)
-Format de la réponse : FLAG{dupont_durand}
-Difficulty EASY - 25 points
-Author: OZINT ScreenshotWrite up We could try to look for her userame @claudedlm, but it will be only useful for the next part.
-Nope, for this one, only google the words of the documentary: documentaire 2010 esclaves ile]]></description>
-</item>
-<item>
-    <title>HeadShot</title>
-    <link>https://nozyzy.github.io/posts/headshot/</link>
-    <pubDate>Sun, 22 Oct 2023 13:58:04 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/headshot/</guid>
-    <description><![CDATA[Flag4All - HeadShot Category Forensics
-Description Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.
-Files headShot.tar
-Difficulty Medium - 497 points
-Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the .]]></description>
 </item>
 </channel>
 </rss>

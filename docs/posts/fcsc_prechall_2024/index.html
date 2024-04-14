@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>FCSC prechall 2024 - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="FCSC prechall 2024" />
+<meta property="og:description" content="FCSC 2024 - FCSC prechall 2024 Category Intro
+Description Pour vous faire patienter jusqu&rsquo;au 5 avril 2024 à 14h pour le lancement du FCSC 2024, nous vous proposons cette année encore une épreuve de teasing ! Le point de départ est le jeu donné ci-dessous et vous permettra d&rsquo;aboutir à un flag au format FCSC{xxx}. La résolution de ce challenge apportera 1 point symbolique pour le FCSC 2024, et sera matérialisée sur le site par un 🔥 à côté des noms d&rsquo;utilisateur." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/fcsc_prechall_2024/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-04-02T05:03:14-04:00" />
+<meta property="article:modified_time" content="2024-04-02T05:03:14-04:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta name="twitter:title" content="FCSC prechall 2024"/>
+<meta name="twitter:description" content="FCSC 2024 - FCSC prechall 2024 Category Intro
+Description Pour vous faire patienter jusqu&rsquo;au 5 avril 2024 à 14h pour le lancement du FCSC 2024, nous vous proposons cette année encore une épreuve de teasing ! Le point de départ est le jeu donné ci-dessous et vous permettra d&rsquo;aboutir à un flag au format FCSC{xxx}. La résolution de ce challenge apportera 1 point symbolique pour le FCSC 2024, et sera matérialisée sur le site par un 🔥 à côté des noms d&rsquo;utilisateur."/>
+      <meta name="twitter:site" content="@Nozzouille"/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/fcsc_prechall_2024/" /><link rel="prev" href="https://nozyzy.github.io/posts/the-shakespearean-mouse/" /><link rel="next" href="https://nozyzy.github.io/posts/soc-simulator/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "FCSC prechall 2024",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/fcsc_prechall_2024\/"
+        },"genre": "posts","keywords": "prog, web, reverse","wordcount":  2300 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/fcsc_prechall_2024\/","datePublished": "2024-04-02T05:03:14-04:00","dateModified": "2024-04-02T05:03:14-04:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">FCSC prechall 2024</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/fcsc-2024/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>FCSC 2024</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="02-04-2024">02-04-2024</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2300 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;11 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#difficulty">Difficulty</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#finding-the-dino">Finding the dino</a></li>
+        <li><a href="#make-the-dino-run">Make the dino run</a></li>
+        <li><a href="#no-dino-">&hellip;No dino ?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="fcsc-2024---fcsc-prechall-2024">FCSC 2024 - FCSC prechall 2024</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>Intro</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<blockquote>
+<p>Pour vous faire patienter jusqu&rsquo;au 5 avril 2024 à 14h pour le lancement du FCSC 2024, nous vous proposons cette année encore une épreuve de teasing ! Le point de départ est le jeu donné ci-dessous et vous permettra d&rsquo;aboutir à un flag au format FCSC{xxx}. La résolution de ce challenge apportera 1 point symbolique pour le FCSC 2024, et sera matérialisée sur le site par un 🔥 à côté des noms d&rsquo;utilisateur.</p>
+</blockquote>
+<h2 id="files">Files</h2>
+<p><a href="/posts/fcsc_prechall_2024/fcsc2024-dino.wasm" rel="">dino.wasm</a></p>
+<h2 id="difficulty">Difficulty</h2>
+<p><strong>INTRO</strong> - 1 point</p>
+<ul>
+<li>Author: <strong>FCSC</strong></li>
+</ul>
+<hr>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/screen.png"
+        data-srcset="/posts/fcsc_prechall_2024/screen.png, /posts/fcsc_prechall_2024/screen.png 1.5x, /posts/fcsc_prechall_2024/screen.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/screen.png"
+        title="screenshot" width="1447" height="817" /></p>
+<h2 id="write-up">Write up</h2>
+<h3 id="finding-the-dino">Finding the dino</h3>
+<p>As always, FCSC lets us find and resolve what&rsquo;s called a &ldquo;prechall&rdquo;, few weeks before the real CTF starts.</p>
+<p>Our entry point is their website, a CTFd platform. It is known to be very editable. Something can easily be hidden in the source code.</p>
+<p>Just press Ctrl+U on the main page, and you found the dino:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/goodLuckAndHaveFun.png"
+        data-srcset="/posts/fcsc_prechall_2024/goodLuckAndHaveFun.png, /posts/fcsc_prechall_2024/goodLuckAndHaveFun.png 1.5x, /posts/fcsc_prechall_2024/goodLuckAndHaveFun.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/goodLuckAndHaveFun.png"
+        title="goodLuckAndHaveFun" width="898" height="532" /></p>
+<p>The entrypoint is located here : <code>/teasing</code></p>
+<h3 id="make-the-dino-run">Make the dino run</h3>
+<p>We found the entrypoint, which is the Chrome Dino game, that can lead us to a flag. Great.</p>
+<p>Let&rsquo;s just play a little !</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/game.gif"
+        data-srcset="/posts/fcsc_prechall_2024/game.gif, /posts/fcsc_prechall_2024/game.gif 1.5x, /posts/fcsc_prechall_2024/game.gif 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/game.gif"
+        title="game" width="1143" height="320" /></p>
+<p>It is a game with a score, so we probably have to hit a certain high score to obtain the flag. This kind of game is really famous in challenges, because of its simplicity of gameplay but which can be challenging to write a program to make a very high score.</p>
+<p>Because yes, the goal score might probably be very, very, very high, and impossible to reach in the common way.</p>
+<p>Let&rsquo;s just read the source code again. Ctrl+U</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/wasm.png"
+        data-srcset="/posts/fcsc_prechall_2024/wasm.png, /posts/fcsc_prechall_2024/wasm.png 1.5x, /posts/fcsc_prechall_2024/wasm.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/wasm.png"
+        title="wasm" width="572" height="927" /></p>
+<p>The game is loaded with Js, from a wasm file.</p>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>What is WASM ?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">WASM stand for <strong>W</strong>eb<strong>As</strong>e<strong>m</strong>bly, which is a binary format that can be loaded in browsers through JavaScript, to run applications with way better performances.</div>
+        </div>
+    </div>
+<p>We can then download the file at <code>/files/teasing/fcsc2024-dino.wasm</code> and start reversing.</p>
+<p>Looking on Google for tools to reverse WASM, we rapidly find the <a href="https://github.com/WebAssembly/wabt" target="_blank" rel="noopener noreffer ">WebAssembly Binary Toolkit</a>. It possesses a bunch of binaries to help in development and manipulation of WebAssembly files.</p>
+<p>Only two of them will be useful for us :</p>
+<ul>
+<li><a href="https://webassembly.github.io/wabt/demo/wasm2wat/" target="_blank" rel="noopener noreffer ">wasm2wat</a> : convert wasm binary into wasm text format</li>
+<li><a href="https://webassembly.github.io/wabt/demo/wat2wasm/" target="_blank" rel="noopener noreffer ">wat2wasm</a> : convert wasm text format to wasm binary</li>
+</ul>
+<p>If we try converting our file to text format, it looks like this :
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/wat.png"
+        data-srcset="/posts/fcsc_prechall_2024/wat.png, /posts/fcsc_prechall_2024/wat.png 1.5x, /posts/fcsc_prechall_2024/wat.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/wat.png"
+        title="/posts/fcsc_prechall_2024/wat.png" width="1012" height="587" /></p>
+<p>Nothing really helpful to understand the program. Nothing seems to be a recoverable data hidden. Only a big set of data at the end, but that we could not read.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>What are we looking for<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If the data is not intented to be hidden in plain sight, maybe we need to finish the game to make something appear. Reaching a high score might probably make something spawn to the screen.</div>
+        </div>
+    </div>
+<p>We can convert binary to text, and text to binary. It means that we can edit the data.</p>
+<p>My first idea at this point, was to find a way to make my score higher, or to set the limit lower.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/globals.png"
+        data-srcset="/posts/fcsc_prechall_2024/globals.png, /posts/fcsc_prechall_2024/globals.png 1.5x, /posts/fcsc_prechall_2024/globals.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/globals.png"
+        title="globals" width="940" height="854" /></p>
+<p>I found those globlas value set to 0 at the end of the generated wat file. Let&rsquo;s change their value, rebuild the game with <code>wat2wasm</code>, and run the program locally.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/build.png"
+        data-srcset="/posts/fcsc_prechall_2024/build.png, /posts/fcsc_prechall_2024/build.png 1.5x, /posts/fcsc_prechall_2024/build.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/build.png"
+        title="build" width="562" height="65" /></p>
+<p>To play the game locally, just copy the source code of the related <code>&lt;canvas&gt;</code> and <code>&lt;script&gt;</code> on the <code>/teasing</code> page, and past them into a <code>index.html</code> file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">canvas</span>  <span class="na">style</span><span class="o">=</span><span class="s">&#34;object-fit: contain; image-rendering: pixelated; image-rendering: crisp-edges; width:75%&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">canvas</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  Utilisez <span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>Haut<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span> et <span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>Bas<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span> pour éviter les objets.
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  // Prechall Game
+</span></span><span class="line"><span class="cl">  fetch(&#39;dino.wasm&#39;)
+</span></span><span class="line"><span class="cl">    .then(response =&gt; response.arrayBuffer())
+</span></span><span class="line"><span class="cl">    .then(bytes =&gt; WebAssembly.instantiate(bytes, {Math}))
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></div><p>We can run the command <code>python3 -m http.server &lt;PORT&gt;</code> to run a web server, and load the web page :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/game.png"
+        data-srcset="/posts/fcsc_prechall_2024/game.png, /posts/fcsc_prechall_2024/game.png 1.5x, /posts/fcsc_prechall_2024/game.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/game.png"
+        title="game" width="1449" height="836" /></p>
+<p>I understood that on the globals variables :</p>
+<ul>
+<li><code>$a</code> : idk lol</li>
+<li><code>$b</code> : first instanciation of the <strong>printed</strong> score, does not change real score</li>
+<li><code>$c</code> : our score, but cannot be setup to a high value because it loses the game instantly.</li>
+</ul>
+<p>However, if we try to take a look a bit upper into the programm, we manage to find a suspect value :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/big_number.png"
+        data-srcset="/posts/fcsc_prechall_2024/big_number.png, /posts/fcsc_prechall_2024/big_number.png 1.5x, /posts/fcsc_prechall_2024/big_number.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/big_number.png"
+        title="big_number" width="259" height="165" /></p>
+<p>Oter big numbers exists in the program, but they look random, like memory adress value. This one is really rounded and probably human-chosen.</p>
+<p>What if we lower it to 1, for example ?</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>High Score<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Change 500000000 to 1</div>
+        </div>
+    </div>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/qr.png"
+        data-srcset="/posts/fcsc_prechall_2024/qr.png, /posts/fcsc_prechall_2024/qr.png 1.5x, /posts/fcsc_prechall_2024/qr.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/qr.png"
+        title="qr" width="1445" height="448" /></p>
+<p>We have found our next part &#x1f609;</p>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>QR Code<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><code>https://france-cybersecurity-challenge.fr/bded79a9edb3e51a1d752c5ea6dfae1a</code></div>
+        </div>
+    </div>
+<h3 id="no-dino-">&hellip;No dino ?</h3>
+<p>Here is the script of the second step :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">sha256</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">CHARSET</span> <span class="o">=</span> <span class="s2">&#34;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!?€$*&#34;</span>   <span class="c1"># 57</span>
+</span></span><span class="line"><span class="cl"><span class="n">L1</span> <span class="o">=</span> <span class="s2">&#34;$ABFIZht!HPUYhirKOXdhjxy?DGJSWehCENahklo*cghmpu€MQRVfhvzLTbhnqsw&#34;</span> <span class="c1"># 64</span>
+</span></span><span class="line"><span class="cl"><span class="n">L2</span> <span class="o">=</span> <span class="s2">&#34;!FOWamwzFRSTUdlp*EFVXbei?FMNPgjsCDFHcnvxFJQYkqy€FGKLforu&#34;</span> <span class="c1"># 56</span>
+</span></span><span class="line"><span class="cl"><span class="n">L3</span> <span class="o">=</span> <span class="s2">&#34;!FOWamwz$RcejkrwDIKNVYpwGHMXltw€*APSovwy?BCQdiuwEJUZfgwx&#34;</span> <span class="c1"># 56</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">a</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl">                <span class="n">S</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span> <span class="o">&amp;=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">S</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">&amp;=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;&gt;&gt;&gt; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="mi">8</span> <span class="o">*</span> <span class="p">(</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">x</span> <span class="ow">in</span> <span class="n">CHARSET</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="p">[</span> <span class="n">s1</span><span class="p">[</span><span class="n">j</span><span class="p">:</span><span class="n">j</span> <span class="o">+</span> <span class="mi">8</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="p">]</span> <span class="c1"># 64</span>
+</span></span><span class="line"><span class="cl"><span class="n">B</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="n">s2</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">][</span><span class="n">j</span><span class="p">:</span><span class="n">j</span> <span class="o">+</span> <span class="mi">8</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">),</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="n">L1</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="n">L2</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span> <span class="n">B</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="n">L3</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="nb">all</span><span class="p">([</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="n">check</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">h</span> <span class="o">=</span> <span class="n">sha256</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Congrats! You can now go here: https://france-cybersecurity-challenge.fr/</span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Summerize :</p>
+<ul>
+<li>we give an input</li>
+<li>it passes through multiple condition</li>
+<li>if they are all good : this was the good input, print result</li>
+</ul>
+<p>Concering the content of the script :</p>
+<ul>
+<li>The input must only be composed of char from the 57-long charset</li>
+<li>It must be <code>8 * (8 * 7 + 1) = 456</code> chars long</li>
+<li>It must begin by the L1 string</li>
+<li>It must be followed by the string L2</li>
+</ul>
+<p>Then, it begins to be a little more complex. We need to see the remaingin chars of the input string as an array of 7 array, of 6 string of 8 chars long. The first array being populated with the previous L2.</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>array of array of string ?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Table of 7x7 groups of 8 chars</div>
+        </div>
+    </div>
+<p>For the example, I populated the rest of the input with <code>#</code>. You&rsquo;ll need to comment the <code>assert all(x in CHARSET for x in s)</code>, or apply your modification after. It must look like this :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;!FOWamwz&#39;</span><span class="p">,</span> <span class="s1">&#39;FRSTUdlp&#39;</span><span class="p">,</span> <span class="s1">&#39;*EFVXbei&#39;</span><span class="p">,</span> <span class="s1">&#39;?FMNPgjs&#39;</span><span class="p">,</span> <span class="s1">&#39;CDFHcnvx&#39;</span><span class="p">,</span> <span class="s1">&#39;FJQYkqy€&#39;</span><span class="p">,</span> <span class="s1">&#39;FGKLforu&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>  
+</span></span></code></pre></div><p>Now that we see this format, the next condition :</p>
+<ul>
+<li>Populate the first string of all columns with L3</li>
+</ul>
+<p>Indeed, it must look like this :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;!FOWamwz&#39;</span><span class="p">,</span> <span class="s1">&#39;FRSTUdlp&#39;</span><span class="p">,</span> <span class="s1">&#39;*EFVXbei&#39;</span><span class="p">,</span> <span class="s1">&#39;?FMNPgjs&#39;</span><span class="p">,</span> <span class="s1">&#39;CDFHcnvx&#39;</span><span class="p">,</span> <span class="s1">&#39;FJQYkqy€&#39;</span><span class="p">,</span> <span class="s1">&#39;FGKLforu&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;$Rcejkrw&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;DIKNVYpw&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;GHMXltw€&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;*APSovwy&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;?BCQdiuw&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;EJUZfgwx&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">,</span> <span class="s1">&#39;########&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Do not care of sorting<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Just forget about the condition that check if it is sorted for the moment.</div>
+        </div>
+    </div>
+<p>The last, and not least step, is tu understand th purpose of the function <code>check(A,B)</code>.</p>
+<p>To be clear, what are A and B :</p>
+<ul>
+<li>A : the first 64 chars splitted in chunks of 8 (8 groups of 8 chars)</li>
+<li>B : the double array of 7x7 chunks of 8 chars (7 lines of 7 columns of 8 chars)</li>
+</ul>
+<p>I personnally used a debugger to better understand what was happenning in the function.</p>
+<p>Briefly : <strong>it goes through all the double-array B, and check if each group has one AND ONLY ONE char in common with every group of A</strong></p>
+<p>Do you know the game <a href="https://www.dobblegame.com/" target="_blank" rel="noopener noreffer ">dobble</a> ?</p>
+<p>It is a card game that match exactly our needs :</p>
+<blockquote>
+<p>Requirement 1: every card has exactly one symbol in common with every other card.</p>
+<p>Requirement 2: each card has the same number of symbols.</p>
+<p>Requirement 3: no symbol appears more than once on a given card.</p>
+</blockquote>
+<p>It is not required to understand the math behind the game, but it really helps understand the purpose of this whole script, and why the charset is of 57 for example ;)</p>
+<p>A represent our first set of 8 cards, B is already part-populated.</p>
+<p>The first line verification will be successful, because it already has been greatly fullfilled.</p>
+<p>The alrgorithm is all alredy written, because each line of B has a part of the charset we need.</p>
+<p><strong>THE SOLUTION IS</strong> :</p>
+<ul>
+<li>Let the algorithm go as it follows. You will have the unique char at each rotation, for each line.</li>
+<li>Keep this unique char.</li>
+<li>Replace one TEMPLATE_CHAR of the next step by this one unique char.</li>
+<li>The verification of the next step will work, because you just fullfilled it as the <code>check()</code> function wanted it to be.</li>
+</ul>
+<p>The script looks as it follow :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">CHARSET</span> <span class="o">=</span> <span class="s2">&#34;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!?€$*&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">L1</span> <span class="o">=</span> <span class="s2">&#34;$ABFIZht!HPUYhirKOXdhjxy?DGJSWehCENahklo*cghmpu€MQRVfhvzLTbhnqsw&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">L2</span> <span class="o">=</span> <span class="s2">&#34;!FOWamwzFRSTUdlp*EFVXbei?FMNPgjsCDFHcnvxFJQYkqy€FGKLforu&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">L3</span> <span class="o">=</span> <span class="s2">&#34;!FOWamwz$RcejkrwDIKNVYpwGHMXltw€*APSovwy?BCQdiuwEJUZfgwx&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">TEMPLATE_CHAR</span> <span class="o">=</span> <span class="s2">&#34;#&#34;</span> <span class="c1"># Must not be in CHARSET</span>
+</span></span><span class="line"><span class="cl"><span class="n">SIZE</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="p">(</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">check_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">a</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl">                <span class="n">S</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">                <span class="n">B</span><span class="p">[(</span><span class="n">a</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span><span class="p">][(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span><span class="p">[(</span><span class="n">a</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span><span class="p">][(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">TEMPLATE_CHAR</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">S</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Replace 1 TEMPLATE_CHAR by the unique char found at the next iteration </span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span> <span class="o">&amp;=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">S</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">B</span><span class="p">[(</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">7</span><span class="p">][</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span><span class="p">[(</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">7</span><span class="p">][</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">TEMPLATE_CHAR</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">S</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Replace 1 TEMPLATE_CHAR by the unique char found at the next iteration</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">&amp;=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="n">L1</span> <span class="o">+</span> <span class="n">L2</span> <span class="c1">#input(&#34;&gt;&gt;&gt; &#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">+=</span> <span class="n">TEMPLATE_CHAR</span> <span class="o">*</span> <span class="p">(</span><span class="n">SIZE</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="p">[</span> <span class="n">s1</span><span class="p">[</span><span class="n">j</span><span class="p">:</span><span class="n">j</span> <span class="o">+</span> <span class="mi">8</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">B</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="n">s2</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">][</span><span class="n">j</span><span class="p">:</span><span class="n">j</span> <span class="o">+</span> <span class="mi">8</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">),</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">L3</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="mi">8</span><span class="p">:(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">check_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">])):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span></code></pre></div><p>This part of the script construct the double-array B as intented by the check function. B must look like this :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;!FOWamwz&#39;</span><span class="p">,</span> <span class="s1">&#39;FRSTUdlp&#39;</span><span class="p">,</span> <span class="s1">&#39;*EFVXbei&#39;</span><span class="p">,</span> <span class="s1">&#39;?FMNPgjs&#39;</span><span class="p">,</span> <span class="s1">&#39;CDFHcnvx&#39;</span><span class="p">,</span> <span class="s1">&#39;FJQYkqy€&#39;</span><span class="p">,</span> <span class="s1">&#39;FGKLforu&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;$Rcejkrw&#39;</span><span class="p">,</span> <span class="s1">&#39;!$?TVox€&#39;</span><span class="p">,</span> <span class="s1">&#39;$DMUabuy&#39;</span><span class="p">,</span> <span class="s1">&#39;$JKilmsv&#39;</span><span class="p">,</span> <span class="s1">&#39;$EGOPQnp&#39;</span><span class="p">,</span> <span class="s1">&#39;$*HNWdfq&#39;</span><span class="p">,</span> <span class="s1">&#39;$CLSXYgz&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;DIKNVYpw&#39;</span><span class="p">,</span> <span class="s1">&#39;*CIJMOTr&#39;</span><span class="p">,</span> <span class="s1">&#39;!GIbdgkv&#39;</span><span class="p">,</span> <span class="s1">&#39;IQUWXcos&#39;</span><span class="p">,</span> <span class="s1">&#39;ISafijn€&#39;</span><span class="p">,</span> <span class="s1">&#39;IPelquxz&#39;</span><span class="p">,</span> <span class="s1">&#39;?EHILRmy&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;GHMXltw€&#39;</span><span class="p">,</span> <span class="s1">&#39;ETWYjtuv&#39;</span><span class="p">,</span> <span class="s1">&#39;NQSbmrtx&#39;</span><span class="p">,</span> <span class="s1">&#39;!Cefpsty&#39;</span><span class="p">,</span> <span class="s1">&#39;*?KUkntz&#39;</span><span class="p">,</span> <span class="s1">&#39;DORgioqt&#39;</span><span class="p">,</span> <span class="s1">&#39;JLPVacdt&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;*APSovwy&#39;</span><span class="p">,</span> <span class="s1">&#39;AHKQTaeg&#39;</span><span class="p">,</span> <span class="s1">&#39;?AOYbcfl&#39;</span><span class="p">,</span> <span class="s1">&#39;ADEdrsz€&#39;</span><span class="p">,</span> <span class="s1">&#39;!AJNRXnu&#39;</span><span class="p">,</span> <span class="s1">&#39;ACGUVjmq&#39;</span><span class="p">,</span> <span class="s1">&#39;ALMWikpx&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;?BCQdiuw&#39;</span><span class="p">,</span> <span class="s1">&#39;BDPTXfkm&#39;</span><span class="p">,</span> <span class="s1">&#39;BHJbjopz&#39;</span><span class="p">,</span> <span class="s1">&#39;*BGRYasx&#39;</span><span class="p">,</span> <span class="s1">&#39;BVWglnry&#39;</span><span class="p">,</span> <span class="s1">&#39;!BEKMScq&#39;</span><span class="p">,</span> <span class="s1">&#39;BLNOUev€&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="s1">&#39;EJUZfgwx&#39;</span><span class="p">,</span> <span class="s1">&#39;GNTZciyz&#39;</span><span class="p">,</span> <span class="s1">&#39;CKPRWZb€&#39;</span><span class="p">,</span> <span class="s1">&#39;HOSVZksu&#39;</span><span class="p">,</span> <span class="s1">&#39;MYZdemno&#39;</span><span class="p">,</span> <span class="s1">&#39;?XZapqrv&#39;</span><span class="p">,</span> <span class="s1">&#39;!*DLQZjl&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><p>The biggest part is done. We just need to reconcatente everything to get the right input string :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">sha256</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">CHARSET</span> <span class="o">=</span> <span class="s2">&#34;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!?€$*&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">L1</span> <span class="o">=</span> <span class="s2">&#34;$ABFIZht!HPUYhirKOXdhjxy?DGJSWehCENahklo*cghmpu€MQRVfhvzLTbhnqsw&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">L2</span> <span class="o">=</span> <span class="s2">&#34;!FOWamwzFRSTUdlp*EFVXbei?FMNPgjsCDFHcnvxFJQYkqy€FGKLforu&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">L3</span> <span class="o">=</span> <span class="s2">&#34;!FOWamwz$RcejkrwDIKNVYpwGHMXltw€*APSovwy?BCQdiuwEJUZfgwx&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">TEMPLATE_CHAR</span> <span class="o">=</span> <span class="s2">&#34;#&#34;</span> <span class="c1"># Must not be in CHARSET</span>
+</span></span><span class="line"><span class="cl"><span class="n">SIZE</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="p">(</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">check_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">a</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl">                <span class="n">S</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">                <span class="n">B</span><span class="p">[(</span><span class="n">a</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span><span class="p">][(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span><span class="p">[(</span><span class="n">a</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span><span class="p">][(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">TEMPLATE_CHAR</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">S</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Replace 1 TEMPLATE_CHAR by the unique char found at the next iteration </span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span> <span class="o">&amp;=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">S</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">B</span><span class="p">[(</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">7</span><span class="p">][</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span><span class="p">[(</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">7</span><span class="p">][</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">TEMPLATE_CHAR</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">S</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Replace 1 TEMPLATE_CHAR by the unique char found at the next iteration</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">&amp;=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">a</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl">                <span class="n">S</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span> <span class="o">&amp;=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">S</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">&amp;=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="n">L1</span> <span class="o">+</span> <span class="n">L2</span> <span class="c1">#input(&#34;&gt;&gt;&gt; &#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">+=</span> <span class="n">TEMPLATE_CHAR</span> <span class="o">*</span> <span class="p">(</span><span class="n">SIZE</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="p">[</span> <span class="n">s1</span><span class="p">[</span><span class="n">j</span><span class="p">:</span><span class="n">j</span> <span class="o">+</span> <span class="mi">8</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">B</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="n">s2</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">][</span><span class="n">j</span><span class="p">:</span><span class="n">j</span> <span class="o">+</span> <span class="mi">8</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">),</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">L3</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="mi">8</span><span class="p">:(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">check_solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">])):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">+=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="n">SIZE</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">x</span> <span class="ow">in</span> <span class="n">CHARSET</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="p">[</span> <span class="n">s1</span><span class="p">[</span><span class="n">j</span><span class="p">:</span><span class="n">j</span> <span class="o">+</span> <span class="mi">8</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">B</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="n">s2</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">][</span><span class="n">j</span><span class="p">:</span><span class="n">j</span> <span class="o">+</span> <span class="mi">8</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">),</span> <span class="mi">8</span> <span class="o">*</span> <span class="mi">7</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="n">L1</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="n">L2</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span> <span class="n">B</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="n">L3</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="nb">all</span><span class="p">([</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="n">check</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[+] Here is your right input &gt;&gt;&gt; &#34;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">h</span> <span class="o">=</span> <span class="n">sha256</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Congrats! You can now go here: https://france-cybersecurity-challenge.fr/</span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>  
+</span></span></code></pre></div><p>The result is as follow :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>+<span class="o">]</span> Here is your right input &gt;&gt;&gt;  <span class="nv">$ABFIZht</span>!HPUYhirKOXdhjxy?DGJSWehCENahklo*cghmpu€MQRVfhvzLTbhnqsw!FOWamwzFRSTUdlp*EFVXbei?FMNPgjsCDFHcnvxFJQYkqy€FGKLforu<span class="nv">$Rcejkrw</span>!<span class="nv">$?</span>TVox€<span class="nv">$DMUabuy$JKilmsv$EGOPQnp$*</span>HNWdfq<span class="nv">$CLSXYgzDIKNVYpw</span>*CIJMOTr!GIbdgkvIQUWXcosISafijn€IPelquxz?EHILRmyGHMXltw€ETWYjtuvNQSbmrtx!Cefpsty*?KUkntzDORgioqtJLPVacdt*APSovwyAHKQTaeg?AOYbcflADEdrsz€!AJNRXnuACGUVjmqALMWikpx?BCQdiuwBDPTXfkmBHJbjopz*BGRYasxBVWglnry!BEKMScqBLNOUev€EJUZfgwxGNTZciyzCKPRWZb€HOSVZksuMYZdemno?XZapqrv!*DLQZjl
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Congrats! You can now go here: https://france-cybersecurity-challenge.fr/b476ca7cd889ee0d2de7db528f2cc094329be7da417d10a24a808997825fff90
+</span></span></code></pre></div><p>We are now ready to attend FCSC 2024 :-)</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/fcsc_prechall_2024/get_ready.png"
+        data-srcset="/posts/fcsc_prechall_2024/get_ready.png, /posts/fcsc_prechall_2024/get_ready.png 1.5x, /posts/fcsc_prechall_2024/get_ready.png 2x"
+        data-sizes="auto"
+        alt="/posts/fcsc_prechall_2024/get_ready.png"
+        title="/posts/fcsc_prechall_2024/get_ready.png" width="1432" height="752" /></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>FCSC{892e99c79e21dc688583812d93064773609e6ce39cc37cae2d17da9a5535d1a6}</code></div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 02-04-2024</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/fcsc_prechall_2024/" data-title="FCSC prechall 2024" data-via="Nozzouille" data-hashtags="prog,web,reverse"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/fcsc_prechall_2024/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/fcsc_prechall_2024/" data-title="FCSC prechall 2024"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/fcsc_prechall_2024/" data-title="FCSC prechall 2024"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/fcsc_prechall_2024/" data-title="FCSC prechall 2024"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/prog/">Prog</a>,&nbsp;<a href="/tags/web/">Web</a>,&nbsp;<a href="/tags/reverse/">Reverse</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/the-shakespearean-mouse/" class="prev" rel="prev" title="The Shakespearean Mouse"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>The Shakespearean Mouse</a>
+            <a href="/posts/soc-simulator/" class="next" rel="next" title="SOC Simulator">SOC Simulator<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.d7121d72cd85153ec9d35a888cee3eb28c2700ca763f649a538f6c772d750021.js" integrity="sha256-1xIdcs2FFT7J01qIjO4+sownAMp2P2SaU49sdy11ACE="></script></body>
+</html>

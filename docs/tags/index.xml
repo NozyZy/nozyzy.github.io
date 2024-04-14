@@ -4,12 +4,36 @@
         <link>https://nozyzy.github.io/tags/</link>
         <description>Tags - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 11 Apr 2024 09:32:53 -0400</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Forensics</title>
     <link>https://nozyzy.github.io/tags/forensics/</link>
-    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
+    <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate>
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/tags/forensics/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Prog</title>
+    <link>https://nozyzy.github.io/tags/prog/</link>
+    <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/prog/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Reverse</title>
+    <link>https://nozyzy.github.io/tags/reverse/</link>
+    <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/reverse/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Web</title>
+    <link>https://nozyzy.github.io/tags/web/</link>
+    <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/web/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -29,14 +53,6 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Web</title>
-    <link>https://nozyzy.github.io/tags/web/</link>
-    <pubDate>Sat, 25 Nov 2023 15:56:22 &#43;0100</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/tags/web/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
     <title>OSINT</title>
     <link>https://nozyzy.github.io/tags/osint/</link>
     <pubDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</pubDate>
@@ -53,7 +69,7 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>dump</title>
+    <title>Dump</title>
     <link>https://nozyzy.github.io/tags/dump/</link>
     <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate>
     <author>NozZy</author>
@@ -66,22 +82,6 @@
     <pubDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</pubDate>
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/tags/hunt/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Social Engineering</title>
-    <link>https://nozyzy.github.io/tags/social-engineering/</link>
-    <pubDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/tags/social-engineering/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Radio-frequency</title>
-    <link>https://nozyzy.github.io/tags/radio-frequency/</link>
-    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/tags/radio-frequency/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

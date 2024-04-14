@@ -4,7 +4,18 @@
         <link>https://nozyzy.github.io/tags/forensics/</link>
         <description>Forensics - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 11 Apr 2024 09:32:53 -0400</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
+    <title>SOC Simulator</title>
+    <link>https://nozyzy.github.io/posts/soc-simulator/</link>
+    <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
+    <description><![CDATA[FCSC 2024 - SOC Simulator Category Forensics
+Description Introduction commune à la série SOC Simulator
+Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
+Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.]]></description>
+</item>
+<item>
     <title>The Shakespearean Mouse</title>
     <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
     <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
@@ -39,8 +50,8 @@ Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, an
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/posts/dark_side/</guid>
     <description><![CDATA[Flag4All - Dark Side Category Steganography
-Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
-🇬🇧 You are a IT student and a mysterious person send an archive to the classe.]]></description>
+Description &#x1f1eb;&#x1f1f7; Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
+&#x1f1ec;&#x1f1e7; You are a IT student and a mysterious person send an archive to the classe.]]></description>
 </item>
 <item>
     <title>HeadShot</title>
@@ -52,7 +63,7 @@ Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse pe
 Description Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.
 Files headShot.tar
 Difficulty Medium - 497 points
-Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the .]]></description>
+Author: Penthium2 (BZHack) Screenshot Write up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the .]]></description>
 </item>
 <item>
     <title>Gishadb</title>
@@ -65,7 +76,7 @@ Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsqu
 This server listen on two ports: 443 and 222. Find a way to get the flag.
 Link https://gishadb.flag4all.sh
 Difficulty EASY - 481 points
-Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
+Author: Penthium2 (BZHack) Screenshot Write up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
 </item>
 <item>
     <title>DumpCyber</title>
@@ -77,7 +88,7 @@ Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you 
 Description I am lost inside this dump, to escape I think I need my key and IV? The challenge is available here. Note: the flag format for this challenge is flag{...}.
 Challenge made by: Yogosha
 Difficulty Medium - 100 points
-Author: SemahBA ScreenshotWrite up Understanding the context Profile and objective We got a RAM dump on a Windows 7, we&rsquo;ll use volatility for the analysis.]]></description>
+Author: SemahBA Screenshot Write up Understanding the context Profile and objective We got a RAM dump on a Windows 7, we&rsquo;ll use volatility for the analysis.]]></description>
 </item>
 <item>
     <title>How to decrypt LUKS1 with key in memory</title>

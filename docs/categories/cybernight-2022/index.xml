@@ -30,7 +30,7 @@ Soumettez un score Roombaverse Simulator avec votre propre compte
 Note : vous devez télécharger et jouer à Roombaverse Simulator pour ce challenge.
 Files Roombaverse.exe
 Difficulty HARD
-Author: MrSheepSheep Write up Requêtes DNS et HTTPS Alors en jouant au jeu du roomba simulator, on peut collecter 6 billes jaunes, et ce message apparait : Win message(PS : récupérer les 6 billes est déjà un challenge en soi avec son propre flag)]]></description>
+Author: MrSheepSheep Write up Requêtes DNS et HTTPS Alors en jouant au jeu du roomba simulator, on peut collecter 6 billes jaunes, et ce message apparait : Win message (PS : récupérer les 6 billes est déjà un challenge en soi avec son propre flag)]]></description>
 </item>
 <item>
     <title>Cooking Roomba</title>
@@ -43,7 +43,7 @@ Description Aucune information.
 Difficulty EASY
 Author: MrSheepSheep Write up On n&rsquo;a aucune info, mais le titre va grandement aider. Web + cooking = cookies
 Donc il faut chercher à se connecter pour avoir des cookies (vide sinon) On se crée un petit compte, et on se connecte
-En ouvrant les Dev-tools (F12 ou Ctrl+Shift+I) &gt; Appli &gt; Cookies CookiesLà deux cookies apparaissent: auth : un-truc-du-style-123456789 et surtout can_i_haz_flag : no]]></description>
+En ouvrant les Dev-tools (F12 ou Ctrl+Shift+I) &gt; Appli &gt; Cookies Cookies Là deux cookies apparaissent: auth : un-truc-du-style-123456789 et surtout can_i_haz_flag : no]]></description>
 </item>
 <item>
     <title>Spirale</title>
