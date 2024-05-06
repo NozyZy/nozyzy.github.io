@@ -48,13 +48,16 @@ Table better than talkin', nah ?
 
 | CTF                                                      | Team            | Points | Position | Dates               |
 |----------------------------------------------------------|-----------------|--------|----------|---------------------|
+| [Midnightflag Blackbox](https://midnightflag.fr/) | CTFREI       | 7378       | 16/158 | 27/04/24 |
+| [HexaOSINT CTF](https://hexaosint.fr/) | Apé'roseaux       |        |  | 12/04/24 - 24/04/24 |
+| [FCSC 2024](https://france-cybersecurity-challenge.fr/) | NozZy (solo)       |  2785      | 118 | 05/04/24 - 14/04/24 |
 | [European Cybercup 2024](https://european-cybercup.com/) | Overflowl       |        | 11/20    | 27/03/24 - 28/03/24 |
 | [Hackday 2024 - Finals](https://hackday.fr/)             | Overflowl       | 3430   | 6/20     | 08/03/24 - 09/03/24 |
 | [Hackday 2024 - Quals](https://hackday.fr/)              | Overflowl       | 5409   | 4        | 15/01/24 - 20/01/24 |
 | [BackdoorCTF 2023](/categories/backdoorctf-2023/)        | Overflowl       | 8023   | 49       | 16/12/23 - 18/12/23 |
 | [Cybernight 2023](/categories/cybernight-2023/)          | Les Crackers    | 400    | 4/27     | 24/11/23            |
-| [Flag4All](https://flag4all.sh/)                         | Solo            | 4136   | 9/295    | 21/10/23 - 22/10/23 |
-| [ECW](https://challenge-ecw.fr/)                         | Solo            | 275    |          | 13/10/23 - 29/10/23 |
+| [Flag4All](https://flag4all.sh/)                         | NozZy (solo)            | 4136   | 9/295    | 21/10/23 - 22/10/23 |
+| [ECW](https://challenge-ecw.fr/)                         | NozZy (solo)            | 275    |          | 13/10/23 - 29/10/23 |
 | [Sunshine](https://sunshinectf.org/)                     | La Shapance     |        |          | 07/10/23 - 09/10/23 |
 | [Stranger X Hunt](https://strangercase.org/)             | En légende      |        | 6/10     | 01/07/23            |
 | [404CTF](https://www.404ctf.fr)                          | Solo            | 8892   | 174/2848 | 12/05/23 - 04/06/23 |

@@ -2,7 +2,7 @@
 title: "How to decrypt LUKS1 with key in memory"
 date: 2023-07-10T17:15:29+02:00
 draft: false
-tags: ['Forensics']
+tags: ['Forensics', 'LUKS', 'Decrypt', 'cryptsetup', 'Disk', 'LUKS1', 'key']
 categories:
   - 'Articles'
   
