@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>LUKS1 - Tag - NozZy</title>
+        <link>https://nozyzy.github.io/tags/luks1/</link>
+        <description>LUKS1 - Tag - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/luks1/" rel="self" type="application/rss+xml" /><item>
+    <title>How to decrypt LUKS1 with key in memory</title>
+    <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
+    <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</guid>
+    <description><![CDATA[How to decrypt LUKS1 with key in memory LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe vulnerability. The master key, used to encrypt and decrypt the whole disk, can be retrieved in the memory of the running machine. This article will show you how to recover that key, and then decrypt the disk.]]></description>
+</item>
+</channel>
+</rss>

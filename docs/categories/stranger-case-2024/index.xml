@@ -1,0 +1,30 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Stranger Case 2024 - Category - NozZy</title>
+        <link>https://nozyzy.github.io/categories/stranger-case-2024/</link>
+        <description>Stranger Case 2024 - Category - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 05 May 2024 17:33:47 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/stranger-case-2024/" rel="self" type="application/rss+xml" /><item>
+    <title>Stranger Case 2024</title>
+    <link>https://nozyzy.github.io/posts/stranger_case-2024/</link>
+    <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/stranger_case-2024/</guid>
+    <description><![CDATA[Stranger Case 2024 - Misson : Ecplipse Category OSINT
+Description Le Stranger Case est une enquête OSINT qui se déroule en deux parties : qualifications en ligne, et hunt sur place pour la finale.
+La première phase prend la forme d&rsquo;une enquête en ligne. Nous jouons le rôle d&rsquo;enquêteurs, et sommes appelés pour mener une investigation sur la disparition d&rsquo;une personne.
+Cette phase mélange OSINT et Social Enginnering, puisque les informations que nous trouverons proviendront à grande majorité de sources ouvertes.]]></description>
+</item>
+<item>
+    <title>Stranger Case Intro</title>
+    <link>https://nozyzy.github.io/posts/stranger-case-intro/</link>
+    <pubDate>Tue, 23 Apr 2024 09:33:02 -0400</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/stranger-case-intro/</guid>
+    <description><![CDATA[Stranger Case 2024 - Challenge d&rsquo;intro Category OSINT
+Description Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.
+Files Ordre de mission
+Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la suivante :]]></description>
+</item>
+</channel>
+</rss>

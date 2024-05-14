@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Croissanted - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Croissanted" />
+<meta property="og:description" content="Midnight Flag 2024 - Croissanted Category Forensics
+Description FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.
+EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/croissanted/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-05-01T13:35:11+02:00" />
+<meta property="article:modified_time" content="2024-05-01T13:35:11+02:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta name="twitter:title" content="Croissanted"/>
+<meta name="twitter:description" content="Midnight Flag 2024 - Croissanted Category Forensics
+Description FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.
+EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue."/>
+      <meta name="twitter:site" content="@Nozzouille"/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/croissanted/" /><link rel="prev" href="https://nozyzy.github.io/posts/silent_hill_2/" /><link rel="next" href="https://nozyzy.github.io/posts/stranger_case-2024/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Croissanted",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/croissanted\/"
+        },"genre": "posts","keywords": "Forensics, Disk","wordcount":  681 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/croissanted\/","datePublished": "2024-05-01T13:35:11+02:00","dateModified": "2024-05-01T13:35:11+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Croissanted</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/midnight-flag-2024/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Midnight Flag 2024</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="01-05-2024">01-05-2024</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;681 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#suspicious-files">Suspicious files</a></li>
+        <li><a href="#web-downloads">Web downloads</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="midnight-flag-2024---croissanted">Midnight Flag 2024 - Croissanted</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>Forensics</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<blockquote>
+<p>FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.</p>
+<p>EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue. Identify why. A copy of the VM has been provided to you.</p>
+<p>Flag format : MCTF{/full/path/backdoor1:/full/path/backdoor2}</p>
+</blockquote>
+<h2 id="files">Files</h2>
+<p>Lien de téléchargement / Download link :
+Google Drive : <a href="https://drive.google.com/file/d/1SPxsP1BgIZTkuVe_qIzxgVsNWIgss_vn/view?usp=sharing" target="_blank" rel="noopener noreffer ">https://drive.google.com/file/d/1SPxsP1BgIZTkuVe_qIzxgVsNWIgss_vn/view?usp=sharing</a>
+Mega : <a href="https://mega.nz/file/tFoljBKa#nQzbbbOS9VfCc3dJq3idTa7-dgLAHVd3jmr0c4C6KJA" target="_blank" rel="noopener noreffer ">https://mega.nz/file/tFoljBKa#nQzbbbOS9VfCc3dJq3idTa7-dgLAHVd3jmr0c4C6KJA</a></p>
+<ul>
+<li>Author: <strong>klemou</strong></li>
+</ul>
+<hr>
+<h2 id="write-up">Write up</h2>
+<p>According to the description, persistence has been applied on his system. We&rsquo;ll need to find evidence of the compromise from the attacker, then what files did he drop to maintain persistence.</p>
+<p>We could look inside the crontab, the files loaded at boot, or SSH keys for example.</p>
+<p>I used <a href="https://www.autopsy.com/" target="_blank" rel="noopener noreffer ">Autopsy</a> for windows to statically analyze the disk.
+It can take a while, but we end up with something like this:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img.png"
+        data-srcset="/posts/croissanted/img.png, /posts/croissanted/img.png 1.5x, /posts/croissanted/img.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img.png"
+        title="img.png" width="361" height="563" /></p>
+<p>It allows us to browse the disk by:</p>
+<ul>
+<li>arbores</li>
+<li>file type</li>
+<li>delete files</li>
+<li>data artifacts
+<ul>
+<li>emails</li>
+<li>web
+<ul>
+<li>cookies</li>
+<li>download</li>
+<li>history</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Here is how I found the evidence.</p>
+<h3 id="suspicious-files">Suspicious files</h3>
+<p>I begin by looking at the files&rsquo; tree from the main partition. Folders like <code>/home</code>, <code>/etc</code> can be useful to hide something.</p>
+<p>To speed up research, I sorted the results by <strong>modified time</strong>, to see last events first.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_1.png"
+        data-srcset="/posts/croissanted/img_1.png, /posts/croissanted/img_1.png 1.5x, /posts/croissanted/img_1.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_1.png"
+        title="img_1.png" width="1733" height="201" /></p>
+<p>First suspicious files is <code>/Trust_Me_I_Am_Safe</code>, which is at the root of the tree. We have its creation time, <strong>2024-02-21 13:33:28 CET</strong>, and size is empty.</p>
+<p>We begin to identify the timeframe.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_2.png"
+        data-srcset="/posts/croissanted/img_2.png, /posts/croissanted/img_2.png 1.5x, /posts/croissanted/img_2.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_2.png"
+        title="img_2.png" width="1680" height="205" /></p>
+<p>Another suspicious empty file is located at <code>/home/itarow/hack_plus_fort</code>, created 3 minutes after the previous one. That&rsquo;s a great beginning.</p>
+<h3 id="web-downloads">Web downloads</h3>
+<p>I talked about web downloads before, let&rsquo;s look at them:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_3.png"
+        data-srcset="/posts/croissanted/img_3.png, /posts/croissanted/img_3.png 1.5x, /posts/croissanted/img_3.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_3.png"
+        title="img_3.png" width="1336" height="103" /></p>
+<p>That is really explicit. He has <strong>downloaded backdoors from a remote ip</strong> in its network. He saved both <code>.zip</code> in the download folder, which appears to be store only the file downloaded.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_4.png"
+        data-srcset="/posts/croissanted/img_4.png, /posts/croissanted/img_4.png 1.5x, /posts/croissanted/img_4.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_4.png"
+        title="img_4.png" width="516" height="230" /></p>
+<p>We can find the reason by looking at the <strong>root&rsquo;s bash history</strong>:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_5.png"
+        data-srcset="/posts/croissanted/img_5.png, /posts/croissanted/img_5.png 1.5x, /posts/croissanted/img_5.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_5.png"
+        title="img_5.png" width="1185" height="246" /></p>
+<p>So he downloaded them at <strong>13:25:42</strong> with Firefox, them removed them using the root account at <strong>13:28:56</strong>.</p>
+<p>We have identified the timeframe: between <strong>2024-02-21 13:25:42 CET</strong> and <strong>2024-02-21 13:36:28 CET</strong></p>
+<h3 id="timeline">Timeline</h3>
+<p>Autopsy allows us to look at the timeline of all events analyzed. Because we could not find an exact correlation between the suspicios events, and the backdoors, and that he deleted the files, it is hard to look at them directly.</p>
+<p>To investigate, we&rsquo;ll look at <strong>the events that occurred between our identified timeframe</strong>. We&rsquo;ll probably see it if something is suspect.</p>
+<p>Here is a recap of the events:</p>
+<div class="mermaid" id="id-1"></div>
+<p>To do so, we&rsquo;ll begin or timeline by the downloaded artifacts, and we&rsquo;ll search for event of <strong>Web downloads</strong> and <strong>Modification, Creation and Deletion</strong> but no <del>Access</del> to reduce the number of events.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_6.png"
+        data-srcset="/posts/croissanted/img_6.png, /posts/croissanted/img_6.png 1.5x, /posts/croissanted/img_6.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_6.png"
+        title="img_6.png" width="298" height="410" /></p>
+<p>Here is our first event:
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_7.png"
+        data-srcset="/posts/croissanted/img_7.png, /posts/croissanted/img_7.png 1.5x, /posts/croissanted/img_7.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_7.png"
+        title="img_7.png" width="996" height="221" /></p>
+<p>And there is our last one:
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_8.png"
+        data-srcset="/posts/croissanted/img_8.png, /posts/croissanted/img_8.png 1.5x, /posts/croissanted/img_8.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_8.png"
+        title="img_8.png" width="865" height="318" /></p>
+<p>We need to search between them, something suspicious that can achieve persistence.</p>
+<p>And here it is:
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/croissanted/img_9.png"
+        data-srcset="/posts/croissanted/img_9.png, /posts/croissanted/img_9.png 1.5x, /posts/croissanted/img_9.png 2x"
+        data-sizes="auto"
+        alt="/posts/croissanted/img_9.png"
+        title="img_9.png" width="758" height="424" /></p>
+<h1 id="just-after-the-download-of-the-zip-two-so-files-have-been-created-in-the-folder-usrlibx86_64-linux-gnusecurity-which-contains-libraries-used-by-the-system">&laquo;&laquo;&laquo;&lt; HEAD
+&laquo;&laquo;&laquo;&lt; HEAD
+Just after the download of the <code>zip</code>, two <code>.so</code> files have been created in the folder <code>/usr/lib/x86_64-linux-gnu/security/</code>, which contains libraries used by the system.</h1>
+<p>Jst after the download of the <code>zip</code>, two <code>.so</code> files have been created in the folder <code>/usr/lib/x86_64-linux-gnu/security/</code>, which contains libraries used by the system.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>c93141e (added Midnight flag)
+=======
+Just after the download of the <code>zip</code>, two <code>.so</code> files have been created in the folder <code>/usr/lib/x86_64-linux-gnu/security/</code>, which contains libraries used by the system.
+6cbdace (typo)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>It is <strong>in fact</strong> a really <strong>efficient way to achieve persistence</strong>, because:</p>
+<ul>
+<li>This is not a folder sed by the ser, so they won&rsquo;t ever be found without searching for it</li>
+<li>These are used by the system and lots of programs, at boot and on the run</li>
+<li>More precisely, it looks lie there could be sed by PAM and security systems, with high permissions and really often.</li>
+</ul>
+<p>Our two files are:</p>
+<ul>
+<li><code>/usr/lib/x86_64-linux-gnu/security/pam_chevalo.so</code></li>
+<li><code>/usr/lib/x86_64-linux-gnu/security/pam_seigneur.so</code></li>
+</ul>
+<p>The final events are
+<div class="mermaid" id="id-2"></div></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>MCTF{/usr/lib/x86_64-linux-gnu/security/pam_seigneur.so:/usr/lib/x86_64-linux-gnu/security/pam_chevalo.so}</code></div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 01-05-2024</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/croissanted/" data-title="Croissanted" data-via="Nozzouille" data-hashtags="Forensics,Disk"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/croissanted/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/croissanted/" data-title="Croissanted"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/croissanted/" data-title="Croissanted"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/croissanted/" data-title="Croissanted"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/forensics/">Forensics</a>,&nbsp;<a href="/tags/disk/">Disk</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/silent_hill_2/" class="prev" rel="prev" title="Silent Hill 2"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Silent Hill 2</a>
+            <a href="/posts/stranger_case-2024/" class="next" rel="next" title="Stranger Case 2024">Stranger Case 2024<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.d7121d72cd85153ec9d35a888cee3eb28c2700ca763f649a538f6c772d750021.js" integrity="sha256-1xIdcs2FFT7J01qIjO4+sownAMp2P2SaU49sdy11ACE="></script></body>
+</html>

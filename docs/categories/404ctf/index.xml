@@ -1,0 +1,35 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>404CTF - Category - NozZy</title>
+        <link>https://nozyzy.github.io/categories/404ctf/</link>
+        <description>404CTF - Category - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/404ctf/" rel="self" type="application/rss+xml" /><item>
+    <title>404CTF - OSINTABLES</title>
+    <link>https://nozyzy.github.io/posts/osintables/</link>
+    <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/osintables/</guid>
+    <description><![CDATA[404CTF - OSINTABLES Category OSINT
+Part 1/3 Description En pleine discussion au Procope, Cosette vous raconte autour d&rsquo;une part de fraisier la première fois qu&rsquo;elle a essayé d&rsquo;envoyer une lettre à son bienfaiteur : Jean Valjean. Débutante dans la démarche postale, elle s&rsquo;est trompée sur les informations nécessaires, elle en a même oublié l&rsquo;adresse du destinataire, n&rsquo;écrivant que la sienne. Elle vous montre la photo ci-jointe et vous met au défi de trouver d&rsquo;où elle l&rsquo;a écrite.]]></description>
+</item>
+<item>
+    <title>404CTF - Avez-vous vu les cascades du hérisson ?</title>
+    <link>https://nozyzy.github.io/posts/cascades_herisson/</link>
+    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
+    <description><![CDATA[404CTF - Avez-vous vu les cascades du hérisson ? Category Radio-Frequency
+Description Après avoir rencontré Simone, cette dernière vous propose de découvrir une nouvelle personne. Quoi de mieux qu’un cache-cache pour apprendre à mieux se connaître ? Cela vous changera de l&rsquo;air du café littéraire Le Procope. Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.]]></description>
+</item>
+<item>
+    <title>404CTF - Notes de bas de page</title>
+    <link>https://nozyzy.github.io/posts/notesdebasdepage/</link>
+    <pubDate>Wed, 24 May 2023 00:48:44 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/notesdebasdepage/</guid>
+    <description><![CDATA[404CTF - Notes de bas de page Category Forensics
+Description En tendant l&rsquo;oreille dans le salon, votre attention est captée par une conversation particulière. Là où les alentours dissertent sur des sujets de procédés littéraires toujours plus avancés, celle-ci semble en effet plutôt porter sur la philosophie naturelle. Vous vous approchez par curiosité, lorsque la marquise du Châtelet, alors en pleine explication des travaux d&rsquo;un certain Leibniz, s’interrompt et vous interpelle :]]></description>
+</item>
+</channel>
+</rss>

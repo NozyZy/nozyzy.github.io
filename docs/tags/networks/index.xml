@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Networks - Tag - NozZy</title>
+        <link>https://nozyzy.github.io/tags/networks/</link>
+        <description>Networks - Tag - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 03 Nov 2022 23:38:25 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/networks/" rel="self" type="application/rss+xml" /><item>
+    <title>Identify, Find, Listen</title>
+    <link>https://nozyzy.github.io/posts/identify_find_listen/</link>
+    <pubDate>Thu, 03 Nov 2022 23:38:25 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/identify_find_listen/</guid>
+    <description><![CDATA[Cybernight 2022 - Identify, Find, Listen Category Hardware
+Part 1 - Identify Description Un agent ennemi s’est infiltré à la Cybernight ! Nous l&rsquo;avons vu passer sur une caméra avec un sac rempli de matériel puis sortir du campus.
+Nous pensons qu’il essaye de nous espionner sur le réseau wifi mais nous ne savons pas comment. Une idée de ce qu&rsquo;il a pu faire ?
+Challenge à effectuer en physique uniquement aux 4 étages du bâtiment A.]]></description>
+</item>
+</channel>
+</rss>

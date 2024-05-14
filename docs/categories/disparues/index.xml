@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Disparue(s) - Category - NozZy</title>
+        <link>https://nozyzy.github.io/categories/disparues/</link>
+        <description>Disparue(s) - Category - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/disparues/" rel="self" type="application/rss+xml" /><item>
+    <title>Disparue(s)</title>
+    <link>https://nozyzy.github.io/posts/disparues/</link>
+    <pubDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/disparues/</guid>
+    <description><![CDATA[Disparue(s) Category OSINT
+Description Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.
+Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.
+Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.]]></description>
+</item>
+</channel>
+</rss>

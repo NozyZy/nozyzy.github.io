@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Network - Tag - NozZy</title>
+        <link>https://nozyzy.github.io/tags/network/</link>
+        <description>Network - Tag - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/network/" rel="self" type="application/rss+xml" /><item>
+    <title>Mack&#39;Os</title>
+    <link>https://nozyzy.github.io/posts/mack-os/</link>
+    <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/mack-os/</guid>
+    <description><![CDATA[Midnight Flag 2024 - Mack&rsquo;Os Category Forensics
+Description SOON
+Files Mackos.pcap
+Difficulty Author: NAME screenshot
+Write up Trust me :) We are given a network capture of the moment the thing happened to his computer.
+The first thing we see is an exchange via telnet, in plain text. Just follow the stream (right-click &gt; follow &gt; TCP Stream) to view what was exchanged :
+This is, as planned in the description, the volatility2 commands that were executed.]]></description>
+</item>
+</channel>
+</rss>

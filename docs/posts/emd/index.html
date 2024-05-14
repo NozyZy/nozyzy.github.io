@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>HeroCTF v5 - EMD - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="HeroCTF v5 - EMD" />
+<meta property="og:description" content="HeroCTF v5 - EMD Category Steganography
+Description Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group. Some information to help you:
+The size of the pixel groups is 2 The size of the hidden message is 841 characters The image must be divided into groups containing 2 pixels that follow each other on the x-axis." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/emd/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-23T23:22:43+02:00" />
+<meta property="article:modified_time" content="2023-05-23T23:22:43+02:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta name="twitter:title" content="HeroCTF v5 - EMD"/>
+<meta name="twitter:description" content="HeroCTF v5 - EMD Category Steganography
+Description Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group. Some information to help you:
+The size of the pixel groups is 2 The size of the hidden message is 841 characters The image must be divided into groups containing 2 pixels that follow each other on the x-axis."/>
+      <meta name="twitter:site" content="@Nozzouille"/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/emd/" /><link rel="prev" href="https://nozyzy.github.io/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/" /><link rel="next" href="https://nozyzy.github.io/posts/notesdebasdepage/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "HeroCTF v5 - EMD",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/emd\/"
+        },"genre": "posts","keywords": "Steganography, Images","wordcount":  893 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/emd\/","datePublished": "2023-05-23T23:22:43+02:00","dateModified": "2023-05-23T23:22:43+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">HeroCTF v5 - EMD</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/heroctfv5/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>HeroCTFv5</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="23-05-2023">23-05-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;893 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#difficulty">Difficulty</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#find-documentation">Find documentation</a></li>
+        <li><a href="#understand-the-process">Understand the process</a></li>
+        <li><a href="#extraction">Extraction</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="heroctf-v5---emd">HeroCTF v5 - EMD</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>Steganography</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<p>Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group.
+Some information to help you:</p>
+<ul>
+<li>The size of the pixel groups is 2</li>
+<li>The size of the hidden message is 841 characters</li>
+<li>The image must be divided into groups containing 2 pixels that follow each other on the x-axis.</li>
+<li>No secret key has been used during the encryption, so there is no random permutation of the pixels
+Good luck!</li>
+</ul>
+<p>This challenge uses the most basic &ldquo;Exploiting Modification Direction&rdquo; technique described by Xinpeng Zhang and Shuozhong Wang in their paper &ldquo;Efﬁcient Steganographic Embedding by Exploiting Modiﬁcation Direction&rdquo;</p>
+<p>Format : <strong>Hero[]</strong> WARNING : For this challenge, square brackets [] are used and not braces {}.</p>
+<h2 id="files">Files</h2>
+<figure><a class="lightgallery" href="/EMD/vannesHidden.png" title="Embedded image" data-thumbnail="/EMD/vannesHidden.png" data-sub-html="<h2>Embedded image</h2><p>Embedded image</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/EMD/vannesHidden.png"
+            data-srcset="/EMD/vannesHidden.png, /EMD/vannesHidden.png 1.5x, /EMD/vannesHidden.png 2x"
+            data-sizes="auto"
+            alt="Embedded image" />
+    </a><figcaption class="image-caption">Embedded image</figcaption>
+    </figure>
+<h2 id="difficulty">Difficulty</h2>
+<p><strong>HARD</strong> - 500 points</p>
+<ul>
+<li>Author : <strong>Thibz</strong></li>
+</ul>
+<hr>
+<h2 id="write-up">Write up</h2>
+<p>Some data has been hidden in the file with a relatively non-common method (not LSB for example), so our steps will be :</p>
+<ul>
+<li>find documentation about this method</li>
+<li>understand how it works</li>
+<li>extract</li>
+</ul>
+<h3 id="find-documentation">Find documentation</h3>
+<p>The technique called &ldquo;Exploiting Modification Direction&rdquo; has few papers and documents online, often related to those two names. The first one I found was long and complex: <a href="https://www.sciencedirect.com/science/article/pii/S0898122110000179" target="_blank" rel="noopener noreffer ">EMD</a></p>
+<p>That doesn&rsquo;t fit with the precise name given in the description: &ldquo;Efﬁcient Steganographic Embedding by Exploiting Modiﬁcation Direction&rdquo;
+Typing that sentence gives us teh right link first: <a href="https://ieeexplore.ieee.org/document/4020540" target="_blank" rel="noopener noreffer ">IEEE</a>
+We just need to sign in and download that odf file: <a href="/EMD/3_Efficient20Steganographic20Embedding20by20Exploiting20Modification20Direction.pdf" rel="">EMD PDF</a></p>
+<h3 id="understand-the-process">Understand the process</h3>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>EMD EMBEDDING<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">The interesting part is the &ldquo;<strong>II. EMD EMBEDDING</strong>&rdquo;, wich is not that long. I advise you to read it.</div>
+        </div>
+    </div>
+<p>After reading some math stuff, we learn that we can use groups of <data id="id-1" data-raw></data> pixels to hide data in base <data id="id-2" data-raw></data>
+In our case, groups of 2 pixels are used, so <data id="id-3" data-raw></data> and <data id="id-4" data-raw></data>. Data is hidden in base-5.</p>
+<p>The second thing to understand, is that this technique uses a grayscale image to hide data, because it needs a single decimal value, not 3 values like RGB. Grayscale is just a value between 0 (black) and 255 (white).
+In each pixel group (2 in our case), <data id="id-5" data-raw></data> is the gray value of the <data id="id-6" data-raw></data> pixel, where <data id="id-7" data-raw></data> starts at 1, not 0.
+The very important function to hide data is called <data id="id-8" data-raw></data>, which is a sum of all <data id="id-9" data-raw></data> in a group, modulo <data id="id-10" data-raw></data>.
+<data id="id-11" data-raw></data> is called the <strong>extraction function</strong>, and is also use to embed data.
+In our case, <data id="id-12" data-raw></data></p>
+<p>This is all we have to know for the extraction process. Really.
+It looks horrifying first, then the math are not that complicated, and extraction is easy : sum, multiplication with and modulo.</p>
+<div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>How to extract data<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>Groups of n pixels</li>
+<li>For each pixel in group, multiply the pixel value by its position (1,2,3,&hellip;)</li>
+<li>Add the result to the previous result</li>
+<li>Result modulo (2n+1)</li>
+<li>The result is the data, in base-(2n+1)</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="extraction">Extraction</h3>
+<p>Time to do some Python.</p>
+<p>I&rsquo;m going to write first the extraction function that extract the data from a group of n pixels.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># digit extraction</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">extract</span><span class="p">(</span><span class="n">grays</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">grays</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># f += g_i * i</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">grays</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">f</span> <span class="o">+=</span> <span class="n">grays</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span> <span class="o">=</span> <span class="n">f</span> <span class="o">%</span> <span class="n">m</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">f</span>
+</span></span></code></pre></div><blockquote>
+<p>This code is literally the implementation of <data id="id-13" data-raw></data></p>
+</blockquote>
+<p>Then, we can open the image using <a href="https://pypi.org/project/Pillow/" target="_blank" rel="noopener noreffer ">Pillow</a>, and make pixel groups:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Open image</span>
+</span></span><span class="line"><span class="cl"><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;vannesHidden.png&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Divide image in pixel groups</span>
+</span></span><span class="line"><span class="cl"><span class="n">pixel_groups</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)),</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">)))</span> 
+</span></span><span class="line"><span class="cl">                    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">height</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">                        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">]</span>
+</span></span></code></pre></div><p>Having that, we can process to the extraction of the base-5 data:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># get the extracted value for each pixel group</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># turn it in str, not int</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># concatenate</span>
+</span></span><span class="line"><span class="cl"><span class="n">base5</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,[</span><span class="n">extract</span><span class="p">(</span><span class="n">pixels</span><span class="p">)</span> <span class="k">for</span> <span class="n">pixels</span> <span class="ow">in</span> <span class="n">pixel_groups</span><span class="p">]))</span>
+</span></span></code></pre></div><p>We got that kind of stuff:</p>
+<pre tabindex="0"><code>322404401424401112431404401112421344401342420112433401420431432424401430112430421112
+402342424112410420413342420400134112431404401112312401403410421420342413112303342431
+432424342413112310342424412112421402112431404401112241432413402112421402112302421424
+343410404342420112424401414342410420430112342420112421422401420112430422342344401112
+434410431404112414432413431410422413401112410420402413432401420344401430112431404342
+431112422424421432400413441112344413342410414430112410431430112424421421431430112342
+420400112344432413431432424401141112112112301410430431401400112410420112431404401112
+232413432343112421402112431404401112414421430431112343401342432431410402432413112343
+342441430112410420112431404401112434421424413400134112431404401112241432413402112421
+402112302421424343410404342420112410430112404421414401112431421112430421414401112402
+421424431441112410430413342420400430112420401430431413401400112410420112342112430414
+...
+</code></pre><p>That is a very large amount of data, but we&rsquo;re gonna be smart.</p>
+<p>Knowing a part of the plain text can help us a lot, and we know that the flag start with <code>Hero</code>. So we can convert <code>Hero</code> in base 5, and look for it in our sh*t.</p>
+<p><code>Hero : 242 401 424 421</code></p>
+<p>Time for some python again:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># We look for &#39;Hero&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">begin</span> <span class="o">=</span> <span class="n">base5</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;242401424421&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="ow">not</span> <span class="n">flag</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;]&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Convert from base5 (2n + 1) for n = 2 pixels</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># we admit that each char is composed of 3 digits</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">base5</span><span class="p">[</span><span class="n">begin</span><span class="p">:</span><span class="n">begin</span> <span class="o">+</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">5</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">begin</span> <span class="o">+=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span></code></pre></div><div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>Hero[V4NN3S_C17Y_F7W]</code></div>
+        </div>
+    </div>
+<hr>
+<h4 id="full-code">Full code</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fonction d&#39;extraction du digit</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">extract</span><span class="p">(</span><span class="n">grays</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">grays</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">grays</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">f</span> <span class="o">+=</span> <span class="n">grays</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span> <span class="o">=</span> <span class="n">f</span> <span class="o">%</span> <span class="n">m</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">f</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Ouvrir l&#39;image PNG</span>
+</span></span><span class="line"><span class="cl"><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;vannesHidden.png&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Diviser l&#39;image en groupes de pixels</span>
+</span></span><span class="line"><span class="cl"><span class="n">pixel_groups</span> <span class="o">=</span> <span class="p">[(</span><span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)),</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">)))</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">height</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">n</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">base5</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,[</span><span class="n">extract</span><span class="p">(</span><span class="n">pixels</span><span class="p">)</span> <span class="k">for</span> <span class="n">pixels</span> <span class="ow">in</span> <span class="n">pixel_groups</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># On cherche &#39;Hero&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">begin</span> <span class="o">=</span> <span class="n">base5</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;242401424421&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="ow">not</span> <span class="n">flag</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;]&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># On converti depuis la base5 (2n + 1) pour n = 2 pixels</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">base5</span><span class="p">[</span><span class="n">begin</span><span class="p">:</span><span class="n">begin</span><span class="o">+</span><span class="mi">3</span><span class="p">],</span><span class="mi">5</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">begin</span> <span class="o">+=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 23-05-2023</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/emd/" data-title="HeroCTF v5 - EMD" data-via="Nozzouille" data-hashtags="Steganography,Images"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/emd/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/emd/" data-title="HeroCTF v5 - EMD"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/emd/" data-title="HeroCTF v5 - EMD"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/emd/" data-title="HeroCTF v5 - EMD"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/steganography/">Steganography</a>,&nbsp;<a href="/tags/images/">Images</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/" class="prev" rel="prev" title="Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</a>
+            <a href="/posts/notesdebasdepage/" class="next" rel="next" title="404CTF - Notes de bas de page">404CTF - Notes de bas de page<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"data":{"id-1":"\\( n \\)","id-10":"\\( 2n+1 \\)","id-11":"\\( f \\)","id-12":"\\( f(g_{1}, g_{2}) = (g_{1} + g_{2} * 2) mod 5\\)","id-13":"\\( f(g_{1}, g_{2},..., g_{n}) = [\\sum_{i=1}^i(g_{i} * n)] mod (2n+1)\\)","id-2":"\\( 2n + 1 \\)","id-3":"\\( n = 2 \\)","id-4":"\\( 2n+1 = 5 \\)","id-5":"\\( g_{i} \\)","id-6":"\\( i \\)","id-7":"\\( i \\)","id-8":"\\( f \\)","id-9":"\\( g_{i} * i \\)"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.d7121d72cd85153ec9d35a888cee3eb28c2700ca763f649a538f6c772d750021.js" integrity="sha256-1xIdcs2FFT7J01qIjO4+sownAMp2P2SaU49sdy11ACE="></script></body>
+</html>

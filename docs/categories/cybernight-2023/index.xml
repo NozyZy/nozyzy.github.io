@@ -1,0 +1,60 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cybernight 2023 - Category - NozZy</title>
+        <link>https://nozyzy.github.io/categories/cybernight-2023/</link>
+        <description>Cybernight 2023 - Category - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/cybernight-2023/" rel="self" type="application/rss+xml" /><item>
+    <title>ExitTheCapsule</title>
+    <link>https://nozyzy.github.io/posts/exitthecapsule/</link>
+    <pubDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/exitthecapsule/</guid>
+    <description><![CDATA[Cybernight 2023 - Exit The Capsule Category System
+Description Arriverez-vous à vous échapper du conteneur pour trouver le flag ?
+Link Access to a Docker through Web SSH
+Difficulty EASY - 50 points
+Author: Sysdream Write up NB: I am writing this WU after the CTF was closed, and therefore, and no more access to machines.
+What&rsquo;s a sock ? I already did this kind of Docker Escape/Breakout before, using this Hacktricks book.]]></description>
+</item>
+<item>
+    <title>DoctoLeak</title>
+    <link>https://nozyzy.github.io/posts/doctoleak/</link>
+    <pubDate>Sat, 25 Nov 2023 15:56:22 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/doctoleak/</guid>
+    <description><![CDATA[Cybernight 2023 - DoctoLeak Category Web
+Description Je dois trouver le numéro de sécurité sociale du Patient 0 !
+C&rsquo;est une question de vie ou de mort&hellip;
+Link DoctoLeak
+Difficulty MEDIUM - 100 points
+Author: Sysdream Write up The first interesting thing I found looking to the website was the link as the bottom: Check our API
+Which leads to a /graphql page. At this point, I was sure it was all about exploiting some confidentiality issue in a graphql query.]]></description>
+</item>
+<item>
+    <title>Invest Now !</title>
+    <link>https://nozyzy.github.io/posts/investnow/</link>
+    <pubDate>Sat, 25 Nov 2023 15:17:45 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/investnow/</guid>
+    <description><![CDATA[Cybernight 2023 - Invest Now ! Category OSINT
+Description InvestNow! est une application de gestion de wallet Bitcoin : elle permet d&rsquo;acheter et d&rsquo;échanger des Bitcoins à tout moment pour spéculer sur la montée des cours. De nombreuses personnes sont devenues riches grâce à ce site!
+Vous avez réussi à développer un script pour détecter si une adresse mail est inscrite sur ce site. Après quelques heures de tests avec des bases de données trouvées sur le darknet, une première adresse mail est ressortie : emily.]]></description>
+</item>
+<item>
+    <title>You are mine!</title>
+    <link>https://nozyzy.github.io/posts/youaremine/</link>
+    <pubDate>Sat, 25 Nov 2023 05:38:54 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/youaremine/</guid>
+    <description><![CDATA[Cybernight 2023 - You are mine! Category Forensics
+Description J&rsquo;ai réussi à extraire la RAM d&rsquo;un administrateur de Youaremine !
+Aidez-moi à me loguer, je dois modifier quelque chose dans le panneau d&rsquo;administration !
+Trouvez le nom d&rsquo;utilisateur de l&rsquo;administrateur sur le site web.
+Le flag sera à soumettre sous la forme MALICE{nom_utilisateur}
+Files dump.ram
+Difficulty HARD - 150 points
+Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, and we are looking for web artifacts.]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Disk - Tag - NozZy</title>
+        <link>https://nozyzy.github.io/tags/disk/</link>
+        <description>Disk - Tag - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Wed, 01 May 2024 13:35:11 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/disk/" rel="self" type="application/rss+xml" /><item>
+    <title>Croissanted</title>
+    <link>https://nozyzy.github.io/posts/croissanted/</link>
+    <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/croissanted/</guid>
+    <description><![CDATA[Midnight Flag 2024 - Croissanted Category Forensics
+Description FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.
+EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue.]]></description>
+</item>
+<item>
+    <title>How to decrypt LUKS1 with key in memory</title>
+    <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
+    <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</guid>
+    <description><![CDATA[How to decrypt LUKS1 with key in memory LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe vulnerability. The master key, used to encrypt and decrypt the whole disk, can be retrieved in the memory of the running machine. This article will show you how to recover that key, and then decrypt the disk.]]></description>
+</item>
+</channel>
+</rss>

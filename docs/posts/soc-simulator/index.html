@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>SOC Simulator - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="SOC Simulator" />
+<meta property="og:description" content="FCSC 2024 - SOC Simulator Category Forensics
+Description Introduction commune à la série SOC Simulator
+Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
+Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/soc-simulator/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-04-11T09:32:53-04:00" />
+<meta property="article:modified_time" content="2024-04-11T09:32:53-04:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta name="twitter:title" content="SOC Simulator"/>
+<meta name="twitter:description" content="FCSC 2024 - SOC Simulator Category Forensics
+Description Introduction commune à la série SOC Simulator
+Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
+Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre."/>
+      <meta name="twitter:site" content="@Nozzouille"/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/soc-simulator/" /><link rel="prev" href="https://nozyzy.github.io/posts/fcsc_prechall_2024/" /><link rel="next" href="https://nozyzy.github.io/posts/stranger-case-intro/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "SOC Simulator",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/soc-simulator\/"
+        },"genre": "posts","keywords": "Forensics","wordcount":  1694 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/soc-simulator\/","datePublished": "2024-04-11T09:32:53-04:00","dateModified": "2024-04-11T09:32:53-04:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">SOC Simulator</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/fcsc-2024/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>FCSC 2024</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="11-04-2024">11-04-2024</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1694 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#write-up">Write-Up</a></li>
+    <li><a href="#15--inital-vector">1/5 : Inital Vector</a>
+      <ul>
+        <li><a href="#description-1">Description</a></li>
+        <li><a href="#screenshot">Screenshot</a></li>
+        <li><a href="#write-up-1">Write-Up</a></li>
+      </ul>
+    </li>
+    <li><a href="#25--secrets-stealed-1">2/5 : Secrets stealed 1</a>
+      <ul>
+        <li><a href="#description-2">Description</a></li>
+        <li><a href="#screenshot-1">Screenshot</a></li>
+        <li><a href="#write-up-2">Write-Up</a></li>
+      </ul>
+    </li>
+    <li><a href="#35--exfiltration">3/5 : Exfiltration</a>
+      <ul>
+        <li><a href="#description-3">Description</a></li>
+        <li><a href="#screenshot-2">Screenshot</a></li>
+        <li><a href="#write-up-3">Write-Up</a></li>
+      </ul>
+    </li>
+    <li><a href="#45--lateralisation">4/5 : Lateralisation</a>
+      <ul>
+        <li><a href="#description-4">Description</a></li>
+        <li><a href="#screenshot-3">Screenshot</a></li>
+        <li><a href="#write-up-4">Write-Up</a></li>
+      </ul>
+    </li>
+    <li><a href="#55--secrets-stealed-2">5/5 : Secrets Stealed 2</a>
+      <ul>
+        <li><a href="#description-5">Description</a></li>
+        <li><a href="#screenshot-4">Screenshot</a></li>
+        <li><a href="#write-up-5">Write-Up</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="fcsc-2024---soc-simulator">FCSC 2024 - SOC Simulator</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>Forensics</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<blockquote>
+<p>Introduction commune à la série SOC Simulator</p>
+<p>Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.</p>
+<p>Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.</p>
+</blockquote>
+<ul>
+<li>Author: <strong>FCSC</strong></li>
+</ul>
+<h2 id="files">Files</h2>
+<p><a href="https://files.france-cybersecurity-challenge.fr/dl/soc-simulator/soc_events.zip?token=eyJ1c2VyX2lkIjo1MjAsInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjEzOH0.ZhfnJw.cFSVmuSdSfzdoEcHjM5NsDKakVI" target="_blank" rel="noopener noreffer ">soc_event.zip</a></p>
+<h2 id="write-up">Write-Up</h2>
+<p>We are given <em><strong>7GB</strong></em> of WIndows Event Logs in <code>.evtx</code> format. The usual format is separating files in types of inputs, like this :</p>
+<ul>
+<li>PowerShell-Operationnal.evtx</li>
+<li>Security.evtx</li>
+<li>&hellip;</li>
+</ul>
+<p>This time, the logs provided are like this :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/evtx.png"
+        data-srcset="/posts/soc-simulator/evtx.png, /posts/soc-simulator/evtx.png 1.5x, /posts/soc-simulator/evtx.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/evtx.png"
+        title="/posts/soc-simulator/evtx.png" width="219" height="427" /></p>
+<p>I was not going to open the files one by one, and even less in the &#x2728; <em><strong>beautiful</strong></em> &#x2728; Windows Event Log viewer.</p>
+<p>I wanted to use a tool made to convert <code>evtx</code> to CSV, called <a href="https://github.com/EricZimmerman/evtx" target="_blank" rel="noopener noreffer ">EvtxECmd</a>.
+However, this was the first time that itdid not success to parse the files. This is not a troubleshooting write-up: <strong>I found a better way</strong>.</p>
+<p>Another tool made to analyse event logs, but which imports sigma rules : <a href="https://github.com/Yamato-Security/hayabusa" target="_blank" rel="noopener noreffer ">Hayabusa</a></p>
+<p>It is gonna parse the files like the previous tool, and output a CSV timeline file. The rules will helped me SO MUCH resolving these challenges.</p>
+<p>I used this commandline :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">.\</span><span class="n">hayabusa</span><span class="p">-</span><span class="mf">2.14</span><span class="p">.</span><span class="mf">0</span><span class="n">-win-x64</span><span class="p">.</span><span class="py">exe</span> <span class="nb">csv-timeline</span> <span class="n">-d</span> <span class="p">..\</span><span class="n">CTF</span><span class="p">\</span><span class="n">fcsc</span><span class="p">\</span><span class="n">soc_events</span> <span class="n">-o</span> <span class="p">..\</span><span class="n">CTF</span><span class="p">\</span><span class="n">fcsc</span><span class="p">\</span><span class="n">soc</span><span class="p">.</span><span class="py">csv</span>
+</span></span></code></pre></div><p>We now have two files :</p>
+<ul>
+<li>one with the &ldquo;Core&rdquo; rules of Hayabusa: only <strong>High</strong> and <strong>Critical</strong> rules</li>
+<li>another one with <strong>all rluset</strong> (info, low, med, high, crit)</li>
+</ul>
+<p>Let&rsquo;s analyze!</p>
+<h2 id="15--inital-vector">1/5 : Inital Vector</h2>
+<h3 id="description-1">Description</h3>
+<blockquote>
+<p>Retrouver le nom de la vulnérabilité et l&rsquo;heure UTC de la première tentative d&rsquo;exploitation de cette vulnérabilité.</p>
+<p>Format du flag (insensible à la casse) : <code>FCSC{EternalBlue|2021-11-27T17:38}</code></p>
+</blockquote>
+<p><strong>&#x2b50; &#x2b50;</strong></p>
+<h3 id="screenshot">Screenshot</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/screen1.png"
+        data-srcset="/posts/soc-simulator/screen1.png, /posts/soc-simulator/screen1.png 1.5x, /posts/soc-simulator/screen1.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/screen1.png"
+        title="/posts/soc-simulator/screen1.png" width="797" height="566" /></p>
+<h3 id="write-up-1">Write-Up</h3>
+<p>We are looking to the vulnerability exploited to pwn one of the computers/servers.</p>
+<p>I opened my first CSV using <a href="https://www.sans.org/tools/timeline-explorer/" target="_blank" rel="noopener noreffer ">TimelineExplorer</a>, a tool design to be used on Windows, for reading CSV as DFIR timeline.</p>
+<p>We can group the columns by <code>Computer</code> and <code>Rule Title</code> to easily view which rules have ringed on which computers :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/CVE.png"
+        data-srcset="/posts/soc-simulator/CVE.png, /posts/soc-simulator/CVE.png 1.5x, /posts/soc-simulator/CVE.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/CVE.png"
+        title="/posts/soc-simulator/CVE.png" width="1838" height="929" /></p>
+<p>We can easily see that the computer with the most security events triggered is <code>exchange.tinfa.loc</code>.</p>
+<p>Even more, Defender alerts have been trigerres as exploits of the <code>CVE-2021-31207.B</code>.</p>
+<p>By looking on the internet, we can found <a href="https://news.sophos.com/en-us/2021/08/23/proxyshell-vulnerabilities-in-microsoft-exchange-what-to-do/" target="_blank" rel="noopener noreffer ">this page</a> for example, among many others.</p>
+<p>It talks about a <strong>Remote Code Execution</strong> for this peculiar CVE. Those vulnerabilites in Microsoft Exchange are called <strong>ProxyShell</strong></p>
+<p>We probably have the entrypoint. Lets check that.</p>
+<p>By loing further, we find that this is an exploit in the proxy of Exchange, and the path containing <code>\HttpProxy\owa\auth\&lt;file&gt;.aspx</code>. This exploits an aspx file for this RCE</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/owa.png"
+        data-srcset="/posts/soc-simulator/owa.png, /posts/soc-simulator/owa.png 1.5x, /posts/soc-simulator/owa.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/owa.png"
+        title="/posts/soc-simulator/owa.png" width="975" height="157" /></p>
+<p>It looks like this is the right vulnerability !</p>
+<p>We still need to order our events in ascending timestamp, and take the first exploit attempt about the exchange server :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/exploit.png"
+        data-srcset="/posts/soc-simulator/exploit.png, /posts/soc-simulator/exploit.png 1.5x, /posts/soc-simulator/exploit.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/exploit.png"
+        title="/posts/soc-simulator/exploit.png" width="1897" height="214" /></p>
+<p>Here it is, an attempt to <strong>Exporting a Mailbox</strong> at <strong>2022-07-04 17:36:43 +02:00</strong></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>FCSC{ProxyShell|2022-07-04T15:36:43}</code></div>
+        </div>
+    </div>
+<h2 id="25--secrets-stealed-1">2/5 : Secrets stealed 1</h2>
+<h3 id="description-2">Description</h3>
+<blockquote>
+<p>Après l&rsquo;action vue dans la partie 1, l&rsquo;attaquant vole les identifiants système en mémoire. Retrouver le GUID du processus effectuant ce vol et le nom du fichier où il écrit les secrets volés.</p>
+<p>Format du flag (insensible à la casse) : <code>FCSC{6ccf8905-a033-4edc-8ed7-0a4b0a411e15|C:\Windows\Users\toto\Desktop\fichier.pdf}</code></p>
+</blockquote>
+<p><strong>&#x2b50;</strong></p>
+<h3 id="screenshot-1">Screenshot</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/screen2.png"
+        data-srcset="/posts/soc-simulator/screen2.png, /posts/soc-simulator/screen2.png 1.5x, /posts/soc-simulator/screen2.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/screen2.png"
+        title="/posts/soc-simulator/screen2.png" width="798" height="536" /></p>
+<h3 id="write-up-2">Write-Up</h3>
+<p>According to the description, he stole &ldquo;system credentials stored in memory&rdquo;.</p>
+<p>If you already know Windows systems and usual attacks, or by looking where are stored the system credentials in memory, you&rsquo;ll know what process has been dumped : <strong>LSASS</strong></p>
+<p>The <strong>Local Security Authority Subsystem</strong> is the process that handles user and system authentication. Because it is stored in memory, crendentials are stored in <em>plain text</em>. It is a very popular way for attackers to stuff themselves with credentials, when you have enough permissions to dump this process.</p>
+<p>According to the last logs, the attacker has the <code>EXCHANGE$</code> rights, wich means the local machine account, an admin account. He could easily dump this process.</p>
+<p>Once again, sigma rules helped me a lot finding the right event :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/poor_lsass.png"
+        data-srcset="/posts/soc-simulator/poor_lsass.png, /posts/soc-simulator/poor_lsass.png 1.5x, /posts/soc-simulator/poor_lsass.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/poor_lsass.png"
+        title="/posts/soc-simulator/poor_lsass.png" width="829" height="350" /></p>
+<p>Those rules have been triggered.</p>
+<p>Let&rsquo;s take a look to the last one :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/comsvcs.png"
+        data-srcset="/posts/soc-simulator/comsvcs.png, /posts/soc-simulator/comsvcs.png 1.5x, /posts/soc-simulator/comsvcs.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/comsvcs.png"
+        title="/posts/soc-simulator/comsvcs.png" width="1215" height="88" /></p>
+<p>We found a peculiar cmdline.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"><span class="s2">&#34;C:\Windows\system32\rundll32.exe&#34;</span> C:\Windows\System32\comsvcs.dll MiniDump 652 attr.exe full
+</span></span></code></pre></div><p>At first, it didin&rsquo;t triggered anything to me, because of the <code>.exe</code> extension. I was looking for a text file or something. I lost a lot of time looking at all the <strong>obfuscated PowerShell execution</strong> and <strong>shellcode injection</strong>. But if we think about it, dumping a process to a <code>.exe</code> makes sense. A process in memory is still a process, an executable.</p>
+<p>Moreover, if I just took time earlier to search for this dump technic, &ldquo;Memory Dump Via Comsvcs.DLL&rdquo;</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/minidump.png"
+        data-srcset="/posts/soc-simulator/minidump.png, /posts/soc-simulator/minidump.png 1.5x, /posts/soc-simulator/minidump.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/minidump.png"
+        title="/posts/soc-simulator/minidump.png" width="1033" height="235" /></p>
+<p>The command-line is exactly the same. <strong>He just dump LSASS using <code>comsvcs.dll</code>, into <code>attr.exe</code></strong></p>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>What is the PGUID ?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>We can open the cell content to get more details :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/PGUID.png"
+        data-srcset="/posts/soc-simulator/PGUID.png, /posts/soc-simulator/PGUID.png 1.5x, /posts/soc-simulator/PGUID.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/PGUID.png"
+        title="/posts/soc-simulator/PGUID.png" width="1920" height="192" /></p>
+<blockquote>
+<p>b99a131f-0d4b-62c3-ce03-00000000db01</p>
+</blockquote>
+</div>
+        </div>
+    </div>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>What is the path ?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>This CSV does not contain the full path of attr.exe, because I only chose to eport the high and critical rules in Hayabusa.</p>
+<p>I had to open the second CSV, with all information, to look for our file creation.</p>
+<p>Then search &ldquo;<code>attr.exe</code>&rdquo; and &ldquo;File created&rdquo; :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/attr.exe.png"
+        data-srcset="/posts/soc-simulator/attr.exe.png, /posts/soc-simulator/attr.exe.png 1.5x, /posts/soc-simulator/attr.exe.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/attr.exe.png"
+        title="/posts/soc-simulator/attr.exe.png" width="1901" height="507" /></p>
+<blockquote>
+<p>C:\Windows\System32\inetsrv\attr.exe</p>
+</blockquote>
+</div>
+        </div>
+    </div>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>FCSC{b99a131f-0d4b-62c3-ce03-00000000db01|C:\Windows\System32\inetsrv\attr.exe}</code></div>
+        </div>
+    </div>
+<h2 id="35--exfiltration">3/5 : Exfiltration</h2>
+<h3 id="description-3">Description</h3>
+<blockquote>
+<p>Dans la continuité de ce qui été vu précédemment, l&rsquo;attaquant a collecté une quantité importante de données métier. Retrouver la commande qui a permis de collecter tous ces éléments.</p>
+<p>Format du flag : <code>FCSC{sha256(&lt;commande en UTF8 sans saut de ligne&gt;)}</code></p>
+<p>Par exemple, si la commande malveillante était <code>7z a &quot;Fichiers volés.zip&quot; C:\Windows\System32</code>, le flag serait <code>FCSC{bc5640e69c335a8dbe369db382666070e05198a6c18ce88498563d2c4ac187b1}</code>.</p>
+</blockquote>
+<p><strong>&#x2b50; &#x2b50;</strong></p>
+<h3 id="screenshot-2">Screenshot</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/screen3.png"
+        data-srcset="/posts/soc-simulator/screen3.png, /posts/soc-simulator/screen3.png 1.5x, /posts/soc-simulator/screen3.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/screen3.png"
+        title="/posts/soc-simulator/screen3.png" width="796" height="575" /></p>
+<h3 id="write-up-3">Write-Up</h3>
+<p>After dumping the LSASS process, a data exfiltration has been done by the attacker.</p>
+<p>This one is probably the most hidden one. I first looked at the high and criticals rules. There were the LSASS dump, and couples of encoded + obfuscated PowerShell script executed, that were injection shellcodes in memory. That was only wrong tracks for this part.</p>
+<p>Then I look at all the <code>Cmdline</code> found in all rules-set. That were a LOT. And nothing really interesting excepting what we already knew, and shitty Windows stuff.</p>
+<p>After few days, I tried to replace myslef inside the context :</p>
+<ul>
+<li>Data exfiltration</li>
+<li>Inside an Exchange server</li>
+</ul>
+<p>&hellip;&hellip;.what if he exported&hellip; mails ?</p>
+<p>I used this filter to find this kind of events, among all events:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/mail_export.png"
+        data-srcset="/posts/soc-simulator/mail_export.png, /posts/soc-simulator/mail_export.png 1.5x, /posts/soc-simulator/mail_export.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/mail_export.png"
+        title="/posts/soc-simulator/mail_export.png" width="611" height="474" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/results.png"
+        data-srcset="/posts/soc-simulator/results.png, /posts/soc-simulator/results.png 1.5x, /posts/soc-simulator/results.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/results.png"
+        title="/posts/soc-simulator/results.png" width="1259" height="478" /></p>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Interesting...<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Looks like we found something really interesting</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/script.png"
+        data-srcset="/posts/soc-simulator/script.png, /posts/soc-simulator/script.png 1.5x, /posts/soc-simulator/script.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/script.png"
+        title="/posts/soc-simulator/script.png" width="834" height="136" /></p>
+<p>This <strong>ScriptBlock</strong> (Notice not a Cmdline) exports all Mailbox contained in the Exchange server. We got our exfiltration. Just need to SHA256 the whole line.</p>
+</div>
+        </div>
+    </div>
+<p>Here is the whole malicious command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$Mailbox</span> <span class="k">in</span> <span class="p">(</span><span class="nb">Get-Mailbox</span> <span class="n">-ResultSize</span> <span class="n">Unlimited</span><span class="p">))</span> <span class="p">{</span><span class="nb">New-MailboxExportRequest</span> <span class="n">-Mailbox</span> <span class="nv">$Mailbox</span><span class="p">.</span><span class="py">DisplayName</span> <span class="n">-FilePath</span> <span class="s2">&#34;C:\windows\system32\xwin\(</span><span class="nv">$Mailbox</span><span class="s2">.Alias).pst&#34;</span><span class="p">}</span>
+</span></span></code></pre></div><div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Interesting...<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>FCSC{2ee0ab1d44c759b09159ef21900c9826239a7b63e25c0e5935f200d30348b588}</code></div>
+        </div>
+    </div>
+<h2 id="45--lateralisation">4/5 : Lateralisation</h2>
+<h3 id="description-4">Description</h3>
+<blockquote>
+<p>Sur une courte période de temps, l&rsquo;attaquant a essayé de se connecter à de nombreuses machines, comme s&rsquo;il essayait de réutiliser les secrets volés dans la partie 2. Cela lui a permis de se connecter à la machine Workstation2. Retrouver l&rsquo;IP source, le compte utilisé et l&rsquo;heure UTC de cette connexion.</p>
+<p>Format du flag (insensible à la casse) : <code>FCSC{192.168.42.27|MYCORP\Technician|2021-11-27T17:38:54}</code>.</p>
+</blockquote>
+<p><strong>&#x2b50;</strong></p>
+<h3 id="screenshot-3">Screenshot</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/screen4.png"
+        data-srcset="/posts/soc-simulator/screen4.png, /posts/soc-simulator/screen4.png 1.5x, /posts/soc-simulator/screen4.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/screen4.png"
+        title="/posts/soc-simulator/screen4.png" width="995" height="655" /></p>
+<h3 id="write-up-4">Write-Up</h3>
+<p>The attacker has finished his stuff on the exchange server, and now wants to move to another device.</p>
+<p>According to the statement, he has moved to <code>Workstation2</code> from <code>Exchange</code> by doing <strong>password spraying</strong>: testing previously gathered password on multiples accounts/devices, hoping one has been re-used solewhere else.</p>
+<p>My way of doing this was to filter by windows event ID. Each king of windows events has its own ID, and the ones we are looking for here are :</p>
+<ul>
+<li><code>4624</code> : successful logon</li>
+<li><code>4625</code> : logon failure</li>
+</ul>
+<p>These events will show each successful or failed connection to an account, and its details.</p>
+<p>Again, according to the statement, he tried credentials on multiples devices before achieving it, in a small timeframe: <strong>we&rsquo;re going to look for a series of failure separated by a really time period.</strong></p>
+<p>The filter has to be : <strong>event ID : <code>4625</code></strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/4625.png"
+        data-srcset="/posts/soc-simulator/4625.png, /posts/soc-simulator/4625.png 1.5x, /posts/soc-simulator/4625.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/4625.png"
+        title="/posts/soc-simulator/4625.png" width="1920" height="931" /></p>
+<p>After scrolling lots of <code>User Does Not Exist</code>, we can found a series of <code>Wrong Password</code>, in a small timeframe, and on every computers in the capture.</p>
+<p>It seems that we have found our password spraying. Now we have to find the successful logon just after the last fails. We keep the timeframe, and add the events <code>4624</code> to our filter :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/4624.png"
+        data-srcset="/posts/soc-simulator/4624.png, /posts/soc-simulator/4624.png 1.5x, /posts/soc-simulator/4624.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/4624.png"
+        title="/posts/soc-simulator/4624.png" width="1741" height="495" /></p>
+<p>It looks like we&rsquo;ve found our lateralisation!</p>
+<p>Let&rsquo;s see the details:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/details_logon.png"
+        data-srcset="/posts/soc-simulator/details_logon.png, /posts/soc-simulator/details_logon.png 1.5x, /posts/soc-simulator/details_logon.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/details_logon.png"
+        title="/posts/soc-simulator/details_logon.png" width="1089" height="82" /></p>
+<p>So we got:</p>
+<ul>
+<li>The source IP: <strong>172.16.20.20</strong></li>
+<li>The account used: <strong>Administrator</strong></li>
+<li>The UTC timestamp: <strong>2022-07-06T13:26:57</strong></li>
+</ul>
+<p>The only thing missing is the domain of the account. At first I thought about <strong>TINFA\</strong> domain, which is the domain used by the accounts here. However this does not work. So the other possibility is that Administrator is a <strong>local account</strong>, with its own domain. By default it is <strong>WORKGROUP</strong>, but let&rsquo;s search before guessing.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/workstation2.png"
+        data-srcset="/posts/soc-simulator/workstation2.png, /posts/soc-simulator/workstation2.png 1.5x, /posts/soc-simulator/workstation2.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/workstation2.png"
+        title="/posts/soc-simulator/workstation2.png" width="1796" height="463" /></p>
+<p>I search for <strong>\Administrator</strong> occurrences on the Workstation2, and found it :</p>
+<ul>
+<li>User : <strong>WORKSTATION2\Administrator</strong></li>
+</ul>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>FCSC{172.16.20.20|WORKSTATION2\Administrator|2022-07-06T13:26:57}</code></div>
+        </div>
+    </div>
+<h2 id="55--secrets-stealed-2">5/5 : Secrets Stealed 2</h2>
+<h3 id="description-5">Description</h3>
+<blockquote>
+<p>Sur la machine identifiée en partie 4, l&rsquo;attaquant vole de nouveau les secrets du système. Retrouver le GUID du processus effectuant ce vol et le nom du fichier où il écrit les secrets volés.</p>
+<p>Format du flag (insensible à la casse) : <code>FCSC{6ccf8905-a033-4edc-8ed7-0a4b0a411e15|C:\Windows\Users\toto\Desktop\fichier.pdf}</code>.</p>
+</blockquote>
+<p><strong>&#x2b50;&#x2b50;</strong></p>
+<h3 id="screenshot-4">Screenshot</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/screen5.png"
+        data-srcset="/posts/soc-simulator/screen5.png, /posts/soc-simulator/screen5.png 1.5x, /posts/soc-simulator/screen5.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/screen5.png"
+        title="/posts/soc-simulator/screen5.png" width="989" height="662" /></p>
+<h3 id="write-up-5">Write-Up</h3>
+<p>The guy moved on <code>Workstation2</code>, and stole AGAIN system&rsquo;s secrets ? How greedy he is 🙄</p>
+<p>Once again, sigma rules helped me a lot &#x1f609;</p>
+<p>We are located after the lateralisation, so after 2022-07-06 15:26:57 +0200. If we go back to our High and Critical rules set, we can find those rules on <code>Workstation2</code>:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/lsass_again.png"
+        data-srcset="/posts/soc-simulator/lsass_again.png, /posts/soc-simulator/lsass_again.png 1.5x, /posts/soc-simulator/lsass_again.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/lsass_again.png"
+        title="/posts/soc-simulator/lsass_again.png" width="1824" height="494" /></p>
+<p>We probably found the LSASS dump that we wanted !</p>
+<p>But if we look closer, we see that it opens the file in <strong>Internet Explorer</strong>, to view the file. The dump is previous to that. Let&rsquo;s just re-open the file with all ruleset, and lookup for &ldquo;<strong>lsass.DMP</strong>&rdquo;:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/taskmgr.png"
+        data-srcset="/posts/soc-simulator/taskmgr.png, /posts/soc-simulator/taskmgr.png 1.5x, /posts/soc-simulator/taskmgr.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/taskmgr.png"
+        title="/posts/soc-simulator/taskmgr.png" width="1910" height="411" /></p>
+<p>What we found here is that the attacker dumped the LSASS memory through taskmgr.exe, the <strong>task manager</strong>! He just dumped the memory of the process, and stored it in <code>C:\Users\ADMINI~1\AppData\Local\Temp\3\lsass.DMP</code></p>
+<p>Here are the details of the process:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/soc-simulator/process_mgr.png"
+        data-srcset="/posts/soc-simulator/process_mgr.png, /posts/soc-simulator/process_mgr.png 1.5x, /posts/soc-simulator/process_mgr.png 2x"
+        data-sizes="auto"
+        alt="/posts/soc-simulator/process_mgr.png"
+        title="/posts/soc-simulator/process_mgr.png" width="1081" height="72" /></p>
+<p>Our information are:</p>
+<ul>
+<li>GUID of the process stealing the memory: <code>b7e8a6b7-b273-62c5-bc11-00000000d301</code></li>
+<li>File path of the stealed secrets: <code>C:\Users\ADMINI~1\AppData\Local\Temp\3\lsass.DMP</code></li>
+</ul>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>FCSC{b7e8a6b7-b273-62c5-bc11-00000000d301|C:\Users\ADMINI~1\AppData\Local\Temp\3\lsass.DMP}</code></div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 11-04-2024</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/soc-simulator/" data-title="SOC Simulator" data-via="Nozzouille" data-hashtags="Forensics"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/soc-simulator/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/soc-simulator/" data-title="SOC Simulator"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/soc-simulator/" data-title="SOC Simulator"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/soc-simulator/" data-title="SOC Simulator"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/forensics/">Forensics</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/fcsc_prechall_2024/" class="prev" rel="prev" title="FCSC prechall 2024"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>FCSC prechall 2024</a>
+            <a href="/posts/stranger-case-intro/" class="next" rel="next" title="Stranger Case Intro">Stranger Case Intro<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.d7121d72cd85153ec9d35a888cee3eb28c2700ca763f649a538f6c772d750021.js" integrity="sha256-1xIdcs2FFT7J01qIjO4+sownAMp2P2SaU49sdy11ACE="></script></body>
+</html>

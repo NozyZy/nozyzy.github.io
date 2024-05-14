@@ -1,0 +1,83 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>OSINT - Tag - NozZy</title>
+        <link>https://nozyzy.github.io/tags/osint/</link>
+        <description>OSINT - Tag - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 05 May 2024 17:33:47 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/osint/" rel="self" type="application/rss+xml" /><item>
+    <title>Stranger Case 2024</title>
+    <link>https://nozyzy.github.io/posts/stranger_case-2024/</link>
+    <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/stranger_case-2024/</guid>
+    <description><![CDATA[Stranger Case 2024 - Misson : Ecplipse Category OSINT
+Description Le Stranger Case est une enquête OSINT qui se déroule en deux parties : qualifications en ligne, et hunt sur place pour la finale.
+La première phase prend la forme d&rsquo;une enquête en ligne. Nous jouons le rôle d&rsquo;enquêteurs, et sommes appelés pour mener une investigation sur la disparition d&rsquo;une personne.
+Cette phase mélange OSINT et Social Enginnering, puisque les informations que nous trouverons proviendront à grande majorité de sources ouvertes.]]></description>
+</item>
+<item>
+    <title>Stranger Case Intro</title>
+    <link>https://nozyzy.github.io/posts/stranger-case-intro/</link>
+    <pubDate>Tue, 23 Apr 2024 09:33:02 -0400</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/stranger-case-intro/</guid>
+    <description><![CDATA[Stranger Case 2024 - Challenge d&rsquo;intro Category OSINT
+Description Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.
+Files Ordre de mission
+Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la suivante :]]></description>
+</item>
+<item>
+    <title>Disparue(s)</title>
+    <link>https://nozyzy.github.io/posts/disparues/</link>
+    <pubDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/disparues/</guid>
+    <description><![CDATA[Disparue(s) Category OSINT
+Description Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.
+Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.
+Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.]]></description>
+</item>
+<item>
+    <title>Projet FOX   Trouble From the East</title>
+    <link>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</link>
+    <pubDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</guid>
+    <description><![CDATA[Flag4All - Projet FOX Trouble From the East Category OSINT
+Description Les services de contre-espionnage ont appris que 3 pilotes de la Bundeswehr ont été recrutés par S. B., un homme d&rsquo;affaires chinois et fils d&rsquo;un officier de l&rsquo;Armée Populaire de Libération. Afin d&rsquo;être payés, nous savons qu&rsquo;ils ont chacun établi une société écran. Vous avez pour tâche de retrouver l&rsquo;identité de chacune de ces entreprises.
+Format du flag : FLAG{nom de l&rsquo;entreprise/nom de l&rsquo;entreprise/nom de l&rsquo;entreprise} (par ordre alphabétique)]]></description>
+</item>
+<item>
+    <title>OZINT.eu   La Vie De Claude</title>
+    <link>https://nozyzy.github.io/posts/ozint.eu---la-vie-de-claude/</link>
+    <pubDate>Sun, 22 Oct 2023 14:32:55 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/ozint.eu---la-vie-de-claude/</guid>
+    <description><![CDATA[Flag4All - OZINT.eu La Vie De Claude Category OSINT
+Files énoncé Part 1/2 Description Qui sont les deux auteurs du documentaire ? (on demande les noms de famille dans l&rsquo;ordre alphabétique)
+Format de la réponse : FLAG{dupont_durand}
+Difficulty EASY - 25 points
+Author: OZINT Screenshot Write up We could try to look for her userame @claudedlm, but it will be only useful for the next part.
+Nope, for this one, only google the words of the documentary: documentaire 2010 esclaves ile]]></description>
+</item>
+<item>
+    <title>Stranger Case 2023</title>
+    <link>https://nozyzy.github.io/posts/stranger-case-2023/</link>
+    <pubDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/stranger-case-2023/</guid>
+    <description><![CDATA[Stranger Case 2023 Category OSINT Hunt
+Description Stranger Case is a special CTF in two parts - one online and one in presence - only targeting OSINT and that consists of a big investigation. There are no flag to submit, but reports to submit at the end of each phase.
+The first phase was online qualifications, in teams up to 4 people, going over 16h straight - 10am to 02am.]]></description>
+</item>
+<item>
+    <title>404CTF - OSINTABLES</title>
+    <link>https://nozyzy.github.io/posts/osintables/</link>
+    <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/osintables/</guid>
+    <description><![CDATA[404CTF - OSINTABLES Category OSINT
+Part 1/3 Description En pleine discussion au Procope, Cosette vous raconte autour d&rsquo;une part de fraisier la première fois qu&rsquo;elle a essayé d&rsquo;envoyer une lettre à son bienfaiteur : Jean Valjean. Débutante dans la démarche postale, elle s&rsquo;est trompée sur les informations nécessaires, elle en a même oublié l&rsquo;adresse du destinataire, n&rsquo;écrivant que la sienne. Elle vous montre la photo ci-jointe et vous met au défi de trouver d&rsquo;où elle l&rsquo;a écrite.]]></description>
+</item>
+</channel>
+</rss>

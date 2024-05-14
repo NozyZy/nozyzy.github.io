@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Stranger Case Intro - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Stranger Case Intro" />
+<meta property="og:description" content="Stranger Case 2024 - Challenge d&rsquo;intro Category OSINT
+Description Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.
+Files Ordre de mission
+Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la suivante :" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/stranger-case-intro/" /><meta property="og:image" content="https://nozyzy.github.io/posts/stranger-case-intro/banner.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-04-23T09:33:02-04:00" />
+<meta property="article:modified_time" content="2024-04-23T09:33:02-04:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nozyzy.github.io/posts/stranger-case-intro/banner.png" /><meta name="twitter:title" content="Stranger Case Intro"/>
+<meta name="twitter:description" content="Stranger Case 2024 - Challenge d&rsquo;intro Category OSINT
+Description Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.
+Files Ordre de mission
+Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la suivante :"/>
+      <meta name="twitter:site" content="@Nozzouille"/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/stranger-case-intro/" /><link rel="prev" href="https://nozyzy.github.io/posts/soc-simulator/" /><link rel="next" href="https://nozyzy.github.io/posts/grand-ecart/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Stranger Case Intro",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/stranger-case-intro\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/nozyzy.github.io\/posts\/stranger-case-intro\/banner.png",
+                            "width":  1917 ,
+                            "height":  580 
+                        }],"genre": "posts","keywords": "OSINT","wordcount":  1583 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/stranger-case-intro\/","datePublished": "2024-04-23T09:33:02-04:00","dateModified": "2024-04-23T09:33:02-04:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Stranger Case Intro</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/stranger-case-2024/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Stranger Case 2024</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="23-04-2024">23-04-2024</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1583 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/banner.png"
+        data-srcset="/posts/stranger-case-intro/banner.png, /posts/stranger-case-intro/banner.png 1.5x, /posts/stranger-case-intro/banner.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/banner.png"
+        title="/posts/stranger-case-intro/banner.png" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#notre-cible">Notre cible</a></li>
+        <li><a href="#journaliste-et-photographe">Journaliste et Photographe</a></li>
+        <li><a href="#le-farfouilleur">Le farfouilleur</a></li>
+        <li><a href="#intervention-investigation">Intervention, investigation</a></li>
+        <li><a href="#toujours-plus-louche">Toujours plus Louche</a></li>
+        <li><a href="#théorie-finale">Théorie finale</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="stranger-case-2024---challenge-dintro">Stranger Case 2024 - Challenge d&rsquo;intro</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>OSINT</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<blockquote>
+<p>Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.</p>
+</blockquote>
+<h2 id="files">Files</h2>
+<p><a href="/posts/stranger-case-intro/mission.pdf" rel="">Ordre de mission</a></p>
+<ul>
+<li>Author: <strong>Neyzor &amp; Giorgone</strong></li>
+</ul>
+<hr>
+<h2 id="write-up">Write up</h2>
+<h3 id="notre-cible">Notre cible</h3>
+<p>La video de départ est la suivante :</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/j6QhuwEnoV4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>On y voit une personne ressemblant à un agent, et une personne kidnappée dans le coffre de sa voiture. <strong>C&rsquo;est notre cible</strong></p>
+<p>On apperçoit à un moment donné un dossier marqué &ldquo;CONFIDENTIEL&rdquo; avec du texte marqué dessus :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/dossier.png"
+        data-srcset="/posts/stranger-case-intro/dossier.png, /posts/stranger-case-intro/dossier.png 1.5x, /posts/stranger-case-intro/dossier.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/dossier.png"
+        title="/posts/stranger-case-intro/dossier.png" width="716" height="413" /></p>
+<p>C&rsquo;est un peu flou, mais on arrive à distinguer le nom :</p>
+<blockquote>
+<p><strong>Aymeric LABALLE</strong></p>
+</blockquote>
+<h3 id="journaliste-et-photographe">Journaliste et Photographe</h3>
+<p>Avec son nom, nous pouvons le rechercher sur différents réseaux sociaux (facebook, linkedin, Twitter, Instagram, etc)</p>
+<p>On trouve ce compte <a href="https://twitter.com/Laballe_Daily" target="_blank" rel="noopener noreffer ">Twitter</a> :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/twitter.png"
+        data-srcset="/posts/stranger-case-intro/twitter.png, /posts/stranger-case-intro/twitter.png 1.5x, /posts/stranger-case-intro/twitter.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/twitter.png"
+        title="/posts/stranger-case-intro/twitter.png" width="599" height="509" /></p>
+<p>Il y parle de journalisme, d&rsquo;actualité, d&rsquo;IA, de photographie animale. Il dit aussi avoir un <strong>blog</strong></p>
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">N&#39;oubliez pas que je publie toujours en avant-première sur mon blog. Les plus assidus d&#39;entre vous ont peut-être remarqué que les futurs articles en préparation sont protégés, mais cela vous permet d&#39;avoir une idée sur quoi je travaille.</p>&mdash; Aymeric LB (@Laballe_Daily) <a href="https://twitter.com/Laballe_Daily/status/1765332798045372559?ref_src=twsrc%5Etfw">March 6, 2024</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>On peut alors tenter naivement de chercher le site <a href="https://aymeric-laballe.fr/" target="_blank" rel="noopener noreffer ">https://aymeric-laballe.fr/</a></p>
+<p>Et ça marche !</p>
+<p>Il s&rsquo;agit de son blog de photographie.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Vraie façon<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Il y avait évidemment une autre façon de faire prévue, et il s&rsquo;agissait de passer par son instagram :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/lien.png"
+        data-srcset="/posts/stranger-case-intro/lien.png, /posts/stranger-case-intro/lien.png 1.5x, /posts/stranger-case-intro/lien.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/lien.png"
+        title="/posts/stranger-case-intro/lien.png" width="577" height="82" /></p>
+<p>Le compte Instagram étant trouvable grâce au Facebook. Ce dernier est trouvable en cherchant son nom :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/facebook.png"
+        data-srcset="/posts/stranger-case-intro/facebook.png, /posts/stranger-case-intro/facebook.png 1.5x, /posts/stranger-case-intro/facebook.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/facebook.png"
+        title="/posts/stranger-case-intro/facebook.png" width="682" height="657" /></p>
+</div>
+        </div>
+    </div>
+<div class="details admonition note">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Autre façon<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Un autre façon était de chercher son nom sur google :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/afnic.png"
+        data-srcset="/posts/stranger-case-intro/afnic.png, /posts/stranger-case-intro/afnic.png 1.5x, /posts/stranger-case-intro/afnic.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/afnic.png"
+        title="/posts/stranger-case-intro/afnic.png" width="724" height="880" /></p>
+<p>Un dump de noms de domaines provenant de l&rsquo;AFNIC (<em>Association française pour le nommage Internet en coopération</em>) cite le nom de domaine de notre cher aymeric.</p>
+</div>
+        </div>
+    </div>
+<p>Sur ses photos, il inscrit un @, très probablement un pseudo à lui :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/chat.png"
+        data-srcset="/posts/stranger-case-intro/chat.png, /posts/stranger-case-intro/chat.png 1.5x, /posts/stranger-case-intro/chat.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/chat.png"
+        title="/posts/stranger-case-intro/chat.png" width="1207" height="519" /></p>
+<p>Le pseudo est <strong>@photo_aymeric</strong></p>
+<p>Si l&rsquo;on utilise un outil de recherche de pseudos comme <a href="https://blackbird-osint.herokuapp.com/#/results" target="_blank" rel="noopener noreffer ">blackbird</a>, on trouve qu&rsquo;il a un compte <a href="https://www.instagram.com/photo_aymeric/" target="_blank" rel="noopener noreffer ">Instagram</a> avec ce pseudo.</p>
+<blockquote
+    class="instagram-media"
+    data-instgrm-captioned
+    data-instgrm-permalink="https://www.instagram.com/p/C5ORY0hsWlj"
+    data-instgrm-version="14"
+    style="
+      background: #fff;
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+      margin: 1px;
+      max-width: 540px;
+      min-width: 326px;
+      padding: 0;
+      width: 99.375%;
+      width: -webkit-calc(100% - 2px);
+      width: calc(100% - 2px);
+    "
+  >
+    <div style="padding: 16px">
+      <a
+        href="https://www.instagram.com/p/C5ORY0hsWlj"
+        style="
+          background: #ffffff;
+          line-height: 0;
+          padding: 0 0;
+          text-align: center;
+          text-decoration: none;
+          width: 100%;
+        "
+        target="_blank"
+      >
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 50%;
+              flex-grow: 0;
+              height: 40px;
+              margin-right: 14px;
+              width: 40px;
+            "
+          ></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                margin-bottom: 6px;
+                width: 100px;
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                width: 60px;
+              "
+            ></div>
+          </div>
+        </div>
+        <div style="padding: 19% 0"></div>
+        <div
+          style="display: block; height: 50px; margin: 0 auto 12px; width: 50px"
+        >
+          <svg
+            width="50px"
+            height="50px"
+            viewBox="0 0 60 60"
+            version="1.1"
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                <g>
+                  <path
+                    d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div style="padding-top: 8px">
+          <div
+            style="
+              color: #3897f0;
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 550;
+              line-height: 18px;
+            "
+          >
+            View this post on Instagram
+          </div>
+        </div>
+        <div style="padding: 12.5% 0"></div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 14px;
+            align-items: center;
+          "
+        >
+          <div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(0px) translateY(7px);
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                height: 12.5px;
+                transform: rotate(-45deg) translateX(3px) translateY(1px);
+                width: 12.5px;
+                flex-grow: 0;
+                margin-right: 14px;
+                margin-left: 2px;
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(9px) translateY(-18px);
+              "
+            ></div>
+          </div>
+          <div style="margin-left: 8px">
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                flex-grow: 0;
+                height: 20px;
+                width: 20px;
+              "
+            ></div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-top: 2px solid transparent;
+                border-left: 6px solid #f4f4f4;
+                border-bottom: 2px solid transparent;
+                transform: translateX(16px) translateY(-4px) rotate(30deg);
+              "
+            ></div>
+          </div>
+          <div style="margin-left: auto">
+            <div
+              style="
+                width: 0px;
+                border-top: 8px solid #f4f4f4;
+                border-right: 8px solid transparent;
+                transform: translateY(16px);
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                flex-grow: 0;
+                height: 12px;
+                width: 16px;
+                transform: translateY(-4px);
+              "
+            ></div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-top: 8px solid #f4f4f4;
+                border-left: 8px solid transparent;
+                transform: translateY(-4px) translateX(8px);
+              "
+            ></div>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            margin-bottom: 24px;
+          "
+        >
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              margin-bottom: 6px;
+              width: 224px;
+            "
+          ></div>
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              width: 144px;
+            "
+          ></div></div
+      ></a>
+    </div>
+  </blockquote><script async src="//www.instagram.com/embed.js"></script>
+<p>Il parle de technologie, mais surtout de photos et d&rsquo;animaux.</p>
+<p>En haut du profile, on peut ne rien trouver sur ordinateur. En revanche, sur téléphone, un bouton &ldquo;<strong>Adresse mail</strong>&rdquo; apparaît : <code>aymeric.laballe.prive@proton.me</code></p>
+<p>On est alors en mesure de faire une recherche via email grâce à un outil comme <a href="https://epieos.com/?q=aymeric.laballe.prive%40proton.me&amp;t=email" target="_blank" rel="noopener noreffer ">Epieos</a>, et l&rsquo;on trouve qu&rsquo;il possède un compte.</p>
+<p>En cherchant comment récupérer un compte gravatar avec un email, on trouve une <a href="https://fr.gravatar.com/" target="_blank" rel="noopener noreffer ">page dédiée</a> sur le site officiel. On trouve alors son <a href="https://fr.gravatar.com/aymericlaballeprive" target="_blank" rel="noopener noreffer ">compte</a> :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/gravatar.png"
+        data-srcset="/posts/stranger-case-intro/gravatar.png, /posts/stranger-case-intro/gravatar.png 1.5x, /posts/stranger-case-intro/gravatar.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/gravatar.png"
+        title="/posts/stranger-case-intro/gravatar.png" width="647" height="574" /></p>
+<p>Son profil référence un lien : <a href="https://alerte-lb.fr/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/</a></p>
+<p>En regardant dessus, on voit qu&rsquo;il s&rsquo;agit de son fameux <strong>blog de journalisme</strong>. D&rsquo;après son tweet, il y aurait des articles protégés. On va donc chercher à énumérer les différents posts existant, à l&rsquo;url suivante : <code>https://alerte-lb.fr/wp-json/wp/v2/posts</code></p>
+<p>On trouve 5 articles :</p>
+<ul>
+<li><a href="https://alerte-lb.fr/2024/02/25/revelation-choc-un-lanceur-dalerte-denonce-des-pratiques-troublantes-dans-lindustrie-agroalimentaire/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2024/02/25/revelation-choc-un-lanceur-dalerte-denonce-des-pratiques-troublantes-dans-lindustrie-agroalimentaire/</a></li>
+<li><a href="https://alerte-lb.fr/2024/02/25/revelations-poignantes-un-lanceur-dalerte-denonce-le-scandaleux-traitement-des-animaux-dans-un-zoo-renomme/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2024/02/25/revelations-poignantes-un-lanceur-dalerte-denonce-le-scandaleux-traitement-des-animaux-dans-un-zoo-renomme/</a></li>
+<li><a href="https://alerte-lb.fr/2024/02/25/scandale-financier-dans-le-monde-de-la-chirurgie-esthetique-un-lanceur-dalerte-revele-des-detournements-de-fonds-choquants/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2024/02/25/scandale-financier-dans-le-monde-de-la-chirurgie-esthetique-un-lanceur-dalerte-revele-des-detournements-de-fonds-choquants/</a></li>
+<li><strong><a href="https://alerte-lb.fr/2024/02/25/backup-n127/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2024/02/25/backup-n127/</a></strong></li>
+<li><a href="https://alerte-lb.fr/2017/02/11/bonjour-tout-le-monde-2/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2017/02/11/bonjour-tout-le-monde-2/</a></li>
+</ul>
+<p>Les trois premiers et le dernier sont des articles révélateurs de son milieu : lanceur d&rsquo;alerte, actualité polémique, scandales, etc&hellip;</p>
+<p>En revanche le 4e à un nom, et un contenu intéressant :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/code.png"
+        data-srcset="/posts/stranger-case-intro/code.png, /posts/stranger-case-intro/code.png 1.5x, /posts/stranger-case-intro/code.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/code.png"
+        title="/posts/stranger-case-intro/code.png" width="1204" height="518" /></p>
+<p>Un article <strong>protégé par mot de passe</strong>, qui raporte u certain <strong>témoignage</strong>&hellip;
+On commence à avoir une piste concernant sa disparaition : quelqu&rsquo;un aurait pu vouloir le faire taire.</p>
+<div class="details admonition note">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Spotify<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Notre ami possède un compte <a href="https://open.spotify.com/user/31qszakeln3aodi43pbepsxmo2gm" target="_blank" rel="noopener noreffer ">Spotify</a>, trouvable depuis son Facebook.</p>
+<p>Mais ce dernier ne nous a pas été utile. Il donne plus de réalisme au personnage.</p>
+</div>
+        </div>
+    </div>
+<h3 id="le-farfouilleur">Le farfouilleur</h3>
+<p>Pour trouver son code, les agents en lien avec nous dans l&rsquo;agence nous on apporté une information importante :</p>
+<blockquote>
+<p>Aymeric n&rsquo;utilise que son pavé numérique pour ses codes</p>
+</blockquote>
+<p>Plusieurs possibilités s&rsquo;offrent à nous :</p>
+<ul>
+<li>le code pourrait avoir fuité</li>
+<li>le code proviendrait d&rsquo;une valeur qui lui tient à coeur (eg. date)</li>
+<li>le site web protège mal son code</li>
+</ul>
+<p>Il se trouve qu&rsquo;à cette étape, nous avions déjà trouvé et compris ce que nous voulions.</p>
+<blockquote
+    class="instagram-media"
+    data-instgrm-captioned
+    data-instgrm-permalink="https://www.instagram.com/p/C4JR9CasGYU"
+    data-instgrm-version="14"
+    style="
+      background: #fff;
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+      margin: 1px;
+      max-width: 540px;
+      min-width: 326px;
+      padding: 0;
+      width: 99.375%;
+      width: -webkit-calc(100% - 2px);
+      width: calc(100% - 2px);
+    "
+  >
+    <div style="padding: 16px">
+      <a
+        href="https://www.instagram.com/p/C4JR9CasGYU"
+        style="
+          background: #ffffff;
+          line-height: 0;
+          padding: 0 0;
+          text-align: center;
+          text-decoration: none;
+          width: 100%;
+        "
+        target="_blank"
+      >
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 50%;
+              flex-grow: 0;
+              height: 40px;
+              margin-right: 14px;
+              width: 40px;
+            "
+          ></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                margin-bottom: 6px;
+                width: 100px;
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                width: 60px;
+              "
+            ></div>
+          </div>
+        </div>
+        <div style="padding: 19% 0"></div>
+        <div
+          style="display: block; height: 50px; margin: 0 auto 12px; width: 50px"
+        >
+          <svg
+            width="50px"
+            height="50px"
+            viewBox="0 0 60 60"
+            version="1.1"
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                <g>
+                  <path
+                    d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div style="padding-top: 8px">
+          <div
+            style="
+              color: #3897f0;
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 550;
+              line-height: 18px;
+            "
+          >
+            View this post on Instagram
+          </div>
+        </div>
+        <div style="padding: 12.5% 0"></div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 14px;
+            align-items: center;
+          "
+        >
+          <div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(0px) translateY(7px);
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                height: 12.5px;
+                transform: rotate(-45deg) translateX(3px) translateY(1px);
+                width: 12.5px;
+                flex-grow: 0;
+                margin-right: 14px;
+                margin-left: 2px;
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(9px) translateY(-18px);
+              "
+            ></div>
+          </div>
+          <div style="margin-left: 8px">
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                flex-grow: 0;
+                height: 20px;
+                width: 20px;
+              "
+            ></div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-top: 2px solid transparent;
+                border-left: 6px solid #f4f4f4;
+                border-bottom: 2px solid transparent;
+                transform: translateX(16px) translateY(-4px) rotate(30deg);
+              "
+            ></div>
+          </div>
+          <div style="margin-left: auto">
+            <div
+              style="
+                width: 0px;
+                border-top: 8px solid #f4f4f4;
+                border-right: 8px solid transparent;
+                transform: translateY(16px);
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                flex-grow: 0;
+                height: 12px;
+                width: 16px;
+                transform: translateY(-4px);
+              "
+            ></div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-top: 8px solid #f4f4f4;
+                border-left: 8px solid transparent;
+                transform: translateY(-4px) translateX(8px);
+              "
+            ></div>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            margin-bottom: 24px;
+          "
+        >
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              margin-bottom: 6px;
+              width: 224px;
+            "
+          ></div>
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              width: 144px;
+            "
+          ></div></div
+      ></a>
+    </div>
+  </blockquote><script async src="//www.instagram.com/embed.js"></script>
+<p>Dans ce post instagram, il parle fièrement de son chien. Il écrit un commentaire beaucoup plus long que ses autres posts. Et parmis ce texte, il parle d&rsquo;une <strong>date d&rsquo;adoption</strong> Le <strong>15/02/2020</strong>. Cela pourrait correspondre à notre deuxième solution.</p>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Code<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Le code est <strong>15022020</strong></div>
+        </div>
+    </div>
+<p>Cela nous donne accès à de nombreux screenshots d&rsquo;emails et de photos de conversations SMS :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/emails.png"
+        data-srcset="/posts/stranger-case-intro/emails.png, /posts/stranger-case-intro/emails.png 1.5x, /posts/stranger-case-intro/emails.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/emails.png"
+        title="/posts/stranger-case-intro/emails.png" width="1079" height="790" /></p>
+<p>Toutes les photos sont <a href="../../stranger-intro/emails.html" rel="">disponibles ici</a></p>
+<p>Dans ces photos, on apprend qu&rsquo;il a été contacté par un Pierre, qui possède des documents compromettants sur son entreprise, et compte sur Aymeric pour l&rsquo;aider à investiguer et dévoiler tout cela au grand jour.</p>
+<p>Pierre lui fournit des preuves photos, et après avoir refusé de prendre rendez-vous physiquement avec Aymeric, ils ont probablement fini par se rencontrer au <strong>café albertine</strong></p>
+<p>Un post d&rsquo;Aymeric nous indique où se trouve ce fameux café :
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/caf%C3%A9.png"
+        data-srcset="/posts/stranger-case-intro/caf%C3%A9.png, /posts/stranger-case-intro/caf%C3%A9.png 1.5x, /posts/stranger-case-intro/caf%C3%A9.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/caf%C3%A9.png"
+        title="/posts/stranger-case-intro/caf%C3%A9.png" width="682" height="542" /></p>
+<p>Les photos montrant des factures donnent accès à un email et au site de l&rsquo;entreprise en question, pointée du doigt par Pierre.</p>
+<h3 id="intervention-investigation">Intervention, investigation</h3>
+<p>L&rsquo;entreprise est <strong>AS-Intervention</strong>, leur site est <a href="https://as-intervention.fr/" target="_blank" rel="noopener noreffer ">https://as-intervention.fr/</a></p>
+<p>Leur site met en avant leur domaine d&rsquo;activité :</p>
+<blockquote>
+<p>Nous offrons une gamme complète de services dans le domaine de la conception et de la fabrication de missiles, ainsi que des solutions d&rsquo;approvisionnement en bateau et en avion à l&rsquo;échelle mondiale.</p>
+</blockquote>
+<p>Ils travaillent dans <strong>l&rsquo;armement militaire.</strong></p>
+<p>On trouve aussi des citation d&rsquo;employés :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/gens.png"
+        data-srcset="/posts/stranger-case-intro/gens.png, /posts/stranger-case-intro/gens.png 1.5x, /posts/stranger-case-intro/gens.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/gens.png"
+        title="/posts/stranger-case-intro/gens.png" width="1217" height="646" /></p>
+<p>Sur la page <a href="https://as-intervention.fr/a-propos/" target="_blank" rel="noopener noreffer ">a propos</a> on trouve l&rsquo;interview de <strong>Pierre Louche</strong>, du Support IT</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/index_20240426113822120.png"
+        data-srcset="/posts/stranger-case-intro/index_20240426113822120.png, /posts/stranger-case-intro/index_20240426113822120.png 1.5x, /posts/stranger-case-intro/index_20240426113822120.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/index_20240426113822120.png"
+        title="/posts/stranger-case-intro/index_20240426113822120.png" width="1160" height="211" /></p>
+<p>Il s&rsquo;agit donc du Pierre qui a échangé avec Aymeric.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Récap<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">L&rsquo;entreprise <strong>AS-Intervention</strong> fait du business d&rsquo;armement à très haute valeur, et semble vouloir garder cela secret et protégé.
+<strong>Pierre Louche</strong> du support IT s&rsquo;en rend compte, collecte des preuves, et contacte le journaliste <strong>Aymeric Laballe</strong> pour que ce dernier fasse paraître cela au grand jour.</div>
+        </div>
+    </div>
+<h3 id="toujours-plus-louche">Toujours plus Louche</h3>
+<p>Essayons d&rsquo;en apprendre plus sur Pierre. Il aura probablement plus d&rsquo;informations concernant la disparition de Aymeric.</p>
+<p>Comme notre cher Aymeric, Pierre possède un <a href="https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreffer ">compte Twitter</a></p>
+<p>Pour autant, aucun poste à ce jour, aucun follow ou liste intéressante.
+La recherche par pivot avec le username (@_pierrelouche) ne donne rien non plus.</p>
+<p>Bizarre d&rsquo;avoir un twitter aussi vide&hellip; Peut-être qu&rsquo;il était plus intéressant avant ? En cherchant sut <a href="https://archive.org" target="_blank" rel="noopener noreffer ">https://archive.org</a>, on trouve une <a href="https://web.archive.org/web/20240214185923/https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreffer ">archive de son compte</a> :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/archive_twitter.png"
+        data-srcset="/posts/stranger-case-intro/archive_twitter.png, /posts/stranger-case-intro/archive_twitter.png 1.5x, /posts/stranger-case-intro/archive_twitter.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/archive_twitter.png"
+        title="/posts/stranger-case-intro/archive_twitter.png" width="1915" height="575" /></p>
+<p>On trouve alors le lien de son <a href="https://linktr.ee/pierre.louche" target="_blank" rel="noopener noreffer ">linktree</a></p>
+<p>De nombreux liens sont alors à notre disposition :
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/tree.png"
+        data-srcset="/posts/stranger-case-intro/tree.png, /posts/stranger-case-intro/tree.png 1.5x, /posts/stranger-case-intro/tree.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/tree.png"
+        title="/posts/stranger-case-intro/tree.png" width="656" height="699" /></p>
+<ul>
+<li><a href="https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreffer ">Mon compte X</a> : son Twitter</li>
+<li><a href="https://pastebin.com/AufN6aM8" target="_blank" rel="noopener noreffer ">My Secret liste - Pastebin.com</a> : un pastebin avec une liste d&rsquo;animes</li>
+<li><a href="https://t.me/&#43;dGupLEDgAnM1NWRk" target="_blank" rel="noopener noreffer ">Telegram: Join Group Poker</a> : Lien Telegram vers une conversation sans historique autour du Poker</li>
+<li><a href="https://pastebin.com/BVQbkxdA" target="_blank" rel="noopener noreffer ">Administration - Pastebin.com</a> : Lien pastebin avec un script powershell pour de l&rsquo;AdminSys</li>
+<li><a href="https://pastebin.com/7CVviAth" target="_blank" rel="noopener noreffer ">Pastebin.com Eric</a> : Lien pastebin qui donne vers un lien <a href="https://t.me/&#43;nGnMfes8XHhiNTU8" target="_blank" rel="noopener noreffer ">Groupe Telegram Boulot</a></li>
+<li><a href="https://pastebin.com/Miz64hWX" target="_blank" rel="noopener noreffer ">Projet secret&hellip; - Pastebin.com</a> : Lien pastebin avec un programme sportif</li>
+</ul>
+<p>Si l&rsquo;on regarde les personnes présntes dans le Telegram Poker, on y trouve des noms :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/stranger-case-intro/poker.png"
+        data-srcset="/posts/stranger-case-intro/poker.png, /posts/stranger-case-intro/poker.png 1.5x, /posts/stranger-case-intro/poker.png 2x"
+        data-sizes="auto"
+        alt="/posts/stranger-case-intro/poker.png"
+        title="poker" width="264" height="363" /></p>
+<p>Pour l&rsquo;insant aucune assurance qui sont ces personnes, cela peut être d&rsquo;autres enquêteurs ou vraiment des proches de Pierre.</p>
+<p>Le Telegram Boulot est en revanche bien plus intéressant :
+<a href="../../stranger-intro/messages.html" rel="">Dump local de la conversation</a></p>
+<p>On commence par discerner les noms de ces collègues impliqués :</p>
+<ul>
+<li>Etienne Prune</li>
+<li>Eric Toile</li>
+<li>Pascal (?) : &ldquo;grand patron&rdquo;</li>
+</ul>
+<p>Chacun raconte un peu sa vie, jusqu&rsquo;au moment où Pierre se voit demander un service particulier à son travail :</p>
+<blockquote>
+<p>J&rsquo;ai reçu un message du chef aujourd&rsquo;hui, je ne vous raconte pas, il avait l&rsquo;air sérieux..
+il m&rsquo;a donné une tache de manière particulière</p>
+</blockquote>
+<p>Cette tâche concerne un certain &ldquo;Pascal&rdquo; le &ldquo;Grand patron&rdquo;. Le service est demandé très discrètement, à une personne de confiance. Ce n&rsquo;est donc pas quelque chose qui se veut être entendu.</p>
+<p>Soit c&rsquo;est intime, soit c&rsquo;est confidentiel, soit c&rsquo;est tout bonnement illégal. Au vu des photos, cela confirme la théorie du <strong>business illegal</strong>.</p>
+<p>Pierre veut en parler a ses collègues après avoir vu les onglets actifs, les factures et les messages.</p>
+<p>L&rsquo;employé est surpris en train de prendre les photos par <strong>une personne inconnue</strong>, avec un air agressif. Pierre a peur et craint de se faire virer suite à cela.</p>
+<p>Le lendemain, il a eu le temps d&rsquo;envoyer les documents à Aymeric, avant de ne <strong>plus donner une seule nouvelle</strong>.</p>
+<h3 id="théorie-finale">Théorie finale</h3>
+<p>C&rsquo;est ici que se termine cette enquête, pour le moment. Nous avons suffisamment d&rsquo;éléments pour établir une théorie sur les événements à l&rsquo;heure actuelle.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Théorie<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>L&rsquo;entreprise <strong>AS-Intervention</strong> fait du business illégal de matériel militaire. Les factures ne sont pas recevables, et les valeurs d&rsquo;argent sont très elevées.</p>
+<p><strong>Pierre Louche</strong>, du Support IT de cette entreprise, est demandé pour un service par Pascal, le grand patron. Ce service se doit être très discret, et dans la confidence. C&rsquo;est à ce moment, en faisant son travail sur l&rsquo;ordinateur de Pascal, que <strong>Pierre tombe sur ces preuves</strong>. Il les prend en photo, mais <strong>se fait surprendre par un inconnu</strong>. La personne à l&rsquo;air agressif, jamais vu dans la boite, qui l&rsquo;a bien vu prendre des photos.</p>
+<p>Entre temps, Pierre a pris contact avec <strong>Aymeric Laballe</strong>, un journaliste lanceur d&rsquo;alerte. Ils se sont mis d&rsquo;accord pour enquêter sur cette affaire, et Pierre lui a envoyé les preuves.</p>
+<p>Le dernier signe de vie de Pierre sur internet remonte au <strong>3 avril</strong>, après quoi plus de nouvelles. Dans son dernier mail à Aymeric, il dit avoir revu une personne, et que ça l&rsquo;inquiète. Il s&rsquo;agit probablement de <strong>l&rsquo;inconnu agressif</strong>, en route pour kidnapper Pierre, afin de le faire taire.</p>
+<p>La même chose est ensuite arrivée à Aymeric, qui se retrouve enlevé dans le coffre d&rsquo;une voiture, afin que son article ne soit jamais publié.</p>
+</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 23-04-2024</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro" data-via="Nozzouille" data-hashtags="OSINT"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/stranger-case-intro/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/osint/">OSINT</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/soc-simulator/" class="prev" rel="prev" title="SOC Simulator"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>SOC Simulator</a>
+            <a href="/posts/grand-ecart/" class="next" rel="next" title="Le grand écart">Le grand écart<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.d7121d72cd85153ec9d35a888cee3eb28c2700ca763f649a538f6c772d750021.js" integrity="sha256-1xIdcs2FFT7J01qIjO4+sownAMp2P2SaU49sdy11ACE="></script></body>
+</html>

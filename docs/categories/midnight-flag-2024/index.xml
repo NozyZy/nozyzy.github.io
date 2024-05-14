@@ -1,0 +1,82 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Midnight Flag 2024 - Category - NozZy</title>
+        <link>https://nozyzy.github.io/categories/midnight-flag-2024/</link>
+        <description>Midnight Flag 2024 - Category - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Wed, 01 May 2024 13:35:11 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/midnight-flag-2024/" rel="self" type="application/rss+xml" /><item>
+    <title>Croissanted</title>
+    <link>https://nozyzy.github.io/posts/croissanted/</link>
+    <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/croissanted/</guid>
+    <description><![CDATA[Midnight Flag 2024 - Croissanted Category Forensics
+Description FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.
+EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue.]]></description>
+</item>
+<item>
+    <title>Silent Hill 2</title>
+    <link>https://nozyzy.github.io/posts/silent_hill_2/</link>
+    <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
+    <description><![CDATA[Midnight Flag 2024 - Silent Hill 2 Category Steganography
+Description by memory
+retrouve le flag lol
+Files Silent_hill_2.png
+Difficulty Author: kuorashi Write up Aperisolve Putting the file on Aperisolve helps us find the entry point:
+It really looks like there is som LSB hidden in 3 bits in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.
+It appears for the three colors, so there might be LSB 3-Bits RGB]]></description>
+</item>
+<item>
+    <title>I want my tickets back</title>
+    <link>https://nozyzy.github.io/posts/i_want_my_tickets_back/</link>
+    <pubDate>Tue, 30 Apr 2024 20:48:58 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/i_want_my_tickets_back/</guid>
+    <description><![CDATA[Midnight Flag 2024 - I want my tickets back Category Forensics
+Part 1 Jean a découvert un colis dans sa boîte aux lettres. À l&rsquo;intérieur, il se trouvait une clé USB et une lettre lui annonçant qu&rsquo;il avait gagné des billets pour les Jeux Olympiques de Paris 2024. La lettre précisait que les billets étaient sur la clé USB. Intrigué, Jean a inséré la clé dans son ordinateur et a ouvert le fichier : une note d&rsquo;information au format HTML.]]></description>
+</item>
+<item>
+    <title>S0uS_l3s_r4d4r</title>
+    <link>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</link>
+    <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
+    <description><![CDATA[Midnight Flag 2024 - S0uS_l3s_r4d4r Category Steganography
+Description By memory
+Recover the hidden flag
+Format : MCTF{flag{XXXXXXXXX}}
+Files Gorille_wallpaper.jpg
+Difficulty Author: kuorashi Write up Aperisolve does not give anything interesting at first sight. But if you scroll into the strings, you&rsquo;ll find something interesting.
+Push the thing a way further, doing this:
+strings -n 8 Gorille_wallpaper.jpg ... @wzJPB))v ,U#=b0t` {La[!dm7 qB)P&#39;,W18b import string; alph = string.ascii_letters;flag_enc = &#34;109 115 104 110 { 130 111 131 104 111 132 108 122 123 145 104 122 149 121 118 119 149 118 123 }&#34; def decode_flag(flag): lst = flag.]]></description>
+</item>
+<item>
+    <title>MyFace</title>
+    <link>https://nozyzy.github.io/posts/myface/</link>
+    <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/myface/</guid>
+    <description><![CDATA[Midnight Flag 2024 - MyFace Category Steganography
+Description Description by memory
+You will need to find my face to decode our messages
+Link Access to an instantiated website
+Difficulty Author: TBD Write up Sources As I am writing this, I do not have access to the source description and website. I only have what I&rsquo;ve done locally. MyFace We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.]]></description>
+</item>
+<item>
+    <title>Mack&#39;Os</title>
+    <link>https://nozyzy.github.io/posts/mack-os/</link>
+    <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/mack-os/</guid>
+    <description><![CDATA[Midnight Flag 2024 - Mack&rsquo;Os Category Forensics
+Description SOON
+Files Mackos.pcap
+Difficulty Author: NAME screenshot
+Write up Trust me :) We are given a network capture of the moment the thing happened to his computer.
+The first thing we see is an exchange via telnet, in plain text. Just follow the stream (right-click &gt; follow &gt; TCP Stream) to view what was exchanged :
+This is, as planned in the description, the volatility2 commands that were executed.]]></description>
+</item>
+</channel>
+</rss>

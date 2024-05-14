@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Silent Hill 2 - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Silent Hill 2" />
+<meta property="og:description" content="Midnight Flag 2024 - Silent Hill 2 Category Steganography
+Description by memory
+retrouve le flag lol
+Files Silent_hill_2.png
+Difficulty Author: kuorashi Write up Aperisolve Putting the file on Aperisolve helps us find the entry point:
+It really looks like there is som LSB hidden in 3 bits in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.
+It appears for the three colors, so there might be LSB 3-Bits RGB" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/silent_hill_2/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-04-30T21:58:48+02:00" />
+<meta property="article:modified_time" content="2024-04-30T21:58:48+02:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta name="twitter:title" content="Silent Hill 2"/>
+<meta name="twitter:description" content="Midnight Flag 2024 - Silent Hill 2 Category Steganography
+Description by memory
+retrouve le flag lol
+Files Silent_hill_2.png
+Difficulty Author: kuorashi Write up Aperisolve Putting the file on Aperisolve helps us find the entry point:
+It really looks like there is som LSB hidden in 3 bits in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.
+It appears for the three colors, so there might be LSB 3-Bits RGB"/>
+      <meta name="twitter:site" content="@Nozzouille"/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/silent_hill_2/" /><link rel="prev" href="https://nozyzy.github.io/posts/i_want_my_tickets_back/" /><link rel="next" href="https://nozyzy.github.io/posts/croissanted/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Silent Hill 2",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/silent_hill_2\/"
+        },"genre": "posts","keywords": "Steganography, Image","wordcount":  490 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/silent_hill_2\/","datePublished": "2024-04-30T21:58:48+02:00","dateModified": "2024-04-30T21:58:48+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Silent Hill 2</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/midnight-flag-2024/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Midnight Flag 2024</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="30-04-2024">30-04-2024</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;490 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#difficulty">Difficulty</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#aperisolve">Aperisolve</a></li>
+        <li><a href="#stegonline">Stegonline</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="midnight-flag-2024---silent-hill-2">Midnight Flag 2024 - Silent Hill 2</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>Steganography</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<p><em>by memory</em></p>
+<blockquote>
+<p>retrouve le flag lol</p>
+</blockquote>
+<h2 id="files">Files</h2>
+<p><a href="/posts/silent_hill_2/Silent_hill_2.png" rel="">Silent_hill_2.png</a></p>
+<h2 id="difficulty">Difficulty</h2>
+<ul>
+<li>Author: <strong>kuorashi</strong></li>
+</ul>
+<hr>
+<h2 id="write-up">Write up</h2>
+<h3 id="aperisolve">Aperisolve</h3>
+<p>Putting the file on <a href="https://aperisolve.fr/5130b332fbdb2d7cf9e8d2333101932d" target="_blank" rel="noopener noreffer ">Aperisolve</a> helps us find the entry point:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/silent_hill_2/img.png"
+        data-srcset="/posts/silent_hill_2/img.png, /posts/silent_hill_2/img.png 1.5x, /posts/silent_hill_2/img.png 2x"
+        data-sizes="auto"
+        alt="/posts/silent_hill_2/img.png"
+        title="img.png" width="1780" height="626" /></p>
+<p>It really looks like there is som <strong>LSB</strong> hidden in <strong>3 bits</strong> in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.</p>
+<p>It appears for the three colors, so there might be <strong>LSB 3-Bits RGB</strong></p>
+<p>Looking even closer, let us find that:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/silent_hill_2/img_1.png"
+        data-srcset="/posts/silent_hill_2/img_1.png, /posts/silent_hill_2/img_1.png 1.5x, /posts/silent_hill_2/img_1.png 2x"
+        data-sizes="auto"
+        alt="/posts/silent_hill_2/img_1.png"
+        title="img_1.png" width="1000" height="490" /></p>
+<p>There is also a LSB 3-bits RGB for this corner as well, but really smaller.</p>
+<p>Let&rsquo;s cut our image in for equal images:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+</span></span><span class="line"><span class="cl"><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Silent_hill_2.png&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+</span></span><span class="line"><span class="cl"><span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">w</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="n">h</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;split1.png&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">h</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="n">w</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;split2.png&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">w</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;split3.png&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">w</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="n">h</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;split4.png&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/silent_hill_2/img_2.png"
+        data-srcset="/posts/silent_hill_2/img_2.png, /posts/silent_hill_2/img_2.png 1.5x, /posts/silent_hill_2/img_2.png 2x"
+        data-sizes="auto"
+        alt="/posts/silent_hill_2/img_2.png"
+        title="img_2.png" width="431" height="108" /></p>
+<h3 id="stegonline">Stegonline</h3>
+<p>It&rsquo;s now time to recover data. I used <a href="https://georgeom.net/StegOnline/upload" target="_blank" rel="noopener noreffer ">Stegonline</a>, because of its flexibility in LSB :</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/silent_hill_2/img_3.png"
+        data-srcset="/posts/silent_hill_2/img_3.png, /posts/silent_hill_2/img_3.png 1.5x, /posts/silent_hill_2/img_3.png 2x"
+        data-sizes="auto"
+        alt="/posts/silent_hill_2/img_3.png"
+        title="img_3.png" width="782" height="782" /></p>
+<p>Using the <strong>split3</strong>, we can easily see the data sing the three least significant bits:</p>
+<pre tabindex="0"><code>Speak. I am the Crimson One.
+
+The lies and the mist are not they but I. You all know that I am one. Yes, and the One is I.
+
+Believers hearken to me! Twenty score men and seven thousand beasts. Heed my words and speaketh them to all, that they shall ever be obeyed even under the light of the proud and merciless sun.
+
+I shall bring down bitter vengeance upon thee and thou shalt suffer my eternal wrath.
+
+The beauty of the withering flower and the last struggles of the dying man, they are my blessings.
+
+Thou shalt ever call upon me and all that is me in the place that is silent.
+
+Oh, proud fragrance of life which flies towards the heart. Oh Cup which brims with the whitest of wine, it is in thee that all begins.
+
+MCTF{d1D_y
+</code></pre><p>The next part is composed of <strong>split2</strong>, sing the same bits we recover some base64 data. <a href="https://gchq.github.io/CyberChef/#recipe=From_Base64%28%27A-Za-z0-9%2B/%3D%27,true,false%29&amp;input=VkdobElHNWhiV1VnWTI5dFpYTWdabkp2YlNCMGFHVWdiR1ZuWlc1a0lHOW1JSFJvWlNCd1pXOXdiR1VnZDJodmMyVWdiR0Z1WkNCM1lYTWdjM1J2YkdWdUlHWnliMjBnZEdobGJTNEtWR2hsZVNCallXeHNaV1FnZEdocGN5QndiR0ZqWlNCVWFHVWdVR3hoWTJVZ2IyWWdkR2hsSUZOcGJHVnVkQ0JUY0dseWFYUnpMaUJDZVNCVGNHbHlhWFJ6TENCMGFHVjVJRzFsWVc1MElHNXZkQ0J2Ym14NUlIUm9aV2x5SUdSbFlXUWdjbVZzWVhScGRtVnpMQ0JpZFhRZ1lXeHpieUIwYUdVZ2MzQnBjbWwwY3lCMGFHRjBJSFJvWlhrZ1ltVnNhV1YyWldRZ2FXNW9ZV0pwZEdWa0lIUm9aU0IwYUhKbFpYTXNJSEp2WTJ0ekxDQmhibVFnZDJGMFpYSWdZWEp2ZFc1a0lIUm9aVzB1Q2tGalkyOXlaR2x1WnlCMGJ5QnNaV2RsYm1Rc0lIUm9hWE1nZDJGeklIZG9aWEpsSUhSb1pTQm9iMnhwWlhOMElHTmxjbVZ0YjI1cFpYTWdkRzl2YXlCd2JHRmpaUzRLUW5WMElHbDBJSGRoY3lCdWIzUWdkR2hsSUdGdVkyVnpkRzl5Y3lCdlppQjBhRzl6WlNCM2FHOGdibTkzSUd4cGRtVWdhVzRnZEdocGN5QjBiM2R1SUhSb1lYUWdabWx5YzNRZ2MzUnZiR1VnZEdobElHeGhibVFnWm5KdmJTQjBhR1Z6WlNCd1pXOXdiR1V1SUZSb1pYSmxJSGRsY21VZ2IzUm9aWEp6SUhkb2J5QmpZVzFsSUdKbFptOXlaUzRLU1c0Z2RHaHZjMlVnWkdGNWN5d2dkR2hwY3lCMGIzZHVJSGRsYm5RZ1lua2dZVzV2ZEdobGNpQnVZVzFsTGlCQ2RYUWdkR2hoZENCdVlXMWxJR2x6SUc1dmR5Qm9iM0JsYkdWemMyeDVJR3h2YzNRZ2FXNGdkR2hsSUhabGFXeHpJRzltSUhScGJXVXVDa0ZzYkNCM1pTQnJibTkzSUdseklIUm9ZWFFnZEdobGNtVWdkMkZ6SUdGdWIzUm9aWElnYm1GdFpTd2dZVzVrSUhSb1lYUWdabTl5SUhOdmJXVWdjbVZoYzI5dUlIUm9aU0IwYjNkdUlIZGhjeUJ2Ym1ObElHRmlZVzVrYjI1bFpDQmllU0JwZEhNZ2NtVnphV1JsYm5Sekxnb3dkVjlHYVc1RVh3PQ" target="_blank" rel="noopener noreffer ">Cyberchef</a> helps s decode it:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/silent_hill_2/img_4.png"
+        data-srcset="/posts/silent_hill_2/img_4.png, /posts/silent_hill_2/img_4.png 1.5x, /posts/silent_hill_2/img_4.png 2x"
+        data-sizes="auto"
+        alt="/posts/silent_hill_2/img_4.png"
+        title="img_4.png" width="1544" height="496" />
+<code>0u_FinD_</code></p>
+<p>The third part is made of <strong>split4</strong>, once again decoded from base64. But it is not plain text. The string is so big, it looks like a file. However, cyberchef is not able to detect of what kind.</p>
+<p>Download it, and use the command <code>file</code> to know what it is :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ file download.dat
+</span></span><span class="line"><span class="cl">download.dat: MPEG ADTS, layer III, v2,  <span class="m">48</span> kbps, <span class="m">24</span> kHz, Monaural
+</span></span></code></pre></div><p><strong>MPEG</strong> file ambedded in a picture of a radio: <strong>this is sound</strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/silent_hill_2/img_6.png"
+        data-srcset="/posts/silent_hill_2/img_6.png, /posts/silent_hill_2/img_6.png 1.5x, /posts/silent_hill_2/img_6.png 2x"
+        data-sizes="auto"
+        alt="/posts/silent_hill_2/img_6.png"
+        title="img_6.png" width="1920" height="304" /></p>
+<p>It says : <code>All letter are lowercase : four l l underscore one t three m underscore</code> : <code>4ll_1t3m_</code></p>
+<p>And the last consists of <strong>split1</strong>, which also embedd a big base64 string. <a href="https://gchq.github.io/CyberChef/#recipe=From_Base64%28%27A-Za-z0-9%2B/%3D%27,true,false%29Detect_File_Type%28true,true,true,true,true,true,true%29" target="_blank" rel="noopener noreffer ">Cyberchef</a> helps us find the type of data this time: <strong>MP4 video</strong>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/silent_hill_2/img_5.png"
+        data-srcset="/posts/silent_hill_2/img_5.png, /posts/silent_hill_2/img_5.png 1.5x, /posts/silent_hill_2/img_5.png 2x"
+        data-sizes="auto"
+        alt="/posts/silent_hill_2/img_5.png"
+        title="img_5.png" width="1538" height="405" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/941380896" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<p><code>h1d3_h3r3_?}</code></p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>recap<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>Corner top right: text -&gt; <code>MCTF{d1D_y</code></li>
+<li>Corner bottom left: base64 -&gt; text -&gt; <code>0u_FinD_</code></li>
+<li>Corner bottom right: base64 -&gt; MPEG file -&gt; <code>4ll_1t3m_</code></li>
+<li>Corner top leftt: base64 -&gt; MP4 file -&gt; <code>h1d3_h3r3_?}</code></li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&#x1f6a9; <code>MCTF{d1D_y0u_FinD_4ll_1t3m_h1d3_h3r3_?}</code></div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 30-04-2024</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/silent_hill_2/" data-title="Silent Hill 2" data-via="Nozzouille" data-hashtags="Steganography,Image"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/silent_hill_2/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/silent_hill_2/" data-title="Silent Hill 2"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/silent_hill_2/" data-title="Silent Hill 2"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/silent_hill_2/" data-title="Silent Hill 2"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/steganography/">Steganography</a>,&nbsp;<a href="/tags/image/">Image</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/i_want_my_tickets_back/" class="prev" rel="prev" title="I want my tickets back"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>I want my tickets back</a>
+            <a href="/posts/croissanted/" class="next" rel="next" title="Croissanted">Croissanted<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.d7121d72cd85153ec9d35a888cee3eb28c2700ca763f649a538f6c772d750021.js" integrity="sha256-1xIdcs2FFT7J01qIjO4+sownAMp2P2SaU49sdy11ACE="></script></body>
+</html>
