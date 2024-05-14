@@ -131,7 +131,11 @@ We need to search between them, something suspicious that can achieve persistenc
 And here it is:
 ![img_9.png](img_9.png)
 
+<<<<<<< HEAD
 Just after the download of the ``zip``, two `.so` files have been created in the folder `/usr/lib/x86_64-linux-gnu/security/`, which contains libraries used by the system.
+=======
+Jst after the download of the ``zip``, two `.so` files have been created in the folder `/usr/lib/x86_64-linux-gnu/security/`, which contains libraries used by the system.
+>>>>>>> c93141e (added Midnight flag)
 
 It is **in fact** a really **efficient way to achieve persistence**, because:
 - This is not a folder sed by the ser, so they won't ever be found without searching for it
