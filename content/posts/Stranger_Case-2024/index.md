@@ -6,13 +6,10 @@ tags: ['OSINT', 'Hunt', 'Social Engineering']
 categories:
   - 'Writeups'
   - 'Stranger Case 2024'
-<<<<<<< HEAD
 
 resources:
   - name: "featured-image"
     src: "banner_eclipse.png"
-=======
->>>>>>> 797a2de (added Stranger Case 2024)
 ---
 
 # Stranger Case 2024 - Misson : Ecplipse
@@ -38,12 +35,8 @@ La seconde phase est la poursuite de l'enquête, sous la forme de Hunt dans une 
 ### Stranger Case - Qualifications en ligne
 
 ### Ordre de mission
-<<<<<<< HEAD
-{{< pdfReader "Stranger_Case_III_-_Ordre_de_mission.pdf" >}}
-=======
 
-[Ordre de mission.pdf](Stranger_Case_III_-_Ordre_de_mission.pdf)
->>>>>>> 797a2de (added Stranger Case 2024)
+{{< pdfReader "Stranger_Case_III_-_Ordre_de_mission.pdf" >}}
 
 > **ORDRE DE MISSION**
 > 
@@ -64,19 +57,12 @@ disparition alarmante d'**Antoine Launay**, un militant politique et président 
 > 
 > Bonne chance.
 
-<<<<<<< HEAD
 {{< pdfReader "Chronique%20lunaire%20-%20Mission%20Eclipse%20-%20En%20Legend2.pdf" >}}
 
 {{< admonition info "Mindmap finale" >}}
 
 [Mindmap](https://excalidraw.com/#json=Kzqv5t5ZKaeT4w4ZRr2Am,e3Y8TB7rH1nc-PhvvIf5iw)
 
-=======
-{{< admonition tip "Rapport final !" >}}
-:flag_fr: [Mission Eclipse - En Légend2](Chronique%20lunaire%20-%20Mission%20Eclipse%20-%20En%20Legend2.pdf)
-
-[Mindmap](https://excalidraw.com/#json=Kzqv5t5ZKaeT4w4ZRr2Am,e3Y8TB7rH1nc-PhvvIf5iw)
->>>>>>> 797a2de (added Stranger Case 2024)
 {{< /admonition >}}
 
 {{< image src="En%20Legend2%20-%20Mindmap_small.png" caption="Mindmap Finale" src_s="En%20Legend2%20-%20Mindmap_small.png" src_l="En%20Legend2%20-%20Mindmap_small.png" >}}
