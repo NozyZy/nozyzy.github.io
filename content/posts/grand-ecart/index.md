@@ -1,7 +1,7 @@
 ---
 title: "Le grand écart"
 date: 2024-04-26T05:40:26-04:00
-draft: true
+draft: false
 tags: ['Steganography']
 categories:
   - 'Writeups'
@@ -49,7 +49,7 @@ The text had surely been altered to hide some data inside.
 I first tried to search for `404CTF{` chars, but that wasn't promising.
 
 The word "écart" in the title made me think two things :
-- there must a sort of fixed separating space between interesting chars
+- there must a sort of fixed space between interesting chars
 - we must compare it with the original file
 
 Let's begin with the second idea. By Googling few keywords in the text, we can find this [page](https://gist.github.com/StevenClontz/4445774):
