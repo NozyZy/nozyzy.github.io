@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Cryptsetup - Tag - NozZy</title>
+        <title>cryptsetup - Tag - NozZy</title>
         <link>https://nozyzy.github.io/tags/cryptsetup/</link>
-        <description>Cryptsetup - Tag - NozZy</description>
+        <description>cryptsetup - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/cryptsetup/" rel="self" type="application/rss+xml" /><item>
     <title>How to decrypt LUKS1 with key in memory</title>

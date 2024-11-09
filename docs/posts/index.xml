@@ -73,7 +73,7 @@ strings -n 8 Gorille_wallpaper.jpg ... @wzJPB))v ,U#=b0t` {La[!dm7 qB)P&#39;,W18
 Description Description by memory
 You will need to find my face to decode our messages
 Link Access to an instantiated website
-Difficulty Author: TBD Write up Sources As I am writing this, I do not have access to the source description and website. I only have what I&rsquo;ve done locally. MyFace We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.]]></description>
+Difficulty Author: TBD Write up SourcesAs I am writing this, I do not have access to the source description and website. I only have what I&rsquo;ve done locally.MyFace We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.]]></description>
 </item>
 <item>
     <title>Mack&#39;Os</title>
@@ -99,7 +99,7 @@ This is, as planned in the description, the volatility2 commands that were execu
 Description En sortant de votre cours de gymnastique, vous tombez sur un étrange bouquin dans les vestiaires&hellip; À vous d&rsquo;en trouver tous les secrets.
 Files challenge.txt
 Difficulty MEDIUM - 987 points
-Author: @acmo0 Write up Salted Whale &#x1f433; We are given a large text file. By looking at it rapidly, it looks like it is the raw and complete content of the book &ldquo;Moby Dick&rdquo;]]></description>
+Author: @acmo0 Write up Salted Whale 🐳 We are given a large text file. By looking at it rapidly, it looks like it is the raw and complete content of the book &ldquo;Moby Dick&rdquo;]]></description>
 </item>
 <item>
     <title>Stranger Case Intro</title>

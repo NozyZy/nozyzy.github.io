@@ -4,7 +4,19 @@
         <link>https://nozyzy.github.io/categories/articles/</link>
         <description>Articles - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/articles/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/articles/" rel="self" type="application/rss+xml" /><item>
+    <title>Wireshark/Tshark TCP illegal flags</title>
+    <link>https://nozyzy.github.io/articles/tcp_illegal_flags/</link>
+    <pubDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/articles/tcp_illegal_flags/</guid>
+    <description><![CDATA[During the patriotCTF, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.
+For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:
+Wireshark red packetsHere, only the combination of FIN, SYN, RST appears, with the addition of PSH sometimes.
+However, I was missing something.
+TCP Flags Here is a small recap of which TCP flags exist, and will be used for illegal combinations:]]></description>
+</item>
+<item>
     <title>How to decrypt LUKS1 with key in memory</title>
     <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
     <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate>

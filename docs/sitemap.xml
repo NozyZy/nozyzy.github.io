@@ -2,19 +2,22 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://nozyzy.github.io/categories/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/categories/articles/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/articles/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/categories/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/forensics/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/articles/tcp_illegal_flags/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/hunt/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/osint/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/social-engineering/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/stranger-case-2024/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/stranger_case-2024/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/tags/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/writeups/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/croissanted/</loc><lastmod>2024-05-01T13:35:11&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/disk/</loc><lastmod>2024-05-01T13:35:11&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/tags/forensics/</loc><lastmod>2024-05-01T13:35:11&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/midnight-flag-2024/</loc><lastmod>2024-05-01T13:35:11&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/image/</loc><lastmod>2024-04-30T21:58:48&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/silent_hill_2/</loc><lastmod>2024-04-30T21:58:48&#43;02:00</lastmod></url><url>
@@ -45,8 +48,8 @@
             <loc>https://nozyzy.github.io/posts/disparues/</loc><lastmod>2023-11-04T23:05:52&#43;01:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/dark_side/</loc><lastmod>2023-10-23T18:06:28&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/flag4all/</loc><lastmod>2023-10-23T18:06:28&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</loc><lastmod>2023-10-22T15:29:41&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/posts/ozint.eu---la-vie-de-claude/</loc><lastmod>2023-10-22T14:32:55&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/posts/projet-fox-trouble-from-the-east/</loc><lastmod>2023-10-22T15:29:41&#43;02:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/posts/ozint.eu-la-vie-de-claude/</loc><lastmod>2023-10-22T14:32:55&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/headshot/</loc><lastmod>2023-10-22T13:58:04&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/gishadb/</loc><lastmod>2023-10-22T03:13:42&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/realistic/</loc><lastmod>2023-10-22T03:13:42&#43;02:00</lastmod></url><url>
@@ -55,8 +58,6 @@
             <loc>https://nozyzy.github.io/categories/ecw-2023/</loc><lastmod>2023-10-13T19:51:18&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/stranger-case/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/stranger-case-2023/</loc><lastmod>2023-07-10T19:25:30&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/categories/articles/</loc><lastmod>2023-07-10T17:15:29&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/articles/</loc><lastmod>2023-07-10T17:15:29&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/cryptsetup/</loc><lastmod>2023-07-10T17:15:29&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/decrypt/</loc><lastmod>2023-07-10T17:15:29&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</loc><lastmod>2023-07-10T17:15:29&#43;02:00</lastmod></url><url>

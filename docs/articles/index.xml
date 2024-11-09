@@ -8,14 +8,28 @@
     <language>en-us</language>
     <managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
     <webMaster>nozzy@club-rezo.net (NozZy)</webMaster>
-    <lastBuildDate>Mon, 10 Jul 2023 17:15:29 +0200</lastBuildDate>
-    <atom:link href="https://nozyzy.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Sep 2024 21:13:10 +0200</lastBuildDate><atom:link href="https://nozyzy.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wireshark/Tshark TCP illegal flags</title>
+      <link>https://nozyzy.github.io/articles/tcp_illegal_flags/</link>
+      <pubDate>Sat, 21 Sep 2024 21:13:10 +0200</pubDate>
+      <author>nozzy@club-rezo.net (NozZy)</author>
+      <guid>https://nozyzy.github.io/articles/tcp_illegal_flags/</guid>
+      <description>During the patriotCTF, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.
+For that purpose, I based my knowledge of &amp;ldquo;illegal TCP packets&amp;rdquo; only on wrong flags combinations, displayed as red in wireshark:
+Wireshark red packetsHere, only the combination of FIN, SYN, RST appears, with the addition of PSH sometimes.
+However, I was missing something.
+TCP Flags Here is a small recap of which TCP flags exist, and will be used for illegal combinations:</description>
+    </item>
+    
     <item>
       <title>How to decrypt LUKS1 with key in memory</title>
       <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
-      <pubDate>Mon, 10 Jul 2023 17:15:29 +0200</pubDate><author>nozzy@club-rezo.net (NozZy)</author>
+      <pubDate>Mon, 10 Jul 2023 17:15:29 +0200</pubDate>
+      <author>nozzy@club-rezo.net (NozZy)</author>
       <guid>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</guid>
       <description>How to decrypt LUKS1 with key in memory LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe vulnerability. The master key, used to encrypt and decrypt the whole disk, can be retrieved in the memory of the running machine. This article will show you how to recover that key, and then decrypt the disk.</description>
     </item>
+    
   </channel>
 </rss>

@@ -10,16 +10,17 @@ Description Introduction commune à la série SOC Simulator
 Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
 Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nozyzy.github.io/posts/soc-simulator/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/soc-simulator/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-04-11T09:32:53-04:00" />
 <meta property="article:modified_time" content="2024-04-11T09:32:53-04:00" /><meta property="og:site_name" content="NozZy" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png" /><meta name="twitter:title" content="SOC Simulator"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png"/>
+
+<meta name="twitter:title" content="SOC Simulator"/>
 <meta name="twitter:description" content="FCSC 2024 - SOC Simulator Category Forensics
 Description Introduction commune à la série SOC Simulator
 Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
 Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre."/>
-      <meta name="twitter:site" content="@Nozzouille"/>
 <meta name="application-name" content="NozZy">
 <meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -205,7 +206,7 @@ Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsq
         data-sizes="auto"
         alt="/posts/soc-simulator/evtx.png"
         title="/posts/soc-simulator/evtx.png" width="219" height="427" /></p>
-<p>I was not going to open the files one by one, and even less in the &#x2728; <em><strong>beautiful</strong></em> &#x2728; Windows Event Log viewer.</p>
+<p>I was not going to open the files one by one, and even less in the ✨ <em><strong>beautiful</strong></em> ✨ Windows Event Log viewer.</p>
 <p>I wanted to use a tool made to convert <code>evtx</code> to CSV, called <a href="https://github.com/EricZimmerman/evtx" target="_blank" rel="noopener noreffer ">EvtxECmd</a>.
 However, this was the first time that itdid not success to parse the files. This is not a troubleshooting write-up: <strong>I found a better way</strong>.</p>
 <p>Another tool made to analyse event logs, but which imports sigma rules : <a href="https://github.com/Yamato-Security/hayabusa" target="_blank" rel="noopener noreffer ">Hayabusa</a></p>
@@ -224,7 +225,7 @@ However, this was the first time that itdid not success to parse the files. This
 <p>Retrouver le nom de la vulnérabilité et l&rsquo;heure UTC de la première tentative d&rsquo;exploitation de cette vulnérabilité.</p>
 <p>Format du flag (insensible à la casse) : <code>FCSC{EternalBlue|2021-11-27T17:38}</code></p>
 </blockquote>
-<p><strong>&#x2b50; &#x2b50;</strong></p>
+<p><strong>⭐ ⭐</strong></p>
 <h3 id="screenshot">Screenshot</h3>
 <p><img
         class="lazyload"
@@ -276,7 +277,7 @@ However, this was the first time that itdid not success to parse the files. This
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">&#x1f6a9; <code>FCSC{ProxyShell|2022-07-04T15:36:43}</code></div>
+            <div class="admonition-content">🚩 <code>FCSC{ProxyShell|2022-07-04T15:36:43}</code></div>
         </div>
     </div>
 <h2 id="25--secrets-stealed-1">2/5 : Secrets stealed 1</h2>
@@ -285,7 +286,7 @@ However, this was the first time that itdid not success to parse the files. This
 <p>Après l&rsquo;action vue dans la partie 1, l&rsquo;attaquant vole les identifiants système en mémoire. Retrouver le GUID du processus effectuant ce vol et le nom du fichier où il écrit les secrets volés.</p>
 <p>Format du flag (insensible à la casse) : <code>FCSC{6ccf8905-a033-4edc-8ed7-0a4b0a411e15|C:\Windows\Users\toto\Desktop\fichier.pdf}</code></p>
 </blockquote>
-<p><strong>&#x2b50;</strong></p>
+<p><strong>⭐</strong></p>
 <h3 id="screenshot-1">Screenshot</h3>
 <p><img
         class="lazyload"
@@ -379,7 +380,7 @@ However, this was the first time that itdid not success to parse the files. This
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">&#x1f6a9; <code>FCSC{b99a131f-0d4b-62c3-ce03-00000000db01|C:\Windows\System32\inetsrv\attr.exe}</code></div>
+            <div class="admonition-content">🚩 <code>FCSC{b99a131f-0d4b-62c3-ce03-00000000db01|C:\Windows\System32\inetsrv\attr.exe}</code></div>
         </div>
     </div>
 <h2 id="35--exfiltration">3/5 : Exfiltration</h2>
@@ -389,7 +390,7 @@ However, this was the first time that itdid not success to parse the files. This
 <p>Format du flag : <code>FCSC{sha256(&lt;commande en UTF8 sans saut de ligne&gt;)}</code></p>
 <p>Par exemple, si la commande malveillante était <code>7z a &quot;Fichiers volés.zip&quot; C:\Windows\System32</code>, le flag serait <code>FCSC{bc5640e69c335a8dbe369db382666070e05198a6c18ce88498563d2c4ac187b1}</code>.</p>
 </blockquote>
-<p><strong>&#x2b50; &#x2b50;</strong></p>
+<p><strong>⭐ ⭐</strong></p>
 <h3 id="screenshot-2">Screenshot</h3>
 <p><img
         class="lazyload"
@@ -451,7 +452,7 @@ However, this was the first time that itdid not success to parse the files. This
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Interesting...<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">&#x1f6a9; <code>FCSC{2ee0ab1d44c759b09159ef21900c9826239a7b63e25c0e5935f200d30348b588}</code></div>
+            <div class="admonition-content">🚩 <code>FCSC{2ee0ab1d44c759b09159ef21900c9826239a7b63e25c0e5935f200d30348b588}</code></div>
         </div>
     </div>
 <h2 id="45--lateralisation">4/5 : Lateralisation</h2>
@@ -460,7 +461,7 @@ However, this was the first time that itdid not success to parse the files. This
 <p>Sur une courte période de temps, l&rsquo;attaquant a essayé de se connecter à de nombreuses machines, comme s&rsquo;il essayait de réutiliser les secrets volés dans la partie 2. Cela lui a permis de se connecter à la machine Workstation2. Retrouver l&rsquo;IP source, le compte utilisé et l&rsquo;heure UTC de cette connexion.</p>
 <p>Format du flag (insensible à la casse) : <code>FCSC{192.168.42.27|MYCORP\Technician|2021-11-27T17:38:54}</code>.</p>
 </blockquote>
-<p><strong>&#x2b50;</strong></p>
+<p><strong>⭐</strong></p>
 <h3 id="screenshot-3">Screenshot</h3>
 <p><img
         class="lazyload"
@@ -533,7 +534,7 @@ However, this was the first time that itdid not success to parse the files. This
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">&#x1f6a9; <code>FCSC{172.16.20.20|WORKSTATION2\Administrator|2022-07-06T13:26:57}</code></div>
+            <div class="admonition-content">🚩 <code>FCSC{172.16.20.20|WORKSTATION2\Administrator|2022-07-06T13:26:57}</code></div>
         </div>
     </div>
 <h2 id="55--secrets-stealed-2">5/5 : Secrets Stealed 2</h2>
@@ -542,7 +543,7 @@ However, this was the first time that itdid not success to parse the files. This
 <p>Sur la machine identifiée en partie 4, l&rsquo;attaquant vole de nouveau les secrets du système. Retrouver le GUID du processus effectuant ce vol et le nom du fichier où il écrit les secrets volés.</p>
 <p>Format du flag (insensible à la casse) : <code>FCSC{6ccf8905-a033-4edc-8ed7-0a4b0a411e15|C:\Windows\Users\toto\Desktop\fichier.pdf}</code>.</p>
 </blockquote>
-<p><strong>&#x2b50;&#x2b50;</strong></p>
+<p><strong>⭐⭐</strong></p>
 <h3 id="screenshot-4">Screenshot</h3>
 <p><img
         class="lazyload"
@@ -554,7 +555,7 @@ However, this was the first time that itdid not success to parse the files. This
         title="/posts/soc-simulator/screen5.png" width="989" height="662" /></p>
 <h3 id="write-up-5">Write-Up</h3>
 <p>The guy moved on <code>Workstation2</code>, and stole AGAIN system&rsquo;s secrets ? How greedy he is 🙄</p>
-<p>Once again, sigma rules helped me a lot &#x1f609;</p>
+<p>Once again, sigma rules helped me a lot 😉</p>
 <p>We are located after the lateralisation, so after 2022-07-06 15:26:57 +0200. If we go back to our High and Critical rules set, we can find those rules on <code>Workstation2</code>:</p>
 <p><img
         class="lazyload"
@@ -594,7 +595,7 @@ However, this was the first time that itdid not success to parse the files. This
             <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">&#x1f6a9; <code>FCSC{b7e8a6b7-b273-62c5-bc11-00000000d301|C:\Users\ADMINI~1\AppData\Local\Temp\3\lsass.DMP}</code></div>
+            <div class="admonition-content">🚩 <code>FCSC{b7e8a6b7-b273-62c5-bc11-00000000d301|C:\Users\ADMINI~1\AppData\Local\Temp\3\lsass.DMP}</code></div>
         </div>
     </div>
 </div><div class="post-footer" id="post-footer">
@@ -623,7 +624,7 @@ However, this was the first time that itdid not success to parse the files. This
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.124.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
@@ -633,5 +634,5 @@ However, this was the first time that itdid not success to parse the files. This
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.d7121d72cd85153ec9d35a888cee3eb28c2700ca763f649a538f6c772d750021.js" integrity="sha256-1xIdcs2FFT7J01qIjO4+sownAMp2P2SaU49sdy11ACE="></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
 </html>

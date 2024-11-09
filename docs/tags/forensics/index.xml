@@ -4,7 +4,19 @@
         <link>https://nozyzy.github.io/tags/forensics/</link>
         <description>Forensics - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Wed, 01 May 2024 13:35:11 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
+    <title>Wireshark/Tshark TCP illegal flags</title>
+    <link>https://nozyzy.github.io/articles/tcp_illegal_flags/</link>
+    <pubDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/articles/tcp_illegal_flags/</guid>
+    <description><![CDATA[During the patriotCTF, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.
+For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:
+Wireshark red packetsHere, only the combination of FIN, SYN, RST appears, with the addition of PSH sometimes.
+However, I was missing something.
+TCP Flags Here is a small recap of which TCP flags exist, and will be used for illegal combinations:]]></description>
+</item>
+<item>
     <title>Croissanted</title>
     <link>https://nozyzy.github.io/posts/croissanted/</link>
     <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate>
@@ -83,8 +95,8 @@ Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, an
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/posts/dark_side/</guid>
     <description><![CDATA[Flag4All - Dark Side Category Steganography
-Description &#x1f1eb;&#x1f1f7; Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
-&#x1f1ec;&#x1f1e7; You are a IT student and a mysterious person send an archive to the classe.]]></description>
+Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
+🇬🇧 You are a IT student and a mysterious person send an archive to the classe.]]></description>
 </item>
 <item>
     <title>HeadShot</title>
@@ -96,7 +108,7 @@ Description &#x1f1eb;&#x1f1f7; Vous êtes étudiant en informatique et une myst�
 Description Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.
 Files headShot.tar
 Difficulty Medium - 497 points
-Author: Penthium2 (BZHack) Screenshot Write up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the .]]></description>
+Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the .]]></description>
 </item>
 <item>
     <title>Gishadb</title>
@@ -109,19 +121,7 @@ Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsqu
 This server listen on two ports: 443 and 222. Find a way to get the flag.
 Link https://gishadb.flag4all.sh
 Difficulty EASY - 481 points
-Author: Penthium2 (BZHack) Screenshot Write up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
-</item>
-<item>
-    <title>DumpCyber</title>
-    <link>https://nozyzy.github.io/posts/dumpcyber/</link>
-    <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/dumpcyber/</guid>
-    <description><![CDATA[ECW 2023 prequals - DumpCyber Category Forensics
-Description I am lost inside this dump, to escape I think I need my key and IV? The challenge is available here. Note: the flag format for this challenge is flag{...}.
-Challenge made by: Yogosha
-Difficulty Medium - 100 points
-Author: SemahBA Screenshot Write up Understanding the context Profile and objective We got a RAM dump on a Windows 7, we&rsquo;ll use volatility for the analysis.]]></description>
+Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
 </item>
 </channel>
 </rss>

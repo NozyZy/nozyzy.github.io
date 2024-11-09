@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Wireshark/Tshark TCP illegal flags - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Wireshark/Tshark TCP illegal flags" />
+<meta property="og:description" content="During the patriotCTF, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.
+For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:
+Wireshark red packetsHere, only the combination of FIN, SYN, RST appears, with the addition of PSH sometimes.
+However, I was missing something.
+TCP Flags Here is a small recap of which TCP flags exist, and will be used for illegal combinations:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/articles/tcp_illegal_flags/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png"/><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2024-09-21T21:13:10+02:00" />
+<meta property="article:modified_time" content="2024-09-21T21:13:10+02:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png"/>
+
+<meta name="twitter:title" content="Wireshark/Tshark TCP illegal flags"/>
+<meta name="twitter:description" content="During the patriotCTF, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.
+For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:
+Wireshark red packetsHere, only the combination of FIN, SYN, RST appears, with the addition of PSH sometimes.
+However, I was missing something.
+TCP Flags Here is a small recap of which TCP flags exist, and will be used for illegal combinations:"/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/articles/tcp_illegal_flags/" /><link rel="prev" href="https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Wireshark/Tshark TCP illegal flags",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/articles\/tcp_illegal_flags\/"
+        },"genre": "articles","keywords": "Forensics","wordcount":  501 ,
+        "url": "https:\/\/nozyzy.github.io\/articles\/tcp_illegal_flags\/","datePublished": "2024-09-21T21:13:10+02:00","dateModified": "2024-09-21T21:13:10+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Wireshark/Tshark TCP illegal flags</h1><div class="content" id="content"><p>During the <a href="https://pctf.competitivecyber.club/" target="_blank" rel="noopener noreffer ">patriotCTF</a>, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.</p>
+<p>For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:</p>
+<figure><a class="lightgallery" href="/illegal_tcp_flags/img.png" title="Wireshark red packets" data-thumbnail="/illegal_tcp_flags/img.png" data-sub-html="<h2>Wireshark red packets</h2><p>Wireshark red packets</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/illegal_tcp_flags/img.png"
+            data-srcset="/illegal_tcp_flags/img.png, /illegal_tcp_flags/img.png 1.5x, /illegal_tcp_flags/img.png 2x"
+            data-sizes="auto"
+            alt="Wireshark red packets" />
+    </a><figcaption class="image-caption">Wireshark red packets</figcaption>
+    </figure>
+<p>Here, only the combination of <strong>FIN</strong>, <strong>SYN</strong>, <strong>RST</strong> appears, with the addition of PSH sometimes.</p>
+<p>However, I was missing something.</p>
+<h2 id="tcp-flags">TCP Flags</h2>
+<p>Here is a small recap of which TCP flags exist, and will be used for illegal combinations:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Small form</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Urgent</td>
+<td>URG</td>
+<td>Indicates that the Urgent pointer field is significant.</td>
+</tr>
+<tr>
+<td>Acknowledge</td>
+<td>ACK</td>
+<td>Indicates that the Acknowledgment field is significant. All packets after the initial SYN packet sent by the client should have this flag set.</td>
+</tr>
+<tr>
+<td>Push</td>
+<td>PSH</td>
+<td>Push function. Asks to push the buffered data to the receiving application.</td>
+</tr>
+<tr>
+<td>Reset</td>
+<td>RST</td>
+<td>Reset the connection by non-genuinely dropping next packets.</td>
+</tr>
+<tr>
+<td>Synchronize</td>
+<td>SYN</td>
+<td>Synchronize sequence numbers. Only the first packet sent from each end should have this flag set. Some other flags and fields change meaning based on this flag, and some are only valid when it is set, and others when it is clear.</td>
+</tr>
+<tr>
+<td>Finish</td>
+<td>FIN</td>
+<td>Last packet from sender, end the connection genuinely.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" target="_blank" rel="noopener noreffer ">Source</a></p>
+<p>Each of these flags is set or not set using <strong>one bit</strong>, in the same order as described above, from the highest to the least significant bit.</p>
+<p>In wirehsark, we can visualize those flags:
+<figure><a class="lightgallery" href="/illegal_tcp_flags/img_1.png" title="Flags visualisation" data-thumbnail="/illegal_tcp_flags/img_1.png" data-sub-html="<h2>Flags visualisation</h2><p>Flags visualisation</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/illegal_tcp_flags/img_1.png"
+            data-srcset="/illegal_tcp_flags/img_1.png, /illegal_tcp_flags/img_1.png 1.5x, /illegal_tcp_flags/img_1.png 2x"
+            data-sizes="auto"
+            alt="Flags visualisation" height="50%" />
+    </a><figcaption class="image-caption">Flags visualisation</figcaption>
+    </figure></p>
+<p>A hex value is displayed to know which combination is set for each packet.
+In this example, the flags RST, SYN and FIn are set, which can be written 000111 using the 6 flags described above, which is 0x07 in hexa.</p>
+<h2 id="illegal-flags-combination">Illegal flags combination</h2>
+<p>Those flags, defined by <a href="https://datatracker.ietf.org/doc/html/rfc9293" target="_blank" rel="noopener noreffer ">RFC9323</a> are meant to be used only under certain circumstances. It means that some combinations are allowed, where others are not.</p>
+<p>For example, setting the <strong>FIN</strong> and <strong>RST</strong> flags together would mean to <strong>reset</strong> the connection and <strong>finish</strong> it genuinely. It is not coherent.</p>
+<p>To find all the illegal combinations, I was looking for an already made tshark filter to easily find those illegal packets, and could not find it.</p>
+<p>So I turned my research into finding the list of all illegal combinations, and found <a href="https://support.zyxel.eu/hc/en-us/articles/360001445493-Firewall-Abnormal-TCP-flag-attack-detected#tcp-flag-attacks-detected-in-firewall-1" target="_blank" rel="noopener noreffer ">that link</a></p>
+<p>It is not official documentation because I was unable to interpret the actual whole RFC :)</p>
+<p>The provided link lists a firewall rule set to detect illegal TCP flags, which could translate to an attack:
+<figure><a class="lightgallery" href="/illegal_tcp_flags/img_2.png" title="Some illegal combinations" data-thumbnail="/illegal_tcp_flags/img_2.png" data-sub-html="<h2>Some illegal combinations</h2><p>Some illegal combinations</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/illegal_tcp_flags/img_2.png"
+            data-srcset="/illegal_tcp_flags/img_2.png, /illegal_tcp_flags/img_2.png 1.5x, /illegal_tcp_flags/img_2.png 2x"
+            data-sizes="auto"
+            alt="Some illegal combinations" height="50%" />
+    </a><figcaption class="image-caption">Some illegal combinations</figcaption>
+    </figure></p>
+<h2 id="resulting-filter">Resulting filter</h2>
+<p>So I build this Wireshark/tshark filter, which reflects in the right order the previous screenshot:</p>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Illegal TCP flags Filter<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><code>tcp.flags == 0xfff || (tcp.flags.syn == True &amp;&amp; tcp.flags.fin == True) || (tcp.flags.syn == True &amp;&amp; tcp.flags.reset == True) || (tcp.flags.fin == True &amp;&amp; tcp.flags.reset == True) || tcp.flags == 0x001 || tcp.flags == 0x008 || tcp.flags == 0x020</code></div>
+        </div>
+    </div>
+<p>I was able to find the solution using those documentation and the resulting filter.</p>
+<p>I hope it could help you (and myself too!) in the future :D</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>
