@@ -4,7 +4,15 @@
         <link>https://nozyzy.github.io/tags/</link>
         <description>Tags - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>OSINT</title>
+    <link>https://nozyzy.github.io/tags/osint/</link>
+    <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/tags/osint/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Forensics</title>
     <link>https://nozyzy.github.io/tags/forensics/</link>
     <pubDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</pubDate>
@@ -18,14 +26,6 @@
     <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate>
     <author>NozZy</author>
     <guid>https://nozyzy.github.io/tags/hunt/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>OSINT</title>
-    <link>https://nozyzy.github.io/tags/osint/</link>
-    <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/tags/osint/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>

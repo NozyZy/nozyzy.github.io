@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Traque Au Scammer - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Traque Au Scammer" />
+<meta property="og:description" content="AMSI CTF - Traque Au Scammer Category OSINT
+Description Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nozyzy.github.io/posts/traque/" /><meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-01T20:31:00+01:00" />
+<meta property="article:modified_time" content="2024-12-01T20:31:00+01:00" /><meta property="og:site_name" content="NozZy" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png"/>
+
+<meta name="twitter:title" content="Traque Au Scammer"/>
+<meta name="twitter:description" content="AMSI CTF - Traque Au Scammer Category OSINT
+Description Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie."/>
+<meta name="application-name" content="NozZy">
+<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/traque/" /><link rel="prev" href="https://nozyzy.github.io/posts/stranger_case-2024/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Traque Au Scammer",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nozyzy.github.io\/posts\/traque\/"
+        },"genre": "posts","keywords": "OSINT","wordcount":  574 ,
+        "url": "https:\/\/nozyzy.github.io\/posts\/traque\/","datePublished": "2024-12-01T20:31:00+01:00","dateModified": "2024-12-01T20:31:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "NozZy"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="NozZy"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
+        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
+        data-sizes="auto"
+        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
+        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Traque Au Scammer</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/amsi-ctf-2024/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>AMSI CTF 2024</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="01-12-2024">01-12-2024</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;574 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#difficulty">Difficulty</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#little-punk">Little punk</a></li>
+        <li><a href="#le-scammer-de-crypto">Le scammer de crypto</a></li>
+        <li><a href="#sa-petite-vie-sur-internet">Sa petite vie sur internet</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="amsi-ctf---traque-au-scammer">AMSI CTF - Traque Au Scammer</h1>
+<hr>
+<h2 id="category">Category</h2>
+<blockquote>
+<p>OSINT</p>
+</blockquote>
+<h2 id="description">Description</h2>
+<blockquote>
+<p>Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie. Le C3N compte sur vous pour retrouver son adresse et son prénom.</p>
+<p>Format du flag : AMSI{adresse_prenom}</p>
+<p>Exemple : AMSI{Montpellier-12-rue-Claret_Roger}</p>
+</blockquote>
+<h2 id="files">Files</h2>
+<p><a href="/posts/traque/FCKY.png" rel="">FCKY.png</a></p>
+<h2 id="difficulty">Difficulty</h2>
+<p><strong>MEDIUM</strong> - 500 points</p>
+<ul>
+<li>Author: <strong>Flavio - flav-sns</strong></li>
+</ul>
+<hr>
+<figure><a class="lightgallery" href="/posts/traque/img.png" title="Description" data-thumbnail="/posts/traque/img.png" data-sub-html="<h2>Description</h2><p>Description</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img.png"
+            data-srcset="/posts/traque/img.png, /posts/traque/img.png 1.5x, /posts/traque/img.png 2x"
+            data-sizes="auto"
+            alt="Description" width="499" height="620" />
+    </a><figcaption class="image-caption">Description</figcaption>
+    </figure>
+<h2 id="write-up">Write up</h2>
+<h3 id="little-punk">Little punk</h3>
+<p>On commence avec une photo assez générique d&rsquo;un meme, le contenu ne nous aidera pas à identifier le scammer.</p>
+<p>En revanche, ce petit malin à signer son image de <strong>son nom</strong> :
+<figure><a class="lightgallery" href="/posts/traque/img_1.png" title="Exiftool" data-thumbnail="/posts/traque/img_1.png" data-sub-html="<h2>Exiftool</h2><p>Exiftool</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_1.png"
+            data-srcset="/posts/traque/img_1.png, /posts/traque/img_1.png 1.5x, /posts/traque/img_1.png 2x"
+            data-sizes="auto"
+            alt="Exiftool" width="766" height="630" />
+    </a><figcaption class="image-caption">Exiftool</figcaption>
+    </figure></p>
+<p>Petit coup de recherche d&rsquo;username avec <a href="https://whatsmyname.app/" target="_blank" rel="noopener noreffer ">whatsmyname</a>, et on trouve que ce malin possède un compte <strong><a href="https://github.com/Punk4ch1en" target="_blank" rel="noopener noreffer ">github</a></strong> :
+<figure><a class="lightgallery" href="/posts/traque/img_3.png" title="whatsmyname" data-thumbnail="/posts/traque/img_3.png" data-sub-html="<h2>whatsmyname</h2><p>whatsmyname</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_3.png"
+            data-srcset="/posts/traque/img_3.png, /posts/traque/img_3.png 1.5x, /posts/traque/img_3.png 2x"
+            data-sizes="auto"
+            alt="whatsmyname" width="627" height="394" />
+    </a><figcaption class="image-caption">whatsmyname</figcaption>
+    </figure></p>
+<h3 id="le-scammer-de-crypto">Le scammer de crypto</h3>
+<p>On peut alors se balader sur ses repos, et ses commits. Evidemment que l&rsquo;on trouve quelque chose d&rsquo;intéressant dans ce <a href="https://github.com/Punk4ch1en/Spinning_cat/commit/4ea912e855c603c82223b444e6cf9e494c4b22bd" target="_blank" rel="noopener noreffer ">commit</a> :
+<figure><a class="lightgallery" href="/posts/traque/img_4.png" title="Le commit" data-thumbnail="/posts/traque/img_4.png" data-sub-html="<h2>Le commit</h2><p>Le commit</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_4.png"
+            data-srcset="/posts/traque/img_4.png, /posts/traque/img_4.png 1.5x, /posts/traque/img_4.png 2x"
+            data-sizes="auto"
+            alt="Le commit" width="832" height="418" />
+    </a><figcaption class="image-caption">Le commit</figcaption>
+    </figure></p>
+<p>On possède alors sa &ldquo;drain address&rdquo;, qui est une adresse crypto utilisée pour voler les gens : <code>0xd9A1C3788D81257612E2581A6ea0aDa244853a91</code></p>
+<p>Le site que je recommande, et qui m&rsquo;a été utile est <a href="https://etherscan.io" target="_blank" rel="noopener noreffer ">etherscan</a>, on trouve sur <a href="https://etherscan.io/address/0xd9A1C3788D81257612E2581A6ea0aDa244853a91" target="_blank" rel="noopener noreffer ">la page de son adresse</a> certaines infos :
+<figure><a class="lightgallery" href="/posts/traque/img_5.png" title="Etherscan" data-thumbnail="/posts/traque/img_5.png" data-sub-html="<h2>Etherscan</h2><p>Etherscan</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_5.png"
+            data-srcset="/posts/traque/img_5.png, /posts/traque/img_5.png 1.5x, /posts/traque/img_5.png 2x"
+            data-sizes="auto"
+            alt="Etherscan" width="931" height="453" />
+    </a><figcaption class="image-caption">Etherscan</figcaption>
+    </figure></p>
+<p>On a donc bien un rappel qu&rsquo;il s&rsquo;agit de scam, alors on peut rechercher des Database de report d&rsquo;adresse crypto.
+<figure><a class="lightgallery" href="/posts/traque/img_6.png" title="ChainAbuse" data-thumbnail="/posts/traque/img_6.png" data-sub-html="<h2>ChainAbuse</h2><p>ChainAbuse</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_6.png"
+            data-srcset="/posts/traque/img_6.png, /posts/traque/img_6.png 1.5x, /posts/traque/img_6.png 2x"
+            data-sizes="auto"
+            alt="ChainAbuse" width="320" height="273" />
+    </a><figcaption class="image-caption">ChainAbuse</figcaption>
+    </figure></p>
+<p>On n&rsquo;y trouve aucun report (avant la fin du CTF, il y en a eu depuis par les joueurs).
+<figure><a class="lightgallery" href="/posts/traque/img_7.png" title="No report" data-thumbnail="/posts/traque/img_7.png" data-sub-html="<h2>No report</h2><p>No report</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_7.png"
+            data-srcset="/posts/traque/img_7.png, /posts/traque/img_7.png 1.5x, /posts/traque/img_7.png 2x"
+            data-sizes="auto"
+            alt="No report" width="758" height="166" />
+    </a><figcaption class="image-caption">No report</figcaption>
+    </figure></p>
+<p>La solution se cache dans le fai que notre adresse est liée à une autre, qui l&rsquo;a fourni en argent :
+<figure><a class="lightgallery" href="/posts/traque/img_8.png" title="Feed address" data-thumbnail="/posts/traque/img_8.png" data-sub-html="<h2>Feed address</h2><p>Feed address</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_8.png"
+            data-srcset="/posts/traque/img_8.png, /posts/traque/img_8.png 1.5x, /posts/traque/img_8.png 2x"
+            data-sizes="auto"
+            alt="Feed address" width="356" height="104" />
+    </a><figcaption class="image-caption">Feed address</figcaption>
+    </figure></p>
+<p>On recherche alors cette adresse <code>0xDCddc9287e59B5DF08d17148a078bD181313EAcC</code> sur <a href="https://www.chainabuse.com/address/0xDCddc9287e59B5DF08d17148a078bD181313EAcC" target="_blank" rel="noopener noreffer ">CoinAbuse</a>
+<figure><a class="lightgallery" href="/posts/traque/img_9.png" title="Report" data-thumbnail="/posts/traque/img_9.png" data-sub-html="<h2>Report</h2><p>Report</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_9.png"
+            data-srcset="/posts/traque/img_9.png, /posts/traque/img_9.png 1.5x, /posts/traque/img_9.png 2x"
+            data-sizes="auto"
+            alt="Report" width="875" height="540" />
+    </a><figcaption class="image-caption">Report</figcaption>
+    </figure></p>
+<h3 id="sa-petite-vie-sur-internet">Sa petite vie sur internet</h3>
+<p>On a donc la source de la personne qui a report : <a href="https://x.com/LDfmf4883" target="_blank" rel="noopener noreffer ">https://x.com/LDfmf4883</a></p>
+<p>Le compte Twitter est assez vide : pas de post, pas d&rsquo;archive, pas de liste, rien.
+Seulement des <strong>abonnements</strong>.</p>
+<p>Regardez qui voilà :
+<figure><a class="lightgallery" href="/posts/traque/img_10.png" title="Abonnés twitter" data-thumbnail="/posts/traque/img_10.png" data-sub-html="<h2>Abonnés twitter</h2><p>Abonnés twitter</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_10.png"
+            data-srcset="/posts/traque/img_10.png, /posts/traque/img_10.png 1.5x, /posts/traque/img_10.png 2x"
+            data-sizes="auto"
+            alt="Abonnés twitter" width="768" height="519" />
+    </a><figcaption class="image-caption">Abonnés twitter</figcaption>
+    </figure></p>
+<p>Le retour de notre ami le scammer, et il se plaint sur son <a href="https://x.com/cdjknd43084" target="_blank" rel="noopener noreffer ">compte twitter</a> d&rsquo;avoir perdu son adresse crypto entre autres.</p>
+<p>Par contre, on retrouve un petit commentaire sympa sur <a href="https://x.com/cdjknd43084/status/1860959517585899896" target="_blank" rel="noopener noreffer ">un de ses posts</a> :
+<figure><a class="lightgallery" href="/posts/traque/img_11.png" title="Post scam" data-thumbnail="/posts/traque/img_11.png" data-sub-html="<h2>Post scam</h2><p>Post scam</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_11.png"
+            data-srcset="/posts/traque/img_11.png, /posts/traque/img_11.png 1.5x, /posts/traque/img_11.png 2x"
+            data-sizes="auto"
+            alt="Post scam" width="601" height="460" />
+    </a><figcaption class="image-caption">Post scam</figcaption>
+    </figure></p>
+<p>Cette personne s&rsquo;appelle alors <strong>Philipe</strong>, et possédait un petit compte perso, qui est évidemment supprimé désormais :
+<figure><a class="lightgallery" href="/posts/traque/img_12.png" title="Compte supprimé" data-thumbnail="/posts/traque/img_12.png" data-sub-html="<h2>Compte supprimé</h2><p>Compte supprimé</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_12.png"
+            data-srcset="/posts/traque/img_12.png, /posts/traque/img_12.png 1.5x, /posts/traque/img_12.png 2x"
+            data-sizes="auto"
+            alt="Compte supprimé" width="590" height="401" />
+    </a><figcaption class="image-caption">Compte supprimé</figcaption>
+    </figure></p>
+<p>En revanche, une <strong>archive</strong> existe, mais pas sur archive.org, uniquement sur <a href="https://archive.ph/tvNKB" target="_blank" rel="noopener noreffer ">archive.ph</a> (archive today) :
+<figure><a class="lightgallery" href="/posts/traque/img_13.png" title="Archive" data-thumbnail="/posts/traque/img_13.png" data-sub-html="<h2>Archive</h2><p>Archive</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_13.png"
+            data-srcset="/posts/traque/img_13.png, /posts/traque/img_13.png 1.5x, /posts/traque/img_13.png 2x"
+            data-sizes="auto"
+            alt="Archive" width="467" height="786" />
+    </a><figcaption class="image-caption">Archive</figcaption>
+    </figure></p>
+<p>On a donc une image, prise à priori devant chez lui, avec des infos importantes :</p>
+<ul>
+<li>Boutique &ldquo;Mag&rsquo; Occaz&rdquo;</li>
+<li>Une fileuse de verre</li>
+<li>Une cordonnerie, à l&rsquo;adresse où habite le scammer</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://archive.ph/tvNKB/f6eb1b708ad0df0f7a3644331bb84e18019a1dc4.jpg"
+        data-srcset="https://archive.ph/tvNKB/f6eb1b708ad0df0f7a3644331bb84e18019a1dc4.jpg, https://archive.ph/tvNKB/f6eb1b708ad0df0f7a3644331bb84e18019a1dc4.jpg 1.5x, https://archive.ph/tvNKB/f6eb1b708ad0df0f7a3644331bb84e18019a1dc4.jpg 2x"
+        data-sizes="auto"
+        alt="https://archive.ph/tvNKB/f6eb1b708ad0df0f7a3644331bb84e18019a1dc4.jpg"
+        title="photo" /></p>
+<p>Alors ensuite, pour trouver le lieu, je ne vous raconte pas par quoi je suis passé. <br>
+&hellip; <br>
+Bon ok je vous dis :</p>
+<ul>
+<li><a href="https://papper.fr" target="_blank" rel="noopener noreffer ">pappers.fr</a> → trouvé aucune boutique</li>
+<li>pages facebook → pareil</li>
+<li>reverse image (google, bing, yandex) → pas trouvé perso (askip on pouvait)</li>
+<li>overpass turbo → aucun résultat probant</li>
+<li>mots clé sur Google et Google Maps → boff boff</li>
+</ul>
+<p>Comment j&rsquo;ai trouvé ?</p>
+<figure><a class="lightgallery" href="/posts/traque/img_14.png" title="Google Images" data-thumbnail="/posts/traque/img_14.png" data-sub-html="<h2>Google Images</h2><p>Google Images</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_14.png"
+            data-srcset="/posts/traque/img_14.png, /posts/traque/img_14.png 1.5x, /posts/traque/img_14.png 2x"
+            data-sizes="auto"
+            alt="Google Images" width="1866" height="756" />
+    </a><figcaption class="image-caption">Google Images</figcaption>
+    </figure>
+<p>Lien de l&rsquo;article : <a href="https://www.lamontagne.fr/saint-flour-15100/actualites/le-nouveau-reseau-electrique-de-la-rue-marchande-inaugure_11425042/" target="_blank" rel="noopener noreffer ">https://www.lamontagne.fr/saint-flour-15100/actualites/le-nouveau-reseau-electrique-de-la-rue-marchande-inaugure_11425042/</a></p>
+<p>On apprend que ça se passe dans la ville de <strong>Saint-Flour</strong> !</p>
+<p>On peut alors chercher la fileuse de verre, le Mag&rsquo; Occaz, ou direct la cordonnerie, mais on finira bien par la trouver :
+<figure><a class="lightgallery" href="/posts/traque/img_15.png" title="Street View" data-thumbnail="/posts/traque/img_15.png" data-sub-html="<h2>Street View</h2><p>Street View</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_15.png"
+            data-srcset="/posts/traque/img_15.png, /posts/traque/img_15.png 1.5x, /posts/traque/img_15.png 2x"
+            data-sizes="auto"
+            alt="Street View" width="1819" height="910" />
+    </a><figcaption class="image-caption">Street View</figcaption>
+    </figure></p>
+<figure><a class="lightgallery" href="/posts/traque/img_16.png" title="Adresse" data-thumbnail="/posts/traque/img_16.png" data-sub-html="<h2>Adresse</h2><p>Adresse</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/traque/img_16.png"
+            data-srcset="/posts/traque/img_16.png, /posts/traque/img_16.png 1.5x, /posts/traque/img_16.png 2x"
+            data-sizes="auto"
+            alt="Adresse" width="903" height="618" />
+    </a><figcaption class="image-caption">Adresse</figcaption>
+    </figure>
+<p>Nous voici chez le cordonnier, au <strong>34 rue Marchande, à Saint-Flour</strong></p>
+<div class="details admonition success">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Flag<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">🚩 <code>AMSI{Saint-Flour-34-rue-Marchande_Philippe}</code></div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 01-12-2024</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/traque/" data-title="Traque Au Scammer" data-via="Nozzouille" data-hashtags="OSINT"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/traque/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/traque/" data-title="Traque Au Scammer"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/traque/" data-title="Traque Au Scammer"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/traque/" data-title="Traque Au Scammer"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/osint/">OSINT</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/stranger_case-2024/" class="prev" rel="prev" title="Stranger Case 2024"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Stranger Case 2024</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

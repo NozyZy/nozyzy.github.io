@@ -4,9 +4,18 @@
         <link>https://nozyzy.github.io/</link>
         <description>French Cybersecurity student and CTF enjoyer.</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</lastBuildDate>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate>
             <atom:link href="https://nozyzy.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Traque Au Scammer</title>
+    <link>https://nozyzy.github.io/posts/traque/</link>
+    <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/traque/</guid>
+    <description><![CDATA[AMSI CTF - Traque Au Scammer Category OSINT
+Description Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie.]]></description>
+</item>
+<item>
     <title>Stranger Case 2024</title>
     <link>https://nozyzy.github.io/posts/stranger_case-2024/</link>
     <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate>
@@ -113,17 +122,6 @@ Author: @acmo0 Write up Salted Whale 🐳 We are given a large text file. By loo
 Description Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.
 Files Ordre de mission
 Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la suivante :]]></description>
-</item>
-<item>
-    <title>SOC Simulator</title>
-    <link>https://nozyzy.github.io/posts/soc-simulator/</link>
-    <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
-    <description><![CDATA[FCSC 2024 - SOC Simulator Category Forensics
-Description Introduction commune à la série SOC Simulator
-Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
-Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.]]></description>
 </item>
 </channel>
 </rss>

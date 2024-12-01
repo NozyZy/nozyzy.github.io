@@ -4,7 +4,16 @@
         <link>https://nozyzy.github.io/tags/osint/</link>
         <description>OSINT - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 05 May 2024 17:33:47 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/osint/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/osint/" rel="self" type="application/rss+xml" /><item>
+    <title>Traque Au Scammer</title>
+    <link>https://nozyzy.github.io/posts/traque/</link>
+    <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/traque/</guid>
+    <description><![CDATA[AMSI CTF - Traque Au Scammer Category OSINT
+Description Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie.]]></description>
+</item>
+<item>
     <title>Stranger Case 2024</title>
     <link>https://nozyzy.github.io/posts/stranger_case-2024/</link>
     <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate>

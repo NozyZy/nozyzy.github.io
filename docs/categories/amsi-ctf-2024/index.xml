@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>AMSI CTF 2024 - Category - NozZy</title>
+        <link>https://nozyzy.github.io/categories/amsi-ctf-2024/</link>
+        <description>AMSI CTF 2024 - Category - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/amsi-ctf-2024/" rel="self" type="application/rss+xml" /><item>
+    <title>Traque Au Scammer</title>
+    <link>https://nozyzy.github.io/posts/traque/</link>
+    <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate>
+    <author>NozZy</author>
+    <guid>https://nozyzy.github.io/posts/traque/</guid>
+    <description><![CDATA[AMSI CTF - Traque Au Scammer Category OSINT
+Description Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie.]]></description>
+</item>
+</channel>
+</rss>

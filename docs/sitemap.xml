@@ -2,20 +2,22 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://nozyzy.github.io/categories/amsi-ctf-2024/</loc><lastmod>2024-12-01T20:31:00&#43;01:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/categories/</loc><lastmod>2024-12-01T20:31:00&#43;01:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/</loc><lastmod>2024-12-01T20:31:00&#43;01:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/osint/</loc><lastmod>2024-12-01T20:31:00&#43;01:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/posts/</loc><lastmod>2024-12-01T20:31:00&#43;01:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/tags/</loc><lastmod>2024-12-01T20:31:00&#43;01:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/posts/traque/</loc><lastmod>2024-12-01T20:31:00&#43;01:00</lastmod></url><url>
+            <loc>https://nozyzy.github.io/categories/writeups/</loc><lastmod>2024-12-01T20:31:00&#43;01:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/articles/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/articles/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/categories/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/forensics/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/tags/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/articles/tcp_illegal_flags/</loc><lastmod>2024-09-21T21:13:10&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/hunt/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/tags/osint/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/posts/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/social-engineering/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/stranger-case-2024/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/stranger_case-2024/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
-            <loc>https://nozyzy.github.io/categories/writeups/</loc><lastmod>2024-05-05T17:33:47&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/posts/croissanted/</loc><lastmod>2024-05-01T13:35:11&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/tags/disk/</loc><lastmod>2024-05-01T13:35:11&#43;02:00</lastmod></url><url>
             <loc>https://nozyzy.github.io/categories/midnight-flag-2024/</loc><lastmod>2024-05-01T13:35:11&#43;02:00</lastmod></url><url>
