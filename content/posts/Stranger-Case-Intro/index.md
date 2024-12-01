@@ -181,7 +181,7 @@ Leur site met en avant leur domaine d'activité :
 
 Ils travaillent dans **l'armement militaire.**
 
-On trouve aussi des citation d'employés :
+On trouve aussi des citations d'employés :
 
 ![](gens.png)
 
