@@ -1,14 +1,12 @@
 ---
 title: "The Shakespearean Mouse"
+subtitle: "BackdoorCTF 2023 - The Shakespearean Mouse"
 date: 2023-12-18T23:57:11+01:00
 draft: false
 tags: ['Steganography', 'Forensics']
 categories:
   - 'Writeups'
   - 'BackdoorCTF 2023'
----
-
-# BackdoorCTF 2023 - The Shakespearean Mouse
 ---
 
 ## Category

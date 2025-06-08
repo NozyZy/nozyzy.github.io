@@ -21,7 +21,7 @@ This article will show you how to ___recover that key___, and then ___decrypt th
 This is for educational purpose only, do not try this on systems that you do now own, or have been allowed to do so.
 {{< /admonition >}}
 
-### :(fas fa-list fa-fw): Requirements
+### {{< fa-icon  solid list >}} Requirements
 
 This can only be done if you have access to :
 
@@ -35,7 +35,7 @@ The memory can be extracted with tools like [avml](https://github.com/microsoft/
 
 The Linux machine will be the support for decryption and then access the data.
 
-### :(fas fa-key fa-fw): Key recovering
+### {{< fa-icon solid key >}} Key recovering
 
 LUKS1 uses **AES algorithm** for encrypting data. The vulnerability of LUKS1 is that this key is kept in plain text forever in the memory, while the machine is running and decrypted.
 The idea here, is to find the key in the memory. 
@@ -62,7 +62,7 @@ Save your result somewhere.
 Here we have two AES keys found. We'll get back to it later. 
 {{< /admonition >}}
 
-### :(fas fa-lock-open fa-fw): Decrypt 
+### {{< fa-icon solid lock-open >}} Decrypt 
 
 Next step is to attach and mount the disk. I personally used the .vmdk version in a Kali VM.
 

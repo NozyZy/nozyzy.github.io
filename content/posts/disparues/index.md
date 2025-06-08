@@ -1,18 +1,14 @@
 ---
 title: "Disparue(s)"
+subtitle: "Oscar Zulu - Disparue(s)"
 date: 2023-11-04T23:05:52+01:00
 draft:  false
 tags: ['OSINT']
 categories:
   - 'Writeups'
   - 'Disparue(s)'
-
-resources:
-  - name: "featured-image"
-    src: "img.png"
----
-
-# Disparue(s)
+featuredImage: "img.png"
+featuredImagePreview: "img.png"
 ---
 
 ## Category
@@ -23,7 +19,7 @@ resources:
 
 Ce CTF est particulier, car il s'agit d'une seule et grande enquête en OSINT.
 
-Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories. 
+Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.
 
 - Author: **Oscar Zulu**
 ---
@@ -37,13 +33,13 @@ Ici, je partage tous les challenges que mon équipe et moi avons résolus, par o
 > Le fichier PDF joint rassemble le peu d'informations que la famille a pu vous donner.
 >
 > Après leur avoir précisé que vous ne pourrez rien leur communiquer sans l'accord d'Ellen (si vous la retrouvez), mais que vous informerez celle-ci de leur inquiétude, vous acceptez la mission
-> 
+>
 > Bonne chance !
-> 
+>
 > **Dans quelle école Ellen a t-elle fait sa formation lors de sa reconversion ?**
 >
 > format du flag : ``udemy``
-> 
+>
 > ***20 points***
 
 {{< image src="img_1.png" >}}
@@ -79,10 +75,10 @@ Sur son compte [linkedin](https://www.linkedin.com/in/ellen-gravist-jacoulet-a99
 > Vous commencez à avoir une idée de qui est Ellen, et certaines lectures sont assez claires sur son état d’esprit au moment de sa disparition… Mais elle a clairement été aidée. Quel est le prénom de la personne qui lui permet de prendre un nouveau départ dans sa vie ?
 >
 > Format du flag : ``antonin``
-> 
+>
 > ***20 points***
 
-Ellen partage des articles de son compte [Medium](https://medium.com/@ellen.gravist). 
+Ellen partage des articles de son compte [Medium](https://medium.com/@ellen.gravist).
 
 Ce n'est pas dans l'un d'entre eux que l'on trouvera la réponse, bien que l'on apprenne l'état psychologique dans lequel se trouve Ellen (sa conversion pro et son rapport à la mort)
 
@@ -93,19 +89,19 @@ Sur cette page par contre, elle donne le lien de son [Wattpad](https://www.wattp
 {{< /admonition >}}
 
 
-### Kiss of Death 
+### Kiss of Death
 
 > Vous avez trouvé son journal, qu’elle rédige avec un certain talent, mais il semble que la piste s’arrête là… Il vous faut maintenant poursuivre votre enquête pour savoir ce qu’il est advenu d’elle.
-> 
+>
 > De quel peintre du XVIIe siècle a-t-elle partagé une oeuvre ?
-> 
+>
 > Format du flag : ``Jean Jacques Picasso``
-> 
+>
 > ***50 points***
 
 Les lectures de son journal nous apprennent deux choses essentielles ici :
 - Elle a changé de nom, pour devenir **Perséphonia Aidoneus**
-- Elle a un récent "blog sur cette vieille plateforme à \[son\] nouveau nom" 
+- Elle a un récent "blog sur cette vieille plateforme à \[son\] nouveau nom"
 
 Celui-là m'a donné du fil à retordre pour pas grand-chose. En herchant des vieux sites de blog on tombe sur Skyblog (qui a fermé la veille de l'ouverture de son compte wattpad), Myspace ou encore tumblr.
 
@@ -122,7 +118,7 @@ Dessus, elle partage une peinture de Peter Paul Rubens, datée de 1630-35.
 > Avant de continuer, vous prenez quelques minutes pour faire un point et relire tous les renseignements que vous avez trouvés. Il semble que votre enquête prenne la direction d’une secte dans laquelle Ellen aurait été recrutée. Quel est le nom de cette secte ?
 >
 > Format du flag : ``Les oncles d'elise``
-> 
+>
 > ***10 points***
 
 Le nom est cit sur son Medium et dans son journal : **Les Enfants d'Hades**
@@ -135,12 +131,12 @@ Le nom est cit sur son Medium et dans son journal : **Les Enfants d'Hades**
 ### Nothing to Lose
 
 > Vous souhaitez en avoir le cœur net. Sans doute pourrez-vous trouver un email parmi les informations disponibles.
-> 
+>
 > Format du flag : ``nom.prenom@untrucavantle.com``
-> 
+>
 > ***70 points***
 
-Un compte tumblr permet d'archiver des posts. Mais on peut retrouver ces posts en cliquant sur :(fa-solid fa-ellipsis):.
+Un compte tumblr permet d'archiver des posts. Mais on peut retrouver ces posts en cliquant sur {{< fa-icon solid ellipsis-h >}}.
 
 Un de ces posts est une photo nue floutée, probablement la photo dont elle parle dans son journal, prise par un certain G.
 
@@ -157,7 +153,7 @@ En dessous cette photo, on peut y trouver son mail, avec une incitation à prend
 > Comme toute organisation moderne, la secte doit avoir un canal d’information officiel. Il faudrait l'identifier.
 >
 > Format du flag : ``informations.com``
-> 
+>
 > ***50 points***
 
 Sous un de ses posts, on retrouve le hashtag ``#enfantsdhades.com``.
@@ -171,9 +167,9 @@ Il s'agit bien de leur site web.
 ### Judge Dredd
 
 > Obtenez le pseudo du responsable de la sécurité.
-> 
+>
 > exemple : ``mickey``
-> 
+>
 > ***150 points***
 
 Il y a deux façons de faire.
@@ -182,7 +178,7 @@ Ma première trouvaille a été ce commentaire, laissé sous le premier post d'E
 
 {{< image src="img_2.png" >}}
 
-La page tumblr de cette personne nous renvoie vers son [blog](https://kronosantihades.wordpress.com), où il dénonces les activités de la secte.
+La page tumblr de cette personne nous renvoie vers son [blog](https://kronosantihades.wordpress.com), où il dénonce les activités de la secte.
 
 Son dernier poste parle d'un certain dénommé **H.**, responsable de la sécurité. Notre cible.
 
@@ -211,7 +207,7 @@ La page ``https://enfantsdhades.com/vfrrghertevb34535lkh2Ohh00hLhkl0iujd39hhkbek
 {{< image src="img_4.png" >}}
 
 
-À l'intérieur de ``/org`` se trouve comme seul fichier un ``organigramme.pdf``, contenant ces informations : 
+À l'intérieur de ``/org`` se trouve comme seul fichier un ``organigramme.pdf``, contenant ces informations :
 
 {{< image src="img_6.png" >}}
 
@@ -227,7 +223,7 @@ Nous retrouvons bien le pseudo de notre responsable sécurité.
 >Le responsable de la sécurité doit savoir beaucoup de choses ! Il faut à tout prix l'identifier ! Trouvez sa véritable identité.
 >
 > format du flag : ``godefroy salsepareille`` (prénom nom)
-> 
+>
 > ***200 points***
 
 Pour celui-là, il fallait avoir trouvé l'organigramme.
@@ -272,7 +268,7 @@ Heracles s'appelle en réalité **Guillaume Tacheleron**
 > En vous basant sur ce que vous avez trouvé jusqu’ici, vous devriez pouvoir ajouter un nouveau chapitre à votre dossier. Quel pseudo utilise le chef de la secte ?
 >
 > format du flag : ``poseidon``
-> 
+>
 > ***30 points***
 
 Tout en haut de l'organigramme, on retrouve **Sarapis**
@@ -293,7 +289,7 @@ Tout en haut de l'organigramme, on retrouve **Sarapis**
 
 L'étape pour y arriver, bien qu'assez détachée du challenge à mon sens, eu été **d'envoyer un mail à persephonia.aidoneus@proton.me**.
 
-Voici la réponse que nous obtenons : 
+Voici la réponse que nous obtenons :
 
 ```
 Es tu prêt à comprendre que notre corps n'est qu'un vaisseau destiné a servir les plaisirs et les souffrances de notre âme ?
@@ -310,17 +306,17 @@ Les trois noms sont : **Persephone**, **Demeter** et **Macarie**
 :triangular_flag_on_post: `demeter macarie`
 {{< /admonition >}}
 
-### Heavenly Creatures 
+### Heavenly Creatures
 
 > Vous avez découvert un site internet terrifiant… comme vous l’imaginiez, ces jeunes filles ne sont pas protégées par la secte, mais au contraire manipulées pour devenir les proies d’hommes prêts à payer pour abuser d’elles. Bien décidé à les sortir de ce piège, vous continuez votre enquête. Quel est l’auteur des photos du site ?
-> 
+>
 > Format du flag : ``alain deloin``
-> 
+>
 > ***50 points***
 
 Remonter jusqu'au photographe.. On a déjà vu qu'il se faisait surnommer **G.** Et si le Gary, Responsable Communication, de l'organigramme était ce fameux photographe ?
 
-Pour en être sûr, on peut regarder les métadonnées d'une des trois photos des jeunes filles trouvées sur le lien tor, à l'aide de la commande ``èxiftool`` par exemple : 
+Pour en être sûr, on peut regarder les métadonnées d'une des trois photos des jeunes filles trouvées sur le lien tor, à l'aide de la commande ``èxiftool`` par exemple :
 
 {{< image src="img_11.png" >}}
 
@@ -330,15 +326,15 @@ Notre photographe n'est autre que **Gary Durbourg**
 :triangular_flag_on_post: `Gary Durbourg`
 {{< /admonition >}}
 
-### Donnie Brasco 
+### Donnie Brasco
 
 > Son pseudonyme ne vous aide pas beaucoup, mais il pourra vous servir à éventuellement trouver sa véritable identité !
-> 
+>
 > Format du flag : ``michel sardine``
-> 
+>
 > ***100 points***
 
-Rien de plus simple qu'une petite recherche google ici :  
+Rien de plus simple qu'une petite recherche google ici :
 
 {{< image src="img_12.png" >}}
 
@@ -358,9 +354,9 @@ On reconnait deux mots-clés qui nous parlent. Voici donc son profil [Behance](h
 ### Tales from the Hood
 
 > Comme toute secte, les Enfants d’Hades doivent avoir des détracteurs ! Sous quel pseudonyme pourrez-vous en retrouver un ?
-> 
+>
 > Format du flag : ``Jason Staham``
-> 
+>
 > ***40 points***
 
 De retour sur le blog de **Kronos Titan**, la personne voulant dénoncer les actes de la secte.
@@ -376,11 +372,11 @@ Le voilà notre détracteur, le "Last Man Standing"
 > Vous commencez à en apprendre plus sur le fonctionnement de la secte, et sur comment Ellen a été recrutée et manipulée.
 >
 > Ils sont à priori bien organisés !
-> 
+>
 > Quel rôle occupe Marianne dans la secte ?
-> 
+>
 > Format du flag : ``surveillant``
-> 
+>
 > ***20 points***
 
 Ellen en a parlé dans son journal, mais Kronos aussi : Marianne a joué le rôle de **marraine** pour Ellen
@@ -392,9 +388,9 @@ Ellen en a parlé dans son journal, mais Kronos aussi : Marianne a joué le rôl
 ### Touch of Evil
 
 > Afin d’être le plus efficace possible, il vous faut continuer à obtenir le plus d’informations possible sur les Enfants d’Hades, et en particulier sur les évènements qui pourraient vous permettre de retrouver Ellen. Quel nom est donné aux soirées de cette secte ?
-> 
+>
 > Format du flag : ``Mariages de la planète bleue``
-> 
+>
 > ***20 points***
 
 Permis les article de Kronos, [celui-là](https://kronosantihades.wordpress.com/2023/08/28/les-soirees-de-la-lune-noire-comment-les-enfants-dhades-se-financent-en-exploitant-leurs-jeunes-recrues/) parle de cette cérémonie sacrée où se retrouvent les membres : la **Céremonie de la lune noire**
@@ -408,7 +404,7 @@ Permis les article de Kronos, [celui-là](https://kronosantihades.wordpress.com/
 > Pour reprendre contact avec Ellen, il vous faudra essayer de savoir les étapes subies pendant son intégration dans la secte. Quelle est la troisième étape initiale dans le processus de recrutement des Enfants d'Hades ?
 >
 > format du flag : ``classification des vérités``
-> 
+>
 > ***40 points***
 
 Toujours sur le blog de Kronos, [cet article](https://kronosantihades.wordpress.com/2023/08/28/le-piege-des-tenebres-comment-les-enfants-dhades-manipulent-et-recrutent-des-jeunes-femmes-en-difficulte/) nous explique la manière de recruter de la secte.
@@ -424,9 +420,9 @@ Celle que nous recherchons s'appelle la **verification des antécédents**.
 ### The Glass Shield
 
 > Bien entendu, l'idéal serait de pouvoir identifier cette source précieuse pour votre enquête. Il doit être possible de trouver plus d'informations sur lui, afin de trouver son prénom et le lien qu'il a avec l'actuel chef de la secte.
-> 
+>
 > format du flag : ``Hector oncle``
-> 
+>
 > ***100 points***
 
 Honte de sa position, Kronos a supprimé un article de son blog où il se confessait par rapport à son lien intime à la secte.
@@ -446,7 +442,7 @@ Cet article nous apprend que Kronos s'appelle **Georges**, qu'il est le fondateu
 > Un membre de la secte possède surement son propre serveur informatique. Pourriez vous vous y connecter ?
 >
 > Format du flag : ``EDH{Ceci_Est_Un_Magnifique_Flag}``
-> 
+>
 > ***50 points***
 
 Parmi les membres de la direction présent sur l'organigramme, si nous envoyions un mail au Responsable Evénement Zagreux (``zagreus@enfantsdhades.com``), ce dernier vous répond cela :
@@ -463,9 +459,7 @@ Je ne sais pas combien de temps ce serveur sera encore disponible.
 Zagreus
 ```
 
-On peut alors se connecter en SSH à ce serveur, ce qui donne :
-
-![gif des enfers](https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&is=65467a7a&hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&)
+On peut alors se connecter en SSH à ce serveur, ce qui donne un flot de caractères imbitable.
 
 Aucune action n'est faisable, mais il nous donne le flag.
 

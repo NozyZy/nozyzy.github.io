@@ -1,14 +1,12 @@
 ---
 title: "Mack'Os"
+subtitle: "Midnight Flag 2024 - Mack'Os"
 date: 2024-04-28T09:08:52+02:00
 draft: false
 tags: ['Forensics', 'Network']
 categories:
   - 'Writeups'
   - 'Midnight Flag 2024'
----
-
-# Midnight Flag 2024 - Mack'Os
 ---
 
 ## Category

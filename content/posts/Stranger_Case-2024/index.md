@@ -1,18 +1,18 @@
 ---
 title: "Stranger Case 2024"
+subtitle: "Stranger Case 2024 - Misson : Eclipse"
 date: 2024-05-05T17:33:47+02:00
 draft: false
 tags: ['OSINT', 'Hunt', 'Social Engineering']
 categories:
   - 'Writeups'
   - 'Stranger Case 2024'
+featuredImage: "banner_eclipse.png"
+featuredImagePreview: "banner_eclipse.png"
 
-resources:
-  - name: "featured-image"
-    src: "banner_eclipse.png"
----
+lightgallery: true
+rssFullText: false
 
-# Stranger Case 2024 - Misson : Ecplipse
 ---
 
 ## Category

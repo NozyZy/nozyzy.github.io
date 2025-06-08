@@ -1,14 +1,12 @@
 ---
 title: "Gishadb"
+subtitle: "Flag4All - Gishadb"
 date: 2023-10-22T03:13:42+02:00
 draft: false
 tags: ['Forensics', 'Realistic']
 categories:
   - 'Writeups'
   - 'Flag4All'
----
-
-# Flag4All - Gishadb
 ---
 
 ## Category

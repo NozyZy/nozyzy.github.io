@@ -1,14 +1,12 @@
 ---
 title: "DumpCyber"
+subtitle: "ECW 2023 prequals - DumpCyber"
 date: 2023-10-13T19:51:18+02:00
 draft: false
 tags: ['forensics', 'dump']
 categories:
   - 'Writeups'
   - 'ECW 2023'
----
-
-# ECW 2023 prequals - DumpCyber
 ---
 
 ## Category

@@ -1,14 +1,12 @@
 ---
 title: "Identify, Find, Listen"
+subtitle: "Cybernight 2022 - Identify, Find, Listen"
 date: 2022-11-03T23:38:25+01:00
 draft: false
 tags: ['Hardware', 'Networks']
 categories:
   - 'Writeups'
   - 'Cybernight 2022'
----
-
-# Cybernight 2022 - Identify, Find, Listen
 ---
 
 ## Category

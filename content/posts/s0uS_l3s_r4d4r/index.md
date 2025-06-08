@@ -1,14 +1,12 @@
 ---
 title: "S0uS_l3s_r4d4r"
+subtitle: "Midnight Flag 2024 - S0uS_l3s_r4d4r"
 date: 2024-04-29T23:17:07+02:00
 draft: false
 tags: ['Steganography', 'Image']
 categories:
   - 'Writeups'
   - 'Midnight Flag 2024'
----
-
-# Midnight Flag 2024 - S0uS_l3s_r4d4r
 ---
 
 ## Category
@@ -25,8 +23,6 @@ categories:
 ## Files
 
 [Gorille_wallpaper.jpg](Gorille_wallpaper.jpg)
-
-## Difficulty
 
 - Author: **kuorashi**
 ---

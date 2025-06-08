@@ -1,14 +1,12 @@
 ---
 title: "ExitTheCapsule"
+subtitle: "Cybernight 2023 - Exit The Capsule"
 date: 2023-11-25T16:20:18+01:00
 draft: false
 tags: ['System']
 categories:
   - 'Writeups'
   - 'Cybernight 2023'
----
-
-# Cybernight 2023 - Exit The Capsule
 ---
 
 ## Category

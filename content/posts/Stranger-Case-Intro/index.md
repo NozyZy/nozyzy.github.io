@@ -1,18 +1,14 @@
 ---
 title: "Stranger Case Intro"
+subtitle: "Stranger Case 2024 - Challenge d'intro"
 date: 2024-04-23T09:33:02-04:00
 draft: false
 tags: ['OSINT']
 categories:
   - 'Writeups'
   - 'Stranger Case 2024'
-
-resources:
-  - name: "featured-image"
-    src: "banner.png"
----
-
-# Stranger Case 2024 - Challenge d'intro
+featuredImage: "banner.png"
+featuredImagePreview: "banner.png"
 ---
 
 ## Category
@@ -41,7 +37,7 @@ La video de départ est la suivante :
 
 On y voit une personne ressemblant à un agent, et une personne kidnappée dans le coffre de sa voiture. **C'est notre cible**
 
-On apperçoit à un moment donné un dossier marqué "CONFIDENTIEL" avec du texte marqué dessus :
+On aperçoit à un moment donné un dossier marqué "CONFIDENTIEL" avec du texte marqué dessus :
 
 ![](dossier.png)
 
@@ -58,7 +54,7 @@ On trouve ce compte [Twitter](https://twitter.com/Laballe_Daily) :
 
 Il y parle de journalisme, d'actualité, d'IA, de photographie animale. Il dit aussi avoir un **blog**
 
-{{< tweet user=Laballe_Daily id=1765332798045372559 >}}
+{{< x user=Laballe_Daily id=1765332798045372559 >}}
 
 On peut alors tenter naivement de chercher le site https://aymeric-laballe.fr/
 
@@ -80,7 +76,7 @@ Le compte Instagram étant trouvable grâce au Facebook. Ce dernier est trouvabl
 
 {{< admonition note "Autre façon" false >}}
 
-Un autre façon était de chercher son nom sur google :
+Un autre façon était de chercher son nom sur Google :
 
 ![](afnic.png)
 
@@ -100,7 +96,7 @@ Si l'on utilise un outil de recherche de pseudos comme [blackbird](https://black
 
 Il parle de technologie, mais surtout de photos et d'animaux.
 
-En haut du profile, on peut ne rien trouver sur ordinateur. En revanche, sur téléphone, un bouton "**Adresse mail**" apparaît : `aymeric.laballe.prive@proton.me`
+En haut du profil, on peut ne rien trouver sur ordinateur. En revanche, sur téléphone, un bouton "**Adresse mail**" apparaît : `aymeric.laballe.prive@proton.me`
 
 On est alors en mesure de faire une recherche via email grâce à un outil comme [Epieos](https://epieos.com/?q=aymeric.laballe.prive%40proton.me&t=email), et l'on trouve qu'il possède un compte.
 
@@ -110,7 +106,7 @@ En cherchant comment récupérer un compte gravatar avec un email, on trouve une
 
 Son profil référence un lien : https://alerte-lb.fr/
 
-En regardant dessus, on voit qu'il s'agit de son fameux **blog de journalisme**. D'après son tweet, il y aurait des articles protégés. On va donc chercher à énumérer les différents posts existant, à l'url suivante : `https://alerte-lb.fr/wp-json/wp/v2/posts`
+En regardant dessus, on voit qu'il s'agit de son fameux **blog de journalisme**. D'après son tweet, il y aurait des articles protégés. On va donc chercher à énumérer les différents posts existants, à l'url suivante : `https://alerte-lb.fr/wp-json/wp/v2/posts`
 
 On trouve 5 articles :
 - https://alerte-lb.fr/2024/02/25/revelation-choc-un-lanceur-dalerte-denonce-des-pratiques-troublantes-dans-lindustrie-agroalimentaire/
@@ -119,14 +115,14 @@ On trouve 5 articles :
 - **https://alerte-lb.fr/2024/02/25/backup-n127/**
 - https://alerte-lb.fr/2017/02/11/bonjour-tout-le-monde-2/
 
-Les trois premiers et le dernier sont des articles révélateurs de son milieu : lanceur d'alerte, actualité polémique, scandales, etc...
+Les trois premiers et le dernier sont des articles révélateurs de son milieu : lanceur d'alerte, actualité polémique, scandales, etc.
 
 En revanche le 4e à un nom, et un contenu intéressant :
 
 ![](code.png)
 
-Un article **protégé par mot de passe**, qui raporte u certain **témoignage**...
-On commence à avoir une piste concernant sa disparaition : quelqu'un aurait pu vouloir le faire taire.
+Un article **protégé par mot de passe**, qui rapporte un certain **témoignage**...
+On commence à avoir une piste concernant sa disparition : quelqu'un aurait pu vouloir le faire taire.
 
 {{< admonition note "Spotify" false >}}
 
@@ -138,20 +134,20 @@ Mais ce dernier ne nous a pas été utile. Il donne plus de réalisme au personn
 
 ### Le farfouilleur
 
-Pour trouver son code, les agents en lien avec nous dans l'agence nous on apporté une information importante :
+Pour trouver son code, les agents en lien avec nous dans l'agence nous ont apporté une information importante :
 
 > Aymeric n'utilise que son pavé numérique pour ses codes
 
 Plusieurs possibilités s'offrent à nous :
 - le code pourrait avoir fuité
-- le code proviendrait d'une valeur qui lui tient à coeur (eg. date)
+- le code proviendrait d'une valeur qui lui tient à cœur (eg. date).
 - le site web protège mal son code
 
 Il se trouve qu'à cette étape, nous avions déjà trouvé et compris ce que nous voulions.
 
 {{< instagram C4JR9CasGYU >}}
 
-Dans ce post instagram, il parle fièrement de son chien. Il écrit un commentaire beaucoup plus long que ses autres posts. Et parmis ce texte, il parle d'une **date d'adoption** Le **15/02/2020**. Cela pourrait correspondre à notre deuxième solution.
+Dans ce post instagram, il parle fièrement de son chien. Il écrit un commentaire beaucoup plus long que ses autres posts. Et parmi ce texte, il parle d'une **date d'adoption** Le **15/02/2020**. Cela pourrait correspondre à notre deuxième solution.
 
 {{< admonition success "Code" >}}
 Le code est **15022020**
@@ -185,25 +181,25 @@ On trouve aussi des citations d'employés :
 
 ![](gens.png)
 
-Sur la page [a propos](https://as-intervention.fr/a-propos/) on trouve l'interview de **Pierre Louche**, du Support IT
+Sur la page [à propos](https://as-intervention.fr/a-propos/) on trouve l'interview de **Pierre Louche**, du Support IT
 
 ![](index_20240426113822120.png)
 
 Il s'agit donc du Pierre qui a échangé avec Aymeric.
 
 {{< admonition note Récap >}}
-L'entreprise **AS-Intervention** fait du business d'armement à très haute valeur, et semble vouloir garder cela secret et protégé.
+L'entreprise **AS-Intervention** faite du business d'armement à très haute valeur, et semble vouloir garder cela secret et protégé.
 **Pierre Louche** du support IT s'en rend compte, collecte des preuves, et contacte le journaliste **Aymeric Laballe** pour que ce dernier fasse paraître cela au grand jour.
 {{</ admonition >}}
 
 ### Toujours plus Louche
 
-Essayons d'en apprendre plus sur Pierre. Il aura probablement plus d'informations concernant la disparition de Aymeric.
+Essayons d'en apprendre plus sur Pierre. Il aura probablement plus d'informations concernant la disparition d'Aymeric.
 
 Comme notre cher Aymeric, Pierre possède un [compte Twitter](https://twitter.com/_pierrelouche)
 
 Pour autant, aucun poste à ce jour, aucun follow ou liste intéressante.
-La recherche par pivot avec le username (@_pierrelouche) ne donne rien non plus.
+La recherche par pivot avec l'username (@_pierrelouche) ne donne rien non plus.
 
 Bizarre d'avoir un twitter aussi vide... Peut-être qu'il était plus intéressant avant ? En cherchant sut https://archive.org, on trouve une [archive de son compte](https://web.archive.org/web/20240214185923/https://twitter.com/_pierrelouche) :
 
@@ -219,7 +215,7 @@ De nombreux liens sont alors à notre disposition :
 - [Telegram: Join Group Poker](https://t.me/+dGupLEDgAnM1NWRk) : Lien Telegram vers une conversation sans historique autour du Poker
 - [Administration - Pastebin.com](https://pastebin.com/BVQbkxdA) : Lien pastebin avec un script powershell pour de l'AdminSys
 - [Pastebin.com Eric](https://pastebin.com/7CVviAth) : Lien pastebin qui donne vers un lien [Groupe Telegram Boulot](https://t.me/+nGnMfes8XHhiNTU8)
-- [Projet secret... - Pastebin.com](https://pastebin.com/Miz64hWX) : Lien pastebin avec un programme sportif
+- [Projet secret.. – Pastebin.com](https://pastebin.com/Miz64hWX) : Lien pastebin avec un programme sportif
 
 Si l'on regarde les personnes présntes dans le Telegram Poker, on y trouve des noms : 
 
@@ -244,7 +240,7 @@ Cette tâche concerne un certain "Pascal" le "Grand patron". Le service est dema
 
 Soit c'est intime, soit c'est confidentiel, soit c'est tout bonnement illégal. Au vu des photos, cela confirme la théorie du **business illegal**.
 
-Pierre veut en parler a ses collègues après avoir vu les onglets actifs, les factures et les messages.
+Pierre veut en parler à ses collègues après avoir vu les onglets actifs, les factures et les messages.
 
 L'employé est surpris en train de prendre les photos par **une personne inconnue**, avec un air agressif. Pierre a peur et craint de se faire virer suite à cela.
 
@@ -255,9 +251,9 @@ Le lendemain, il a eu le temps d'envoyer les documents à Aymeric, avant de ne *
 C'est ici que se termine cette enquête, pour le moment. Nous avons suffisamment d'éléments pour établir une théorie sur les événements à l'heure actuelle.
 
 {{< admonition note "Théorie" >}}
-L'entreprise **AS-Intervention** fait du business illégal de matériel militaire. Les factures ne sont pas recevables, et les valeurs d'argent sont très elevées.
+L'entreprise **AS-Intervention** fait du business illégal de matériel militaire. Les factures ne sont pas recevables, et les valeurs d'argent sont très élevées.
 
-**Pierre Louche**, du Support IT de cette entreprise, est demandé pour un service par Pascal, le grand patron. Ce service se doit être très discret, et dans la confidence. C'est à ce moment, en faisant son travail sur l'ordinateur de Pascal, que **Pierre tombe sur ces preuves**. Il les prend en photo, mais **se fait surprendre par un inconnu**. La personne à l'air agressif, jamais vu dans la boite, qui l'a bien vu prendre des photos.  
+**Pierre Louche**, du Support IT de cette entreprise, est demandé pour un service par Pascal, le grand patron. Ce service se doit être très discret, et dans la confidence. C'est à ce moment, en faisant son travail sur l'ordinateur de Pascal, que **Pierre tombe sur ces preuves**. Il les prend en photo, mais **se fait surprendre par un inconnu**. La personne a l'air agressif, jamais vu dans la boite, qui l'a bien vu prendre des photos.  
 
 Entre temps, Pierre a pris contact avec **Aymeric Laballe**, un journaliste lanceur d'alerte. Ils se sont mis d'accord pour enquêter sur cette affaire, et Pierre lui a envoyé les preuves.
 

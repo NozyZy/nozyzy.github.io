@@ -1,14 +1,12 @@
 ---
 title: "Traque Au Scammer"
+subtitle: "MSI CTF - Traque Au Scammer"
 date: 2024-12-01T20:31:00+01:00
 draft: false
 tags: ['OSINT']
 categories:
   - 'Writeups'
   - 'AMSI CTF 2024'
----
-
-# AMSI CTF - Traque Au Scammer
 ---
 
 ## Category

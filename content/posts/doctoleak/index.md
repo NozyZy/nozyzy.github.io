@@ -1,14 +1,12 @@
 ---
 title: "DoctoLeak"
+subtitle: "Cybernight 2023 - DoctoLeak"
 date: 2023-11-25T15:56:22+01:00
 draft: false
 tags: ['Web']
 categories:
   - 'Writeups'
   - 'Cybernight 2023'
----
-
-# Cybernight 2023 - DoctoLeak
 ---
 
 ## Category
@@ -74,7 +72,7 @@ Here is our first leak! I could not manage to attach the id of the patient with 
 However, our previous request contains that data at the bottom:
 
 ```json
-{"firstName":"Admin","lastName":"Admin","id":"634d5b00dae927003e214578","patients":[{"ssn":"b16cff8b-4a5a-41c8-8545-d9880fd7aae5"}]
+{"firstName":"Admin","lastName":"Admin","id":"634d5b00dae927003e214578","patients":[{"ssn":"b16cff8b-4a5a-41c8-8545-d9880fd7aae5"}]}
 ```
 
 The ssn was the one we were looking for.

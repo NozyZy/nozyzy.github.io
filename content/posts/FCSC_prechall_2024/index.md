@@ -1,14 +1,12 @@
 ---
 title: "FCSC prechall 2024"
+subtitle: "FCSC 2024 - FCSC prechall 2024"
 date: 2024-04-02T05:03:14-04:00
 draft: false
 tags: ['prog', 'web', 'reverse']
 categories:
   - 'Writeups'
   - 'FCSC 2024'
----
-
-# FCSC 2024 - FCSC prechall 2024
 ---
 
 ## Category
