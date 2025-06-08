@@ -7,126 +7,255 @@
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/steganography/" rel="self" type="application/rss+xml" /><item>
     <title>Silent Hill 2</title>
     <link>https://nozyzy.github.io/posts/silent_hill_2/</link>
-    <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Silent Hill 2 Category Steganography
-Description by memory
-retrouve le flag lol
-Files Silent_hill_2.png
-Difficulty Author: kuorashi Write up Aperisolve Putting the file on Aperisolve helps us find the entry point:
-It really looks like there is som LSB hidden in 3 bits in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.
-It appears for the three colors, so there might be LSB 3-Bits RGB]]></description>
-</item>
-<item>
+    <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p><em>by memory</em></p>
+<blockquote>
+  <p>retrouve le flag lol</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/silent_hill_2/Silent_hill_2.png" rel="">Silent_hill_2.png</a></p>
+<ul>
+<li>Author: <strong>kuorashi</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="aperisolve" class="headerLink">
+    <a href="#aperisolve" class="header-mark"></a>Aperisolve</h3><p>Putting the file on <a href="https://aperisolve.fr/5130b332fbdb2d7cf9e8d2333101932d" target="_blank" rel="noopener noreferrer">Aperisolve</a> helps us find the entry point:</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/silent_hill_2/img.png' srcset="/posts/silent_hill_2/img_hu_f506e168d6df9579.webp 800w, /posts/silent_hill_2/img_hu_65cf3e8decba9cc3.webp 1200w, /posts/silent_hill_2/img_hu_ab937e216d7de8be.webp 1600w"  alt="img.png" height="626" width="1780"></p>
+<p>It really looks like there is som <strong>LSB</strong> hidden in <strong>3 bits</strong> in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.</p>
+<p>It appears for the three colors, so there might be <strong>LSB 3-Bits RGB</strong></p>]]></description>
+</item><item>
     <title>S0uS_l3s_r4d4r</title>
     <link>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</link>
-    <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
-    <description><![CDATA[Midnight Flag 2024 - S0uS_l3s_r4d4r Category Steganography
-Description By memory
-Recover the hidden flag
-Format : MCTF{flag{XXXXXXXXX}}
-Files Gorille_wallpaper.jpg
-Difficulty Author: kuorashi Write up Aperisolve does not give anything interesting at first sight. But if you scroll into the strings, you&rsquo;ll find something interesting.
-Push the thing a way further, doing this:
-strings -n 8 Gorille_wallpaper.jpg ... @wzJPB))v ,U#=b0t` {La[!dm7 qB)P&#39;,W18b import string; alph = string.ascii_letters;flag_enc = &#34;109 115 104 110 { 130 111 131 104 111 132 108 122 123 145 104 122 149 121 118 119 149 118 123 }&#34; def decode_flag(flag): lst = flag.]]></description>
-</item>
-<item>
+    <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p><em>By memory</em></p>
+<blockquote>
+  <p>Recover the hidden flag</p>
+<p>Format : MCTF{flag{XXXXXXXXX}}</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/s0us_l3s_r4d4r/Gorille_wallpaper.jpg" rel="">Gorille_wallpaper.jpg</a></p>
+<ul>
+<li>Author: <strong>kuorashi</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><p><a href="https://aperisolve.fr/470d65fbda570aee3a4da6fef39e33ae" target="_blank" rel="noopener noreferrer">Aperisolve</a> does not give anything interesting at first sight. But if you scroll into the <strong>strings</strong>, you&rsquo;ll find something interesting.</p>
+<p>Push the thing a way further, doing this:</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">bash</p>]]></description>
+</item><item>
     <title>MyFace</title>
     <link>https://nozyzy.github.io/posts/myface/</link>
-    <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/myface/</guid>
-    <description><![CDATA[Midnight Flag 2024 - MyFace Category Steganography
-Description Description by memory
-You will need to find my face to decode our messages
-Link Access to an instantiated website
-Difficulty Author: TBD Write up SourcesAs I am writing this, I do not have access to the source description and website. I only have what I&rsquo;ve done locally.MyFace We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.]]></description>
-</item>
-<item>
+    <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/myface/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p><em>Description by memory</em></p>
+<blockquote>
+  <p>You will need to find my face to decode our messages</p>
+</blockquote><h2 id="link" class="headerLink">
+    <a href="#link" class="header-mark"></a>Link</h2><p><em>Access to an instantiated website</em></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><ul>
+<li>Author: <strong>TBD</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><div class="details admonition info open">
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg></span>Sources<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">As I am writing this, I do not have access to the source description and website. I only have what I&rsquo;ve done locally.</div></div></div>
+<h3 id="myface" class="headerLink">
+    <a href="#myface" class="header-mark"></a>MyFace</h3><p>We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.</p>]]></description>
+</item><item>
     <title>Le grand écart</title>
     <link>https://nozyzy.github.io/posts/grand-ecart/</link>
-    <pubDate>Fri, 26 Apr 2024 05:40:26 -0400</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/grand-ecart/</guid>
-    <description><![CDATA[404CTF - Grand Ecart Category Stéganographie
-Description En sortant de votre cours de gymnastique, vous tombez sur un étrange bouquin dans les vestiaires&hellip; À vous d&rsquo;en trouver tous les secrets.
-Files challenge.txt
-Difficulty MEDIUM - 987 points
-Author: @acmo0 Write up Salted Whale 🐳 We are given a large text file. By looking at it rapidly, it looks like it is the raw and complete content of the book &ldquo;Moby Dick&rdquo;]]></description>
-</item>
-<item>
+    <pubDate>Fri, 26 Apr 2024 05:40:26 -0400</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/grand-ecart/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Stéganographie</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>En sortant de votre cours de gymnastique, vous tombez sur un étrange bouquin dans les vestiaires&hellip; À vous d&rsquo;en trouver tous les secrets.</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/grand-ecart/challenge.txt" rel="">challenge.txt</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>MEDIUM</strong> - 987 points</p>
+<ul>
+<li>Author: <strong>@acmo0</strong></li>
+</ul>
+<hr>
+<p><img class="tw-inline" loading="lazy" src='/posts/grand-ecart/screen.png' srcset="/posts/grand-ecart/screen_hu_7d4fdd8ab2e76e92.webp 800w, /posts/grand-ecart/screen_hu_668865a6143f0e61.webp 1200w, /posts/grand-ecart/screen_hu_eec76ea085918c79.webp 1600w"   height="618" width="497"></p>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="salted-whale-whale" class="headerLink">
+    <a href="#salted-whale-whale" class="header-mark"></a>Salted Whale &#x1f433;</h3><p>We are given a large text file. By looking at it rapidly, it looks like it is the raw and complete content of the book &ldquo;<strong>Moby Dick</strong>&rdquo;</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/grand-ecart/mobydick.png' srcset="/posts/grand-ecart/mobydick_hu_bb00929ea79073e1.webp 800w, /posts/grand-ecart/mobydick_hu_e6af142ec2bd6308.webp 1200w, /posts/grand-ecart/mobydick_hu_7e328396a7d41518.webp 1600w"   height="844" width="413"></p>]]></description>
+</item><item>
     <title>The Shakespearean Mouse</title>
     <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
-    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
-    <description><![CDATA[BackdoorCTF 2023 - The Shakespearean Mouse Category Forensics
-Description wend f&rsquo;rward with this quest of yours, f&rsquo;r thee shalt findeth the flag at the endeth Attachments: https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip
-Files shakespeareanmouse.zip
-Difficulty 496 points
-Author: cy4n1d3 Write up The Shakespearan Langage Inside the zip file we got two files: out.bmp, and The Backdoor Lore containing only text, at first sight, the script of drama play.
-I rapidly think of a so of esoteric language, like Poetic or Whitespace, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.]]></description>
-</item>
-<item>
+    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>wend f&rsquo;rward with this quest of yours, f&rsquo;r thee shalt findeth the flag at the endeth Attachments: <a href="https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip" target="_blank" rel="noopener noreferrer">https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip</a></p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip" target="_blank" rel="noopener noreferrer">shakespeareanmouse.zip</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p>496 points</p>
+<ul>
+<li>Author: <strong>cy4n1d3</strong></li>
+</ul>
+<hr>
+<p><img class="tw-inline" loading="lazy" src='/posts/the-shakespearean-mouse/img.png' srcset="/posts/the-shakespearean-mouse/img_hu_27ebe08bd82c4cf6.webp 800w, /posts/the-shakespearean-mouse/img_hu_3c00313e5cd74a05.webp 1200w, /posts/the-shakespearean-mouse/img_hu_f8128d27b19f7013.webp 1600w"  alt="img.png" height="221" width="930"></p>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="the-shakespearan-langage" class="headerLink">
+    <a href="#the-shakespearan-langage" class="header-mark"></a>The Shakespearan Langage</h3><p>Inside the zip file we got two files: <strong>out.bmp</strong>, and <strong>The Backdoor Lore</strong> containing only text, at first sight, the script of drama play.</p>
+<p>I rapidly think of a so of <a href="https://esolangs.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer">esoteric language</a>, like <a href="https://esolangs.org/wiki/Poetic" target="_blank" rel="noopener noreferrer">Poetic</a> or <a href="https://esolangs.org/wiki/Whitespace" target="_blank" rel="noopener noreferrer">Whitespace</a>, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.</p>]]></description>
+</item><item>
     <title>Dark Side</title>
     <link>https://nozyzy.github.io/posts/dark_side/</link>
-    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/dark_side/</guid>
-    <description><![CDATA[Flag4All - Dark Side Category Steganography
-Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
-🇬🇧 You are a IT student and a mysterious person send an archive to the classe.]]></description>
-</item>
-<item>
-    <title>404CTF - Avez-vous vu les cascades du hérisson ?</title>
+    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/dark_side/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>&#x1f1eb;&#x1f1f7;
+Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe.
+Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip.
+À vous de retrouver ces réponses sur le compte.</p>
+<p>&#x1f1ec;&#x1f1e7;
+You are a IT student and a mysterious person send an archive to the classe.
+This person tells that all the answers for the following exams are behind an only account. To find this account, you have to follow the hidden hints that the archive will give you.
+Your turn to find this answers!</p>]]></description>
+</item><item>
+    <title>Avez-vous vu les cascades du hérisson ?</title>
     <link>https://nozyzy.github.io/posts/cascades_herisson/</link>
-    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
-    <description><![CDATA[404CTF - Avez-vous vu les cascades du hérisson ? Category Radio-Frequency
-Description Après avoir rencontré Simone, cette dernière vous propose de découvrir une nouvelle personne. Quoi de mieux qu’un cache-cache pour apprendre à mieux se connaître ? Cela vous changera de l&rsquo;air du café littéraire Le Procope. Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.]]></description>
-</item>
-<item>
-    <title>HeroCTF v5 - EMD</title>
+    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
+    <description><![CDATA[<h1 id="404ctf---avez-vous-vu-les-cascades-du-hérisson-" class="headerLink">
+    <a href="#404ctf---avez-vous-vu-les-cascades-du-h%c3%a9risson-" class="header-mark"></a>404CTF - Avez-vous vu les cascades du hérisson ?</h1><hr>
+<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Radio-Frequency</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>Après avoir rencontré Simone, cette dernière vous propose de découvrir une nouvelle personne. Quoi de mieux qu’un cache-cache pour apprendre à mieux se connaître ? Cela vous changera de l&rsquo;air du café littéraire Le Procope.
+Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.</p>]]></description>
+</item><item>
+    <title>EMD</title>
     <link>https://nozyzy.github.io/posts/emd/</link>
-    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/emd/</guid>
-    <description><![CDATA[HeroCTF v5 - EMD Category Steganography
-Description Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group. Some information to help you:
-The size of the pixel groups is 2 The size of the hidden message is 841 characters The image must be divided into groups containing 2 pixels that follow each other on the x-axis.]]></description>
-</item>
-<item>
+    <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/emd/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group.
+Some information to help you:</p>
+<ul>
+<li>The size of the pixel groups is 2</li>
+<li>The size of the hidden message is 841 characters</li>
+<li>The image must be divided into groups containing 2 pixels that follow each other on the x-axis.</li>
+<li>No secret key has been used during the encryption, so there is no random permutation of the pixels
+Good luck!</li>
+</ul>
+<p>This challenge uses the most basic &ldquo;Exploiting Modification Direction&rdquo; technique described by Xinpeng Zhang and Shuozhong Wang in their paper &ldquo;Efﬁcient Steganographic Embedding by Exploiting Modiﬁcation Direction&rdquo;</p>]]></description>
+</item><item>
     <title>Spirale</title>
     <link>https://nozyzy.github.io/posts/spirale/</link>
-    <pubDate>Thu, 03 Nov 2022 23:38:54 &#43;0100</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/spirale/</guid>
-    <description><![CDATA[Cybernight 2022 - Spirale Category Steganography
-Description tourne tourne petit moulin frappe frappe petite main
-Files chall_stegano
-Difficulty EASY
-Author: Marie-Jeanne Write up Il fait mal aux yeux celui-là
-En parcourant un peu le texte du fichier, puisque je ne trouvais rien sur https://www.aperisolve.com/, je me dis que ça doit être dans le texte
-En lisant la spirale, on voit que des caractères en majuscule apparaissent, et que ceux-ci commencent par CYBN]]></description>
-</item>
-<item>
+    <pubDate>Thu, 03 Nov 2022 23:38:54 &#43;0100</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/spirale/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>tourne tourne petit moulin frappe frappe petite main</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/Spirale/chall_stegano.png" rel="">chall_stegano</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>EASY</strong></p>
+<ul>
+<li>Author: <strong>Marie-Jeanne</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><p>Il fait mal aux yeux celui-là</p>
+<p>En parcourant un peu le texte du fichier, puisque je ne trouvais rien sur <a href="https://www.aperisolve.com/" target="_blank" rel="noopener noreferrer">https://www.aperisolve.com/</a>, je me dis que ça doit être dans le texte</p>
+<p>En lisant la spirale, on voit que des caractères en majuscule apparaissent, et que ceux-ci commencent par CYBN</p>
+<p>On se résout à ne pas l&rsquo;automatiser et le faire avec ses petits yeux, et on note toutes les majuscules, lettres et caractères spéciaux dans l&rsquo;ordre d&rsquo;arrivée
+<figure><a class="lightgallery" href="/Spirale/spirale_solved.png" title="Solved" data-thumbnail="/Spirale/spirale_solved.png" data-sub-html="<h2>Solved</h2><p>Solved</p>]]></description>
+</item><item>
     <title>Pyramide</title>
     <link>https://nozyzy.github.io/posts/pyramide/</link>
-    <pubDate>Thu, 03 Nov 2022 23:38:48 &#43;0100</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/pyramide/</guid>
-    <description><![CDATA[Cybernight 2022 - Pyramide Category Steganography
-Description Il faut parfois extraire la clef pour trouver la solution.
-Retrouvez ici une citation d&rsquo;un personnage de film. Le flag est son nom.
-Format de flag : CYBN{Auteur}
-Files triforce
-Difficulty MEDIUM - x points
-Author: Marie-Jeanne Write up Sois patient, apprends à lire Celui-là m&rsquo;a pris du temps alors qu&rsquo;il n&rsquo;était pas si compliqué
-Comme toujours quand j&rsquo;ai des chall stegano avec image, je l&rsquo;importe dans https://www.]]></description>
-</item>
-</channel>
+    <pubDate>Thu, 03 Nov 2022 23:38:48 &#43;0100</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/pyramide/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>Il faut parfois extraire la clef pour trouver la solution.</p>
+<p>Retrouvez ici une citation d&rsquo;un personnage de film. Le flag est son nom.</p>
+<p>Format de flag : CYBN{Auteur}</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/Pyramide/triforce.png" rel="">triforce</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>MEDIUM</strong> - x points</p>
+<ul>
+<li>Author: <strong>Marie-Jeanne</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="sois-patient-apprends-à-lire" class="headerLink">
+    <a href="#sois-patient-apprends-%c3%a0-lire" class="header-mark"></a>Sois patient, apprends à lire</h3><p>Celui-là m&rsquo;a pris du temps alors qu&rsquo;il n&rsquo;était pas si compliqué</p>
+<p>Comme toujours quand j&rsquo;ai des chall stegano avec image, je l&rsquo;importe dans <a href="https://www.aperisolve.com/" target="_blank" rel="noopener noreferrer">https://www.aperisolve.com/</a>, et je ne trouve <strong>rien d&rsquo;intéressant malheuresement</strong> (retenez bien)</p>]]></description>
+</item></channel>
 </rss>

@@ -7,22 +7,28 @@
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 11 Apr 2024 09:32:53 -0400</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/fcsc-2024/" rel="self" type="application/rss+xml" /><item>
     <title>SOC Simulator</title>
     <link>https://nozyzy.github.io/posts/soc-simulator/</link>
-    <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
-    <description><![CDATA[FCSC 2024 - SOC Simulator Category Forensics
-Description Introduction commune à la série SOC Simulator
-Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
-Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.]]></description>
-</item>
-<item>
+    <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>Introduction commune à la série SOC Simulator</p>
+<p>Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.</p>
+<p>Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.</p>]]></description>
+</item><item>
     <title>FCSC prechall 2024</title>
     <link>https://nozyzy.github.io/posts/fcsc_prechall_2024/</link>
-    <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/fcsc_prechall_2024/</guid>
-    <description><![CDATA[FCSC 2024 - FCSC prechall 2024 Category Intro
-Description Pour vous faire patienter jusqu&rsquo;au 5 avril 2024 à 14h pour le lancement du FCSC 2024, nous vous proposons cette année encore une épreuve de teasing ! Le point de départ est le jeu donné ci-dessous et vous permettra d&rsquo;aboutir à un flag au format FCSC{xxx}. La résolution de ce challenge apportera 1 point symbolique pour le FCSC 2024, et sera matérialisée sur le site par un 🔥 à côté des noms d&rsquo;utilisateur.]]></description>
-</item>
-</channel>
+    <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/fcsc_prechall_2024/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Intro</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>Pour vous faire patienter jusqu&rsquo;au 5 avril 2024 à 14h pour le lancement du FCSC 2024, nous vous proposons cette année encore une épreuve de teasing ! Le point de départ est le jeu donné ci-dessous et vous permettra d&rsquo;aboutir à un flag au format FCSC{xxx}. La résolution de ce challenge apportera 1 point symbolique pour le FCSC 2024, et sera matérialisée sur le site par un 🔥 à côté des noms d&rsquo;utilisateur.</p>]]></description>
+</item></channel>
 </rss>

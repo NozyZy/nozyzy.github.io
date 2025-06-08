@@ -1,145 +1,299 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>Disparue(s) - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Disparue(s)" />
-<meta property="og:description" content="Disparue(s) Category OSINT
-Description Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" /><title>Disparue(s) - NozZy</title><meta name="Description" content="French Cybersecurity Analyst and CTF enjoyer."><meta property="og:url" content="https://nozyzy.github.io/posts/disparues/">
+  <meta property="og:site_name" content="NozZy">
+  <meta property="og:title" content="Disparue(s)">
+  <meta property="og:description" content="CategoryOSINT
+DescriptionCe CTF est particulier, car il s’agit d’une seule et grande enquête en OSINT.
 Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.
-Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://nozyzy.github.io/posts/disparues/" /><meta property="og:image" content="https://nozyzy.github.io/posts/disparues/img.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-11-04T23:05:52+01:00" />
-<meta property="article:modified_time" content="2023-11-04T23:05:52+01:00" /><meta property="og:site_name" content="NozZy" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://nozyzy.github.io/posts/disparues/img.png"/>
-<meta name="twitter:title" content="Disparue(s)"/>
-<meta name="twitter:description" content="Disparue(s) Category OSINT
-Description Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.
+Author: Oscar Zulu Dead Man WalkingVous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n’a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-04T23:05:52+01:00">
+    <meta property="article:modified_time" content="2023-11-04T23:05:52+01:00">
+    <meta property="article:tag" content="OSINT">
+    <meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png">
+  <meta name="twitter:title" content="Disparue(s)">
+  <meta name="twitter:description" content="CategoryOSINT
+DescriptionCe CTF est particulier, car il s’agit d’une seule et grande enquête en OSINT.
 Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.
-Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie."/>
+Author: Oscar Zulu Dead Man WalkingVous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n’a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.">
+      <meta name="twitter:site" content="@Nozzouille">
 <meta name="application-name" content="NozZy">
-<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="NozZy">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><meta name="twitter:creator" content="@Nozzouille" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/disparues/" /><link rel="prev" href="https://nozyzy.github.io/posts/dark_side/" /><link rel="next" href="https://nozyzy.github.io/posts/youaremine/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<link rel="canonical" href="https://nozyzy.github.io/posts/disparues/" /><link rel="prev" href="https://nozyzy.github.io/posts/dark_side/" /><link rel="next" href="https://nozyzy.github.io/posts/youaremine/" />
+<link rel="stylesheet" href="/css/main.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">{"@context": "https://schema.org","@type": "BlogPosting",
         "headline": "Disparue(s)",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/nozyzy.github.io\/posts\/disparues\/"
+            "@id": "https://nozyzy.github.io/posts/disparues/"
         },"image": [{
                             "@type": "ImageObject",
-                            "url": "https:\/\/nozyzy.github.io\/posts\/disparues\/img.png",
+                            "url": "https://nozyzy.github.io/posts/disparues/img.png",
                             "width":  1000 ,
                             "height":  598 
-                        }],"genre": "posts","keywords": "OSINT","wordcount":  2203 ,
-        "url": "https:\/\/nozyzy.github.io\/posts\/disparues\/","datePublished": "2023-11-04T23:05:52+01:00","dateModified": "2023-11-04T23:05:52+01:00","publisher": {
+                        },{
+                            "@type": "ImageObject",
+                            "url": "https://nozyzy.github.io/posts/disparues/img.png",
+                            "width":  1000 ,
+                            "height":  598 
+                        }],"genre": "posts","keywords":["OSINT"],"wordcount":  2207 ,
+        "url": "https://nozyzy.github.io/posts/disparues/","datePublished": "2023-11-04T23:05:52+01:00","dateModified": "2023-11-04T23:05:52+01:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
-                "name": "NozZy"
+                "name": "NozZy",
+                "url": "nozyzy.github.io"
             },"description": ""
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    }</script></head>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+
+<body data-instant-intensity="viewport" class="tw-flex tw-min-h-screen tw-flex-col"><script>
+    function setTheme(theme) {
+      document.body.setAttribute('theme', theme); 
+      document.documentElement.className = theme;
+      document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');
+      if (theme === 'light') {
+        document.documentElement.classList.remove('tw-dark')
+      } else {
+        document.documentElement.classList.add('tw-dark')
+      }
+      window.theme = theme;   
+      window.isDark = window.theme !== 'light' 
+    }
+    function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+    function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+    if (window.localStorage && localStorage.getItem('theme')) {
+        let theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') {
+        setTheme(theme);
+        } else {
+            if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                setTheme('dark');
+            } else {
+                setTheme('light');
+            }
+        }
+      } else { 
+        if ('auto' === 'light' || 'auto' === 'dark') 
+            setTheme('auto'), saveTheme('auto'); 
+        else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');
+    }
+    let metaColors = {'light': '#f8f8f8','dark': '#161b22'}
+    getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    window.switchThemeEventSet = new Set()
+</script><div id="back-to-top"></div>
+    <div id="mask"></div><header class="desktop print:!tw-hidden" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="NozZy"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
-        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
-        data-sizes="auto"
-        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
-        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            <a href="/" title="NozZy"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src='/60878689_3489515195507601015.png'   alt="NozZy" height="32" width="32">NozZy</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a></div>
+            <div class="menu-inner"><a class="menu-item"
+                    href="/posts/"  title="Writeups" > Writeups </a><a class="menu-item"
+                    href="/articles/"  title="Articles" > Articles </a><a class="menu-item"
+                    href="/tags/" > Tags </a><a class="menu-item"
+                    href="/categories/" > Categories </a><a class="menu-item"
+                    href="/whoami" > ./whoami </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                    <input type="text"
+                        placeholder="Search titles or contents..."
+                        id="search-input-desktop">
+                    <button class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                    </button>
+                    <button class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"/></svg>
+                    </button>
+                    <span class="search-button search-loading tw-animate-spin" id="search-loading-desktop">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"/></svg>
+                    </span>
+                </span><button class="menu-item theme-switch" aria-label="Switch Theme">
+                    <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/></svg>
+                </button></div>
         </div>
     </div>
-</header><header class="mobile" id="header-mobile">
+</header><header class="mobile print:!tw-hidden" id="header-mobile">
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="NozZy"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
-        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
-        data-sizes="auto"
-        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
-        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+                <a href="/" title="NozZy"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src='/60878689_3489515195507601015.png'   alt="NozZy" height="32" width="32">NozZy</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
         <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
+                <div class="search mobile" id="search-mobile">
+                    <input type="text"
+                        placeholder="Search titles or contents..."
+                        id="search-input-mobile">
+                    <button class="search-button search-toggle tw-h-10" id="search-toggle-mobile" title="Search">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                    </button>
+                    <button class="search-button search-clear tw-h-fit" id="search-clear-mobile" title="Clear">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"/></svg>
+                    </button>
+                    <span class="search-button search-loading tw-animate-spin" id="search-loading-mobile">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"/></svg>
+                    </span>
+                </div>
+                <button class="search-cancel" id="search-cancel-mobile">
+                    Cancel
+                </button>
+            </div><a class="menu-item" href="/posts/" title="Writeups" >Writeups</a><a class="menu-item" href="/articles/" title="Articles" >Articles</a><a class="menu-item" href="/tags/" title="" >Tags</a><a class="menu-item" href="/categories/" title="" >Categories</a><a class="menu-item" href="/whoami" title="" >./whoami</a><button class="menu-item theme-switch tw-w-full" aria-label="Switch Theme">
+                <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/></svg>
+            </button></div>
     </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Disparue(s)</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/disparues/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Disparue(s)</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="04-11-2023">04-11-2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2203 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;11 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/disparues/img.png"
-        data-srcset="/posts/disparues/img.png, /posts/disparues/img.png 1.5x, /posts/disparues/img.png 2x"
-        data-sizes="auto"
-        alt="/posts/disparues/img.png"
-        title="/posts/disparues/img.png" /></div><div class="details toc" id="toc-static"  data-kept="">
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="tw-mx-4 tw-flex-1"><div class="toc print:!tw-hidden" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#dead-man-walking">Dead Man Walking</a></li>
+    <li><a href="#hard-target">Hard Target</a>
+      <ul>
+        <li><a href="#fresh">Fresh</a></li>
+        <li><a href="#killing-zoe">Killing Zoe</a></li>
+        <li><a href="#kiss-of-death">Kiss of Death</a></li>
+        <li><a href="#bad-company">Bad Company</a></li>
+        <li><a href="#nothing-to-lose">Nothing to Lose</a></li>
+      </ul>
+    </li>
+    <li><a href="#city-of-industry">City of Industry</a>
+      <ul>
+        <li><a href="#clear-and-present-danger">Clear and Present Danger</a></li>
+        <li><a href="#judge-dredd">Judge Dredd</a></li>
+        <li><a href="#albino-alligator">Albino Alligator</a></li>
+      </ul>
+    </li>
+    <li><a href="#guilty-as-sin">Guilty as Sin</a>
+      <ul>
+        <li><a href="#psycho">Psycho</a></li>
+      </ul>
+    </li>
+    <li><a href="#faster-pussycat-kill-kill">Faster Pussycat! Kill! Kill!</a>
+      <ul>
+        <li><a href="#captives">Captives</a></li>
+        <li><a href="#heavenly-creatures">Heavenly Creatures</a></li>
+        <li><a href="#donnie-brasco">Donnie Brasco</a></li>
+      </ul>
+    </li>
+    <li><a href="#last-man-standing">Last Man Standing</a>
+      <ul>
+        <li><a href="#tales-from-the-hood">Tales from the Hood</a></li>
+        <li><a href="#true-romance">True Romance</a></li>
+        <li><a href="#touch-of-evil">Touch of Evil</a></li>
+        <li><a href="#basic-instinct">Basic Instinct</a></li>
+        <li><a href="#the-glass-shield">The Glass Shield</a></li>
+      </ul>
+    </li>
+    <li><a href="#swordfish">Swordfish</a>
+      <ul>
+        <li><a href="#wargames">Wargames</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><dialog id="toc-dialog" class="tw-max-w-full tw-w-full tw-max-h-full tw-h-full tw-ml-16">
+        <div class="toc tw-mx-4 tw-max-w-full">
+            <h2 class="tw-mx-0 tw-my-6 tw-uppercase tw-text-2xl">Contents</h2>
+            <div class="toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#dead-man-walking">Dead Man Walking</a></li>
+    <li><a href="#hard-target">Hard Target</a>
+      <ul>
+        <li><a href="#fresh">Fresh</a></li>
+        <li><a href="#killing-zoe">Killing Zoe</a></li>
+        <li><a href="#kiss-of-death">Kiss of Death</a></li>
+        <li><a href="#bad-company">Bad Company</a></li>
+        <li><a href="#nothing-to-lose">Nothing to Lose</a></li>
+      </ul>
+    </li>
+    <li><a href="#city-of-industry">City of Industry</a>
+      <ul>
+        <li><a href="#clear-and-present-danger">Clear and Present Danger</a></li>
+        <li><a href="#judge-dredd">Judge Dredd</a></li>
+        <li><a href="#albino-alligator">Albino Alligator</a></li>
+      </ul>
+    </li>
+    <li><a href="#guilty-as-sin">Guilty as Sin</a>
+      <ul>
+        <li><a href="#psycho">Psycho</a></li>
+      </ul>
+    </li>
+    <li><a href="#faster-pussycat-kill-kill">Faster Pussycat! Kill! Kill!</a>
+      <ul>
+        <li><a href="#captives">Captives</a></li>
+        <li><a href="#heavenly-creatures">Heavenly Creatures</a></li>
+        <li><a href="#donnie-brasco">Donnie Brasco</a></li>
+      </ul>
+    </li>
+    <li><a href="#last-man-standing">Last Man Standing</a>
+      <ul>
+        <li><a href="#tales-from-the-hood">Tales from the Hood</a></li>
+        <li><a href="#true-romance">True Romance</a></li>
+        <li><a href="#touch-of-evil">Touch of Evil</a></li>
+        <li><a href="#basic-instinct">Basic Instinct</a></li>
+        <li><a href="#the-glass-shield">The Glass Shield</a></li>
+      </ul>
+    </li>
+    <li><a href="#swordfish">Swordfish</a>
+      <ul>
+        <li><a href="#wargames">Wargames</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+        </div>
+    </dialog><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single print:!tw-w-full print:!tw-max-w-none print:!tw-m-0 print:!tw-p-0"><h1 class="single-title" data-pagefind-meta="date:04-11-2023" data-pagefind-body>Disparue(s)</h1><h2 class="single-subtitle">Oscar Zulu - Disparue(s)</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><a href="nozyzy.github.io" title="Author" rel=" author" class="author">NozZy</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/writeups/"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>Writeups</a>&nbsp;<a href=""><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg></a></span></div>
+            <div class="post-meta-line"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;<time datetime="04-11-2023">04-11-2023</time>&nbsp;<svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg>&nbsp;<time datetime="04-11-2023">04-11-2023</time>&nbsp;<svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;2207 words&nbsp;
+                    <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;10 minutes&nbsp;</div>
+        </div><div class="featured-image"><img  loading="eager" src='/posts/disparues/img.png' srcset="/posts/disparues/img_hu_9fc8f1ca7bf897ab.webp 800w, /posts/disparues/img_hu_a27834281c84561b.webp 1200w, /posts/disparues/img_hu_670436812f339e0b.webp 1600w"   height="598" width="1000"></div><div class="details toc print:!tw-block" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                    <span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
@@ -190,22 +344,19 @@ Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="disparues">Disparue(s)</h1>
-<hr>
-<h2 id="category">Category</h2>
-<blockquote>
-<p>OSINT</p>
-</blockquote>
-<h2 id="description">Description</h2>
-<p>Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.</p>
+            </div><div class="content" id="content" data-pagefind-body><h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>OSINT</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>Ce CTF est particulier, car il s&rsquo;agit d&rsquo;une seule et grande enquête en OSINT.</p>
 <p>Ici, je partage tous les challenges que mon équipe et moi avons résolus, par ordre de catégories.</p>
 <ul>
 <li>Author: <strong>Oscar Zulu</strong></li>
 </ul>
 <hr>
-<h2 id="dead-man-walking">Dead Man Walking</h2>
-<blockquote>
-<p>Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.</p>
+<h2 id="dead-man-walking" class="headerLink">
+    <a href="#dead-man-walking" class="header-mark"></a>Dead Man Walking</h2><blockquote>
+  <p>Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.</p>
 <p>Ils sont incapables de vous donner plus de détails sur les circonstances, ce qui explique pourquoi les forces de l&rsquo;ordre n&rsquo;ont pas considéré la disparition comme inquiétante&hellip;</p>
 <p>Le fichier PDF joint rassemble le peu d&rsquo;informations que la famille a pu vous donner.</p>
 <p>Après leur avoir précisé que vous ne pourrez rien leur communiquer sans l&rsquo;accord d&rsquo;Ellen (si vous la retrouvez), mais que vous informerez celle-ci de leur inquiétude, vous acceptez la mission</p>
@@ -213,449 +364,611 @@ Author: Oscar Zulu Dead Man Walking Vous avez été sollicité(e) par la famille
 <p><strong>Dans quelle école Ellen a t-elle fait sa formation lors de sa reconversion ?</strong></p>
 <p>format du flag : <code>udemy</code></p>
 <p><em><strong>20 points</strong></em></p>
-</blockquote>
-<a class="lightgallery" href="/posts/disparues/img_1.png" title="/posts/disparues/img_1.png" data-thumbnail="/posts/disparues/img_1.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_1.png"
-            data-srcset="/posts/disparues/img_1.png, /posts/disparues/img_1.png 1.5x, /posts/disparues/img_1.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_1.png" width="955" height="955" />
-    </a>
+</blockquote><a class="lightgallery" href="/posts/disparues/img_1.png" title="" data-thumbnail="/posts/disparues/img_1.png"><img  loading="lazy" src='/posts/disparues/img_1.png' srcset="/posts/disparues/img_1_hu_45f960b52ccd048c.webp 800w, /posts/disparues/img_1_hu_3971a3acc3183a65.webp 1200w, /posts/disparues/img_1_hu_43529c544484c052.webp 1600w"   height="955" width="955"></a>
 <p>Début de l&rsquo;histoire !</p>
-<p>On recherche une Ellen, et son école. Son compte <a href="https://www.linkedin.com/in/ellen-gravist-jacoulet-a9924528a/" target="_blank" rel="noopener noreffer ">linkedin</a> est l&rsquo;endroit parfait pour ça.</p>
+<p>On recherche une Ellen, et son école. Son compte <a href="https://www.linkedin.com/in/ellen-gravist-jacoulet-a9924528a/" target="_blank" rel="noopener noreferrer">linkedin</a> est l&rsquo;endroit parfait pour ça.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Dead Man Walking<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>LiveMentor</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Dead Man Walking<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h2 id="hard-target">Hard Target</h2>
-<h3 id="fresh">Fresh</h3>
-<blockquote>
-<p>Afin de constituer le profil, vous poursuivez vos recherches. Quel est l&rsquo;intitulé de son nouveau métier, clairement indiqué dans son titre de profil ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>LiveMentor</code></div></div></div>
+<h2 id="hard-target" class="headerLink">
+    <a href="#hard-target" class="header-mark"></a>Hard Target</h2><h3 id="fresh" class="headerLink">
+    <a href="#fresh" class="header-mark"></a>Fresh</h3><blockquote>
+  <p>Afin de constituer le profil, vous poursuivez vos recherches. Quel est l&rsquo;intitulé de son nouveau métier, clairement indiqué dans son titre de profil ?</p>
 <p>Format du flag : <code>employée de libre service</code></p>
 <p><em><strong>10 points</strong></em></p>
-</blockquote>
-<p>Sur son compte <a href="https://www.linkedin.com/in/ellen-gravist-jacoulet-a9924528a/" target="_blank" rel="noopener noreffer ">linkedin</a> de même.</p>
+</blockquote><p>Sur son compte <a href="https://www.linkedin.com/in/ellen-gravist-jacoulet-a9924528a/" target="_blank" rel="noopener noreferrer">linkedin</a> de même.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Fresh<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Web Content Writer</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Fresh<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="killing-zoe">Killing Zoe</h3>
-<blockquote>
-<p>Vous commencez à avoir une idée de qui est Ellen, et certaines lectures sont assez claires sur son état d’esprit au moment de sa disparition… Mais elle a clairement été aidée. Quel est le prénom de la personne qui lui permet de prendre un nouveau départ dans sa vie ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Web Content Writer</code></div></div></div>
+<h3 id="killing-zoe" class="headerLink">
+    <a href="#killing-zoe" class="header-mark"></a>Killing Zoe</h3><blockquote>
+  <p>Vous commencez à avoir une idée de qui est Ellen, et certaines lectures sont assez claires sur son état d’esprit au moment de sa disparition… Mais elle a clairement été aidée. Quel est le prénom de la personne qui lui permet de prendre un nouveau départ dans sa vie ?</p>
 <p>Format du flag : <code>antonin</code></p>
 <p><em><strong>20 points</strong></em></p>
-</blockquote>
-<p>Ellen partage des articles de son compte <a href="https://medium.com/@ellen.gravist" target="_blank" rel="noopener noreffer ">Medium</a>.</p>
+</blockquote><p>Ellen partage des articles de son compte <a href="https://medium.com/@ellen.gravist" target="_blank" rel="noopener noreferrer">Medium</a>.</p>
 <p>Ce n&rsquo;est pas dans l&rsquo;un d&rsquo;entre eux que l&rsquo;on trouvera la réponse, bien que l&rsquo;on apprenne l&rsquo;état psychologique dans lequel se trouve Ellen (sa conversion pro et son rapport à la mort)</p>
-<p>Sur cette page par contre, elle donne le lien de son <a href="https://www.wattpad.com/user/EllenGravist" target="_blank" rel="noopener noreffer ">Wattpad</a>, dans lequel on trouve son journal. Au cours des 5 chapitres, elle fait la rencontre de <strong>Marianne</strong>. Cette rencontre va bousculer sa vie.</p>
+<p>Sur cette page par contre, elle donne le lien de son <a href="https://www.wattpad.com/user/EllenGravist" target="_blank" rel="noopener noreferrer">Wattpad</a>, dans lequel on trouve son journal. Au cours des 5 chapitres, elle fait la rencontre de <strong>Marianne</strong>. Cette rencontre va bousculer sa vie.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Killing Zoe<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Marianne</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Killing Zoe<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="kiss-of-death">Kiss of Death</h3>
-<blockquote>
-<p>Vous avez trouvé son journal, qu’elle rédige avec un certain talent, mais il semble que la piste s’arrête là… Il vous faut maintenant poursuivre votre enquête pour savoir ce qu’il est advenu d’elle.</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Marianne</code></div></div></div>
+<h3 id="kiss-of-death" class="headerLink">
+    <a href="#kiss-of-death" class="header-mark"></a>Kiss of Death</h3><blockquote>
+  <p>Vous avez trouvé son journal, qu’elle rédige avec un certain talent, mais il semble que la piste s’arrête là… Il vous faut maintenant poursuivre votre enquête pour savoir ce qu’il est advenu d’elle.</p>
 <p>De quel peintre du XVIIe siècle a-t-elle partagé une oeuvre ?</p>
 <p>Format du flag : <code>Jean Jacques Picasso</code></p>
 <p><em><strong>50 points</strong></em></p>
-</blockquote>
-<p>Les lectures de son journal nous apprennent deux choses essentielles ici :</p>
+</blockquote><p>Les lectures de son journal nous apprennent deux choses essentielles ici :</p>
 <ul>
 <li>Elle a changé de nom, pour devenir <strong>Perséphonia Aidoneus</strong></li>
 <li>Elle a un récent &ldquo;blog sur cette vieille plateforme à [son] nouveau nom&rdquo;</li>
 </ul>
 <p>Celui-là m&rsquo;a donné du fil à retordre pour pas grand-chose. En herchant des vieux sites de blog on tombe sur Skyblog (qui a fermé la veille de l&rsquo;ouverture de son compte wattpad), Myspace ou encore tumblr.</p>
-<p>Il se trouve qu&rsquo;en cherchant son nom sur Tumblr, on tombe sur son <a href="https://www.tumblr.com/persephonia-aidoneus" target="_blank" rel="noopener noreffer ">profil</a>.</p>
+<p>Il se trouve qu&rsquo;en cherchant son nom sur Tumblr, on tombe sur son <a href="https://www.tumblr.com/persephonia-aidoneus" target="_blank" rel="noopener noreferrer">profil</a>.</p>
 <p>Dessus, elle partage une peinture de Peter Paul Rubens, datée de 1630-35.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Kiss of Death<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Peter Paul Rubens</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Kiss of Death<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="bad-company">Bad Company</h3>
-<blockquote>
-<p>Avant de continuer, vous prenez quelques minutes pour faire un point et relire tous les renseignements que vous avez trouvés. Il semble que votre enquête prenne la direction d’une secte dans laquelle Ellen aurait été recrutée. Quel est le nom de cette secte ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Peter Paul Rubens</code></div></div></div>
+<h3 id="bad-company" class="headerLink">
+    <a href="#bad-company" class="header-mark"></a>Bad Company</h3><blockquote>
+  <p>Avant de continuer, vous prenez quelques minutes pour faire un point et relire tous les renseignements que vous avez trouvés. Il semble que votre enquête prenne la direction d’une secte dans laquelle Ellen aurait été recrutée. Quel est le nom de cette secte ?</p>
 <p>Format du flag : <code>Les oncles d'elise</code></p>
 <p><em><strong>10 points</strong></em></p>
-</blockquote>
-<p>Le nom est cit sur son Medium et dans son journal : <strong>Les Enfants d&rsquo;Hades</strong></p>
+</blockquote><p>Le nom est cit sur son Medium et dans son journal : <strong>Les Enfants d&rsquo;Hades</strong></p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Bad Company<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Les Enfants d'Hades</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Bad Company<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="nothing-to-lose">Nothing to Lose</h3>
-<blockquote>
-<p>Vous souhaitez en avoir le cœur net. Sans doute pourrez-vous trouver un email parmi les informations disponibles.</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Les Enfants d'Hades</code></div></div></div>
+<h3 id="nothing-to-lose" class="headerLink">
+    <a href="#nothing-to-lose" class="header-mark"></a>Nothing to Lose</h3><blockquote>
+  <p>Vous souhaitez en avoir le cœur net. Sans doute pourrez-vous trouver un email parmi les informations disponibles.</p>
 <p>Format du flag : <code>nom.prenom@untrucavantle.com</code></p>
 <p><em><strong>70 points</strong></em></p>
-</blockquote>
-<p>Un compte tumblr permet d&rsquo;archiver des posts. Mais on peut retrouver ces posts en cliquant sur <i class="fa-solid fa-ellipsis" aria-hidden="true"></i>.</p>
+</blockquote><p>Un compte tumblr permet d&rsquo;archiver des posts. Mais on peut retrouver ces posts en cliquant sur <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg>.</p>
 <p>Un de ces posts est une photo nue floutée, probablement la photo dont elle parle dans son journal, prise par un certain G.</p>
 <p>En dessous cette photo, on peut y trouver son mail, avec une incitation à prendre contact avec elle.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Nothing to Lose<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>persephonia.aidoneus@proton.me</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Nothing to Lose<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h2 id="city-of-industry">City of Industry</h2>
-<h3 id="clear-and-present-danger">Clear and Present Danger</h3>
-<blockquote>
-<p>Comme toute organisation moderne, la secte doit avoir un canal d’information officiel. Il faudrait l&rsquo;identifier.</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>persephonia.aidoneus@proton.me</code></div></div></div>
+<h2 id="city-of-industry" class="headerLink">
+    <a href="#city-of-industry" class="header-mark"></a>City of Industry</h2><h3 id="clear-and-present-danger" class="headerLink">
+    <a href="#clear-and-present-danger" class="header-mark"></a>Clear and Present Danger</h3><blockquote>
+  <p>Comme toute organisation moderne, la secte doit avoir un canal d’information officiel. Il faudrait l&rsquo;identifier.</p>
 <p>Format du flag : <code>informations.com</code></p>
 <p><em><strong>50 points</strong></em></p>
-</blockquote>
-<p>Sous un de ses posts, on retrouve le hashtag <code>#enfantsdhades.com</code>.</p>
+</blockquote><p>Sous un de ses posts, on retrouve le hashtag <code>#enfantsdhades.com</code>.</p>
 <p>Il s&rsquo;agit bien de leur site web.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Clear and Present Danger<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>enfantsdhades.com</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Clear and Present Danger<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="judge-dredd">Judge Dredd</h3>
-<blockquote>
-<p>Obtenez le pseudo du responsable de la sécurité.</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>enfantsdhades.com</code></div></div></div>
+<h3 id="judge-dredd" class="headerLink">
+    <a href="#judge-dredd" class="header-mark"></a>Judge Dredd</h3><blockquote>
+  <p>Obtenez le pseudo du responsable de la sécurité.</p>
 <p>exemple : <code>mickey</code></p>
 <p><em><strong>150 points</strong></em></p>
-</blockquote>
-<p>Il y a deux façons de faire.</p>
+</blockquote><p>Il y a deux façons de faire.</p>
 <p>Ma première trouvaille a été ce commentaire, laissé sous le premier post d&rsquo;Ellen :</p>
-<a class="lightgallery" href="/posts/disparues/img_2.png" title="/posts/disparues/img_2.png" data-thumbnail="/posts/disparues/img_2.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_2.png"
-            data-srcset="/posts/disparues/img_2.png, /posts/disparues/img_2.png 1.5x, /posts/disparues/img_2.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_2.png" width="597" height="154" />
-    </a>
-<p>La page tumblr de cette personne nous renvoie vers son <a href="https://kronosantihades.wordpress.com" target="_blank" rel="noopener noreffer ">blog</a>, où il dénonces les activités de la secte.</p>
+<a class="lightgallery" href="/posts/disparues/img_2.png" title="" data-thumbnail="/posts/disparues/img_2.png"><img  loading="lazy" src='/posts/disparues/img_2.png' srcset="/posts/disparues/img_2_hu_1b536fabfa686f82.webp 800w, /posts/disparues/img_2_hu_924f980b84685a5c.webp 1200w, /posts/disparues/img_2_hu_6d5c9df35e67fa46.webp 1600w"   height="154" width="597"></a>
+<p>La page tumblr de cette personne nous renvoie vers son <a href="https://kronosantihades.wordpress.com" target="_blank" rel="noopener noreferrer">blog</a>, où il dénonce les activités de la secte.</p>
 <p>Son dernier poste parle d&rsquo;un certain dénommé <strong>H.</strong>, responsable de la sécurité. Notre cible.</p>
-<figure><a class="lightgallery" href="/posts/disparues/img_3.png" title="H. Responsable Sécurité" data-thumbnail="/posts/disparues/img_3.png" data-sub-html="<h2>H. Responsable Sécurité</h2><p>H. Responsable Sécurité</p>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_3.png"
-            data-srcset="/posts/disparues/img_3.png, /posts/disparues/img_3.png 1.5x, /posts/disparues/img_3.png 2x"
-            data-sizes="auto"
-            alt="H. Responsable Sécurité" width="1024" height="1024" />
-    </a><figcaption class="image-caption">H. Responsable Sécurité</figcaption>
+<figure><a class="lightgallery" href="/posts/disparues/img_3.png" title="H. Responsable Sécurité" data-thumbnail="/posts/disparues/img_3.png" data-sub-html="<h2>H. Responsable Sécurité</h2><p>H. Responsable Sécurité</p>"><img  loading="lazy" src='/posts/disparues/img_3.png' srcset="/posts/disparues/img_3_hu_fbbaa0ede3789c01.webp 800w, /posts/disparues/img_3_hu_e8e8885722344a5e.webp 1200w, /posts/disparues/img_3_hu_df0b24846abb965d.webp 1600w"  alt="H. Responsable Sécurité" height="1024" width="1024"></a><figcaption class="image-caption">H. Responsable Sécurité</figcaption>
     </figure>
 <p>Or si l&rsquo;on clique sur le nom du post, on ouvre le post en entier. Ce dernier porte l&rsquo;url : <code>https://kronosantihades.wordpress.com/2023/09/05/heracles-sans-doute-le-pire-de-tous/</code></p>
 <p>On en déduit qu&rsquo;<strong>Heracles</strong> est son pseudo.</p>
 <p>Mais puisque je ne suis pas quelqu&rsquo;un de simple, j&rsquo;ai d&rsquo;abord trouvé la seconde solution.</p>
 <p>En regardant le <code>/robots.txt</code> du site de la secte, une page en particulier retient notre attention :</p>
-<pre tabindex="0"><code>User-Agent: *
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">text</p>
+      </button>
+
+   <div class="tw-flex">
+      <button 
+        class="
+          line-number-button
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.show-line-numbers]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle line numbers"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"/></svg></button>
+
+      <button 
+        class="
+          wrap-code-button
+          tw-select-none 
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.is-wrap]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle code wrap"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></button>
+      
+      <button 
+        class="
+          copy-code-button
+          tw-select-none
+          tw-mx-2 
+          tw-hidden
+          group-[.is-open]:tw-block
+          hover:tw-text-fgColor-link 
+          print:!tw-hidden"
+        title="Copy code">
+          <span class="copy-icon tw-block"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"/></svg></span>
+          <span class="check-icon tw-hidden"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg></span>
+      </button>
+        
+      <button 
+        class="
+          tw-select-none 
+          tw-mx-2 
+          tw-block 
+          group-[.is-open]:tw-hidden 
+          print:!tw-hidden" 
+        disabled
+        aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg></button>
+    </div>
+  </div>
+  <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
+    id="codeblock-id-1" 
+    class="
+      chroma 
+      !tw-block 
+      tw-p-0
+      tw-m-0
+      tw-transition-[max-height] 
+      tw-duration-500 
+      tw-ease-in-out 
+      group-[.is-closed]:!tw-max-h-0 
+      group-[.is-wrap]:tw-text-wrap
+      tw-overflow-y-hidden
+      tw-overflow-x-auto
+      tw-scrollbar-thin
+      "><pre tabindex="0"><code>User-Agent: *
 Sitemap: https://enfantsdhades.com/sitemap.xml
 Disallow: /CHANGELOG.txt
 ...
 Disallow: /vfrrghertevb34535lkh2Ohh00hLhkl0iujd39hhkbekzjiceluiquivoitcaestfort909878987
 Allow: /safebrowsing/diagnostic
 ...
-Disallow: /nullze/
-</code></pre><p>La page <code>https://enfantsdhades.com/vfrrghertevb34535lkh2Ohh00hLhkl0iujd39hhkbekzjiceluiquivoitcaestfort909878987/</code> permet un directory listing, donc de se ballader dans les sous-dossiers :
-<a class="lightgallery" href="/posts/disparues/img_4.png" title="/posts/disparues/img_4.png" data-thumbnail="/posts/disparues/img_4.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_4.png"
-            data-srcset="/posts/disparues/img_4.png, /posts/disparues/img_4.png 1.5x, /posts/disparues/img_4.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_4.png" width="1288" height="202" />
-    </a></p>
+Disallow: /nullze/</code></pre></code></pre>
+</div>
+<p>La page <code>https://enfantsdhades.com/vfrrghertevb34535lkh2Ohh00hLhkl0iujd39hhkbekzjiceluiquivoitcaestfort909878987/</code> permet un directory listing, donc de se ballader dans les sous-dossiers :
+<a class="lightgallery" href="/posts/disparues/img_4.png" title="" data-thumbnail="/posts/disparues/img_4.png"><img  loading="lazy" src='/posts/disparues/img_4.png' srcset="/posts/disparues/img_4_hu_7d3e1166ab52b2a6.webp 800w, /posts/disparues/img_4_hu_ad49a28a66cced07.webp 1200w, /posts/disparues/img_4_hu_9e241c7f934ee1cb.webp 1600w"   height="202" width="1288"></a></p>
 <p>À l&rsquo;intérieur de <code>/org</code> se trouve comme seul fichier un <code>organigramme.pdf</code>, contenant ces informations :</p>
-<a class="lightgallery" href="/posts/disparues/img_6.png" title="/posts/disparues/img_6.png" data-thumbnail="/posts/disparues/img_6.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_6.png"
-            data-srcset="/posts/disparues/img_6.png, /posts/disparues/img_6.png 1.5x, /posts/disparues/img_6.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_6.png" width="896" height="767" />
-    </a>
+<a class="lightgallery" href="/posts/disparues/img_6.png" title="" data-thumbnail="/posts/disparues/img_6.png"><img  loading="lazy" src='/posts/disparues/img_6.png' srcset="/posts/disparues/img_6_hu_685fe4a512452da4.webp 800w, /posts/disparues/img_6_hu_4d32de5059c22570.webp 1200w, /posts/disparues/img_6_hu_d52c1007668547b2.webp 1600w"   height="767" width="896"></a>
 <p>Nous retrouvons bien le pseudo de notre responsable sécurité.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Judge Dredd<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>enfantsdhades.com</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Judge Dredd<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="albino-alligator">Albino Alligator</h3>
-<blockquote>
-<p>Le responsable de la sécurité doit savoir beaucoup de choses ! Il faut à tout prix l&rsquo;identifier ! Trouvez sa véritable identité.</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>enfantsdhades.com</code></div></div></div>
+<h3 id="albino-alligator" class="headerLink">
+    <a href="#albino-alligator" class="header-mark"></a>Albino Alligator</h3><blockquote>
+  <p>Le responsable de la sécurité doit savoir beaucoup de choses ! Il faut à tout prix l&rsquo;identifier ! Trouvez sa véritable identité.</p>
 <p>format du flag : <code>godefroy salsepareille</code> (prénom nom)</p>
 <p><em><strong>200 points</strong></em></p>
-</blockquote>
-<p>Pour celui-là, il fallait avoir trouvé l&rsquo;organigramme.</p>
+</blockquote><p>Pour celui-là, il fallait avoir trouvé l&rsquo;organigramme.</p>
 <p>Ce dernier nous apprend que chaque membre de la direction possède un mail de la forme <code>nom@enfantsdhadescom</code>, donc celui d&rsquo;Heracles est <code>heracles@enfantsdhades.com </code></p>
-<p>À l&rsquo;aide d&rsquo;un outil de recherche de ompte en ligne à partir d&rsquo;un email, tel qu&rsquo;<a href="https://epieos.com/" target="_blank" rel="noopener noreffer ">Epieos</a>, on peut trouver que notre bonhomme possède un compte <a href="https://trello.com" target="_blank" rel="noopener noreffer ">Trello</a>.</p>
-<a class="lightgallery" href="/posts/disparues/img_7.png" title="/posts/disparues/img_7.png" data-thumbnail="/posts/disparues/img_7.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_7.png"
-            data-srcset="/posts/disparues/img_7.png, /posts/disparues/img_7.png 1.5x, /posts/disparues/img_7.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_7.png" width="752" height="375" />
-    </a>
+<p>À l&rsquo;aide d&rsquo;un outil de recherche de ompte en ligne à partir d&rsquo;un email, tel qu&rsquo;<a href="https://epieos.com/" target="_blank" rel="noopener noreferrer">Epieos</a>, on peut trouver que notre bonhomme possède un compte <a href="https://trello.com" target="_blank" rel="noopener noreferrer">Trello</a>.</p>
+<a class="lightgallery" href="/posts/disparues/img_7.png" title="" data-thumbnail="/posts/disparues/img_7.png"><img  loading="lazy" src='/posts/disparues/img_7.png' srcset="/posts/disparues/img_7_hu_f0a687223f6dd2.webp 800w, /posts/disparues/img_7_hu_25c92023a9635e2c.webp 1200w, /posts/disparues/img_7_hu_4448092904cd038c.webp 1600w"   height="375" width="752"></a>
 <p>Or, l&rsquo;obtention des détails du compte nécessite un compte payant à Epieos. Mais il y a moyen de faire sans.</p>
 <p>En se créant un compte sur Trello, on peut ajouter des personnes par leur adresse mail à notre espace de travail. Or là, il fallait avoir une astuce technique.</p>
 <p>Puisque Trello auto-détecte le compte en saisissant uniquement l&rsquo;adresse mail, le client effectue donc une requête pour récupérer les infos de ce compte :</p>
-<a class="lightgallery" href="/posts/disparues/img_8.png" title="/posts/disparues/img_8.png" data-thumbnail="/posts/disparues/img_8.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_8.png"
-            data-srcset="/posts/disparues/img_8.png, /posts/disparues/img_8.png 1.5x, /posts/disparues/img_8.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_8.png" width="356" height="180" />
-    </a>
+<a class="lightgallery" href="/posts/disparues/img_8.png" title="" data-thumbnail="/posts/disparues/img_8.png"><img  loading="lazy" src='/posts/disparues/img_8.png' srcset="/posts/disparues/img_8_hu_2d44e64cabb9102d.webp 800w, /posts/disparues/img_8_hu_e3584633d3b8521e.webp 1200w, /posts/disparues/img_8_hu_da5e3d57df2f04ec.webp 1600w"   height="180" width="356"></a>
 <p>On peut alors trouver dans les requêtes web envoyées, la réponse au fetch de ce compte :</p>
-<a class="lightgallery" href="/posts/disparues/img_9.png" title="/posts/disparues/img_9.png" data-thumbnail="/posts/disparues/img_9.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_9.png"
-            data-srcset="/posts/disparues/img_9.png, /posts/disparues/img_9.png 1.5x, /posts/disparues/img_9.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_9.png" width="1417" height="420" />
-    </a>
+<a class="lightgallery" href="/posts/disparues/img_9.png" title="" data-thumbnail="/posts/disparues/img_9.png"><img  loading="lazy" src='/posts/disparues/img_9.png' srcset="/posts/disparues/img_9_hu_5a5719b07ba8e31d.webp 800w, /posts/disparues/img_9_hu_3683ea4f867842dd.webp 1200w, /posts/disparues/img_9_hu_8da2f81073f0ff76.webp 1600w"   height="420" width="1417"></a>
 <p>On apprend, grâce à cela, le nom du compte Trello : <code>heracles34</code>.</p>
-<p>En s&rsquo;inspirant du lien de mon compte public, je peux donc trouver celui d&rsquo;Heracles grâce à son pseudo : <a href="https://trello.com/u/heracles34" target="_blank" rel="noopener noreffer ">https://trello.com/u/heracles34</a></p>
-<p>Ce dernier nous donne accès à son tableau, avec des tâches concernant la secte. L&rsquo;une d&rsquo;elle le concerne directement, puisqu&rsquo;elle contient un lien <a href="https://drive.proton.me/urls/C5AHVF5V04#S6gzfi8xkgcY" target="_blank" rel="noopener noreffer ">Proton Drive</a>, avec un document administratif à son nom dedans :</p>
-<a class="lightgallery" href="/posts/disparues/img_10.png" title="/posts/disparues/img_10.png" data-thumbnail="/posts/disparues/img_10.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_10.png"
-            data-srcset="/posts/disparues/img_10.png, /posts/disparues/img_10.png 1.5x, /posts/disparues/img_10.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_10.png" width="743" height="423" />
-    </a>
+<p>En s&rsquo;inspirant du lien de mon compte public, je peux donc trouver celui d&rsquo;Heracles grâce à son pseudo : <a href="https://trello.com/u/heracles34" target="_blank" rel="noopener noreferrer">https://trello.com/u/heracles34</a></p>
+<p>Ce dernier nous donne accès à son tableau, avec des tâches concernant la secte. L&rsquo;une d&rsquo;elle le concerne directement, puisqu&rsquo;elle contient un lien <a href="https://drive.proton.me/urls/C5AHVF5V04#S6gzfi8xkgcY" target="_blank" rel="noopener noreferrer">Proton Drive</a>, avec un document administratif à son nom dedans :</p>
+<a class="lightgallery" href="/posts/disparues/img_10.png" title="" data-thumbnail="/posts/disparues/img_10.png"><img  loading="lazy" src='/posts/disparues/img_10.png' srcset="/posts/disparues/img_10_hu_b4e56649a7b3fc54.webp 800w, /posts/disparues/img_10_hu_58f48c6574b6984.webp 1200w, /posts/disparues/img_10_hu_11387d6797d1520f.webp 1600w"   height="423" width="743"></a>
 <p>Heracles s&rsquo;appelle en réalité <strong>Guillaume Tacheleron</strong></p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Albino Alligator<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Guillaume Tacheleron</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Albino Alligator<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h2 id="guilty-as-sin">Guilty as Sin</h2>
-<h3 id="psycho">Psycho</h3>
-<blockquote>
-<p>En vous basant sur ce que vous avez trouvé jusqu’ici, vous devriez pouvoir ajouter un nouveau chapitre à votre dossier. Quel pseudo utilise le chef de la secte ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Guillaume Tacheleron</code></div></div></div>
+<h2 id="guilty-as-sin" class="headerLink">
+    <a href="#guilty-as-sin" class="header-mark"></a>Guilty as Sin</h2><h3 id="psycho" class="headerLink">
+    <a href="#psycho" class="header-mark"></a>Psycho</h3><blockquote>
+  <p>En vous basant sur ce que vous avez trouvé jusqu’ici, vous devriez pouvoir ajouter un nouveau chapitre à votre dossier. Quel pseudo utilise le chef de la secte ?</p>
 <p>format du flag : <code>poseidon</code></p>
 <p><em><strong>30 points</strong></em></p>
-</blockquote>
-<p>Tout en haut de l&rsquo;organigramme, on retrouve <strong>Sarapis</strong></p>
+</blockquote><p>Tout en haut de l&rsquo;organigramme, on retrouve <strong>Sarapis</strong></p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Psycho<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Sarapis</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Psycho<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h2 id="faster-pussycat-kill-kill">Faster Pussycat! Kill! Kill!</h2>
-<h3 id="captives">Captives</h3>
-<blockquote>
-<p>Au vue des informations que vous avez trouvées, nul doute qu’Ellen n’est pas la seule victime. Pourrez-vous découvrir les pseudonymes des autres jeunes femmes sous influence ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Sarapis</code></div></div></div>
+<h2 id="faster-pussycat-kill-kill" class="headerLink">
+    <a href="#faster-pussycat-kill-kill" class="header-mark"></a>Faster Pussycat! Kill! Kill!</h2><h3 id="captives" class="headerLink">
+    <a href="#captives" class="header-mark"></a>Captives</h3><blockquote>
+  <p>Au vue des informations que vous avez trouvées, nul doute qu’Ellen n’est pas la seule victime. Pourrez-vous découvrir les pseudonymes des autres jeunes femmes sous influence ?</p>
 <p>Format du Flag : <code>alexia siri</code> (ordre alphabetique)</p>
 <p><em><strong>100 points</strong></em></p>
-</blockquote>
-<p>L&rsquo;étape pour y arriver, bien qu&rsquo;assez détachée du challenge à mon sens, eu été <strong>d&rsquo;envoyer un mail à <a href="mailto:persephonia.aidoneus@proton.me" rel="">persephonia.aidoneus@proton.me</a></strong>.</p>
+</blockquote><p>L&rsquo;étape pour y arriver, bien qu&rsquo;assez détachée du challenge à mon sens, eu été <strong>d&rsquo;envoyer un mail à <a href="mailto:persephonia.aidoneus@proton.me" rel="">persephonia.aidoneus@proton.me</a></strong>.</p>
 <p>Voici la réponse que nous obtenons :</p>
-<pre tabindex="0"><code>Es tu prêt à comprendre que notre corps n&#39;est qu&#39;un vaisseau destiné a servir les plaisirs et les souffrances de notre âme ?
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">text</p>
+      </button>
+
+   <div class="tw-flex">
+      <button 
+        class="
+          line-number-button
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.show-line-numbers]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle line numbers"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"/></svg></button>
+
+      <button 
+        class="
+          wrap-code-button
+          tw-select-none 
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.is-wrap]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle code wrap"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></button>
+      
+      <button 
+        class="
+          copy-code-button
+          tw-select-none
+          tw-mx-2 
+          tw-hidden
+          group-[.is-open]:tw-block
+          hover:tw-text-fgColor-link 
+          print:!tw-hidden"
+        title="Copy code">
+          <span class="copy-icon tw-block"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"/></svg></span>
+          <span class="check-icon tw-hidden"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg></span>
+      </button>
+        
+      <button 
+        class="
+          tw-select-none 
+          tw-mx-2 
+          tw-block 
+          group-[.is-open]:tw-hidden 
+          print:!tw-hidden" 
+        disabled
+        aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg></button>
+    </div>
+  </div>
+  <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
+    id="codeblock-id-2" 
+    class="
+      chroma 
+      !tw-block 
+      tw-p-0
+      tw-m-0
+      tw-transition-[max-height] 
+      tw-duration-500 
+      tw-ease-in-out 
+      group-[.is-closed]:!tw-max-h-0 
+      group-[.is-wrap]:tw-text-wrap
+      tw-overflow-y-hidden
+      tw-overflow-x-auto
+      tw-scrollbar-thin
+      "><pre tabindex="0"><code>Es tu prêt à comprendre que notre corps n&#39;est qu&#39;un vaisseau destiné a servir les plaisirs et les souffrances de notre âme ?
 ul23ocgxwgj7wi455ncpiegylrzqmisd7uwh2hxjsmxgy2wjgax35tad.onion
 
-NB : Les éléments créés dans le cadre de cette enquête et dans ce mail sont purement fictifs et strictement interdits aux mineurs.
-</code></pre><p>Un lien tor, qui amène sur une page qui parle des 3 nouvelles recrues qui passeront bientôt, et certainement, la cérémonie pour devenir des filles d&rsquo;Hades.</p>
+NB : Les éléments créés dans le cadre de cette enquête et dans ce mail sont purement fictifs et strictement interdits aux mineurs.</code></pre></code></pre>
+</div>
+<p>Un lien tor, qui amène sur une page qui parle des 3 nouvelles recrues qui passeront bientôt, et certainement, la cérémonie pour devenir des filles d&rsquo;Hades.</p>
 <p>Les trois noms sont : <strong>Persephone</strong>, <strong>Demeter</strong> et <strong>Macarie</strong></p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Captives<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>demeter macarie</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Captives<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="heavenly-creatures">Heavenly Creatures</h3>
-<blockquote>
-<p>Vous avez découvert un site internet terrifiant… comme vous l’imaginiez, ces jeunes filles ne sont pas protégées par la secte, mais au contraire manipulées pour devenir les proies d’hommes prêts à payer pour abuser d’elles. Bien décidé à les sortir de ce piège, vous continuez votre enquête. Quel est l’auteur des photos du site ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>demeter macarie</code></div></div></div>
+<h3 id="heavenly-creatures" class="headerLink">
+    <a href="#heavenly-creatures" class="header-mark"></a>Heavenly Creatures</h3><blockquote>
+  <p>Vous avez découvert un site internet terrifiant… comme vous l’imaginiez, ces jeunes filles ne sont pas protégées par la secte, mais au contraire manipulées pour devenir les proies d’hommes prêts à payer pour abuser d’elles. Bien décidé à les sortir de ce piège, vous continuez votre enquête. Quel est l’auteur des photos du site ?</p>
 <p>Format du flag : <code>alain deloin</code></p>
 <p><em><strong>50 points</strong></em></p>
-</blockquote>
-<p>Remonter jusqu&rsquo;au photographe.. On a déjà vu qu&rsquo;il se faisait surnommer <strong>G.</strong> Et si le Gary, Responsable Communication, de l&rsquo;organigramme était ce fameux photographe ?</p>
+</blockquote><p>Remonter jusqu&rsquo;au photographe.. On a déjà vu qu&rsquo;il se faisait surnommer <strong>G.</strong> Et si le Gary, Responsable Communication, de l&rsquo;organigramme était ce fameux photographe ?</p>
 <p>Pour en être sûr, on peut regarder les métadonnées d&rsquo;une des trois photos des jeunes filles trouvées sur le lien tor, à l&rsquo;aide de la commande <code>èxiftool</code> par exemple :</p>
-<a class="lightgallery" href="/posts/disparues/img_11.png" title="/posts/disparues/img_11.png" data-thumbnail="/posts/disparues/img_11.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_11.png"
-            data-srcset="/posts/disparues/img_11.png, /posts/disparues/img_11.png 1.5x, /posts/disparues/img_11.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_11.png" width="604" height="517" />
-    </a>
+<a class="lightgallery" href="/posts/disparues/img_11.png" title="" data-thumbnail="/posts/disparues/img_11.png"><img  loading="lazy" src='/posts/disparues/img_11.png' srcset="/posts/disparues/img_11_hu_c5b7e27c3ca79489.webp 800w, /posts/disparues/img_11_hu_a5f375164b87e515.webp 1200w, /posts/disparues/img_11_hu_a77c054b6ddfcdaa.webp 1600w"   height="517" width="604"></a>
 <p>Notre photographe n&rsquo;est autre que <strong>Gary Durbourg</strong></p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Heavenly Creatures<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Gary Durbourg</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Heavenly Creatures<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="donnie-brasco">Donnie Brasco</h3>
-<blockquote>
-<p>Son pseudonyme ne vous aide pas beaucoup, mais il pourra vous servir à éventuellement trouver sa véritable identité !</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Gary Durbourg</code></div></div></div>
+<h3 id="donnie-brasco" class="headerLink">
+    <a href="#donnie-brasco" class="header-mark"></a>Donnie Brasco</h3><blockquote>
+  <p>Son pseudonyme ne vous aide pas beaucoup, mais il pourra vous servir à éventuellement trouver sa véritable identité !</p>
 <p>Format du flag : <code>michel sardine</code></p>
 <p><em><strong>100 points</strong></em></p>
-</blockquote>
-<p>Rien de plus simple qu&rsquo;une petite recherche google ici :</p>
-<a class="lightgallery" href="/posts/disparues/img_12.png" title="/posts/disparues/img_12.png" data-thumbnail="/posts/disparues/img_12.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/disparues/img_12.png"
-            data-srcset="/posts/disparues/img_12.png, /posts/disparues/img_12.png 1.5x, /posts/disparues/img_12.png 2x"
-            data-sizes="auto"
-            alt="/posts/disparues/img_12.png" width="735" height="345" />
-    </a>
-<p>On reconnait deux mots-clés qui nous parlent. Voici donc son profil <a href="https://www.behance.net/garydurbourg13100?tracking_source=search_users%7cGary%20Durbourg" target="_blank" rel="noopener noreffer ">Behance</a>, dans lequel il dit dans sa bio</p>
+</blockquote><p>Rien de plus simple qu&rsquo;une petite recherche google ici :</p>
+<a class="lightgallery" href="/posts/disparues/img_12.png" title="" data-thumbnail="/posts/disparues/img_12.png"><img  loading="lazy" src='/posts/disparues/img_12.png' srcset="/posts/disparues/img_12_hu_9ae6be7a0cc2996f.webp 800w, /posts/disparues/img_12_hu_3aa632f48ee9586f.webp 1200w, /posts/disparues/img_12_hu_6d8b22274d058bf4.webp 1600w"   height="345" width="735"></a>
+<p>On reconnait deux mots-clés qui nous parlent. Voici donc son profil <a href="https://www.behance.net/garydurbourg13100?tracking_source=search_users%7cGary%20Durbourg" target="_blank" rel="noopener noreferrer">Behance</a>, dans lequel il dit dans sa bio</p>
 <blockquote>
-<p>À PROPOS DE MOI</p>
+  <p>À PROPOS DE MOI</p>
 <p>De mon vrai nom Gérard Dubourguin, je suis photographe de métier depuis plus de 20 ans.
 blabla</p>
-</blockquote>
-<div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Donnie Brasco<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Gérard Dubourguin</code></div>
-        </div>
+</blockquote><div class="details admonition success">
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Donnie Brasco<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h2 id="last-man-standing">Last Man Standing</h2>
-<h3 id="tales-from-the-hood">Tales from the Hood</h3>
-<blockquote>
-<p>Comme toute secte, les Enfants d’Hades doivent avoir des détracteurs ! Sous quel pseudonyme pourrez-vous en retrouver un ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Gérard Dubourguin</code></div></div></div>
+<h2 id="last-man-standing" class="headerLink">
+    <a href="#last-man-standing" class="header-mark"></a>Last Man Standing</h2><h3 id="tales-from-the-hood" class="headerLink">
+    <a href="#tales-from-the-hood" class="header-mark"></a>Tales from the Hood</h3><blockquote>
+  <p>Comme toute secte, les Enfants d’Hades doivent avoir des détracteurs ! Sous quel pseudonyme pourrez-vous en retrouver un ?</p>
 <p>Format du flag : <code>Jason Staham</code></p>
 <p><em><strong>40 points</strong></em></p>
-</blockquote>
-<p>De retour sur le blog de <strong>Kronos Titan</strong>, la personne voulant dénoncer les actes de la secte.</p>
+</blockquote><p>De retour sur le blog de <strong>Kronos Titan</strong>, la personne voulant dénoncer les actes de la secte.</p>
 <p>Le voilà notre détracteur, le &ldquo;Last Man Standing&rdquo;</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Tales from the Hood<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Kronos Titan</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Tales from the Hood<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="true-romance">True Romance</h3>
-<blockquote>
-<p>Vous commencez à en apprendre plus sur le fonctionnement de la secte, et sur comment Ellen a été recrutée et manipulée.</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Kronos Titan</code></div></div></div>
+<h3 id="true-romance" class="headerLink">
+    <a href="#true-romance" class="header-mark"></a>True Romance</h3><blockquote>
+  <p>Vous commencez à en apprendre plus sur le fonctionnement de la secte, et sur comment Ellen a été recrutée et manipulée.</p>
 <p>Ils sont à priori bien organisés !</p>
 <p>Quel rôle occupe Marianne dans la secte ?</p>
 <p>Format du flag : <code>surveillant</code></p>
 <p><em><strong>20 points</strong></em></p>
-</blockquote>
-<p>Ellen en a parlé dans son journal, mais Kronos aussi : Marianne a joué le rôle de <strong>marraine</strong> pour Ellen</p>
+</blockquote><p>Ellen en a parlé dans son journal, mais Kronos aussi : Marianne a joué le rôle de <strong>marraine</strong> pour Ellen</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>True Romance<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>marraine</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>True Romance<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="touch-of-evil">Touch of Evil</h3>
-<blockquote>
-<p>Afin d’être le plus efficace possible, il vous faut continuer à obtenir le plus d’informations possible sur les Enfants d’Hades, et en particulier sur les évènements qui pourraient vous permettre de retrouver Ellen. Quel nom est donné aux soirées de cette secte ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>marraine</code></div></div></div>
+<h3 id="touch-of-evil" class="headerLink">
+    <a href="#touch-of-evil" class="header-mark"></a>Touch of Evil</h3><blockquote>
+  <p>Afin d’être le plus efficace possible, il vous faut continuer à obtenir le plus d’informations possible sur les Enfants d’Hades, et en particulier sur les évènements qui pourraient vous permettre de retrouver Ellen. Quel nom est donné aux soirées de cette secte ?</p>
 <p>Format du flag : <code>Mariages de la planète bleue</code></p>
 <p><em><strong>20 points</strong></em></p>
-</blockquote>
-<p>Permis les article de Kronos, <a href="https://kronosantihades.wordpress.com/2023/08/28/les-soirees-de-la-lune-noire-comment-les-enfants-dhades-se-financent-en-exploitant-leurs-jeunes-recrues/" target="_blank" rel="noopener noreffer ">celui-là</a> parle de cette cérémonie sacrée où se retrouvent les membres : la <strong>Céremonie de la lune noire</strong></p>
+</blockquote><p>Permis les article de Kronos, <a href="https://kronosantihades.wordpress.com/2023/08/28/les-soirees-de-la-lune-noire-comment-les-enfants-dhades-se-financent-en-exploitant-leurs-jeunes-recrues/" target="_blank" rel="noopener noreferrer">celui-là</a> parle de cette cérémonie sacrée où se retrouvent les membres : la <strong>Céremonie de la lune noire</strong></p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Touch of Evil<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Céremonie de la lune noire</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Touch of Evil<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="basic-instinct">Basic Instinct</h3>
-<blockquote>
-<p>Pour reprendre contact avec Ellen, il vous faudra essayer de savoir les étapes subies pendant son intégration dans la secte. Quelle est la troisième étape initiale dans le processus de recrutement des Enfants d&rsquo;Hades ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Céremonie de la lune noire</code></div></div></div>
+<h3 id="basic-instinct" class="headerLink">
+    <a href="#basic-instinct" class="header-mark"></a>Basic Instinct</h3><blockquote>
+  <p>Pour reprendre contact avec Ellen, il vous faudra essayer de savoir les étapes subies pendant son intégration dans la secte. Quelle est la troisième étape initiale dans le processus de recrutement des Enfants d&rsquo;Hades ?</p>
 <p>format du flag : <code>classification des vérités</code></p>
 <p><em><strong>40 points</strong></em></p>
-</blockquote>
-<p>Toujours sur le blog de Kronos, <a href="https://kronosantihades.wordpress.com/2023/08/28/le-piege-des-tenebres-comment-les-enfants-dhades-manipulent-et-recrutent-des-jeunes-femmes-en-difficulte/" target="_blank" rel="noopener noreffer ">cet article</a> nous explique la manière de recruter de la secte.</p>
-<p>Entre deux paragraphes, Kronos donne le lien du <a href="https://kronosantihades.wordpress.com/2023/08/28/le-piege-des-tenebres-comment-les-enfants-dhades-manipulent-et-recrutent-des-jeunes-femmes-en-difficulte/" target="_blank" rel="noopener noreffer ">guide de recrutement</a> des enfants, où sont détaillées les étapes.</p>
+</blockquote><p>Toujours sur le blog de Kronos, <a href="https://kronosantihades.wordpress.com/2023/08/28/le-piege-des-tenebres-comment-les-enfants-dhades-manipulent-et-recrutent-des-jeunes-femmes-en-difficulte/" target="_blank" rel="noopener noreferrer">cet article</a> nous explique la manière de recruter de la secte.</p>
+<p>Entre deux paragraphes, Kronos donne le lien du <a href="https://kronosantihades.wordpress.com/2023/08/28/le-piege-des-tenebres-comment-les-enfants-dhades-manipulent-et-recrutent-des-jeunes-femmes-en-difficulte/" target="_blank" rel="noopener noreferrer">guide de recrutement</a> des enfants, où sont détaillées les étapes.</p>
 <p>Celle que nous recherchons s&rsquo;appelle la <strong>verification des antécédents</strong>.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Basic Instinct<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>verification des antécédents</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Basic Instinct<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="the-glass-shield">The Glass Shield</h3>
-<blockquote>
-<p>Bien entendu, l&rsquo;idéal serait de pouvoir identifier cette source précieuse pour votre enquête. Il doit être possible de trouver plus d&rsquo;informations sur lui, afin de trouver son prénom et le lien qu&rsquo;il a avec l&rsquo;actuel chef de la secte.</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>verification des antécédents</code></div></div></div>
+<h3 id="the-glass-shield" class="headerLink">
+    <a href="#the-glass-shield" class="header-mark"></a>The Glass Shield</h3><blockquote>
+  <p>Bien entendu, l&rsquo;idéal serait de pouvoir identifier cette source précieuse pour votre enquête. Il doit être possible de trouver plus d&rsquo;informations sur lui, afin de trouver son prénom et le lien qu&rsquo;il a avec l&rsquo;actuel chef de la secte.</p>
 <p>format du flag : <code>Hector oncle</code></p>
 <p><em><strong>100 points</strong></em></p>
-</blockquote>
-<p>Honte de sa position, Kronos a supprimé un article de son blog où il se confessait par rapport à son lien intime à la secte.</p>
-<p>On est en capacité de retrouver cet article grâce à <a href="https://web.archive.org/web/20230903085211/https://kronosantihades.wordpress.com/2023/08/24/la-veritable-origine-des-enfants-dhades-mes-confessions/#more-45" target="_blank" rel="noopener noreffer ">Web archive</a>.</p>
+</blockquote><p>Honte de sa position, Kronos a supprimé un article de son blog où il se confessait par rapport à son lien intime à la secte.</p>
+<p>On est en capacité de retrouver cet article grâce à <a href="https://web.archive.org/web/20230903085211/https://kronosantihades.wordpress.com/2023/08/24/la-veritable-origine-des-enfants-dhades-mes-confessions/#more-45" target="_blank" rel="noopener noreferrer">Web archive</a>.</p>
 <p>Cet article nous apprend que Kronos s&rsquo;appelle <strong>Georges</strong>, qu&rsquo;il est le fondateur des Enfants d&rsquo;Hades, mais que son <strong>fils</strong> a perverti son organisation, jusqu&rsquo;à en prendre la tête et la transformer en secte malsaine et dangereuse.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>The Glass Shield<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>Georges pere </code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>The Glass Shield<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h2 id="swordfish">Swordfish</h2>
-<h3 id="wargames">Wargames</h3>
-<blockquote>
-<p>Un membre de la secte possède surement son propre serveur informatique. Pourriez vous vous y connecter ?</p>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>Georges pere </code></div></div></div>
+<h2 id="swordfish" class="headerLink">
+    <a href="#swordfish" class="header-mark"></a>Swordfish</h2><h3 id="wargames" class="headerLink">
+    <a href="#wargames" class="header-mark"></a>Wargames</h3><blockquote>
+  <p>Un membre de la secte possède surement son propre serveur informatique. Pourriez vous vous y connecter ?</p>
 <p>Format du flag : <code>EDH{Ceci_Est_Un_Magnifique_Flag}</code></p>
 <p><em><strong>50 points</strong></em></p>
-</blockquote>
-<p>Parmi les membres de la direction présent sur l&rsquo;organigramme, si nous envoyions un mail au Responsable Evénement Zagreux (<code>zagreus@enfantsdhades.com</code>), ce dernier vous répond cela :</p>
-<pre tabindex="0"><code>Il ne me reste plus beaucoup de temps...
+</blockquote><p>Parmi les membres de la direction présent sur l&rsquo;organigramme, si nous envoyions un mail au Responsable Evénement Zagreux (<code>zagreus@enfantsdhades.com</code>), ce dernier vous répond cela :</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">text</p>
+      </button>
+
+   <div class="tw-flex">
+      <button 
+        class="
+          line-number-button
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.show-line-numbers]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle line numbers"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"/></svg></button>
+
+      <button 
+        class="
+          wrap-code-button
+          tw-select-none 
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.is-wrap]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle code wrap"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></button>
+      
+      <button 
+        class="
+          copy-code-button
+          tw-select-none
+          tw-mx-2 
+          tw-hidden
+          group-[.is-open]:tw-block
+          hover:tw-text-fgColor-link 
+          print:!tw-hidden"
+        title="Copy code">
+          <span class="copy-icon tw-block"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"/></svg></span>
+          <span class="check-icon tw-hidden"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg></span>
+      </button>
+        
+      <button 
+        class="
+          tw-select-none 
+          tw-mx-2 
+          tw-block 
+          group-[.is-open]:tw-hidden 
+          print:!tw-hidden" 
+        disabled
+        aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg></button>
+    </div>
+  </div>
+  <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
+    id="codeblock-id-3" 
+    class="
+      chroma 
+      !tw-block 
+      tw-p-0
+      tw-m-0
+      tw-transition-[max-height] 
+      tw-duration-500 
+      tw-ease-in-out 
+      group-[.is-closed]:!tw-max-h-0 
+      group-[.is-wrap]:tw-text-wrap
+      tw-overflow-y-hidden
+      tw-overflow-x-auto
+      tw-scrollbar-thin
+      "><pre tabindex="0"><code>Il ne me reste plus beaucoup de temps...
 Si tu souhaites vraiment de me contacter, connecte toi ici :
 
 SSH zagreus@90.84.171.140
@@ -663,62 +976,152 @@ SRm5fowKzC9D6fw9
 
 Je ne sais pas combien de temps ce serveur sera encore disponible.
 
-Zagreus
-</code></pre><p>On peut alors se connecter en SSH à ce serveur, ce qui donne :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp;"
-        data-srcset="https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp;, https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp; 1.5x, https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp; 2x"
-        data-sizes="auto"
-        alt="https://cdn.discordapp.com/attachments/1163865351835111494/1170409166603550720/WindowsTerminal_a8QWRgpb5t.gif?ex=6558ef7a&amp;is=65467a7a&amp;hm=9385a574a5d2cbc2ada2b134353b5b5f224c877aaf9f927cfee0f12c8028aeb4&amp;"
-        title="gif des enfers" /></p>
+Zagreus</code></pre></code></pre>
+</div>
+<p>On peut alors se connecter en SSH à ce serveur, ce qui donne un flot de caractères imbitable.</p>
 <p>Aucune action n&rsquo;est faisable, mais il nous donne le flag.</p>
 <div class="details admonition success">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Wargames<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">🚩 <code>EDH{CHilDren_Of_EasTeR_Egg}</code></div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Wargames<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">&#x1f6a9; <code>EDH{CHilDren_Of_EasTeR_Egg}</code></div></div></div>
 <hr>
-<h4 id="ensuite-mon-équipe-et-moi-navons-pas-poursuivi-nos-recherches"><em>Ensuite, mon équipe et moi n&rsquo;avons pas poursuivi nos recherches&hellip;</em></h4>
-</div><div class="post-footer" id="post-footer">
+<h4 id="ensuite-mon-équipe-et-moi-n" class="headerLink">
+    <a href="#ensuite-mon-%c3%a9quipe-et-moi-n" class="header-mark"></a><em>Ensuite, mon équipe et moi n&rsquo;avons pas poursuivi nos recherches&hellip;</em></h4></div>
+
+        <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
                 <span>Updated on 04-11-2023</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)" data-via="Nozzouille" data-hashtags="OSINT"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/disparues/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line print:!tw-hidden">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/posts/disparues/index.md target="_blank" rel="noopener noreferrer">Read markdown</a>
+                    </span><span>|&nbsp;<a class="link-to-source" href=true target="_blank" rel="noopener noreferrer">View source</a>
+                    </span></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)" data-via="Nozzouille" data-hashtags="OSINT"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/disparues/"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></button><button title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M0 32v448h448V32H0zm21.2 197.2H21c.1-.1.2-.3.3-.4 0 .1 0 .3-.1.4zm218 53.9V384h-31.4V281.3L128 128h37.3c52.5 98.3 49.2 101.2 59.3 125.6 12.3-27 5.8-24.4 60.6-125.6H320l-80.8 155.1z"/></svg></button><button title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)"><svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LINE</title><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></button><button title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/disparues/" data-title="Disparue(s)" data-image="img.png"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg></button></div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/osint/">OSINT</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        <section class="post-tags"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg>&nbsp;<a href="/tags/osint/">OSINT</a></section>
+        <section class="print:!tw-hidden">
+            <span><button class="tw-text-fgColor-link-muted hover:tw-text-fgColor-link-muted-hover" onclick="window.history.back();">Back</button></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/dark_side/" class="prev" rel="prev" title="Dark Side"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Dark Side</a>
-            <a href="/posts/youaremine/" class="next" rel="next" title="You are mine!">You are mine!<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav print:tw-hidden"><a href="/posts/dark_side/" class="prev" rel="prev" title="Dark Side"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>Dark Side</a>
+            <a href="/posts/youaremine/" class="next" rel="next" title="You are mine!">You are mine!<svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div>
-    </footer></div>
+</article></main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.147.8">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.2"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg> DoIt</a>
+                </div><div class="footer-line"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 448c-110.532 0-200-89.451-200-200 0-110.531 89.451-200 200-200 110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200zm107.351-101.064c-9.614 9.712-45.53 41.396-104.065 41.396-82.43 0-140.484-61.425-140.484-141.567 0-79.152 60.275-139.401 139.762-139.401 55.531 0 88.738 26.62 97.593 34.779a11.965 11.965 0 0 1 1.936 15.322l-18.155 28.113c-3.841 5.95-11.966 7.282-17.499 2.921-8.595-6.776-31.814-22.538-61.708-22.538-48.303 0-77.916 35.33-77.916 80.082 0 41.589 26.888 83.692 78.277 83.692 32.657 0 56.843-19.039 65.726-27.225 5.27-4.857 13.596-4.039 17.82 1.738l19.865 27.17a11.947 11.947 0 0 1-1.152 15.518z"/></svg>2023 - 2025<span class="author">&nbsp;<a href="nozyzy.github.io" target="_blank" rel="noopener noreferrer">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer><div class="print:!tw-hidden tw-flex tw-flex-col tw-fixed tw-right-4 tw-bottom-4 tw-gap-2"><a href="#back-to-top" id="back-to-top-button" class="tw-transition-opacity tw-opacity-0 tw-block tw-bg-bgColor-secondary tw-rounded-full" style="padding: 0.6rem; line-height: 1.3rem; font-size: 1rem;" title="Back to Top">
+      <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg>
+  </a>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+  <button id="toc-drawer-button" class="tw-block tw-bg-bgColor-secondary tw-rounded-full md:tw-hidden" style="padding: 0.6rem; line-height: 1.3rem; font-size: 1rem;">
+      <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+  </button></div>
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/lightgallery/lightgallery.min.b38ee65d6456beb2d034bf554505f4ca47e421548b7cd26e8a7805fd2673b6c3.css" integrity="sha256-s47mXWRWvrLQNL9VRQX0ykfkIVSLfNJuingF/SZztsM=">
+        <noscript><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.b38ee65d6456beb2d034bf554505f4ca47e421548b7cd26e8a7805fd2673b6c3.css" integrity="sha256-s47mXWRWvrLQNL9VRQX0ykfkIVSLfNJuingF/SZztsM="></noscript><link rel="stylesheet" href="/lib/katex/katex.min.b668a32dd6d3c13c4f6029dfbe41dedc89ed260586f73ff8caa88b513fa0913f.css" integrity="sha256-tmijLdbTwTxPYCnfvkHe3IntJgWG9z/4yqiLUT&#43;gkT8="><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.cf8e3e934d92a839d209ffdac331fa693da5958a6dff2c8788a4713cc1f50a47.css" integrity="sha256-z44&#43;k02SqDnSCf/awzH6aT2llYpt/yyHiKRxPMH1Ckc=">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.cf8e3e934d92a839d209ffdac331fa693da5958a6dff2c8788a4713cc1f50a47.css" integrity="sha256-z44&#43;k02SqDnSCf/awzH6aT2llYpt/yyHiKRxPMH1Ckc="></noscript>
+<script>window.config={"autocomplete.min.js":"/lib/autocomplete/autocomplete.min.js","comment":{},"fuse.min.js":"/lib/fuse/fuse.min.js","lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true};</script><script
+    src="/lib/lightgallery/lightgallery.min.0c4d9db673dd19489cfa134ab15ef8b9237ae72aaa65d8490d55658442b3a2d3.js"
+    
+      integrity="sha256-DE2dtnPdGUic&#43;hNKsV74uSN65yqqZdhJDVVlhEKzotM="
+    
+      defer
+    
+  ></script><script
+    src="/lib/lightgallery/lg-thumbnail.min.72ceb0f87691041e9e0bea2f2468b9aa3ed544e8f7f6dc9f76d8c8f997699e41.js"
+    
+      integrity="sha256-cs6w&#43;HaRBB6eC&#43;ovJGi5qj7VROj39tyfdtjI&#43;ZdpnkE="
+    
+      defer
+    
+  ></script><script
+    src="/lib/lightgallery/lg-zoom.min.5b0e82e9a1ae0b52d07a52da1eb4640da77eb3ca7e78c3a428c1f3b712858d3c.js"
+    
+      integrity="sha256-Ww6C6aGuC1LQelLaHrRkDad&#43;s8p&#43;eMOkKMHztxKFjTw="
+    
+      defer
+    
+  ></script><script
+    src="/lib/sharer/sharer.min.8fe10eb615eb163a20f795484430a012805ec7c8c11df52df54ddb7a46084254.js"
+    
+      integrity="sha256-j&#43;EOthXrFjog95VIRDCgEoBex8jBHfUt9U3bekYIQlQ="
+    
+  ></script><script
+    src="/lib/katex/katex.min.e8d885505949f3a5f4abdd5dd0d53696bd1371ad26ffbf4f310dcd77c8cdae89.js"
+    
+      integrity="sha256-6NiFUFlJ86X0q91d0NU2lr0Tca0m/79PMQ3Nd8jNrok="
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
+    
+      integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/copy-tex.min.07770af90943a1de1a1010794bc78c6a7346d46d48fb63e35cc76ba76b827604.js"
+    
+      integrity="sha256-B3cK&#43;QlDod4aEBB5S8eManNG1G1I&#43;2PjXMdrp2uCdgQ="
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/mhchem.min.9f87e5e9c384a160472d0045035a8641f6013358eddb3ece708634a50f946a40.js"
+    
+      integrity="sha256-n4fl6cOEoWBHLQBFA1qGQfYBM1jt2z7OcIY0pQ&#43;UakA="
+    
+      defer
+    
+  ></script><script
+    src="/js/katex.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script>
+
+<script type="speculationrules">
+  {
+    "prerender": [
+      {
+        "where": { "href_matches": "/*" },
+        "eagerness": "moderate"
+      }
+    ]
+  }
+</script>
+</body>
+
 </html>

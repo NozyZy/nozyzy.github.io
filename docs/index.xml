@@ -2,126 +2,21 @@
     <channel>
         <title>NozZy</title>
         <link>https://nozyzy.github.io/</link>
-        <description>French Cybersecurity student and CTF enjoyer.</description>
+        <description>French Cybersecurity Analyst and CTF enjoyer.</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate>
             <atom:link href="https://nozyzy.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Traque Au Scammer</title>
     <link>https://nozyzy.github.io/posts/traque/</link>
-    <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/traque/</guid>
-    <description><![CDATA[AMSI CTF - Traque Au Scammer Category OSINT
-Description Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie.]]></description>
-</item>
-<item>
-    <title>Stranger Case 2024</title>
-    <link>https://nozyzy.github.io/posts/stranger_case-2024/</link>
-    <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/stranger_case-2024/</guid>
-    <description><![CDATA[Stranger Case 2024 - Misson : Ecplipse Category OSINT
-Description Le Stranger Case est une enquête OSINT qui se déroule en deux parties : qualifications en ligne, et hunt sur place pour la finale.
-La première phase prend la forme d&rsquo;une enquête en ligne. Nous jouons le rôle d&rsquo;enquêteurs, et sommes appelés pour mener une investigation sur la disparition d&rsquo;une personne.
-Cette phase mélange OSINT et Social Enginnering, puisque les informations que nous trouverons proviendront à grande majorité de sources ouvertes.]]></description>
-</item>
-<item>
-    <title>Croissanted</title>
-    <link>https://nozyzy.github.io/posts/croissanted/</link>
-    <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/croissanted/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Croissanted Category Forensics
-Description FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.
-EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue.]]></description>
-</item>
-<item>
-    <title>Silent Hill 2</title>
-    <link>https://nozyzy.github.io/posts/silent_hill_2/</link>
-    <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Silent Hill 2 Category Steganography
-Description by memory
-retrouve le flag lol
-Files Silent_hill_2.png
-Difficulty Author: kuorashi Write up Aperisolve Putting the file on Aperisolve helps us find the entry point:
-It really looks like there is som LSB hidden in 3 bits in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.
-It appears for the three colors, so there might be LSB 3-Bits RGB]]></description>
-</item>
-<item>
-    <title>I want my tickets back</title>
-    <link>https://nozyzy.github.io/posts/i_want_my_tickets_back/</link>
-    <pubDate>Tue, 30 Apr 2024 20:48:58 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/i_want_my_tickets_back/</guid>
-    <description><![CDATA[Midnight Flag 2024 - I want my tickets back Category Forensics
-Part 1 Jean a découvert un colis dans sa boîte aux lettres. À l&rsquo;intérieur, il se trouvait une clé USB et une lettre lui annonçant qu&rsquo;il avait gagné des billets pour les Jeux Olympiques de Paris 2024. La lettre précisait que les billets étaient sur la clé USB. Intrigué, Jean a inséré la clé dans son ordinateur et a ouvert le fichier : une note d&rsquo;information au format HTML.]]></description>
-</item>
-<item>
-    <title>S0uS_l3s_r4d4r</title>
-    <link>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</link>
-    <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
-    <description><![CDATA[Midnight Flag 2024 - S0uS_l3s_r4d4r Category Steganography
-Description By memory
-Recover the hidden flag
-Format : MCTF{flag{XXXXXXXXX}}
-Files Gorille_wallpaper.jpg
-Difficulty Author: kuorashi Write up Aperisolve does not give anything interesting at first sight. But if you scroll into the strings, you&rsquo;ll find something interesting.
-Push the thing a way further, doing this:
-strings -n 8 Gorille_wallpaper.jpg ... @wzJPB))v ,U#=b0t` {La[!dm7 qB)P&#39;,W18b import string; alph = string.ascii_letters;flag_enc = &#34;109 115 104 110 { 130 111 131 104 111 132 108 122 123 145 104 122 149 121 118 119 149 118 123 }&#34; def decode_flag(flag): lst = flag.]]></description>
-</item>
-<item>
-    <title>MyFace</title>
-    <link>https://nozyzy.github.io/posts/myface/</link>
-    <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/myface/</guid>
-    <description><![CDATA[Midnight Flag 2024 - MyFace Category Steganography
-Description Description by memory
-You will need to find my face to decode our messages
-Link Access to an instantiated website
-Difficulty Author: TBD Write up SourcesAs I am writing this, I do not have access to the source description and website. I only have what I&rsquo;ve done locally.MyFace We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.]]></description>
-</item>
-<item>
-    <title>Mack&#39;Os</title>
-    <link>https://nozyzy.github.io/posts/mack-os/</link>
-    <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/mack-os/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Mack&rsquo;Os Category Forensics
-Description SOON
-Files Mackos.pcap
-Difficulty Author: NAME screenshot
-Write up Trust me :) We are given a network capture of the moment the thing happened to his computer.
-The first thing we see is an exchange via telnet, in plain text. Just follow the stream (right-click &gt; follow &gt; TCP Stream) to view what was exchanged :
-This is, as planned in the description, the volatility2 commands that were executed.]]></description>
-</item>
-<item>
-    <title>Le grand écart</title>
-    <link>https://nozyzy.github.io/posts/grand-ecart/</link>
-    <pubDate>Fri, 26 Apr 2024 05:40:26 -0400</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/grand-ecart/</guid>
-    <description><![CDATA[404CTF - Grand Ecart Category Stéganographie
-Description En sortant de votre cours de gymnastique, vous tombez sur un étrange bouquin dans les vestiaires&hellip; À vous d&rsquo;en trouver tous les secrets.
-Files challenge.txt
-Difficulty MEDIUM - 987 points
-Author: @acmo0 Write up Salted Whale 🐳 We are given a large text file. By looking at it rapidly, it looks like it is the raw and complete content of the book &ldquo;Moby Dick&rdquo;]]></description>
-</item>
-<item>
-    <title>Stranger Case Intro</title>
-    <link>https://nozyzy.github.io/posts/stranger-case-intro/</link>
-    <pubDate>Tue, 23 Apr 2024 09:33:02 -0400</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/stranger-case-intro/</guid>
-    <description><![CDATA[Stranger Case 2024 - Challenge d&rsquo;intro Category OSINT
-Description Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.
-Files Ordre de mission
-Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la suivante :]]></description>
-</item>
-</channel>
+    <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/traque/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>OSINT</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie. Le C3N compte sur vous pour retrouver son adresse et son prénom.</p>]]></description>
+</item></channel>
 </rss>

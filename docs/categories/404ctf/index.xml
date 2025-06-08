@@ -5,31 +5,43 @@
         <description>404CTF - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/404ctf/" rel="self" type="application/rss+xml" /><item>
-    <title>404CTF - OSINTABLES</title>
+    <title>OSINTABLES</title>
     <link>https://nozyzy.github.io/posts/osintables/</link>
-    <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/osintables/</guid>
-    <description><![CDATA[404CTF - OSINTABLES Category OSINT
-Part 1/3 Description En pleine discussion au Procope, Cosette vous raconte autour d&rsquo;une part de fraisier la première fois qu&rsquo;elle a essayé d&rsquo;envoyer une lettre à son bienfaiteur : Jean Valjean. Débutante dans la démarche postale, elle s&rsquo;est trompée sur les informations nécessaires, elle en a même oublié l&rsquo;adresse du destinataire, n&rsquo;écrivant que la sienne. Elle vous montre la photo ci-jointe et vous met au défi de trouver d&rsquo;où elle l&rsquo;a écrite.]]></description>
-</item>
-<item>
-    <title>404CTF - Avez-vous vu les cascades du hérisson ?</title>
+    <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/osintables/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>OSINT</p>
+</blockquote><h2 id="part-13" class="headerLink">
+    <a href="#part-13" class="header-mark"></a>Part 1/3</h2><h3 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h3><p>En pleine discussion au Procope, Cosette vous raconte autour d&rsquo;une part de fraisier la première fois qu&rsquo;elle a essayé d&rsquo;envoyer une lettre à son bienfaiteur : Jean Valjean.
+Débutante dans la démarche postale, elle s&rsquo;est trompée sur les informations nécessaires, elle en a même oublié l&rsquo;adresse du destinataire, n&rsquo;écrivant que la sienne. Elle vous montre la photo ci-jointe et vous met au défi de trouver d&rsquo;où elle l&rsquo;a écrite.</p>]]></description>
+</item><item>
+    <title>Avez-vous vu les cascades du hérisson ?</title>
     <link>https://nozyzy.github.io/posts/cascades_herisson/</link>
-    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
-    <description><![CDATA[404CTF - Avez-vous vu les cascades du hérisson ? Category Radio-Frequency
-Description Après avoir rencontré Simone, cette dernière vous propose de découvrir une nouvelle personne. Quoi de mieux qu’un cache-cache pour apprendre à mieux se connaître ? Cela vous changera de l&rsquo;air du café littéraire Le Procope. Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.]]></description>
-</item>
-<item>
+    <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
+    <description><![CDATA[<h1 id="404ctf---avez-vous-vu-les-cascades-du-hérisson-" class="headerLink">
+    <a href="#404ctf---avez-vous-vu-les-cascades-du-h%c3%a9risson-" class="header-mark"></a>404CTF - Avez-vous vu les cascades du hérisson ?</h1><hr>
+<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Radio-Frequency</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>Après avoir rencontré Simone, cette dernière vous propose de découvrir une nouvelle personne. Quoi de mieux qu’un cache-cache pour apprendre à mieux se connaître ? Cela vous changera de l&rsquo;air du café littéraire Le Procope.
+Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.</p>]]></description>
+</item><item>
     <title>404CTF - Notes de bas de page</title>
     <link>https://nozyzy.github.io/posts/notesdebasdepage/</link>
-    <pubDate>Wed, 24 May 2023 00:48:44 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/notesdebasdepage/</guid>
-    <description><![CDATA[404CTF - Notes de bas de page Category Forensics
-Description En tendant l&rsquo;oreille dans le salon, votre attention est captée par une conversation particulière. Là où les alentours dissertent sur des sujets de procédés littéraires toujours plus avancés, celle-ci semble en effet plutôt porter sur la philosophie naturelle. Vous vous approchez par curiosité, lorsque la marquise du Châtelet, alors en pleine explication des travaux d&rsquo;un certain Leibniz, s’interrompt et vous interpelle :]]></description>
-</item>
-</channel>
+    <pubDate>Wed, 24 May 2023 00:48:44 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/notesdebasdepage/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>En tendant l&rsquo;oreille dans le salon, votre attention est captée par une conversation particulière. Là où les alentours dissertent sur des sujets de procédés littéraires toujours plus avancés, celle-ci semble en effet plutôt porter sur la philosophie naturelle. Vous vous approchez par curiosité, lorsque la marquise du Châtelet, alors en pleine explication des travaux d&rsquo;un certain Leibniz, s’interrompt et vous interpelle :</p>
+<p>« Vous me voyez ravie de vous rencontrer ici ! Nous n&rsquo;avons pas eu la chance de nous rencontrer, mais on m&rsquo;a parlé de vous et l&rsquo;on m&rsquo;a assuré que vous étiez formidable lorsqu&rsquo;il s’agissait de retrouver les choses perdues. Voyez, j&rsquo;ai travaillé il y a peu sur un projet qui me tient à cœur, et j&rsquo;ai bien peur d&rsquo;avoir perdu le fruit de mon travail par un triste accident. Heureusement, j&rsquo;avais échangé à ce sujet avec un ami proche, et il est bien possible que notre correspondance ait gardé la trace d&rsquo;une note de bas de page que je souhaiterais tout particulièrement retrouver. Auriez vous l’amabilité de m&rsquo;assister dans ma mésaventure ? »</p>]]></description>
+</item></channel>
 </rss>

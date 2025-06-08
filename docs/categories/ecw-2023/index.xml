@@ -7,14 +7,48 @@
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/ecw-2023/" rel="self" type="application/rss+xml" /><item>
     <title>DumpCyber</title>
     <link>https://nozyzy.github.io/posts/dumpcyber/</link>
-    <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/dumpcyber/</guid>
-    <description><![CDATA[ECW 2023 prequals - DumpCyber Category Forensics
-Description I am lost inside this dump, to escape I think I need my key and IV? The challenge is available here. Note: the flag format for this challenge is flag{...}.
-Challenge made by: Yogosha
-Difficulty Medium - 100 points
-Author: SemahBA ScreenshotWrite up Understanding the context Profile and objective We got a RAM dump on a Windows 7, we&rsquo;ll use volatility for the analysis.]]></description>
-</item>
-</channel>
+    <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/dumpcyber/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>I am lost inside this dump, to escape I think I need my key and IV?
+The challenge is available <a href="https://drive.google.com/file/d/12qaHQ5s3Yu4MD9clevbdwjmUNBsQ3q9h" target="_blank" rel="noopener noreferrer">here</a>.
+Note: the flag format for this challenge is <code>flag{...}</code>.</p>
+<p>Challenge made by: Yogosha</p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>Medium</strong> - 100 points</p>
+<ul>
+<li>Author: <strong>SemahBA</strong></li>
+</ul>
+<hr>
+<figure><a class="lightgallery" href="/DumpCyber/screen.png" title="Screenshot" data-thumbnail="/DumpCyber/screen.png" data-sub-html="<h2>Screenshot</h2><p>Screenshot</p>"><img  loading="lazy" src='/DumpCyber/screen.png'   alt="Screenshot"  ></a><figcaption class="image-caption">Screenshot</figcaption>
+    </figure>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="understanding-the-context" class="headerLink">
+    <a href="#understanding-the-context" class="header-mark"></a>Understanding the context</h3><h4 id="profile-and-objective" class="headerLink">
+    <a href="#profile-and-objective" class="header-mark"></a>Profile and objective</h4><p>We got a RAM dump on a Windows 7, we&rsquo;ll use <a href="https://github.com/volatilityfoundation/volatility" target="_blank" rel="noopener noreferrer">volatility</a> for the analysis.</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">text</p>]]></description>
+</item></channel>
 </rss>

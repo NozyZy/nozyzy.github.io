@@ -7,14 +7,27 @@
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Fri, 26 Apr 2024 05:40:26 -0400</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/404ctf-2024/" rel="self" type="application/rss+xml" /><item>
     <title>Le grand écart</title>
     <link>https://nozyzy.github.io/posts/grand-ecart/</link>
-    <pubDate>Fri, 26 Apr 2024 05:40:26 -0400</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/grand-ecart/</guid>
-    <description><![CDATA[404CTF - Grand Ecart Category Stéganographie
-Description En sortant de votre cours de gymnastique, vous tombez sur un étrange bouquin dans les vestiaires&hellip; À vous d&rsquo;en trouver tous les secrets.
-Files challenge.txt
-Difficulty MEDIUM - 987 points
-Author: @acmo0 Write up Salted Whale 🐳 We are given a large text file. By looking at it rapidly, it looks like it is the raw and complete content of the book &ldquo;Moby Dick&rdquo;]]></description>
-</item>
-</channel>
+    <pubDate>Fri, 26 Apr 2024 05:40:26 -0400</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/grand-ecart/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Stéganographie</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>En sortant de votre cours de gymnastique, vous tombez sur un étrange bouquin dans les vestiaires&hellip; À vous d&rsquo;en trouver tous les secrets.</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/grand-ecart/challenge.txt" rel="">challenge.txt</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>MEDIUM</strong> - 987 points</p>
+<ul>
+<li>Author: <strong>@acmo0</strong></li>
+</ul>
+<hr>
+<p><img class="tw-inline" loading="lazy" src='/posts/grand-ecart/screen.png' srcset="/posts/grand-ecart/screen_hu_7d4fdd8ab2e76e92.webp 800w, /posts/grand-ecart/screen_hu_668865a6143f0e61.webp 1200w, /posts/grand-ecart/screen_hu_eec76ea085918c79.webp 1600w"   height="618" width="497"></p>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="salted-whale-whale" class="headerLink">
+    <a href="#salted-whale-whale" class="header-mark"></a>Salted Whale &#x1f433;</h3><p>We are given a large text file. By looking at it rapidly, it looks like it is the raw and complete content of the book &ldquo;<strong>Moby Dick</strong>&rdquo;</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/grand-ecart/mobydick.png' srcset="/posts/grand-ecart/mobydick_hu_bb00929ea79073e1.webp 800w, /posts/grand-ecart/mobydick_hu_e6af142ec2bd6308.webp 1200w, /posts/grand-ecart/mobydick_hu_7e328396a7d41518.webp 1600w"   height="844" width="413"></p>]]></description>
+</item></channel>
 </rss>

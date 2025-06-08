@@ -7,121 +7,198 @@
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
     <title>Wireshark/Tshark TCP illegal flags</title>
     <link>https://nozyzy.github.io/articles/tcp_illegal_flags/</link>
-    <pubDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/articles/tcp_illegal_flags/</guid>
-    <description><![CDATA[During the patriotCTF, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.
-For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:
-Wireshark red packetsHere, only the combination of FIN, SYN, RST appears, with the addition of PSH sometimes.
-However, I was missing something.
-TCP Flags Here is a small recap of which TCP flags exist, and will be used for illegal combinations:]]></description>
-</item>
-<item>
+    <pubDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/articles/tcp_illegal_flags/</guid>
+    <description><![CDATA[<p>During the <a href="https://pctf.competitivecyber.club/" target="_blank" rel="noopener noreferrer">patriotCTF</a>, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.</p>
+<p>For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:</p>
+<figure><a class="lightgallery" href="/illegal_tcp_flags/img.png" title="Wireshark red packets" data-thumbnail="/illegal_tcp_flags/img.png" data-sub-html="<h2>Wireshark red packets</h2><p>Wireshark red packets</p>"><img  loading="lazy" src='/illegal_tcp_flags/img.png'   alt="Wireshark red packets"  ></a><figcaption class="image-caption">Wireshark red packets</figcaption>
+    </figure>
+<p>Here, only the combination of <strong>FIN</strong>, <strong>SYN</strong>, <strong>RST</strong> appears, with the addition of PSH sometimes.</p>]]></description>
+</item><item>
     <title>Croissanted</title>
     <link>https://nozyzy.github.io/posts/croissanted/</link>
-    <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/croissanted/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Croissanted Category Forensics
-Description FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.
-EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue.]]></description>
-</item>
-<item>
+    <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/croissanted/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.</p>
+<p>EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue. Identify why. A copy of the VM has been provided to you.</p>]]></description>
+</item><item>
     <title>I want my tickets back</title>
     <link>https://nozyzy.github.io/posts/i_want_my_tickets_back/</link>
-    <pubDate>Tue, 30 Apr 2024 20:48:58 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/i_want_my_tickets_back/</guid>
-    <description><![CDATA[Midnight Flag 2024 - I want my tickets back Category Forensics
-Part 1 Jean a découvert un colis dans sa boîte aux lettres. À l&rsquo;intérieur, il se trouvait une clé USB et une lettre lui annonçant qu&rsquo;il avait gagné des billets pour les Jeux Olympiques de Paris 2024. La lettre précisait que les billets étaient sur la clé USB. Intrigué, Jean a inséré la clé dans son ordinateur et a ouvert le fichier : une note d&rsquo;information au format HTML.]]></description>
-</item>
-<item>
+    <pubDate>Tue, 30 Apr 2024 20:48:58 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/i_want_my_tickets_back/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="part-1" class="headerLink">
+    <a href="#part-1" class="header-mark"></a>Part 1</h2><blockquote>
+  <p>Jean a découvert un colis dans sa boîte aux lettres. À l&rsquo;intérieur, il se trouvait une clé USB et une lettre lui annonçant qu&rsquo;il avait gagné des billets pour les Jeux Olympiques de Paris 2024. La lettre précisait que les billets étaient sur la clé USB. Intrigué, Jean a inséré la clé dans son ordinateur et a ouvert le fichier : une note d&rsquo;information au format HTML. Conformément aux instructions, le billet s&rsquo;est téléchargé automatiquement. Après avoir consulté son billet, Jean s&rsquo;est rendu compte que tout cela n&rsquo;était qu&rsquo;une supercherie et, déçu, il s&rsquo;est absenté pendant quelques jours. À son retour, Jean a été stupéfait de constater qu&rsquo;il était désormais incapable d&rsquo;ouvrir ses fichiers. Tous présentaient désormais l&rsquo;extension .enc.</p>]]></description>
+</item><item>
     <title>Mack&#39;Os</title>
     <link>https://nozyzy.github.io/posts/mack-os/</link>
-    <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/mack-os/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Mack&rsquo;Os Category Forensics
-Description SOON
-Files Mackos.pcap
-Difficulty Author: NAME screenshot
-Write up Trust me :) We are given a network capture of the moment the thing happened to his computer.
-The first thing we see is an exchange via telnet, in plain text. Just follow the stream (right-click &gt; follow &gt; TCP Stream) to view what was exchanged :
-This is, as planned in the description, the volatility2 commands that were executed.]]></description>
-</item>
-<item>
+    <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/mack-os/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>SOON</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/mack-os/Mackos.pcap" rel="">Mackos.pcap</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><ul>
+<li>Author: <strong>NAME</strong></li>
+</ul>
+<hr>
+<p><a href="screen.png" rel="">screenshot</a></p>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="trust-me-" class="headerLink">
+    <a href="#trust-me-" class="header-mark"></a>Trust me :)</h3><p>We are given a network capture of the moment the thing happened to his computer.</p>
+<p>The first thing we see is an exchange via telnet, in plain text. Just <strong>follow the stream</strong> (right-click &gt; follow &gt; TCP Stream) to view what was exchanged :</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/mack-os/img.png' srcset="/posts/mack-os/img_hu_f8c2cfb9c83a62f5.webp 800w, /posts/mack-os/img_hu_c5e5368743f77c46.webp 1200w, /posts/mack-os/img_hu_9873f27e93dabc7a.webp 1600w"  alt="img.png" height="1049" width="1282"></p>
+<p>This is, as planned in the description, the volatility2 commands that were executed. However, one command prompts a particular message</p>]]></description>
+</item><item>
     <title>SOC Simulator</title>
     <link>https://nozyzy.github.io/posts/soc-simulator/</link>
-    <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
-    <description><![CDATA[FCSC 2024 - SOC Simulator Category Forensics
-Description Introduction commune à la série SOC Simulator
-Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.
-Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.]]></description>
-</item>
-<item>
+    <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>Introduction commune à la série SOC Simulator</p>
+<p>Durant l&rsquo;été 2022, un opérateur d&rsquo;importance vitale (OIV) alerte l&rsquo;ANSSI car il pense être victime d&rsquo;une cyberattaque d&rsquo;ampleur. Le security operation center (SOC) de l&rsquo;OIV envoie à l&rsquo;ANSSI un export de sa collecte système des derniers jours. Vous êtes chargé de comprendre les actions réalisées par l&rsquo;attaquant.</p>
+<p>Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.</p>]]></description>
+</item><item>
     <title>The Shakespearean Mouse</title>
     <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
-    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
-    <description><![CDATA[BackdoorCTF 2023 - The Shakespearean Mouse Category Forensics
-Description wend f&rsquo;rward with this quest of yours, f&rsquo;r thee shalt findeth the flag at the endeth Attachments: https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip
-Files shakespeareanmouse.zip
-Difficulty 496 points
-Author: cy4n1d3 Write up The Shakespearan Langage Inside the zip file we got two files: out.bmp, and The Backdoor Lore containing only text, at first sight, the script of drama play.
-I rapidly think of a so of esoteric language, like Poetic or Whitespace, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.]]></description>
-</item>
-<item>
+    <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>wend f&rsquo;rward with this quest of yours, f&rsquo;r thee shalt findeth the flag at the endeth Attachments: <a href="https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip" target="_blank" rel="noopener noreferrer">https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip</a></p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="https://staticbckdr.infoseciitr.in/shakespeareanmouse.zip" target="_blank" rel="noopener noreferrer">shakespeareanmouse.zip</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p>496 points</p>
+<ul>
+<li>Author: <strong>cy4n1d3</strong></li>
+</ul>
+<hr>
+<p><img class="tw-inline" loading="lazy" src='/posts/the-shakespearean-mouse/img.png' srcset="/posts/the-shakespearean-mouse/img_hu_27ebe08bd82c4cf6.webp 800w, /posts/the-shakespearean-mouse/img_hu_3c00313e5cd74a05.webp 1200w, /posts/the-shakespearean-mouse/img_hu_f8128d27b19f7013.webp 1600w"  alt="img.png" height="221" width="930"></p>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="the-shakespearan-langage" class="headerLink">
+    <a href="#the-shakespearan-langage" class="header-mark"></a>The Shakespearan Langage</h3><p>Inside the zip file we got two files: <strong>out.bmp</strong>, and <strong>The Backdoor Lore</strong> containing only text, at first sight, the script of drama play.</p>
+<p>I rapidly think of a so of <a href="https://esolangs.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer">esoteric language</a>, like <a href="https://esolangs.org/wiki/Poetic" target="_blank" rel="noopener noreferrer">Poetic</a> or <a href="https://esolangs.org/wiki/Whitespace" target="_blank" rel="noopener noreferrer">Whitespace</a>, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.</p>]]></description>
+</item><item>
     <title>You are mine!</title>
     <link>https://nozyzy.github.io/posts/youaremine/</link>
-    <pubDate>Sat, 25 Nov 2023 05:38:54 &#43;0100</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/youaremine/</guid>
-    <description><![CDATA[Cybernight 2023 - You are mine! Category Forensics
-Description J&rsquo;ai réussi à extraire la RAM d&rsquo;un administrateur de Youaremine !
-Aidez-moi à me loguer, je dois modifier quelque chose dans le panneau d&rsquo;administration !
-Trouvez le nom d&rsquo;utilisateur de l&rsquo;administrateur sur le site web.
-Le flag sera à soumettre sous la forme MALICE{nom_utilisateur}
-Files dump.ram
-Difficulty HARD - 150 points
-Author: Sysdream Write up The very hot fox We got a dump of a Win 10 machine, and we are looking for web artifacts.]]></description>
-</item>
-<item>
+    <pubDate>Sat, 25 Nov 2023 05:38:54 &#43;0100</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/youaremine/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>J&rsquo;ai réussi à extraire la RAM d&rsquo;un administrateur de Youaremine !</p>
+<p>Aidez-moi à me loguer, je dois modifier quelque chose dans le panneau d&rsquo;administration !</p>
+<p>Trouvez le nom d&rsquo;utilisateur de l&rsquo;administrateur sur le site web.</p>
+<p>Le flag sera à soumettre sous la forme MALICE{nom_utilisateur}</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p>dump.ram</p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>HARD</strong> - 150 points</p>
+<ul>
+<li>Author: <strong>Sysdream</strong></li>
+</ul>
+<hr>
+<p><img class="tw-inline" loading="lazy" src='/posts/youaremine/img.png' srcset="/posts/youaremine/img_hu_5a63140f830c0aef.webp 800w, /posts/youaremine/img_hu_d55ab53794388b4d.webp 1200w, /posts/youaremine/img_hu_894ed7b27a177560.webp 1600w"  alt="img.png" height="619" width="1302"></p>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="the-very-hot-fox" class="headerLink">
+    <a href="#the-very-hot-fox" class="header-mark"></a>The very hot fox</h3><p>We got a dump of a Win 10 machine, and we are looking for web artifacts.</p>]]></description>
+</item><item>
     <title>Dark Side</title>
     <link>https://nozyzy.github.io/posts/dark_side/</link>
-    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/dark_side/</guid>
-    <description><![CDATA[Flag4All - Dark Side Category Steganography
-Description 🇫🇷 Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe. Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip. À vous de retrouver ces réponses sur le compte.
-🇬🇧 You are a IT student and a mysterious person send an archive to the classe.]]></description>
-</item>
-<item>
+    <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/dark_side/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>&#x1f1eb;&#x1f1f7;
+Vous êtes étudiant en informatique et une mystérieuse personne a envoyé un dossier zip par e-mail à l’ensemble de votre classe.
+Cette personne affirme que des réponses à vos prochains examens se trouvent un compte en ligne et que les indices menant à son compte son cachées dans ce dossier zip.
+À vous de retrouver ces réponses sur le compte.</p>
+<p>&#x1f1ec;&#x1f1e7;
+You are a IT student and a mysterious person send an archive to the classe.
+This person tells that all the answers for the following exams are behind an only account. To find this account, you have to follow the hidden hints that the archive will give you.
+Your turn to find this answers!</p>]]></description>
+</item><item>
     <title>HeadShot</title>
     <link>https://nozyzy.github.io/posts/headshot/</link>
-    <pubDate>Sun, 22 Oct 2023 13:58:04 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/headshot/</guid>
-    <description><![CDATA[Flag4All - HeadShot Category Forensics
-Description Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.
-Files headShot.tar
-Difficulty Medium - 497 points
-Author: Penthium2 (BZHack) ScreenshotWrite up The file consists of some minecraft backup files. To go fast, I just file all files to know exactly what was going on for each of them, and it appears that the .]]></description>
-</item>
-<item>
+    <pubDate>Sun, 22 Oct 2023 13:58:04 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/headshot/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>Un groupe de terroriste exfiltre des données via un jeu vidéo. Ils doivent utiliser leur sauvegarde pour cela. A partir de cette sauvegarde, trouvez les 4 parties du flag. Il n&rsquo;est pas important d&rsquo;installer le jeu.</p>
+<h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="https://ctfd.flag4all.sh/files/7379772026f7dae22376571d239b5239/headShot.tar.gz?token=eyJ1c2VyX2lkIjoxMTIsInRlYW1faWQiOm51bGwsImZpbGVfaWQiOjMxOH0.ZTUOPw.6FXd_EmJfzC42znDu4PMCy7AEp8" target="_blank" rel="noopener noreferrer">headShot.tar</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>Medium</strong> - 497 points</p>
+<ul>
+<li>Author: <strong>Penthium2 (BZHack)</strong></li>
+</ul>
+<hr>
+<figure><a class="lightgallery" href="/HeadShot/screen.png" title="Screenshot" data-thumbnail="/HeadShot/screen.png" data-sub-html="<h2>Screenshot</h2><p>Screenshot</p>"><img  loading="lazy" src='/HeadShot/screen.png'   alt="Screenshot"  ></a><figcaption class="image-caption">Screenshot</figcaption>
+    </figure>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><p>The file consists of some minecraft backup files. To go fast, I just <code>file</code> all files to know exactly what was going on for each of them, and it appears that the <code>.dat</code> files were <strong>gzip archives</strong>.
+And that are the files that will interest us first. Each of <code>level.dat</code> and <code>playerdata/5435ace1-00d5-437c-862f-77d8bacfa86e.dat</code> had the same parts of the flag:</p>]]></description>
+</item><item>
     <title>Gishadb</title>
     <link>https://nozyzy.github.io/posts/gishadb/</link>
-    <pubDate>Sun, 22 Oct 2023 03:13:42 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/gishadb/</guid>
-    <description><![CDATA[Flag4All - Gishadb Category Realistic
-Description Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.
-This server listen on two ports: 443 and 222. Find a way to get the flag.
-Link https://gishadb.flag4all.sh
-Difficulty EASY - 481 points
-Author: Penthium2 (BZHack) ScreenshotWrite up .git dump I highly recommend you to have DotGit extension installed for CTF and web audits. It automatically checks for you if a .]]></description>
-</item>
-</channel>
+    <pubDate>Sun, 22 Oct 2023 03:13:42 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/gishadb/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Realistic</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p>Ce serveur écoute sur 2 ports ! 443 et 222. Trouvez un moyen d&rsquo;obtenir le flag.</p>
+<p>This server listen on two ports: 443 and 222. Find a way to get the flag.</p>
+<h2 id="link" class="headerLink">
+    <a href="#link" class="header-mark"></a>Link</h2><p><a href="https://gishadb.flag4all.sh" target="_blank" rel="noopener noreferrer">https://gishadb.flag4all.sh</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>EASY</strong> - 481 points</p>
+<ul>
+<li>Author: <strong>Penthium2 (BZHack)</strong></li>
+</ul>
+<hr>
+<figure><a class="lightgallery" href="/Gishadb/screen.png" title="Screenshot" data-thumbnail="/Gishadb/screen.png" data-sub-html="<h2>Screenshot</h2><p>Screenshot</p>"><img  loading="lazy" src='/Gishadb/screen.png'   alt="Screenshot"  ></a><figcaption class="image-caption">Screenshot</figcaption>
+    </figure>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="git-dump" class="headerLink">
+    <a href="#git-dump" class="header-mark"></a>.git dump</h3><p>I highly recommend you to have <a href="https://github.com/davtur19/DotGit" target="_blank" rel="noopener noreferrer">DotGit</a> extension installed for CTF and web audits.
+It automatically checks for you if a <strong>.git directory is exposed</strong>. And that&rsquo;s what happened here when I opened the page. This extension also comes with an extraction tool.</p>]]></description>
+</item></channel>
 </rss>

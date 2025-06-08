@@ -7,76 +7,152 @@
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Wed, 01 May 2024 13:35:11 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/midnight-flag-2024/" rel="self" type="application/rss+xml" /><item>
     <title>Croissanted</title>
     <link>https://nozyzy.github.io/posts/croissanted/</link>
-    <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/croissanted/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Croissanted Category Forensics
-Description FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.
-EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue.]]></description>
-</item>
-<item>
+    <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/croissanted/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>FR : Une backdoor semble avoir été déposée sur une machine virtuelle. Des fichiers ont été ajoutés dans le filesystem. Bien que l&rsquo;utilisateur change régulièrement son mot de passe, les intrusions continuent. Identifiez pourquoi. Une copie de la VM vous a été fournie.</p>
+<p>EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue. Identify why. A copy of the VM has been provided to you.</p>]]></description>
+</item><item>
     <title>Silent Hill 2</title>
     <link>https://nozyzy.github.io/posts/silent_hill_2/</link>
-    <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Silent Hill 2 Category Steganography
-Description by memory
-retrouve le flag lol
-Files Silent_hill_2.png
-Difficulty Author: kuorashi Write up Aperisolve Putting the file on Aperisolve helps us find the entry point:
-It really looks like there is som LSB hidden in 3 bits in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.
-It appears for the three colors, so there might be LSB 3-Bits RGB]]></description>
-</item>
-<item>
+    <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p><em>by memory</em></p>
+<blockquote>
+  <p>retrouve le flag lol</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/silent_hill_2/Silent_hill_2.png" rel="">Silent_hill_2.png</a></p>
+<ul>
+<li>Author: <strong>kuorashi</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="aperisolve" class="headerLink">
+    <a href="#aperisolve" class="header-mark"></a>Aperisolve</h3><p>Putting the file on <a href="https://aperisolve.fr/5130b332fbdb2d7cf9e8d2333101932d" target="_blank" rel="noopener noreferrer">Aperisolve</a> helps us find the entry point:</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/silent_hill_2/img.png' srcset="/posts/silent_hill_2/img_hu_f506e168d6df9579.webp 800w, /posts/silent_hill_2/img_hu_65cf3e8decba9cc3.webp 1200w, /posts/silent_hill_2/img_hu_ab937e216d7de8be.webp 1600w"  alt="img.png" height="626" width="1780"></p>
+<p>It really looks like there is som <strong>LSB</strong> hidden in <strong>3 bits</strong> in the two corners. We can suppose there is the same on the bottom left, but is not easily visible.</p>
+<p>It appears for the three colors, so there might be <strong>LSB 3-Bits RGB</strong></p>]]></description>
+</item><item>
     <title>I want my tickets back</title>
     <link>https://nozyzy.github.io/posts/i_want_my_tickets_back/</link>
-    <pubDate>Tue, 30 Apr 2024 20:48:58 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/i_want_my_tickets_back/</guid>
-    <description><![CDATA[Midnight Flag 2024 - I want my tickets back Category Forensics
-Part 1 Jean a découvert un colis dans sa boîte aux lettres. À l&rsquo;intérieur, il se trouvait une clé USB et une lettre lui annonçant qu&rsquo;il avait gagné des billets pour les Jeux Olympiques de Paris 2024. La lettre précisait que les billets étaient sur la clé USB. Intrigué, Jean a inséré la clé dans son ordinateur et a ouvert le fichier : une note d&rsquo;information au format HTML.]]></description>
-</item>
-<item>
+    <pubDate>Tue, 30 Apr 2024 20:48:58 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/i_want_my_tickets_back/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="part-1" class="headerLink">
+    <a href="#part-1" class="header-mark"></a>Part 1</h2><blockquote>
+  <p>Jean a découvert un colis dans sa boîte aux lettres. À l&rsquo;intérieur, il se trouvait une clé USB et une lettre lui annonçant qu&rsquo;il avait gagné des billets pour les Jeux Olympiques de Paris 2024. La lettre précisait que les billets étaient sur la clé USB. Intrigué, Jean a inséré la clé dans son ordinateur et a ouvert le fichier : une note d&rsquo;information au format HTML. Conformément aux instructions, le billet s&rsquo;est téléchargé automatiquement. Après avoir consulté son billet, Jean s&rsquo;est rendu compte que tout cela n&rsquo;était qu&rsquo;une supercherie et, déçu, il s&rsquo;est absenté pendant quelques jours. À son retour, Jean a été stupéfait de constater qu&rsquo;il était désormais incapable d&rsquo;ouvrir ses fichiers. Tous présentaient désormais l&rsquo;extension .enc.</p>]]></description>
+</item><item>
     <title>S0uS_l3s_r4d4r</title>
     <link>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</link>
-    <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
-    <description><![CDATA[Midnight Flag 2024 - S0uS_l3s_r4d4r Category Steganography
-Description By memory
-Recover the hidden flag
-Format : MCTF{flag{XXXXXXXXX}}
-Files Gorille_wallpaper.jpg
-Difficulty Author: kuorashi Write up Aperisolve does not give anything interesting at first sight. But if you scroll into the strings, you&rsquo;ll find something interesting.
-Push the thing a way further, doing this:
-strings -n 8 Gorille_wallpaper.jpg ... @wzJPB))v ,U#=b0t` {La[!dm7 qB)P&#39;,W18b import string; alph = string.ascii_letters;flag_enc = &#34;109 115 104 110 { 130 111 131 104 111 132 108 122 123 145 104 122 149 121 118 119 149 118 123 }&#34; def decode_flag(flag): lst = flag.]]></description>
-</item>
-<item>
+    <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p><em>By memory</em></p>
+<blockquote>
+  <p>Recover the hidden flag</p>
+<p>Format : MCTF{flag{XXXXXXXXX}}</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/s0us_l3s_r4d4r/Gorille_wallpaper.jpg" rel="">Gorille_wallpaper.jpg</a></p>
+<ul>
+<li>Author: <strong>kuorashi</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><p><a href="https://aperisolve.fr/470d65fbda570aee3a4da6fef39e33ae" target="_blank" rel="noopener noreferrer">Aperisolve</a> does not give anything interesting at first sight. But if you scroll into the <strong>strings</strong>, you&rsquo;ll find something interesting.</p>
+<p>Push the thing a way further, doing this:</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">bash</p>]]></description>
+</item><item>
     <title>MyFace</title>
     <link>https://nozyzy.github.io/posts/myface/</link>
-    <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/myface/</guid>
-    <description><![CDATA[Midnight Flag 2024 - MyFace Category Steganography
-Description Description by memory
-You will need to find my face to decode our messages
-Link Access to an instantiated website
-Difficulty Author: TBD Write up SourcesAs I am writing this, I do not have access to the source description and website. I only have what I&rsquo;ve done locally.MyFace We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.]]></description>
-</item>
-<item>
+    <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/myface/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Steganography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><p><em>Description by memory</em></p>
+<blockquote>
+  <p>You will need to find my face to decode our messages</p>
+</blockquote><h2 id="link" class="headerLink">
+    <a href="#link" class="header-mark"></a>Link</h2><p><em>Access to an instantiated website</em></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><ul>
+<li>Author: <strong>TBD</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><div class="details admonition info open">
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg></span>Sources<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">As I am writing this, I do not have access to the source description and website. I only have what I&rsquo;ve done locally.</div></div></div>
+<h3 id="myface" class="headerLink">
+    <a href="#myface" class="header-mark"></a>MyFace</h3><p>We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.</p>]]></description>
+</item><item>
     <title>Mack&#39;Os</title>
     <link>https://nozyzy.github.io/posts/mack-os/</link>
-    <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/mack-os/</guid>
-    <description><![CDATA[Midnight Flag 2024 - Mack&rsquo;Os Category Forensics
-Description SOON
-Files Mackos.pcap
-Difficulty Author: NAME screenshot
-Write up Trust me :) We are given a network capture of the moment the thing happened to his computer.
-The first thing we see is an exchange via telnet, in plain text. Just follow the stream (right-click &gt; follow &gt; TCP Stream) to view what was exchanged :
-This is, as planned in the description, the volatility2 commands that were executed.]]></description>
-</item>
-</channel>
+    <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/mack-os/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Forensics</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>SOON</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/mack-os/Mackos.pcap" rel="">Mackos.pcap</a></p>
+<h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><ul>
+<li>Author: <strong>NAME</strong></li>
+</ul>
+<hr>
+<p><a href="screen.png" rel="">screenshot</a></p>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="trust-me-" class="headerLink">
+    <a href="#trust-me-" class="header-mark"></a>Trust me :)</h3><p>We are given a network capture of the moment the thing happened to his computer.</p>
+<p>The first thing we see is an exchange via telnet, in plain text. Just <strong>follow the stream</strong> (right-click &gt; follow &gt; TCP Stream) to view what was exchanged :</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/mack-os/img.png' srcset="/posts/mack-os/img_hu_f8c2cfb9c83a62f5.webp 800w, /posts/mack-os/img_hu_c5e5368743f77c46.webp 1200w, /posts/mack-os/img_hu_9873f27e93dabc7a.webp 1600w"  alt="img.png" height="1049" width="1282"></p>
+<p>This is, as planned in the description, the volatility2 commands that were executed. However, one command prompts a particular message</p>]]></description>
+</item></channel>
 </rss>

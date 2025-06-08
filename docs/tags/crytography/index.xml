@@ -7,13 +7,22 @@
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 03 Nov 2022 23:37:33 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/crytography/" rel="self" type="application/rss+xml" /><item>
     <title>J&#39;ai pas ROTé</title>
     <link>https://nozyzy.github.io/posts/jai_pas_rote/</link>
-    <pubDate>Thu, 03 Nov 2022 23:37:33 &#43;0100</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/posts/jai_pas_rote/</guid>
-    <description><![CDATA[Cyberight 2022 - J&rsquo;ai pas ROTé Category Cryptography
-Description votre collègue, adepte de blagues plus que de cryptographie, vous envoie la phrase suivante dans la conversation d&rsquo;équipe: &ldquo;j&rsquo;vous promets les gars, cette fois, j&rsquo;ai pas ROTé: 871 1157 858 1014 1599 1287 507 663 1508 1261 1365 1508 1235 1456 676 1495 1235 637 1235 1287 663 1495 1261 1482 1625&rdquo;
-Difficulty EASY
-Author: Lmeaou Write up Ce nom me rappelle grandement celui de l&rsquo;an dernier &ldquo;Burp&rdquo; où il fallait comprendre que c&rsquo;était du ROT13 (Brup, rot, vous l&rsquo;avez ?]]></description>
-</item>
-</channel>
+    <pubDate>Thu, 03 Nov 2022 23:37:33 &#43;0100</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/posts/jai_pas_rote/</guid>
+    <description><![CDATA[<h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>Cryptography</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>votre collègue, adepte de blagues plus que de cryptographie, vous envoie la phrase suivante dans la conversation d&rsquo;équipe: &ldquo;j&rsquo;vous promets les gars, cette fois, j&rsquo;ai pas ROTé: 871 1157 858 1014 1599 1287 507 663 1508 1261 1365 1508 1235 1456 676 1495 1235 637 1235 1287 663 1495 1261 1482 1625&rdquo;</p>
+</blockquote><h2 id="difficulty" class="headerLink">
+    <a href="#difficulty" class="header-mark"></a>Difficulty</h2><p><strong>EASY</strong></p>
+<ul>
+<li>Author: <strong>Lmeaou</strong></li>
+</ul>
+<hr>
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><p>Ce nom me rappelle grandement celui de l&rsquo;an dernier &ldquo;Burp&rdquo; où il fallait comprendre que c&rsquo;était du ROT13 (Brup, rot, vous l&rsquo;avez ?)</p>]]></description>
+</item></channel>
 </rss>

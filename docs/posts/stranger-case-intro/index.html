@@ -1,145 +1,237 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>Stranger Case Intro - NozZy</title><meta name="Description" content="French Cybersecurity student and CTF enjoyer."><meta property="og:title" content="Stranger Case Intro" />
-<meta property="og:description" content="Stranger Case 2024 - Challenge d&rsquo;intro Category OSINT
-Description Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.
-Files Ordre de mission
-Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la suivante :" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://nozyzy.github.io/posts/stranger-case-intro/" /><meta property="og:image" content="https://nozyzy.github.io/posts/stranger-case-intro/banner.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-04-23T09:33:02-04:00" />
-<meta property="article:modified_time" content="2024-04-23T09:33:02-04:00" /><meta property="og:site_name" content="NozZy" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://nozyzy.github.io/posts/stranger-case-intro/banner.png"/>
-<meta name="twitter:title" content="Stranger Case Intro"/>
-<meta name="twitter:description" content="Stranger Case 2024 - Challenge d&rsquo;intro Category OSINT
-Description Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.
-Files Ordre de mission
-Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la suivante :"/>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" /><title>Stranger Case Intro - NozZy</title><meta name="Description" content="French Cybersecurity Analyst and CTF enjoyer."><meta property="og:url" content="https://nozyzy.github.io/posts/stranger-case-intro/">
+  <meta property="og:site_name" content="NozZy">
+  <meta property="og:title" content="Stranger Case Intro">
+  <meta property="og:description" content="CategoryOSINT
+DescriptionVotre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l’agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l’identité de cette personne et de déterminer ce qui lui est arrivé.
+FilesOrdre de mission
+Author: Neyzor &amp; Giorgone Write upNotre cibleLa video de départ est la suivante :
+On y voit une personne ressemblant à un agent, et une personne kidnappée dans le coffre de sa voiture. C’est notre cible">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-04-23T09:33:02-04:00">
+    <meta property="article:modified_time" content="2024-04-23T09:33:02-04:00">
+    <meta property="article:tag" content="OSINT">
+    <meta property="og:image" content="https://nozyzy.github.io/assets/nozzy.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nozyzy.github.io/assets/nozzy.png">
+  <meta name="twitter:title" content="Stranger Case Intro">
+  <meta name="twitter:description" content="CategoryOSINT
+DescriptionVotre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l’agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l’identité de cette personne et de déterminer ce qui lui est arrivé.
+FilesOrdre de mission
+Author: Neyzor &amp; Giorgone Write upNotre cibleLa video de départ est la suivante :
+On y voit une personne ressemblant à un agent, et une personne kidnappée dans le coffre de sa voiture. C’est notre cible">
+      <meta name="twitter:site" content="@Nozzouille">
 <meta name="application-name" content="NozZy">
-<meta name="apple-mobile-web-app-title" content="NozZy"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="NozZy">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><meta name="twitter:creator" content="@Nozzouille" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nozyzy.github.io/posts/stranger-case-intro/" /><link rel="prev" href="https://nozyzy.github.io/posts/soc-simulator/" /><link rel="next" href="https://nozyzy.github.io/posts/grand-ecart/" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<link rel="canonical" href="https://nozyzy.github.io/posts/stranger-case-intro/" /><link rel="prev" href="https://nozyzy.github.io/posts/soc-simulator/" /><link rel="next" href="https://nozyzy.github.io/posts/grand-ecart/" />
+<link rel="stylesheet" href="/css/main.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">{"@context": "https://schema.org","@type": "BlogPosting",
         "headline": "Stranger Case Intro",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/nozyzy.github.io\/posts\/stranger-case-intro\/"
+            "@id": "https://nozyzy.github.io/posts/stranger-case-intro/"
         },"image": [{
                             "@type": "ImageObject",
-                            "url": "https:\/\/nozyzy.github.io\/posts\/stranger-case-intro\/banner.png",
+                            "url": "https://nozyzy.github.io/posts/stranger-case-intro/banner.png",
                             "width":  1917 ,
                             "height":  580 
-                        }],"genre": "posts","keywords": "OSINT","wordcount":  1573 ,
-        "url": "https:\/\/nozyzy.github.io\/posts\/stranger-case-intro\/","datePublished": "2024-04-23T09:33:02-04:00","dateModified": "2024-04-23T09:33:02-04:00","publisher": {
+                        },{
+                            "@type": "ImageObject",
+                            "url": "https://nozyzy.github.io/posts/stranger-case-intro/banner.png",
+                            "width":  1917 ,
+                            "height":  580 
+                        }],"genre": "posts","keywords":["OSINT"],"wordcount":  1568 ,
+        "url": "https://nozyzy.github.io/posts/stranger-case-intro/","datePublished": "2024-04-23T09:33:02-04:00","dateModified": "2024-04-23T09:33:02-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
-                "name": "NozZy"
+                "name": "NozZy",
+                "url": "nozyzy.github.io"
             },"description": ""
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    }</script></head>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+
+<body data-instant-intensity="viewport" class="tw-flex tw-min-h-screen tw-flex-col"><script>
+    function setTheme(theme) {
+      document.body.setAttribute('theme', theme); 
+      document.documentElement.className = theme;
+      document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');
+      if (theme === 'light') {
+        document.documentElement.classList.remove('tw-dark')
+      } else {
+        document.documentElement.classList.add('tw-dark')
+      }
+      window.theme = theme;   
+      window.isDark = window.theme !== 'light' 
+    }
+    function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+    function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+    if (window.localStorage && localStorage.getItem('theme')) {
+        let theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') {
+        setTheme(theme);
+        } else {
+            if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                setTheme('dark');
+            } else {
+                setTheme('light');
+            }
+        }
+      } else { 
+        if ('auto' === 'light' || 'auto' === 'dark') 
+            setTheme('auto'), saveTheme('auto'); 
+        else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');
+    }
+    let metaColors = {'light': '#f8f8f8','dark': '#161b22'}
+    getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    window.switchThemeEventSet = new Set()
+</script><div id="back-to-top"></div>
+    <div id="mask"></div><header class="desktop print:!tw-hidden" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="NozZy"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
-        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
-        data-sizes="auto"
-        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
-        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+            <a href="/" title="NozZy"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src='/60878689_3489515195507601015.png'   alt="NozZy" height="32" width="32">NozZy</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Writeups"> Writeups </a><a class="menu-item" href="/articles/" title="Articles"> Articles </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/aboutme"> ./aboutme </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a></div>
+            <div class="menu-inner"><a class="menu-item"
+                    href="/posts/"  title="Writeups" > Writeups </a><a class="menu-item"
+                    href="/articles/"  title="Articles" > Articles </a><a class="menu-item"
+                    href="/tags/" > Tags </a><a class="menu-item"
+                    href="/categories/" > Categories </a><a class="menu-item"
+                    href="/whoami" > ./whoami </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                    <input type="text"
+                        placeholder="Search titles or contents..."
+                        id="search-input-desktop">
+                    <button class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                    </button>
+                    <button class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"/></svg>
+                    </button>
+                    <span class="search-button search-loading tw-animate-spin" id="search-loading-desktop">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"/></svg>
+                    </span>
+                </span><button class="menu-item theme-switch" aria-label="Switch Theme">
+                    <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/></svg>
+                </button></div>
         </div>
     </div>
-</header><header class="mobile" id="header-mobile">
+</header><header class="mobile print:!tw-hidden" id="header-mobile">
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="NozZy"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="https://avatars.githubusercontent.com/u/60878689?v=4"
-        data-srcset="https://avatars.githubusercontent.com/u/60878689?v=4, https://avatars.githubusercontent.com/u/60878689?v=4 1.5x, https://avatars.githubusercontent.com/u/60878689?v=4 2x"
-        data-sizes="auto"
-        alt="https://avatars.githubusercontent.com/u/60878689?v=4"
-        title="https://avatars.githubusercontent.com/u/60878689?v=4" />NozZy</a>
+                <a href="/" title="NozZy"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src='/60878689_3489515195507601015.png'   alt="NozZy" height="32" width="32">NozZy</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
         <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Writeups">Writeups</a><a class="menu-item" href="/articles/" title="Articles">Articles</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/aboutme" title="">./aboutme</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
+                <div class="search mobile" id="search-mobile">
+                    <input type="text"
+                        placeholder="Search titles or contents..."
+                        id="search-input-mobile">
+                    <button class="search-button search-toggle tw-h-10" id="search-toggle-mobile" title="Search">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                    </button>
+                    <button class="search-button search-clear tw-h-fit" id="search-clear-mobile" title="Clear">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"/></svg>
+                    </button>
+                    <span class="search-button search-loading tw-animate-spin" id="search-loading-mobile">
+                        <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"/></svg>
+                    </span>
+                </div>
+                <button class="search-cancel" id="search-cancel-mobile">
+                    Cancel
+                </button>
+            </div><a class="menu-item" href="/posts/" title="Writeups" >Writeups</a><a class="menu-item" href="/articles/" title="Articles" >Articles</a><a class="menu-item" href="/tags/" title="" >Tags</a><a class="menu-item" href="/categories/" title="" >Categories</a><a class="menu-item" href="/whoami" title="" >./whoami</a><button class="menu-item theme-switch tw-w-full" aria-label="Switch Theme">
+                <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/></svg>
+            </button></div>
     </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Stranger Case Intro</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="nozyzy.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>NozZy</a></span>&nbsp;<span class="post-category">included in <a href="/categories/writeups/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Writeups</a>&nbsp;<a href="/categories/stranger-case-2024/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Stranger Case 2024</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="23-04-2024">23-04-2024</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1573 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/banner.png"
-        data-srcset="/posts/stranger-case-intro/banner.png, /posts/stranger-case-intro/banner.png 1.5x, /posts/stranger-case-intro/banner.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/banner.png"
-        title="/posts/stranger-case-intro/banner.png" /></div><div class="details toc" id="toc-static"  data-kept="">
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="tw-mx-4 tw-flex-1"><div class="toc print:!tw-hidden" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#notre-cible">Notre cible</a></li>
+        <li><a href="#journaliste-et-photographe">Journaliste et Photographe</a></li>
+        <li><a href="#le-farfouilleur">Le farfouilleur</a></li>
+        <li><a href="#intervention-investigation">Intervention, investigation</a></li>
+        <li><a href="#toujours-plus-louche">Toujours plus Louche</a></li>
+        <li><a href="#théorie-finale">Théorie finale</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><dialog id="toc-dialog" class="tw-max-w-full tw-w-full tw-max-h-full tw-h-full tw-ml-16">
+        <div class="toc tw-mx-4 tw-max-w-full">
+            <h2 class="tw-mx-0 tw-my-6 tw-uppercase tw-text-2xl">Contents</h2>
+            <div class="toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#category">Category</a></li>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#files">Files</a></li>
+    <li><a href="#write-up">Write up</a>
+      <ul>
+        <li><a href="#notre-cible">Notre cible</a></li>
+        <li><a href="#journaliste-et-photographe">Journaliste et Photographe</a></li>
+        <li><a href="#le-farfouilleur">Le farfouilleur</a></li>
+        <li><a href="#intervention-investigation">Intervention, investigation</a></li>
+        <li><a href="#toujours-plus-louche">Toujours plus Louche</a></li>
+        <li><a href="#théorie-finale">Théorie finale</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+        </div>
+    </dialog><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single print:!tw-w-full print:!tw-max-w-none print:!tw-m-0 print:!tw-p-0"><h1 class="single-title" data-pagefind-meta="date:23-04-2024" data-pagefind-body>Stranger Case Intro</h1><h2 class="single-subtitle">Stranger Case 2024 - Challenge d&#39;intro</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><a href="nozyzy.github.io" title="Author" rel=" author" class="author">NozZy</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">categories <a href="/categories/writeups/"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>Writeups</a>&nbsp;<a href="/categories/stranger-case-2024/"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>Stranger Case 2024</a></span></div>
+            <div class="post-meta-line"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;<time datetime="23-04-2024">23-04-2024</time>&nbsp;<svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg>&nbsp;<time datetime="23-04-2024">23-04-2024</time>&nbsp;<svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1568 words&nbsp;
+                    <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;7 minutes&nbsp;</div>
+        </div><div class="featured-image"><img  loading="eager" src='/posts/stranger-case-intro/banner.png' srcset="/posts/stranger-case-intro/banner_hu_ee2ad9de7be0c0e9.webp 800w, /posts/stranger-case-intro/banner_hu_943e0c548134485.webp 1200w, /posts/stranger-case-intro/banner_hu_b4c35910225942d9.webp 1600w"   height="580" width="1917"></div><div class="details toc print:!tw-block" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                    <span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
@@ -158,283 +250,628 @@ Author: Neyzor &amp; Giorgone Write up Notre cible La video de départ est la su
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="stranger-case-2024---challenge-dintro">Stranger Case 2024 - Challenge d&rsquo;intro</h1>
-<hr>
-<h2 id="category">Category</h2>
-<blockquote>
-<p>OSINT</p>
-</blockquote>
-<h2 id="description">Description</h2>
-<blockquote>
-<p>Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.</p>
-</blockquote>
-<h2 id="files">Files</h2>
-<p><a href="/posts/stranger-case-intro/mission.pdf" rel="">Ordre de mission</a></p>
+            </div><div class="content" id="content" data-pagefind-body><h2 id="category" class="headerLink">
+    <a href="#category" class="header-mark"></a>Category</h2><blockquote>
+  <p>OSINT</p>
+</blockquote><h2 id="description" class="headerLink">
+    <a href="#description" class="header-mark"></a>Description</h2><blockquote>
+  <p>Votre mission consiste à enquêter sur la personne apparaissant dans la dernière vidéo transmise par l&rsquo;agence. Un de nos agents a pris des risques considérables pour obtenir son nom et prénom. Votre tâche est de découvrir l&rsquo;identité de cette personne et de déterminer ce qui lui est arrivé.</p>
+</blockquote><h2 id="files" class="headerLink">
+    <a href="#files" class="header-mark"></a>Files</h2><p><a href="/posts/stranger-case-intro/mission.pdf" rel="">Ordre de mission</a></p>
 <ul>
 <li>Author: <strong>Neyzor &amp; Giorgone</strong></li>
 </ul>
 <hr>
-<h2 id="write-up">Write up</h2>
-<h3 id="notre-cible">Notre cible</h3>
-<p>La video de départ est la suivante :</p>
-
+<h2 id="write-up" class="headerLink">
+    <a href="#write-up" class="header-mark"></a>Write up</h2><h3 id="notre-cible" class="headerLink">
+    <a href="#notre-cible" class="header-mark"></a>Notre cible</h3><p>La video de départ est la suivante :</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/j6QhuwEnoV4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/j6QhuwEnoV4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
 
 <p>On y voit une personne ressemblant à un agent, et une personne kidnappée dans le coffre de sa voiture. <strong>C&rsquo;est notre cible</strong></p>
-<p>On apperçoit à un moment donné un dossier marqué &ldquo;CONFIDENTIEL&rdquo; avec du texte marqué dessus :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/dossier.png"
-        data-srcset="/posts/stranger-case-intro/dossier.png, /posts/stranger-case-intro/dossier.png 1.5x, /posts/stranger-case-intro/dossier.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/dossier.png"
-        title="/posts/stranger-case-intro/dossier.png" width="716" height="413" /></p>
+<p>On aperçoit à un moment donné un dossier marqué &ldquo;CONFIDENTIEL&rdquo; avec du texte marqué dessus :</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/dossier.png' srcset="/posts/stranger-case-intro/dossier_hu_674e0b13a65e3241.webp 800w, /posts/stranger-case-intro/dossier_hu_48b5564226c09aee.webp 1200w, /posts/stranger-case-intro/dossier_hu_96f1657ab215ece0.webp 1600w"   height="413" width="716"></p>
 <p>C&rsquo;est un peu flou, mais on arrive à distinguer le nom :</p>
 <blockquote>
-<p><strong>Aymeric LABALLE</strong></p>
-</blockquote>
-<h3 id="journaliste-et-photographe">Journaliste et Photographe</h3>
-<p>Avec son nom, nous pouvons le rechercher sur différents réseaux sociaux (facebook, linkedin, Twitter, Instagram, etc)</p>
-<p>On trouve ce compte <a href="https://twitter.com/Laballe_Daily" target="_blank" rel="noopener noreffer ">Twitter</a> :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/twitter.png"
-        data-srcset="/posts/stranger-case-intro/twitter.png, /posts/stranger-case-intro/twitter.png 1.5x, /posts/stranger-case-intro/twitter.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/twitter.png"
-        title="/posts/stranger-case-intro/twitter.png" width="599" height="509" /></p>
+  <p><strong>Aymeric LABALLE</strong></p>
+</blockquote><h3 id="journaliste-et-photographe" class="headerLink">
+    <a href="#journaliste-et-photographe" class="header-mark"></a>Journaliste et Photographe</h3><p>Avec son nom, nous pouvons le rechercher sur différents réseaux sociaux (facebook, linkedin, Twitter, Instagram, etc)</p>
+<p>On trouve ce compte <a href="https://twitter.com/Laballe_Daily" target="_blank" rel="noopener noreferrer">Twitter</a> :</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/twitter.png' srcset="/posts/stranger-case-intro/twitter_hu_787ba38e4ca60157.webp 800w, /posts/stranger-case-intro/twitter_hu_830fd99afda6e0ac.webp 1200w, /posts/stranger-case-intro/twitter_hu_2adc2ecd1a258535.webp 1600w"   height="509" width="599"></p>
 <p>Il y parle de journalisme, d&rsquo;actualité, d&rsquo;IA, de photographie animale. Il dit aussi avoir un <strong>blog</strong></p>
 <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">N&#39;oubliez pas que je publie toujours en avant-première sur mon blog. Les plus assidus d&#39;entre vous ont peut-être remarqué que les futurs articles en préparation sont protégés, mais cela vous permet d&#39;avoir une idée sur quoi je travaille.</p>&mdash; Aymeric LB (@Laballe_Daily) <a href="https://twitter.com/Laballe_Daily/status/1765332798045372559?ref_src=twsrc%5Etfw">March 6, 2024</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-<p>On peut alors tenter naivement de chercher le site <a href="https://aymeric-laballe.fr/" target="_blank" rel="noopener noreffer ">https://aymeric-laballe.fr/</a></p>
+<p>On peut alors tenter naivement de chercher le site <a href="https://aymeric-laballe.fr/" target="_blank" rel="noopener noreferrer">https://aymeric-laballe.fr/</a></p>
 <p>Et ça marche !</p>
 <p>Il s&rsquo;agit de son blog de photographie.</p>
 <div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Vraie façon<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Il y avait évidemment une autre façon de faire prévue, et il s&rsquo;agissait de passer par son instagram :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/lien.png"
-        data-srcset="/posts/stranger-case-intro/lien.png, /posts/stranger-case-intro/lien.png 1.5x, /posts/stranger-case-intro/lien.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/lien.png"
-        title="/posts/stranger-case-intro/lien.png" width="577" height="82" /></p>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg></span>Vraie façon<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Il y avait évidemment une autre façon de faire prévue, et il s&rsquo;agissait de passer par son instagram :</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/lien.png' srcset="/posts/stranger-case-intro/lien_hu_17db35134c47c51a.webp 800w, /posts/stranger-case-intro/lien_hu_70e98cb1f2327358.webp 1200w, /posts/stranger-case-intro/lien_hu_dabe5c786acfcb30.webp 1600w"   height="82" width="577"></p>
 <p>Le compte Instagram étant trouvable grâce au Facebook. Ce dernier est trouvable en cherchant son nom :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/facebook.png"
-        data-srcset="/posts/stranger-case-intro/facebook.png, /posts/stranger-case-intro/facebook.png 1.5x, /posts/stranger-case-intro/facebook.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/facebook.png"
-        title="/posts/stranger-case-intro/facebook.png" width="682" height="657" /></p>
-</div>
-        </div>
-    </div>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/facebook.png' srcset="/posts/stranger-case-intro/facebook_hu_50b1922c4d896c25.webp 800w, /posts/stranger-case-intro/facebook_hu_b0e0481af424dcc2.webp 1200w, /posts/stranger-case-intro/facebook_hu_96a1a2347fc4a946.webp 1600w"   height="657" width="682"></p>
+</div></div></div>
 <div class="details admonition note">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Autre façon<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Un autre façon était de chercher son nom sur google :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/afnic.png"
-        data-srcset="/posts/stranger-case-intro/afnic.png, /posts/stranger-case-intro/afnic.png 1.5x, /posts/stranger-case-intro/afnic.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/afnic.png"
-        title="/posts/stranger-case-intro/afnic.png" width="724" height="880" /></p>
-<p>Un dump de noms de domaines provenant de l&rsquo;AFNIC (<em>Association française pour le nommage Internet en coopération</em>) cite le nom de domaine de notre cher aymeric.</p>
-</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg></span>Autre façon<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Un autre façon était de chercher son nom sur Google :</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/afnic.png' srcset="/posts/stranger-case-intro/afnic_hu_81f2e509fe2fbf2b.webp 800w, /posts/stranger-case-intro/afnic_hu_97b84e43c0a7881c.webp 1200w, /posts/stranger-case-intro/afnic_hu_f499f82125e81560.webp 1600w"   height="880" width="724"></p>
+<p>Un dump de noms de domaines provenant de l&rsquo;AFNIC (<em>Association française pour le nommage Internet en coopération</em>) cite le nom de domaine de notre cher aymeric.</p>
+</div></div></div>
 <p>Sur ses photos, il inscrit un @, très probablement un pseudo à lui :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/chat.png"
-        data-srcset="/posts/stranger-case-intro/chat.png, /posts/stranger-case-intro/chat.png 1.5x, /posts/stranger-case-intro/chat.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/chat.png"
-        title="/posts/stranger-case-intro/chat.png" width="1207" height="519" /></p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/chat.png' srcset="/posts/stranger-case-intro/chat_hu_2e491a5585ec3b6a.webp 800w, /posts/stranger-case-intro/chat_hu_7472a4ed271bf632.webp 1200w, /posts/stranger-case-intro/chat_hu_707e6908412282d7.webp 1600w"   height="519" width="1207"></p>
 <p>Le pseudo est <strong>@photo_aymeric</strong></p>
-<p>Si l&rsquo;on utilise un outil de recherche de pseudos comme <a href="https://blackbird-osint.herokuapp.com/#/results" target="_blank" rel="noopener noreffer ">blackbird</a>, on trouve qu&rsquo;il a un compte <a href="https://www.instagram.com/photo_aymeric/" target="_blank" rel="noopener noreffer ">Instagram</a> avec ce pseudo.</p>
-
+<p>Si l&rsquo;on utilise un outil de recherche de pseudos comme <a href="https://blackbird-osint.herokuapp.com/#/results" target="_blank" rel="noopener noreferrer">blackbird</a>, on trouve qu&rsquo;il a un compte <a href="https://www.instagram.com/photo_aymeric/" target="_blank" rel="noopener noreferrer">Instagram</a> avec ce pseudo.</p>
+<blockquote
+    class="instagram-media"
+    data-instgrm-captioned
+    data-instgrm-permalink="https://www.instagram.com/p/C5ORY0hsWlj"
+    data-instgrm-version="14"
+    style="
+      background: #fff;
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+      margin: 1px;
+      max-width: 540px;
+      min-width: 326px;
+      padding: 0;
+      width: 99.375%;
+      width: -webkit-calc(100% - 2px);
+      width: calc(100% - 2px);
+    "
+  >
+    <div style="padding: 16px">
+      <a
+        href="https://www.instagram.com/p/C5ORY0hsWlj"
+        style="
+          background: #ffffff;
+          line-height: 0;
+          padding: 0 0;
+          text-align: center;
+          text-decoration: none;
+          width: 100%;
+        "
+        target="_blank"
+      >
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 50%;
+              flex-grow: 0;
+              height: 40px;
+              margin-right: 14px;
+              width: 40px;
+            "
+          ></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                margin-bottom: 6px;
+                width: 100px;
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                width: 60px;
+              "
+            ></div>
+          </div>
+        </div>
+        <div style="padding: 19% 0"></div>
+        <div
+          style="display: block; height: 50px; margin: 0 auto 12px; width: 50px"
+        >
+          <svg
+            width="50px"
+            height="50px"
+            viewBox="0 0 60 60"
+            version="1.1"
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                <g>
+                  <path
+                    d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div style="padding-top: 8px">
+          <div
+            style="
+              color: #3897f0;
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 550;
+              line-height: 18px;
+            "
+          >
+            View this post on Instagram
+          </div>
+        </div>
+        <div style="padding: 12.5% 0"></div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 14px;
+            align-items: center;
+          "
+        >
+          <div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(0px) translateY(7px);
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                height: 12.5px;
+                transform: rotate(-45deg) translateX(3px) translateY(1px);
+                width: 12.5px;
+                flex-grow: 0;
+                margin-right: 14px;
+                margin-left: 2px;
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(9px) translateY(-18px);
+              "
+            ></div>
+          </div>
+          <div style="margin-left: 8px">
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                flex-grow: 0;
+                height: 20px;
+                width: 20px;
+              "
+            ></div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-top: 2px solid transparent;
+                border-left: 6px solid #f4f4f4;
+                border-bottom: 2px solid transparent;
+                transform: translateX(16px) translateY(-4px) rotate(30deg);
+              "
+            ></div>
+          </div>
+          <div style="margin-left: auto">
+            <div
+              style="
+                width: 0px;
+                border-top: 8px solid #f4f4f4;
+                border-right: 8px solid transparent;
+                transform: translateY(16px);
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                flex-grow: 0;
+                height: 12px;
+                width: 16px;
+                transform: translateY(-4px);
+              "
+            ></div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-top: 8px solid #f4f4f4;
+                border-left: 8px solid transparent;
+                transform: translateY(-4px) translateX(8px);
+              "
+            ></div>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            margin-bottom: 24px;
+          "
+        >
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              margin-bottom: 6px;
+              width: 224px;
+            "
+          ></div>
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              width: 144px;
+            "
+          ></div></div
+      ></a>
+    </div>
+  </blockquote><script async src="https://www.instagram.com/embed.js"></script>
 <p>Il parle de technologie, mais surtout de photos et d&rsquo;animaux.</p>
-<p>En haut du profile, on peut ne rien trouver sur ordinateur. En revanche, sur téléphone, un bouton &ldquo;<strong>Adresse mail</strong>&rdquo; apparaît : <code>aymeric.laballe.prive@proton.me</code></p>
-<p>On est alors en mesure de faire une recherche via email grâce à un outil comme <a href="https://epieos.com/?q=aymeric.laballe.prive%40proton.me&amp;t=email" target="_blank" rel="noopener noreffer ">Epieos</a>, et l&rsquo;on trouve qu&rsquo;il possède un compte.</p>
-<p>En cherchant comment récupérer un compte gravatar avec un email, on trouve une <a href="https://fr.gravatar.com/" target="_blank" rel="noopener noreffer ">page dédiée</a> sur le site officiel. On trouve alors son <a href="https://fr.gravatar.com/aymericlaballeprive" target="_blank" rel="noopener noreffer ">compte</a> :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/gravatar.png"
-        data-srcset="/posts/stranger-case-intro/gravatar.png, /posts/stranger-case-intro/gravatar.png 1.5x, /posts/stranger-case-intro/gravatar.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/gravatar.png"
-        title="/posts/stranger-case-intro/gravatar.png" width="647" height="574" /></p>
-<p>Son profil référence un lien : <a href="https://alerte-lb.fr/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/</a></p>
-<p>En regardant dessus, on voit qu&rsquo;il s&rsquo;agit de son fameux <strong>blog de journalisme</strong>. D&rsquo;après son tweet, il y aurait des articles protégés. On va donc chercher à énumérer les différents posts existant, à l&rsquo;url suivante : <code>https://alerte-lb.fr/wp-json/wp/v2/posts</code></p>
+<p>En haut du profil, on peut ne rien trouver sur ordinateur. En revanche, sur téléphone, un bouton &ldquo;<strong>Adresse mail</strong>&rdquo; apparaît : <code>aymeric.laballe.prive@proton.me</code></p>
+<p>On est alors en mesure de faire une recherche via email grâce à un outil comme <a href="https://epieos.com/?q=aymeric.laballe.prive%40proton.me&amp;t=email" target="_blank" rel="noopener noreferrer">Epieos</a>, et l&rsquo;on trouve qu&rsquo;il possède un compte.</p>
+<p>En cherchant comment récupérer un compte gravatar avec un email, on trouve une <a href="https://fr.gravatar.com/" target="_blank" rel="noopener noreferrer">page dédiée</a> sur le site officiel. On trouve alors son <a href="https://fr.gravatar.com/aymericlaballeprive" target="_blank" rel="noopener noreferrer">compte</a> :</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/gravatar.png' srcset="/posts/stranger-case-intro/gravatar_hu_f0215b2895265d84.webp 800w, /posts/stranger-case-intro/gravatar_hu_bf686d404e8ad814.webp 1200w, /posts/stranger-case-intro/gravatar_hu_477ec0995eb7d83a.webp 1600w"   height="574" width="647"></p>
+<p>Son profil référence un lien : <a href="https://alerte-lb.fr/" target="_blank" rel="noopener noreferrer">https://alerte-lb.fr/</a></p>
+<p>En regardant dessus, on voit qu&rsquo;il s&rsquo;agit de son fameux <strong>blog de journalisme</strong>. D&rsquo;après son tweet, il y aurait des articles protégés. On va donc chercher à énumérer les différents posts existants, à l&rsquo;url suivante : <code>https://alerte-lb.fr/wp-json/wp/v2/posts</code></p>
 <p>On trouve 5 articles :</p>
 <ul>
-<li><a href="https://alerte-lb.fr/2024/02/25/revelation-choc-un-lanceur-dalerte-denonce-des-pratiques-troublantes-dans-lindustrie-agroalimentaire/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2024/02/25/revelation-choc-un-lanceur-dalerte-denonce-des-pratiques-troublantes-dans-lindustrie-agroalimentaire/</a></li>
-<li><a href="https://alerte-lb.fr/2024/02/25/revelations-poignantes-un-lanceur-dalerte-denonce-le-scandaleux-traitement-des-animaux-dans-un-zoo-renomme/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2024/02/25/revelations-poignantes-un-lanceur-dalerte-denonce-le-scandaleux-traitement-des-animaux-dans-un-zoo-renomme/</a></li>
-<li><a href="https://alerte-lb.fr/2024/02/25/scandale-financier-dans-le-monde-de-la-chirurgie-esthetique-un-lanceur-dalerte-revele-des-detournements-de-fonds-choquants/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2024/02/25/scandale-financier-dans-le-monde-de-la-chirurgie-esthetique-un-lanceur-dalerte-revele-des-detournements-de-fonds-choquants/</a></li>
-<li><strong><a href="https://alerte-lb.fr/2024/02/25/backup-n127/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2024/02/25/backup-n127/</a></strong></li>
-<li><a href="https://alerte-lb.fr/2017/02/11/bonjour-tout-le-monde-2/" target="_blank" rel="noopener noreffer ">https://alerte-lb.fr/2017/02/11/bonjour-tout-le-monde-2/</a></li>
+<li><a href="https://alerte-lb.fr/2024/02/25/revelation-choc-un-lanceur-dalerte-denonce-des-pratiques-troublantes-dans-lindustrie-agroalimentaire/" target="_blank" rel="noopener noreferrer">https://alerte-lb.fr/2024/02/25/revelation-choc-un-lanceur-dalerte-denonce-des-pratiques-troublantes-dans-lindustrie-agroalimentaire/</a></li>
+<li><a href="https://alerte-lb.fr/2024/02/25/revelations-poignantes-un-lanceur-dalerte-denonce-le-scandaleux-traitement-des-animaux-dans-un-zoo-renomme/" target="_blank" rel="noopener noreferrer">https://alerte-lb.fr/2024/02/25/revelations-poignantes-un-lanceur-dalerte-denonce-le-scandaleux-traitement-des-animaux-dans-un-zoo-renomme/</a></li>
+<li><a href="https://alerte-lb.fr/2024/02/25/scandale-financier-dans-le-monde-de-la-chirurgie-esthetique-un-lanceur-dalerte-revele-des-detournements-de-fonds-choquants/" target="_blank" rel="noopener noreferrer">https://alerte-lb.fr/2024/02/25/scandale-financier-dans-le-monde-de-la-chirurgie-esthetique-un-lanceur-dalerte-revele-des-detournements-de-fonds-choquants/</a></li>
+<li><strong><a href="https://alerte-lb.fr/2024/02/25/backup-n127/" target="_blank" rel="noopener noreferrer">https://alerte-lb.fr/2024/02/25/backup-n127/</a></strong></li>
+<li><a href="https://alerte-lb.fr/2017/02/11/bonjour-tout-le-monde-2/" target="_blank" rel="noopener noreferrer">https://alerte-lb.fr/2017/02/11/bonjour-tout-le-monde-2/</a></li>
 </ul>
-<p>Les trois premiers et le dernier sont des articles révélateurs de son milieu : lanceur d&rsquo;alerte, actualité polémique, scandales, etc&hellip;</p>
+<p>Les trois premiers et le dernier sont des articles révélateurs de son milieu : lanceur d&rsquo;alerte, actualité polémique, scandales, etc.</p>
 <p>En revanche le 4e à un nom, et un contenu intéressant :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/code.png"
-        data-srcset="/posts/stranger-case-intro/code.png, /posts/stranger-case-intro/code.png 1.5x, /posts/stranger-case-intro/code.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/code.png"
-        title="/posts/stranger-case-intro/code.png" width="1204" height="518" /></p>
-<p>Un article <strong>protégé par mot de passe</strong>, qui raporte u certain <strong>témoignage</strong>&hellip;
-On commence à avoir une piste concernant sa disparaition : quelqu&rsquo;un aurait pu vouloir le faire taire.</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/code.png' srcset="/posts/stranger-case-intro/code_hu_327e3f4d7691cbb7.webp 800w, /posts/stranger-case-intro/code_hu_c0860b8b12286d4e.webp 1200w, /posts/stranger-case-intro/code_hu_65f09a6a5565d71a.webp 1600w"   height="518" width="1204"></p>
+<p>Un article <strong>protégé par mot de passe</strong>, qui rapporte un certain <strong>témoignage</strong>&hellip;
+On commence à avoir une piste concernant sa disparition : quelqu&rsquo;un aurait pu vouloir le faire taire.</p>
 <div class="details admonition note">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Spotify<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Notre ami possède un compte <a href="https://open.spotify.com/user/31qszakeln3aodi43pbepsxmo2gm" target="_blank" rel="noopener noreffer ">Spotify</a>, trouvable depuis son Facebook.</p>
-<p>Mais ce dernier ne nous a pas été utile. Il donne plus de réalisme au personnage.</p>
-</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg></span>Spotify<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="le-farfouilleur">Le farfouilleur</h3>
-<p>Pour trouver son code, les agents en lien avec nous dans l&rsquo;agence nous on apporté une information importante :</p>
+    <div class="details-content">
+        <div class="admonition-content"><p>Notre ami possède un compte <a href="https://open.spotify.com/user/31qszakeln3aodi43pbepsxmo2gm" target="_blank" rel="noopener noreferrer">Spotify</a>, trouvable depuis son Facebook.</p>
+<p>Mais ce dernier ne nous a pas été utile. Il donne plus de réalisme au personnage.</p>
+</div></div></div>
+<h3 id="le-farfouilleur" class="headerLink">
+    <a href="#le-farfouilleur" class="header-mark"></a>Le farfouilleur</h3><p>Pour trouver son code, les agents en lien avec nous dans l&rsquo;agence nous ont apporté une information importante :</p>
 <blockquote>
-<p>Aymeric n&rsquo;utilise que son pavé numérique pour ses codes</p>
-</blockquote>
-<p>Plusieurs possibilités s&rsquo;offrent à nous :</p>
+  <p>Aymeric n&rsquo;utilise que son pavé numérique pour ses codes</p>
+</blockquote><p>Plusieurs possibilités s&rsquo;offrent à nous :</p>
 <ul>
 <li>le code pourrait avoir fuité</li>
-<li>le code proviendrait d&rsquo;une valeur qui lui tient à coeur (eg. date)</li>
+<li>le code proviendrait d&rsquo;une valeur qui lui tient à cœur (eg. date).</li>
 <li>le site web protège mal son code</li>
 </ul>
 <p>Il se trouve qu&rsquo;à cette étape, nous avions déjà trouvé et compris ce que nous voulions.</p>
-
-<p>Dans ce post instagram, il parle fièrement de son chien. Il écrit un commentaire beaucoup plus long que ses autres posts. Et parmis ce texte, il parle d&rsquo;une <strong>date d&rsquo;adoption</strong> Le <strong>15/02/2020</strong>. Cela pourrait correspondre à notre deuxième solution.</p>
-<div class="details admonition success open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Code<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+<blockquote
+    class="instagram-media"
+    data-instgrm-captioned
+    data-instgrm-permalink="https://www.instagram.com/p/C4JR9CasGYU"
+    data-instgrm-version="14"
+    style="
+      background: #fff;
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+      margin: 1px;
+      max-width: 540px;
+      min-width: 326px;
+      padding: 0;
+      width: 99.375%;
+      width: -webkit-calc(100% - 2px);
+      width: calc(100% - 2px);
+    "
+  >
+    <div style="padding: 16px">
+      <a
+        href="https://www.instagram.com/p/C4JR9CasGYU"
+        style="
+          background: #ffffff;
+          line-height: 0;
+          padding: 0 0;
+          text-align: center;
+          text-decoration: none;
+          width: 100%;
+        "
+        target="_blank"
+      >
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 50%;
+              flex-grow: 0;
+              height: 40px;
+              margin-right: 14px;
+              width: 40px;
+            "
+          ></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                margin-bottom: 6px;
+                width: 100px;
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                width: 60px;
+              "
+            ></div>
+          </div>
         </div>
-        <div class="details-content">
-            <div class="admonition-content">Le code est <strong>15022020</strong></div>
+        <div style="padding: 19% 0"></div>
+        <div
+          style="display: block; height: 50px; margin: 0 auto 12px; width: 50px"
+        >
+          <svg
+            width="50px"
+            height="50px"
+            viewBox="0 0 60 60"
+            version="1.1"
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+          >
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                <g>
+                  <path
+                    d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
         </div>
+        <div style="padding-top: 8px">
+          <div
+            style="
+              color: #3897f0;
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 550;
+              line-height: 18px;
+            "
+          >
+            View this post on Instagram
+          </div>
+        </div>
+        <div style="padding: 12.5% 0"></div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 14px;
+            align-items: center;
+          "
+        >
+          <div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(0px) translateY(7px);
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                height: 12.5px;
+                transform: rotate(-45deg) translateX(3px) translateY(1px);
+                width: 12.5px;
+                flex-grow: 0;
+                margin-right: 14px;
+                margin-left: 2px;
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(9px) translateY(-18px);
+              "
+            ></div>
+          </div>
+          <div style="margin-left: 8px">
+            <div
+              style="
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                flex-grow: 0;
+                height: 20px;
+                width: 20px;
+              "
+            ></div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-top: 2px solid transparent;
+                border-left: 6px solid #f4f4f4;
+                border-bottom: 2px solid transparent;
+                transform: translateX(16px) translateY(-4px) rotate(30deg);
+              "
+            ></div>
+          </div>
+          <div style="margin-left: auto">
+            <div
+              style="
+                width: 0px;
+                border-top: 8px solid #f4f4f4;
+                border-right: 8px solid transparent;
+                transform: translateY(16px);
+              "
+            ></div>
+            <div
+              style="
+                background-color: #f4f4f4;
+                flex-grow: 0;
+                height: 12px;
+                width: 16px;
+                transform: translateY(-4px);
+              "
+            ></div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-top: 8px solid #f4f4f4;
+                border-left: 8px solid transparent;
+                transform: translateY(-4px) translateX(8px);
+              "
+            ></div>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            margin-bottom: 24px;
+          "
+        >
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              margin-bottom: 6px;
+              width: 224px;
+            "
+          ></div>
+          <div
+            style="
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              width: 144px;
+            "
+          ></div></div
+      ></a>
     </div>
+  </blockquote><script async src="https://www.instagram.com/embed.js"></script>
+<p>Dans ce post instagram, il parle fièrement de son chien. Il écrit un commentaire beaucoup plus long que ses autres posts. Et parmi ce texte, il parle d&rsquo;une <strong>date d&rsquo;adoption</strong> Le <strong>15/02/2020</strong>. Cela pourrait correspondre à notre deuxième solution.</p>
+<div class="details admonition success open">
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>Code<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Le code est <strong>15022020</strong></div></div></div>
 <p>Cela nous donne accès à de nombreux screenshots d&rsquo;emails et de photos de conversations SMS :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/emails.png"
-        data-srcset="/posts/stranger-case-intro/emails.png, /posts/stranger-case-intro/emails.png 1.5x, /posts/stranger-case-intro/emails.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/emails.png"
-        title="/posts/stranger-case-intro/emails.png" width="1079" height="790" /></p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/emails.png' srcset="/posts/stranger-case-intro/emails_hu_e8dce11413e646e3.webp 800w, /posts/stranger-case-intro/emails_hu_a811432544bc4b43.webp 1200w, /posts/stranger-case-intro/emails_hu_e3581ad187510517.webp 1600w"   height="790" width="1079"></p>
 <p>Toutes les photos sont <a href="../../stranger-intro/emails.html" rel="">disponibles ici</a></p>
 <p>Dans ces photos, on apprend qu&rsquo;il a été contacté par un Pierre, qui possède des documents compromettants sur son entreprise, et compte sur Aymeric pour l&rsquo;aider à investiguer et dévoiler tout cela au grand jour.</p>
 <p>Pierre lui fournit des preuves photos, et après avoir refusé de prendre rendez-vous physiquement avec Aymeric, ils ont probablement fini par se rencontrer au <strong>café albertine</strong></p>
 <p>Un post d&rsquo;Aymeric nous indique où se trouve ce fameux café :
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/caf%C3%A9.png"
-        data-srcset="/posts/stranger-case-intro/caf%C3%A9.png, /posts/stranger-case-intro/caf%C3%A9.png 1.5x, /posts/stranger-case-intro/caf%C3%A9.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/caf%C3%A9.png"
-        title="/posts/stranger-case-intro/caf%C3%A9.png" width="682" height="542" /></p>
+<img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/caf%C3%A9.png' srcset="/posts/stranger-case-intro/caf%C3%A9_hu_3acd5fbe9152c921.webp 800w, /posts/stranger-case-intro/caf%C3%A9_hu_1fc1ef24830c7993.webp 1200w, /posts/stranger-case-intro/caf%C3%A9_hu_846bc5952dfa0c5d.webp 1600w"   height="542" width="682"></p>
 <p>Les photos montrant des factures donnent accès à un email et au site de l&rsquo;entreprise en question, pointée du doigt par Pierre.</p>
-<h3 id="intervention-investigation">Intervention, investigation</h3>
-<p>L&rsquo;entreprise est <strong>AS-Intervention</strong>, leur site est <a href="https://as-intervention.fr/" target="_blank" rel="noopener noreffer ">https://as-intervention.fr/</a></p>
+<h3 id="intervention-investigation" class="headerLink">
+    <a href="#intervention-investigation" class="header-mark"></a>Intervention, investigation</h3><p>L&rsquo;entreprise est <strong>AS-Intervention</strong>, leur site est <a href="https://as-intervention.fr/" target="_blank" rel="noopener noreferrer">https://as-intervention.fr/</a></p>
 <p>Leur site met en avant leur domaine d&rsquo;activité :</p>
 <blockquote>
-<p>Nous offrons une gamme complète de services dans le domaine de la conception et de la fabrication de missiles, ainsi que des solutions d&rsquo;approvisionnement en bateau et en avion à l&rsquo;échelle mondiale.</p>
-</blockquote>
-<p>Ils travaillent dans <strong>l&rsquo;armement militaire.</strong></p>
+  <p>Nous offrons une gamme complète de services dans le domaine de la conception et de la fabrication de missiles, ainsi que des solutions d&rsquo;approvisionnement en bateau et en avion à l&rsquo;échelle mondiale.</p>
+</blockquote><p>Ils travaillent dans <strong>l&rsquo;armement militaire.</strong></p>
 <p>On trouve aussi des citations d&rsquo;employés :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/gens.png"
-        data-srcset="/posts/stranger-case-intro/gens.png, /posts/stranger-case-intro/gens.png 1.5x, /posts/stranger-case-intro/gens.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/gens.png"
-        title="/posts/stranger-case-intro/gens.png" width="1217" height="646" /></p>
-<p>Sur la page <a href="https://as-intervention.fr/a-propos/" target="_blank" rel="noopener noreffer ">a propos</a> on trouve l&rsquo;interview de <strong>Pierre Louche</strong>, du Support IT</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/index_20240426113822120.png"
-        data-srcset="/posts/stranger-case-intro/index_20240426113822120.png, /posts/stranger-case-intro/index_20240426113822120.png 1.5x, /posts/stranger-case-intro/index_20240426113822120.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/index_20240426113822120.png"
-        title="/posts/stranger-case-intro/index_20240426113822120.png" width="1160" height="211" /></p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/gens.png' srcset="/posts/stranger-case-intro/gens_hu_255b533b84b828d4.webp 800w, /posts/stranger-case-intro/gens_hu_6364638d30e0ff01.webp 1200w, /posts/stranger-case-intro/gens_hu_2d6df1b901f7b0db.webp 1600w"   height="646" width="1217"></p>
+<p>Sur la page <a href="https://as-intervention.fr/a-propos/" target="_blank" rel="noopener noreferrer">à propos</a> on trouve l&rsquo;interview de <strong>Pierre Louche</strong>, du Support IT</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/index_20240426113822120.png' srcset="/posts/stranger-case-intro/index_20240426113822120_hu_ff6c1e513c9d1913.webp 800w, /posts/stranger-case-intro/index_20240426113822120_hu_988705592d2f05f3.webp 1200w, /posts/stranger-case-intro/index_20240426113822120_hu_6717f6a555452ed7.webp 1600w"   height="211" width="1160"></p>
 <p>Il s&rsquo;agit donc du Pierre qui a échangé avec Aymeric.</p>
 <div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Récap<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">L&rsquo;entreprise <strong>AS-Intervention</strong> fait du business d&rsquo;armement à très haute valeur, et semble vouloir garder cela secret et protégé.
-<strong>Pierre Louche</strong> du support IT s&rsquo;en rend compte, collecte des preuves, et contacte le journaliste <strong>Aymeric Laballe</strong> pour que ce dernier fasse paraître cela au grand jour.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg></span>Récap<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
     </div>
-<h3 id="toujours-plus-louche">Toujours plus Louche</h3>
-<p>Essayons d&rsquo;en apprendre plus sur Pierre. Il aura probablement plus d&rsquo;informations concernant la disparition de Aymeric.</p>
-<p>Comme notre cher Aymeric, Pierre possède un <a href="https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreffer ">compte Twitter</a></p>
+    <div class="details-content">
+        <div class="admonition-content">L&rsquo;entreprise <strong>AS-Intervention</strong> faite du business d&rsquo;armement à très haute valeur, et semble vouloir garder cela secret et protégé.
+<strong>Pierre Louche</strong> du support IT s&rsquo;en rend compte, collecte des preuves, et contacte le journaliste <strong>Aymeric Laballe</strong> pour que ce dernier fasse paraître cela au grand jour.</div></div></div>
+<h3 id="toujours-plus-louche" class="headerLink">
+    <a href="#toujours-plus-louche" class="header-mark"></a>Toujours plus Louche</h3><p>Essayons d&rsquo;en apprendre plus sur Pierre. Il aura probablement plus d&rsquo;informations concernant la disparition d&rsquo;Aymeric.</p>
+<p>Comme notre cher Aymeric, Pierre possède un <a href="https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreferrer">compte Twitter</a></p>
 <p>Pour autant, aucun poste à ce jour, aucun follow ou liste intéressante.
-La recherche par pivot avec le username (@_pierrelouche) ne donne rien non plus.</p>
-<p>Bizarre d&rsquo;avoir un twitter aussi vide&hellip; Peut-être qu&rsquo;il était plus intéressant avant ? En cherchant sut <a href="https://archive.org" target="_blank" rel="noopener noreffer ">https://archive.org</a>, on trouve une <a href="https://web.archive.org/web/20240214185923/https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreffer ">archive de son compte</a> :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/archive_twitter.png"
-        data-srcset="/posts/stranger-case-intro/archive_twitter.png, /posts/stranger-case-intro/archive_twitter.png 1.5x, /posts/stranger-case-intro/archive_twitter.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/archive_twitter.png"
-        title="/posts/stranger-case-intro/archive_twitter.png" width="1915" height="575" /></p>
-<p>On trouve alors le lien de son <a href="https://linktr.ee/pierre.louche" target="_blank" rel="noopener noreffer ">linktree</a></p>
+La recherche par pivot avec l&rsquo;username (@_pierrelouche) ne donne rien non plus.</p>
+<p>Bizarre d&rsquo;avoir un twitter aussi vide&hellip; Peut-être qu&rsquo;il était plus intéressant avant ? En cherchant sut <a href="https://archive.org" target="_blank" rel="noopener noreferrer">https://archive.org</a>, on trouve une <a href="https://web.archive.org/web/20240214185923/https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreferrer">archive de son compte</a> :</p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/archive_twitter.png' srcset="/posts/stranger-case-intro/archive_twitter_hu_5683ac68f80c72d3.webp 800w, /posts/stranger-case-intro/archive_twitter_hu_fbc970d2ac19da48.webp 1200w, /posts/stranger-case-intro/archive_twitter_hu_a31d83606abe7a45.webp 1600w"   height="575" width="1915"></p>
+<p>On trouve alors le lien de son <a href="https://linktr.ee/pierre.louche" target="_blank" rel="noopener noreferrer">linktree</a></p>
 <p>De nombreux liens sont alors à notre disposition :
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/tree.png"
-        data-srcset="/posts/stranger-case-intro/tree.png, /posts/stranger-case-intro/tree.png 1.5x, /posts/stranger-case-intro/tree.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/tree.png"
-        title="/posts/stranger-case-intro/tree.png" width="656" height="699" /></p>
+<img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/tree.png' srcset="/posts/stranger-case-intro/tree_hu_88fd615f51dd3d4b.webp 800w, /posts/stranger-case-intro/tree_hu_49d5ec4e14734162.webp 1200w, /posts/stranger-case-intro/tree_hu_836afd1e1cea88d8.webp 1600w"   height="699" width="656"></p>
 <ul>
-<li><a href="https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreffer ">Mon compte X</a> : son Twitter</li>
-<li><a href="https://pastebin.com/AufN6aM8" target="_blank" rel="noopener noreffer ">My Secret liste - Pastebin.com</a> : un pastebin avec une liste d&rsquo;animes</li>
-<li><a href="https://t.me/&#43;dGupLEDgAnM1NWRk" target="_blank" rel="noopener noreffer ">Telegram: Join Group Poker</a> : Lien Telegram vers une conversation sans historique autour du Poker</li>
-<li><a href="https://pastebin.com/BVQbkxdA" target="_blank" rel="noopener noreffer ">Administration - Pastebin.com</a> : Lien pastebin avec un script powershell pour de l&rsquo;AdminSys</li>
-<li><a href="https://pastebin.com/7CVviAth" target="_blank" rel="noopener noreffer ">Pastebin.com Eric</a> : Lien pastebin qui donne vers un lien <a href="https://t.me/&#43;nGnMfes8XHhiNTU8" target="_blank" rel="noopener noreffer ">Groupe Telegram Boulot</a></li>
-<li><a href="https://pastebin.com/Miz64hWX" target="_blank" rel="noopener noreffer ">Projet secret&hellip; - Pastebin.com</a> : Lien pastebin avec un programme sportif</li>
+<li><a href="https://twitter.com/_pierrelouche" target="_blank" rel="noopener noreferrer">Mon compte X</a> : son Twitter</li>
+<li><a href="https://pastebin.com/AufN6aM8" target="_blank" rel="noopener noreferrer">My Secret liste - Pastebin.com</a> : un pastebin avec une liste d&rsquo;animes</li>
+<li><a href="https://t.me/&#43;dGupLEDgAnM1NWRk" target="_blank" rel="noopener noreferrer">Telegram: Join Group Poker</a> : Lien Telegram vers une conversation sans historique autour du Poker</li>
+<li><a href="https://pastebin.com/BVQbkxdA" target="_blank" rel="noopener noreferrer">Administration - Pastebin.com</a> : Lien pastebin avec un script powershell pour de l&rsquo;AdminSys</li>
+<li><a href="https://pastebin.com/7CVviAth" target="_blank" rel="noopener noreferrer">Pastebin.com Eric</a> : Lien pastebin qui donne vers un lien <a href="https://t.me/&#43;nGnMfes8XHhiNTU8" target="_blank" rel="noopener noreferrer">Groupe Telegram Boulot</a></li>
+<li><a href="https://pastebin.com/Miz64hWX" target="_blank" rel="noopener noreferrer">Projet secret.. – Pastebin.com</a> : Lien pastebin avec un programme sportif</li>
 </ul>
 <p>Si l&rsquo;on regarde les personnes présntes dans le Telegram Poker, on y trouve des noms :</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/stranger-case-intro/poker.png"
-        data-srcset="/posts/stranger-case-intro/poker.png, /posts/stranger-case-intro/poker.png 1.5x, /posts/stranger-case-intro/poker.png 2x"
-        data-sizes="auto"
-        alt="/posts/stranger-case-intro/poker.png"
-        title="poker" width="264" height="363" /></p>
+<p><img class="tw-inline" loading="lazy" src='/posts/stranger-case-intro/poker.png' srcset="/posts/stranger-case-intro/poker_hu_7071d98e3710a86.webp 800w, /posts/stranger-case-intro/poker_hu_f8cb1e36b726272f.webp 1200w, /posts/stranger-case-intro/poker_hu_8cde57385fcc3446.webp 1600w"  alt="poker" height="363" width="264"></p>
 <p>Pour l&rsquo;insant aucune assurance qui sont ces personnes, cela peut être d&rsquo;autres enquêteurs ou vraiment des proches de Pierre.</p>
 <p>Le Telegram Boulot est en revanche bien plus intéressant :
 <a href="../../stranger-intro/messages.html" rel="">Dump local de la conversation</a></p>
@@ -446,64 +883,160 @@ La recherche par pivot avec le username (@_pierrelouche) ne donne rien non plus.
 </ul>
 <p>Chacun raconte un peu sa vie, jusqu&rsquo;au moment où Pierre se voit demander un service particulier à son travail :</p>
 <blockquote>
-<p>J&rsquo;ai reçu un message du chef aujourd&rsquo;hui, je ne vous raconte pas, il avait l&rsquo;air sérieux..
+  <p>J&rsquo;ai reçu un message du chef aujourd&rsquo;hui, je ne vous raconte pas, il avait l&rsquo;air sérieux..
 il m&rsquo;a donné une tache de manière particulière</p>
-</blockquote>
-<p>Cette tâche concerne un certain &ldquo;Pascal&rdquo; le &ldquo;Grand patron&rdquo;. Le service est demandé très discrètement, à une personne de confiance. Ce n&rsquo;est donc pas quelque chose qui se veut être entendu.</p>
+</blockquote><p>Cette tâche concerne un certain &ldquo;Pascal&rdquo; le &ldquo;Grand patron&rdquo;. Le service est demandé très discrètement, à une personne de confiance. Ce n&rsquo;est donc pas quelque chose qui se veut être entendu.</p>
 <p>Soit c&rsquo;est intime, soit c&rsquo;est confidentiel, soit c&rsquo;est tout bonnement illégal. Au vu des photos, cela confirme la théorie du <strong>business illegal</strong>.</p>
-<p>Pierre veut en parler a ses collègues après avoir vu les onglets actifs, les factures et les messages.</p>
+<p>Pierre veut en parler à ses collègues après avoir vu les onglets actifs, les factures et les messages.</p>
 <p>L&rsquo;employé est surpris en train de prendre les photos par <strong>une personne inconnue</strong>, avec un air agressif. Pierre a peur et craint de se faire virer suite à cela.</p>
 <p>Le lendemain, il a eu le temps d&rsquo;envoyer les documents à Aymeric, avant de ne <strong>plus donner une seule nouvelle</strong>.</p>
-<h3 id="théorie-finale">Théorie finale</h3>
-<p>C&rsquo;est ici que se termine cette enquête, pour le moment. Nous avons suffisamment d&rsquo;éléments pour établir une théorie sur les événements à l&rsquo;heure actuelle.</p>
+<h3 id="théorie-finale" class="headerLink">
+    <a href="#th%c3%a9orie-finale" class="header-mark"></a>Théorie finale</h3><p>C&rsquo;est ici que se termine cette enquête, pour le moment. Nous avons suffisamment d&rsquo;éléments pour établir une théorie sur les événements à l&rsquo;heure actuelle.</p>
 <div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Théorie<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>L&rsquo;entreprise <strong>AS-Intervention</strong> fait du business illégal de matériel militaire. Les factures ne sont pas recevables, et les valeurs d&rsquo;argent sont très elevées.</p>
-<p><strong>Pierre Louche</strong>, du Support IT de cette entreprise, est demandé pour un service par Pascal, le grand patron. Ce service se doit être très discret, et dans la confidence. C&rsquo;est à ce moment, en faisant son travail sur l&rsquo;ordinateur de Pascal, que <strong>Pierre tombe sur ces preuves</strong>. Il les prend en photo, mais <strong>se fait surprendre par un inconnu</strong>. La personne à l&rsquo;air agressif, jamais vu dans la boite, qui l&rsquo;a bien vu prendre des photos.</p>
+    <div class="details-summary admonition-title">
+        <span class="icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg></span>Théorie<span class="details-icon"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>L&rsquo;entreprise <strong>AS-Intervention</strong> fait du business illégal de matériel militaire. Les factures ne sont pas recevables, et les valeurs d&rsquo;argent sont très élevées.</p>
+<p><strong>Pierre Louche</strong>, du Support IT de cette entreprise, est demandé pour un service par Pascal, le grand patron. Ce service se doit être très discret, et dans la confidence. C&rsquo;est à ce moment, en faisant son travail sur l&rsquo;ordinateur de Pascal, que <strong>Pierre tombe sur ces preuves</strong>. Il les prend en photo, mais <strong>se fait surprendre par un inconnu</strong>. La personne a l&rsquo;air agressif, jamais vu dans la boite, qui l&rsquo;a bien vu prendre des photos.</p>
 <p>Entre temps, Pierre a pris contact avec <strong>Aymeric Laballe</strong>, un journaliste lanceur d&rsquo;alerte. Ils se sont mis d&rsquo;accord pour enquêter sur cette affaire, et Pierre lui a envoyé les preuves.</p>
 <p>Le dernier signe de vie de Pierre sur internet remonte au <strong>3 avril</strong>, après quoi plus de nouvelles. Dans son dernier mail à Aymeric, il dit avoir revu une personne, et que ça l&rsquo;inquiète. Il s&rsquo;agit probablement de <strong>l&rsquo;inconnu agressif</strong>, en route pour kidnapper Pierre, afin de le faire taire.</p>
 <p>La même chose est ensuite arrivée à Aymeric, qui se retrouve enlevé dans le coffre d&rsquo;une voiture, afin que son article ne soit jamais publié.</p>
+</div></div></div>
 </div>
-        </div>
-    </div>
-</div><div class="post-footer" id="post-footer">
+
+        <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
                 <span>Updated on 23-04-2024</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro" data-via="Nozzouille" data-hashtags="OSINT"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/stranger-case-intro/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line print:!tw-hidden">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/posts/stranger-case-intro/index.md target="_blank" rel="noopener noreferrer">Read markdown</a>
+                    </span><span>|&nbsp;<a class="link-to-source" href=true target="_blank" rel="noopener noreferrer">View source</a>
+                    </span></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro" data-via="Nozzouille" data-hashtags="OSINT"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></button><button title="Share on Linkedin" data-sharer="linkedin" data-url="https://nozyzy.github.io/posts/stranger-case-intro/"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></button><button title="Share on Hacker News" data-sharer="hackernews" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M0 32v448h448V32H0zm21.2 197.2H21c.1-.1.2-.3.3-.4 0 .1 0 .3-.1.4zm218 53.9V384h-31.4V281.3L128 128h37.3c52.5 98.3 49.2 101.2 59.3 125.6 12.3-27 5.8-24.4 60.6-125.6H320l-80.8 155.1z"/></svg></button><button title="Share on Line" data-sharer="line" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro"><svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LINE</title><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></button><button title="Share on 微博" data-sharer="weibo" data-url="https://nozyzy.github.io/posts/stranger-case-intro/" data-title="Stranger Case Intro" data-image="banner.png"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg></button></div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/osint/">OSINT</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        <section class="post-tags"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg>&nbsp;<a href="/tags/osint/">OSINT</a></section>
+        <section class="print:!tw-hidden">
+            <span><button class="tw-text-fgColor-link-muted hover:tw-text-fgColor-link-muted-hover" onclick="window.history.back();">Back</button></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/soc-simulator/" class="prev" rel="prev" title="SOC Simulator"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>SOC Simulator</a>
-            <a href="/posts/grand-ecart/" class="next" rel="next" title="Le grand écart">Le grand écart<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav print:tw-hidden"><a href="/posts/soc-simulator/" class="prev" rel="prev" title="SOC Simulator"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>SOC Simulator</a>
+            <a href="/posts/grand-ecart/" class="next" rel="next" title="Le grand écart">Le grand écart<svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="nozyzy.github.io" target="_blank">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div>
-    </footer></div>
+</article></main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.147.8">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.2"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/></svg> DoIt</a>
+                </div><div class="footer-line"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 448c-110.532 0-200-89.451-200-200 0-110.531 89.451-200 200-200 110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200zm107.351-101.064c-9.614 9.712-45.53 41.396-104.065 41.396-82.43 0-140.484-61.425-140.484-141.567 0-79.152 60.275-139.401 139.762-139.401 55.531 0 88.738 26.62 97.593 34.779a11.965 11.965 0 0 1 1.936 15.322l-18.155 28.113c-3.841 5.95-11.966 7.282-17.499 2.921-8.595-6.776-31.814-22.538-61.708-22.538-48.303 0-77.916 35.33-77.916 80.082 0 41.589 26.888 83.692 78.277 83.692 32.657 0 56.843-19.039 65.726-27.225 5.27-4.857 13.596-4.039 17.82 1.738l19.865 27.17a11.947 11.947 0 0 1-1.152 15.518z"/></svg>2023 - 2025<span class="author">&nbsp;<a href="nozyzy.github.io" target="_blank" rel="noopener noreferrer">NozZy</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer><div class="print:!tw-hidden tw-flex tw-flex-col tw-fixed tw-right-4 tw-bottom-4 tw-gap-2"><a href="#back-to-top" id="back-to-top-button" class="tw-transition-opacity tw-opacity-0 tw-block tw-bg-bgColor-secondary tw-rounded-full" style="padding: 0.6rem; line-height: 1.3rem; font-size: 1rem;" title="Back to Top">
+      <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg>
+  </a>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":30},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+  <button id="toc-drawer-button" class="tw-block tw-bg-bgColor-secondary tw-rounded-full md:tw-hidden" style="padding: 0.6rem; line-height: 1.3rem; font-size: 1rem;">
+      <svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+  </button></div>
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/lightgallery/lightgallery.min.b38ee65d6456beb2d034bf554505f4ca47e421548b7cd26e8a7805fd2673b6c3.css" integrity="sha256-s47mXWRWvrLQNL9VRQX0ykfkIVSLfNJuingF/SZztsM=">
+        <noscript><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.b38ee65d6456beb2d034bf554505f4ca47e421548b7cd26e8a7805fd2673b6c3.css" integrity="sha256-s47mXWRWvrLQNL9VRQX0ykfkIVSLfNJuingF/SZztsM="></noscript><link rel="stylesheet" href="/lib/katex/katex.min.b668a32dd6d3c13c4f6029dfbe41dedc89ed260586f73ff8caa88b513fa0913f.css" integrity="sha256-tmijLdbTwTxPYCnfvkHe3IntJgWG9z/4yqiLUT&#43;gkT8="><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.cf8e3e934d92a839d209ffdac331fa693da5958a6dff2c8788a4713cc1f50a47.css" integrity="sha256-z44&#43;k02SqDnSCf/awzH6aT2llYpt/yyHiKRxPMH1Ckc=">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.cf8e3e934d92a839d209ffdac331fa693da5958a6dff2c8788a4713cc1f50a47.css" integrity="sha256-z44&#43;k02SqDnSCf/awzH6aT2llYpt/yyHiKRxPMH1Ckc="></noscript>
+<script>window.config={"autocomplete.min.js":"/lib/autocomplete/autocomplete.min.js","comment":{},"fuse.min.js":"/lib/fuse/fuse.min.js","lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true};</script><script
+    src="/lib/lightgallery/lightgallery.min.0c4d9db673dd19489cfa134ab15ef8b9237ae72aaa65d8490d55658442b3a2d3.js"
+    
+      integrity="sha256-DE2dtnPdGUic&#43;hNKsV74uSN65yqqZdhJDVVlhEKzotM="
+    
+      defer
+    
+  ></script><script
+    src="/lib/lightgallery/lg-thumbnail.min.72ceb0f87691041e9e0bea2f2468b9aa3ed544e8f7f6dc9f76d8c8f997699e41.js"
+    
+      integrity="sha256-cs6w&#43;HaRBB6eC&#43;ovJGi5qj7VROj39tyfdtjI&#43;ZdpnkE="
+    
+      defer
+    
+  ></script><script
+    src="/lib/lightgallery/lg-zoom.min.5b0e82e9a1ae0b52d07a52da1eb4640da77eb3ca7e78c3a428c1f3b712858d3c.js"
+    
+      integrity="sha256-Ww6C6aGuC1LQelLaHrRkDad&#43;s8p&#43;eMOkKMHztxKFjTw="
+    
+      defer
+    
+  ></script><script
+    src="/lib/sharer/sharer.min.8fe10eb615eb163a20f795484430a012805ec7c8c11df52df54ddb7a46084254.js"
+    
+      integrity="sha256-j&#43;EOthXrFjog95VIRDCgEoBex8jBHfUt9U3bekYIQlQ="
+    
+  ></script><script
+    src="/lib/katex/katex.min.e8d885505949f3a5f4abdd5dd0d53696bd1371ad26ffbf4f310dcd77c8cdae89.js"
+    
+      integrity="sha256-6NiFUFlJ86X0q91d0NU2lr0Tca0m/79PMQ3Nd8jNrok="
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
+    
+      integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/copy-tex.min.07770af90943a1de1a1010794bc78c6a7346d46d48fb63e35cc76ba76b827604.js"
+    
+      integrity="sha256-B3cK&#43;QlDod4aEBB5S8eManNG1G1I&#43;2PjXMdrp2uCdgQ="
+    
+      defer
+    
+  ></script><script
+    src="/lib/katex/mhchem.min.9f87e5e9c384a160472d0045035a8641f6013358eddb3ece708634a50f946a40.js"
+    
+      integrity="sha256-n4fl6cOEoWBHLQBFA1qGQfYBM1jt2z7OcIY0pQ&#43;UakA="
+    
+      defer
+    
+  ></script><script
+    src="/js/katex.min.js"
+    
+      defer
+    
+  ></script><script
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script>
+
+<script type="speculationrules">
+  {
+    "prerender": [
+      {
+        "where": { "href_matches": "/*" },
+        "eagerness": "moderate"
+      }
+    ]
+  }
+</script>
+</body>
+
 </html>

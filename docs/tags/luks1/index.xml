@@ -7,10 +7,12 @@
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/luks1/" rel="self" type="application/rss+xml" /><item>
     <title>How to decrypt LUKS1 with key in memory</title>
     <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
-    <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate>
-    <author>NozZy</author>
-    <guid>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</guid>
-    <description><![CDATA[How to decrypt LUKS1 with key in memory LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe vulnerability. The master key, used to encrypt and decrypt the whole disk, can be retrieved in the memory of the running machine. This article will show you how to recover that key, and then decrypt the disk.]]></description>
-</item>
-</channel>
+    <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</guid>
+    <description><![CDATA[<h1 id="how-to-decrypt-luks1-with-key-in-memory" class="headerLink">
+    <a href="#how-to-decrypt-luks1-with-key-in-memory" class="header-mark"></a>How to decrypt LUKS1 with key in memory</h1><hr>
+<p>LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe <strong>vulnerability</strong>. The master key, used to encrypt and decrypt the whole disk, <strong>can be retrieved in the memory</strong> of the running machine.
+This article will show you how to <em><strong>recover that key</strong></em>, and then <em><strong>decrypt the disk</strong></em>.</p>]]></description>
+</item></channel>
 </rss>

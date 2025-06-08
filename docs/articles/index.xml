@@ -1,35 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Articles on NozZy</title>
-    <link>https://nozyzy.github.io/articles/</link>
-    <description>Recent content in Articles on NozZy</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-    <webMaster>nozzy@club-rezo.net (NozZy)</webMaster>
-    <lastBuildDate>Sat, 21 Sep 2024 21:13:10 +0200</lastBuildDate><atom:link href="https://nozyzy.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wireshark/Tshark TCP illegal flags</title>
-      <link>https://nozyzy.github.io/articles/tcp_illegal_flags/</link>
-      <pubDate>Sat, 21 Sep 2024 21:13:10 +0200</pubDate>
-      <author>nozzy@club-rezo.net (NozZy)</author>
-      <guid>https://nozyzy.github.io/articles/tcp_illegal_flags/</guid>
-      <description>During the patriotCTF, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.
-For that purpose, I based my knowledge of &amp;ldquo;illegal TCP packets&amp;rdquo; only on wrong flags combinations, displayed as red in wireshark:
-Wireshark red packetsHere, only the combination of FIN, SYN, RST appears, with the addition of PSH sometimes.
-However, I was missing something.
-TCP Flags Here is a small recap of which TCP flags exist, and will be used for illegal combinations:</description>
-    </item>
-    
-    <item>
-      <title>How to decrypt LUKS1 with key in memory</title>
-      <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
-      <pubDate>Mon, 10 Jul 2023 17:15:29 +0200</pubDate>
-      <author>nozzy@club-rezo.net (NozZy)</author>
-      <guid>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</guid>
-      <description>How to decrypt LUKS1 with key in memory LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe vulnerability. The master key, used to encrypt and decrypt the whole disk, can be retrieved in the memory of the running machine. This article will show you how to recover that key, and then decrypt the disk.</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Articles -  - NozZy</title>
+        <link>https://nozyzy.github.io/articles/</link>
+        <description>Articles -  - NozZy</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/articles/" rel="self" type="application/rss+xml" /><item>
+    <title>Wireshark/Tshark TCP illegal flags</title>
+    <link>https://nozyzy.github.io/articles/tcp_illegal_flags/</link>
+    <pubDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/articles/tcp_illegal_flags/</guid>
+    <description><![CDATA[<p>During the <a href="https://pctf.competitivecyber.club/" target="_blank" rel="noopener noreferrer">patriotCTF</a>, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.</p>
+<p>For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:</p>
+<figure><a class="lightgallery" href="/illegal_tcp_flags/img.png" title="Wireshark red packets" data-thumbnail="/illegal_tcp_flags/img.png" data-sub-html="<h2>Wireshark red packets</h2><p>Wireshark red packets</p>"><img  loading="lazy" src='/illegal_tcp_flags/img.png'   alt="Wireshark red packets"  ></a><figcaption class="image-caption">Wireshark red packets</figcaption>
+    </figure>
+<p>Here, only the combination of <strong>FIN</strong>, <strong>SYN</strong>, <strong>RST</strong> appears, with the addition of PSH sometimes.</p>]]></description>
+</item><item>
+    <title>How to decrypt LUKS1 with key in memory</title>
+    <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
+    <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate><author>
+        <name>NozZy</name>
+    </author><guid>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</guid>
+    <description><![CDATA[<h1 id="how-to-decrypt-luks1-with-key-in-memory" class="headerLink">
+    <a href="#how-to-decrypt-luks1-with-key-in-memory" class="header-mark"></a>How to decrypt LUKS1 with key in memory</h1><hr>
+<p>LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe <strong>vulnerability</strong>. The master key, used to encrypt and decrypt the whole disk, <strong>can be retrieved in the memory</strong> of the running machine.
+This article will show you how to <em><strong>recover that key</strong></em>, and then <em><strong>decrypt the disk</strong></em>.</p>]]></description>
+</item></channel>
 </rss>
