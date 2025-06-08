@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Writeups - Category - NozZy</title>
-        <link>https://nozyzy.github.io/categories/writeups/</link>
+        <link>http://localhost:1313/categories/writeups/</link>
         <description>Writeups - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/writeups/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/writeups/" rel="self" type="application/rss+xml" /><item>
     <title>Traque Au Scammer</title>
-    <link>https://nozyzy.github.io/posts/traque/</link>
+    <link>http://localhost:1313/posts/traque/</link>
     <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/traque/</guid>
+    </author><guid>http://localhost:1313/posts/traque/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT</p>
@@ -18,10 +18,10 @@
   <p>Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie. Le C3N compte sur vous pour retrouver son adresse et son prénom.</p>]]></description>
 </item><item>
     <title>Stranger Case 2024</title>
-    <link>https://nozyzy.github.io/posts/stranger_case-2024/</link>
+    <link>http://localhost:1313/posts/stranger_case-2024/</link>
     <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/stranger_case-2024/</guid>
+    </author><guid>http://localhost:1313/posts/stranger_case-2024/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/stranger_case-2024/banner_eclipse.png" referrerpolicy="no-referrer">
             </div><h2 id="category" class="headerLink">
@@ -33,10 +33,10 @@
 <p>Cette phase mélange OSINT et Social Enginnering, puisque les informations que nous trouverons proviendront à grande majorité de sources ouvertes. Pour le reste, cela proviendra d&rsquo;intéractions avec des personnes, évidemment fictives ici.</p>]]></description>
 </item><item>
     <title>Croissanted</title>
-    <link>https://nozyzy.github.io/posts/croissanted/</link>
+    <link>http://localhost:1313/posts/croissanted/</link>
     <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/croissanted/</guid>
+    </author><guid>http://localhost:1313/posts/croissanted/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -46,10 +46,10 @@
 <p>EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue. Identify why. A copy of the VM has been provided to you.</p>]]></description>
 </item><item>
     <title>Silent Hill 2</title>
-    <link>https://nozyzy.github.io/posts/silent_hill_2/</link>
+    <link>http://localhost:1313/posts/silent_hill_2/</link>
     <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
+    </author><guid>http://localhost:1313/posts/silent_hill_2/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -71,10 +71,10 @@
 <p>It appears for the three colors, so there might be <strong>LSB 3-Bits RGB</strong></p>]]></description>
 </item><item>
     <title>I want my tickets back</title>
-    <link>https://nozyzy.github.io/posts/i_want_my_tickets_back/</link>
+    <link>http://localhost:1313/posts/i_want_my_tickets_back/</link>
     <pubDate>Tue, 30 Apr 2024 20:48:58 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/i_want_my_tickets_back/</guid>
+    </author><guid>http://localhost:1313/posts/i_want_my_tickets_back/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -83,10 +83,10 @@
   <p>Jean a découvert un colis dans sa boîte aux lettres. À l&rsquo;intérieur, il se trouvait une clé USB et une lettre lui annonçant qu&rsquo;il avait gagné des billets pour les Jeux Olympiques de Paris 2024. La lettre précisait que les billets étaient sur la clé USB. Intrigué, Jean a inséré la clé dans son ordinateur et a ouvert le fichier : une note d&rsquo;information au format HTML. Conformément aux instructions, le billet s&rsquo;est téléchargé automatiquement. Après avoir consulté son billet, Jean s&rsquo;est rendu compte que tout cela n&rsquo;était qu&rsquo;une supercherie et, déçu, il s&rsquo;est absenté pendant quelques jours. À son retour, Jean a été stupéfait de constater qu&rsquo;il était désormais incapable d&rsquo;ouvrir ses fichiers. Tous présentaient désormais l&rsquo;extension .enc.</p>]]></description>
 </item><item>
     <title>S0uS_l3s_r4d4r</title>
-    <link>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</link>
+    <link>http://localhost:1313/posts/s0us_l3s_r4d4r/</link>
     <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
+    </author><guid>http://localhost:1313/posts/s0us_l3s_r4d4r/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -126,10 +126,10 @@
           <p class="tw-select-none !tw-my-1">bash</p>]]></description>
 </item><item>
     <title>MyFace</title>
-    <link>https://nozyzy.github.io/posts/myface/</link>
+    <link>http://localhost:1313/posts/myface/</link>
     <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/myface/</guid>
+    </author><guid>http://localhost:1313/posts/myface/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -157,10 +157,10 @@
     <a href="#myface" class="header-mark"></a>MyFace</h3><p>We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.</p>]]></description>
 </item><item>
     <title>Mack&#39;Os</title>
-    <link>https://nozyzy.github.io/posts/mack-os/</link>
+    <link>http://localhost:1313/posts/mack-os/</link>
     <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/mack-os/</guid>
+    </author><guid>http://localhost:1313/posts/mack-os/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -183,10 +183,10 @@
 <p>This is, as planned in the description, the volatility2 commands that were executed. However, one command prompts a particular message</p>]]></description>
 </item><item>
     <title>Le grand écart</title>
-    <link>https://nozyzy.github.io/posts/grand-ecart/</link>
+    <link>http://localhost:1313/posts/grand-ecart/</link>
     <pubDate>Fri, 26 Apr 2024 05:40:26 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/grand-ecart/</guid>
+    </author><guid>http://localhost:1313/posts/grand-ecart/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Stéganographie</p>
@@ -208,10 +208,10 @@
 <p><img class="tw-inline" loading="lazy" src='/posts/grand-ecart/mobydick.png' srcset="/posts/grand-ecart/mobydick_hu_bb00929ea79073e1.webp 800w, /posts/grand-ecart/mobydick_hu_e6af142ec2bd6308.webp 1200w, /posts/grand-ecart/mobydick_hu_7e328396a7d41518.webp 1600w"   height="844" width="413"></p>]]></description>
 </item><item>
     <title>Stranger Case Intro</title>
-    <link>https://nozyzy.github.io/posts/stranger-case-intro/</link>
+    <link>http://localhost:1313/posts/stranger-case-intro/</link>
     <pubDate>Tue, 23 Apr 2024 09:33:02 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/stranger-case-intro/</guid>
+    </author><guid>http://localhost:1313/posts/stranger-case-intro/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/stranger-case-intro/banner.png" referrerpolicy="no-referrer">
             </div><h2 id="category" class="headerLink">

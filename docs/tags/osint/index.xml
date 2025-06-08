@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>OSINT - Tag - NozZy</title>
-        <link>https://nozyzy.github.io/tags/osint/</link>
+        <link>http://localhost:1313/tags/osint/</link>
         <description>OSINT - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/osint/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/osint/" rel="self" type="application/rss+xml" /><item>
     <title>Traque Au Scammer</title>
-    <link>https://nozyzy.github.io/posts/traque/</link>
+    <link>http://localhost:1313/posts/traque/</link>
     <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/traque/</guid>
+    </author><guid>http://localhost:1313/posts/traque/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT</p>
@@ -18,10 +18,10 @@
   <p>Un escroc donne du fil à retordre à la C3N, notamment car ils n&rsquo;ont plus de budget pour engager un expert OSINT. Heureusement que vous êtes là avec un peu de temps libre ce week-end ;) Une victime auditionnée leur a fourni l&rsquo;image que l&rsquo;escroc envoi après avoir chaque escroquerie. Ses méfaits se concentrent principalement sur du phising puis du vol de crypto-monnaie. Le C3N compte sur vous pour retrouver son adresse et son prénom.</p>]]></description>
 </item><item>
     <title>Stranger Case 2024</title>
-    <link>https://nozyzy.github.io/posts/stranger_case-2024/</link>
+    <link>http://localhost:1313/posts/stranger_case-2024/</link>
     <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/stranger_case-2024/</guid>
+    </author><guid>http://localhost:1313/posts/stranger_case-2024/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/stranger_case-2024/banner_eclipse.png" referrerpolicy="no-referrer">
             </div><h2 id="category" class="headerLink">
@@ -33,10 +33,10 @@
 <p>Cette phase mélange OSINT et Social Enginnering, puisque les informations que nous trouverons proviendront à grande majorité de sources ouvertes. Pour le reste, cela proviendra d&rsquo;intéractions avec des personnes, évidemment fictives ici.</p>]]></description>
 </item><item>
     <title>Stranger Case Intro</title>
-    <link>https://nozyzy.github.io/posts/stranger-case-intro/</link>
+    <link>http://localhost:1313/posts/stranger-case-intro/</link>
     <pubDate>Tue, 23 Apr 2024 09:33:02 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/stranger-case-intro/</guid>
+    </author><guid>http://localhost:1313/posts/stranger-case-intro/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/stranger-case-intro/banner.png" referrerpolicy="no-referrer">
             </div><h2 id="category" class="headerLink">
@@ -61,10 +61,10 @@
 <p>On y voit une personne ressemblant à un agent, et une personne kidnappée dans le coffre de sa voiture. <strong>C&rsquo;est notre cible</strong></p>]]></description>
 </item><item>
     <title>Disparue(s)</title>
-    <link>https://nozyzy.github.io/posts/disparues/</link>
+    <link>http://localhost:1313/posts/disparues/</link>
     <pubDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/disparues/</guid>
+    </author><guid>http://localhost:1313/posts/disparues/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/disparues/img.png" referrerpolicy="no-referrer">
             </div><h2 id="category" class="headerLink">
@@ -82,10 +82,10 @@
   <p>Vous avez été sollicité(e) par la famille desespérée de Ellen Gravist, qui n&rsquo;a plus de contact avec elle depuis plusieurs semaines. En rupture avec ses proches, elle ne donnait que peu de nouvelles mais montrait toutefois des signes de vie.</p>]]></description>
 </item><item>
     <title>Projet FOX   Trouble From the East</title>
-    <link>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</link>
+    <link>http://localhost:1313/posts/projet-fox---trouble-from-the-east/</link>
     <pubDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</guid>
+    </author><guid>http://localhost:1313/posts/projet-fox---trouble-from-the-east/</guid>
     <description><![CDATA[<h1 id="flag4all---projet-fox-trouble-from-the-east" class="headerLink">
     <a href="#flag4all---projet-fox-trouble-from-the-east" class="header-mark"></a>Flag4All - Projet FOX Trouble From the East</h1><hr>
 <h2 id="category" class="headerLink">
@@ -96,10 +96,10 @@
 <p>Format du flag : FLAG{nom de l&rsquo;entreprise/nom de l&rsquo;entreprise/nom de l&rsquo;entreprise} (par ordre alphabétique)</p>]]></description>
 </item><item>
     <title>La Vie De Claude</title>
-    <link>https://nozyzy.github.io/posts/ozint.eu---la-vie-de-claude/</link>
+    <link>http://localhost:1313/posts/ozint.eu---la-vie-de-claude/</link>
     <pubDate>Sun, 22 Oct 2023 14:32:55 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/ozint.eu---la-vie-de-claude/</guid>
+    </author><guid>http://localhost:1313/posts/ozint.eu---la-vie-de-claude/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT</p>
@@ -123,10 +123,10 @@
 <p>Nope, for this one, only google the words of the documentary: <strong>documentaire 2010 esclaves ile</strong></p>]]></description>
 </item><item>
     <title>Stranger Case 2023</title>
-    <link>https://nozyzy.github.io/posts/stranger-case-2023/</link>
+    <link>http://localhost:1313/posts/stranger-case-2023/</link>
     <pubDate>Mon, 10 Jul 2023 19:25:30 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/stranger-case-2023/</guid>
+    </author><guid>http://localhost:1313/posts/stranger-case-2023/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT
@@ -137,10 +137,10 @@ Hunt</p>
 <p>The second one was the end of the investigation, in a form of Hunt in Paris. The 10 best teams of the qualifications had to continue the investigation by interacting with actors and evidences places in the city.</p>]]></description>
 </item><item>
     <title>OSINTABLES</title>
-    <link>https://nozyzy.github.io/posts/osintables/</link>
+    <link>http://localhost:1313/posts/osintables/</link>
     <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/osintables/</guid>
+    </author><guid>http://localhost:1313/posts/osintables/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT</p>

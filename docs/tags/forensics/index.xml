@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Forensics - Tag - NozZy</title>
-        <link>https://nozyzy.github.io/tags/forensics/</link>
+        <link>http://localhost:1313/tags/forensics/</link>
         <description>Forensics - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/tags/forensics/" rel="self" type="application/rss+xml" /><item>
     <title>Wireshark/Tshark TCP illegal flags</title>
-    <link>https://nozyzy.github.io/articles/tcp_illegal_flags/</link>
+    <link>http://localhost:1313/articles/tcp_illegal_flags/</link>
     <pubDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/articles/tcp_illegal_flags/</guid>
+    </author><guid>http://localhost:1313/articles/tcp_illegal_flags/</guid>
     <description><![CDATA[<p>During the <a href="https://pctf.competitivecyber.club/" target="_blank" rel="noopener noreferrer">patriotCTF</a>, I had to filter all the illegal TCP packets from a network packet capture, to find how the flag was exfiltrated.</p>
 <p>For that purpose, I based my knowledge of &ldquo;illegal TCP packets&rdquo; only on wrong flags combinations, displayed as red in wireshark:</p>
 <figure><a class="lightgallery" href="/illegal_tcp_flags/img.png" title="Wireshark red packets" data-thumbnail="/illegal_tcp_flags/img.png" data-sub-html="<h2>Wireshark red packets</h2><p>Wireshark red packets</p>"><img  loading="lazy" src='/illegal_tcp_flags/img.png'   alt="Wireshark red packets"  ></a><figcaption class="image-caption">Wireshark red packets</figcaption>
@@ -17,10 +17,10 @@
 <p>Here, only the combination of <strong>FIN</strong>, <strong>SYN</strong>, <strong>RST</strong> appears, with the addition of PSH sometimes.</p>]]></description>
 </item><item>
     <title>Croissanted</title>
-    <link>https://nozyzy.github.io/posts/croissanted/</link>
+    <link>http://localhost:1313/posts/croissanted/</link>
     <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/croissanted/</guid>
+    </author><guid>http://localhost:1313/posts/croissanted/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -30,10 +30,10 @@
 <p>EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue. Identify why. A copy of the VM has been provided to you.</p>]]></description>
 </item><item>
     <title>I want my tickets back</title>
-    <link>https://nozyzy.github.io/posts/i_want_my_tickets_back/</link>
+    <link>http://localhost:1313/posts/i_want_my_tickets_back/</link>
     <pubDate>Tue, 30 Apr 2024 20:48:58 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/i_want_my_tickets_back/</guid>
+    </author><guid>http://localhost:1313/posts/i_want_my_tickets_back/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -42,10 +42,10 @@
   <p>Jean a découvert un colis dans sa boîte aux lettres. À l&rsquo;intérieur, il se trouvait une clé USB et une lettre lui annonçant qu&rsquo;il avait gagné des billets pour les Jeux Olympiques de Paris 2024. La lettre précisait que les billets étaient sur la clé USB. Intrigué, Jean a inséré la clé dans son ordinateur et a ouvert le fichier : une note d&rsquo;information au format HTML. Conformément aux instructions, le billet s&rsquo;est téléchargé automatiquement. Après avoir consulté son billet, Jean s&rsquo;est rendu compte que tout cela n&rsquo;était qu&rsquo;une supercherie et, déçu, il s&rsquo;est absenté pendant quelques jours. À son retour, Jean a été stupéfait de constater qu&rsquo;il était désormais incapable d&rsquo;ouvrir ses fichiers. Tous présentaient désormais l&rsquo;extension .enc.</p>]]></description>
 </item><item>
     <title>Mack&#39;Os</title>
-    <link>https://nozyzy.github.io/posts/mack-os/</link>
+    <link>http://localhost:1313/posts/mack-os/</link>
     <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/mack-os/</guid>
+    </author><guid>http://localhost:1313/posts/mack-os/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -68,10 +68,10 @@
 <p>This is, as planned in the description, the volatility2 commands that were executed. However, one command prompts a particular message</p>]]></description>
 </item><item>
     <title>SOC Simulator</title>
-    <link>https://nozyzy.github.io/posts/soc-simulator/</link>
+    <link>http://localhost:1313/posts/soc-simulator/</link>
     <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
+    </author><guid>http://localhost:1313/posts/soc-simulator/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -82,10 +82,10 @@
 <p>Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.</p>]]></description>
 </item><item>
     <title>The Shakespearean Mouse</title>
-    <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
+    <link>http://localhost:1313/posts/the-shakespearean-mouse/</link>
     <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
+    </author><guid>http://localhost:1313/posts/the-shakespearean-mouse/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -107,10 +107,10 @@
 <p>I rapidly think of a so of <a href="https://esolangs.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer">esoteric language</a>, like <a href="https://esolangs.org/wiki/Poetic" target="_blank" rel="noopener noreferrer">Poetic</a> or <a href="https://esolangs.org/wiki/Whitespace" target="_blank" rel="noopener noreferrer">Whitespace</a>, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.</p>]]></description>
 </item><item>
     <title>You are mine!</title>
-    <link>https://nozyzy.github.io/posts/youaremine/</link>
+    <link>http://localhost:1313/posts/youaremine/</link>
     <pubDate>Sat, 25 Nov 2023 05:38:54 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/youaremine/</guid>
+    </author><guid>http://localhost:1313/posts/youaremine/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -134,10 +134,10 @@
     <a href="#the-very-hot-fox" class="header-mark"></a>The very hot fox</h3><p>We got a dump of a Win 10 machine, and we are looking for web artifacts.</p>]]></description>
 </item><item>
     <title>Dark Side</title>
-    <link>https://nozyzy.github.io/posts/dark_side/</link>
+    <link>http://localhost:1313/posts/dark_side/</link>
     <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/dark_side/</guid>
+    </author><guid>http://localhost:1313/posts/dark_side/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -152,10 +152,10 @@ This person tells that all the answers for the following exams are behind an onl
 Your turn to find this answers!</p>]]></description>
 </item><item>
     <title>HeadShot</title>
-    <link>https://nozyzy.github.io/posts/headshot/</link>
+    <link>http://localhost:1313/posts/headshot/</link>
     <pubDate>Sun, 22 Oct 2023 13:58:04 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/headshot/</guid>
+    </author><guid>http://localhost:1313/posts/headshot/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -176,10 +176,10 @@ Your turn to find this answers!</p>]]></description>
 And that are the files that will interest us first. Each of <code>level.dat</code> and <code>playerdata/5435ace1-00d5-437c-862f-77d8bacfa86e.dat</code> had the same parts of the flag:</p>]]></description>
 </item><item>
     <title>Gishadb</title>
-    <link>https://nozyzy.github.io/posts/gishadb/</link>
+    <link>http://localhost:1313/posts/gishadb/</link>
     <pubDate>Sun, 22 Oct 2023 03:13:42 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/gishadb/</guid>
+    </author><guid>http://localhost:1313/posts/gishadb/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Realistic</p>

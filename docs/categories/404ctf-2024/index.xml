@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>404CTF 2024 - Category - NozZy</title>
-        <link>https://nozyzy.github.io/categories/404ctf-2024/</link>
+        <link>http://localhost:1313/categories/404ctf-2024/</link>
         <description>404CTF 2024 - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Fri, 26 Apr 2024 05:40:26 -0400</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/404ctf-2024/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Fri, 26 Apr 2024 05:40:26 -0400</lastBuildDate><atom:link href="http://localhost:1313/categories/404ctf-2024/" rel="self" type="application/rss+xml" /><item>
     <title>Le grand écart</title>
-    <link>https://nozyzy.github.io/posts/grand-ecart/</link>
+    <link>http://localhost:1313/posts/grand-ecart/</link>
     <pubDate>Fri, 26 Apr 2024 05:40:26 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/grand-ecart/</guid>
+    </author><guid>http://localhost:1313/posts/grand-ecart/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Stéganographie</p>

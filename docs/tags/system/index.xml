@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>System - Tag - NozZy</title>
-        <link>https://nozyzy.github.io/tags/system/</link>
+        <link>http://localhost:1313/tags/system/</link>
         <description>System - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/system/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/system/" rel="self" type="application/rss+xml" /><item>
     <title>ExitTheCapsule</title>
-    <link>https://nozyzy.github.io/posts/exitthecapsule/</link>
+    <link>http://localhost:1313/posts/exitthecapsule/</link>
     <pubDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/exitthecapsule/</guid>
+    </author><guid>http://localhost:1313/posts/exitthecapsule/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>System</p>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Images - Tag - NozZy</title>
-        <link>https://nozyzy.github.io/tags/images/</link>
+        <link>http://localhost:1313/tags/images/</link>
         <description>Images - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 23 May 2023 23:22:43 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/images/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 23 May 2023 23:22:43 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/tags/images/" rel="self" type="application/rss+xml" /><item>
     <title>EMD</title>
-    <link>https://nozyzy.github.io/posts/emd/</link>
+    <link>http://localhost:1313/posts/emd/</link>
     <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/emd/</guid>
+    </author><guid>http://localhost:1313/posts/emd/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>

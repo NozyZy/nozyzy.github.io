@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Dump - Tag - NozZy</title>
-        <link>https://nozyzy.github.io/tags/dump/</link>
+        <link>http://localhost:1313/tags/dump/</link>
         <description>Dump - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/dump/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/tags/dump/" rel="self" type="application/rss+xml" /><item>
     <title>DumpCyber</title>
-    <link>https://nozyzy.github.io/posts/dumpcyber/</link>
+    <link>http://localhost:1313/posts/dumpcyber/</link>
     <pubDate>Fri, 13 Oct 2023 19:51:18 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/dumpcyber/</guid>
+    </author><guid>http://localhost:1313/posts/dumpcyber/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Cybernight 2023 - Category - NozZy</title>
-        <link>https://nozyzy.github.io/categories/cybernight-2023/</link>
+        <link>http://localhost:1313/categories/cybernight-2023/</link>
         <description>Cybernight 2023 - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/cybernight-2023/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/cybernight-2023/" rel="self" type="application/rss+xml" /><item>
     <title>ExitTheCapsule</title>
-    <link>https://nozyzy.github.io/posts/exitthecapsule/</link>
+    <link>http://localhost:1313/posts/exitthecapsule/</link>
     <pubDate>Sat, 25 Nov 2023 16:20:18 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/exitthecapsule/</guid>
+    </author><guid>http://localhost:1313/posts/exitthecapsule/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>System</p>
@@ -32,10 +32,10 @@
 <p>This time, running all the command and tests it recommends, without thinking a little, didn&rsquo;t work.</p>]]></description>
 </item><item>
     <title>DoctoLeak</title>
-    <link>https://nozyzy.github.io/posts/doctoleak/</link>
+    <link>http://localhost:1313/posts/doctoleak/</link>
     <pubDate>Sat, 25 Nov 2023 15:56:22 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/doctoleak/</guid>
+    </author><guid>http://localhost:1313/posts/doctoleak/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Web</p>
@@ -57,10 +57,10 @@
 <p>Which leads to a <strong>/graphql</strong> page. At this point, I was sure it was all about exploiting some confidentiality issue in a graphql query.</p>]]></description>
 </item><item>
     <title>Invest Now !</title>
-    <link>https://nozyzy.github.io/posts/investnow/</link>
+    <link>http://localhost:1313/posts/investnow/</link>
     <pubDate>Sat, 25 Nov 2023 15:17:45 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/investnow/</guid>
+    </author><guid>http://localhost:1313/posts/investnow/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT</p>
@@ -70,10 +70,10 @@
 <p>Vous avez réussi à développer un script pour détecter si une adresse mail est inscrite sur ce site. Après quelques heures de tests avec des bases de données trouvées sur le darknet, une première adresse mail est ressortie : <code>emily.clement.hevre@malice.fr</code>.</p>]]></description>
 </item><item>
     <title>You are mine!</title>
-    <link>https://nozyzy.github.io/posts/youaremine/</link>
+    <link>http://localhost:1313/posts/youaremine/</link>
     <pubDate>Sat, 25 Nov 2023 05:38:54 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>https://nozyzy.github.io/posts/youaremine/</guid>
+    </author><guid>http://localhost:1313/posts/youaremine/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
