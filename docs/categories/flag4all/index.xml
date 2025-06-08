@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Flag4All - Category - NozZy</title>
-        <link>http://localhost:1313/categories/flag4all/</link>
+        <link>https://nozyzy.github.io/categories/flag4all/</link>
         <description>Flag4All - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/categories/flag4all/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/flag4all/" rel="self" type="application/rss+xml" /><item>
     <title>Dark Side</title>
-    <link>http://localhost:1313/posts/dark_side/</link>
+    <link>https://nozyzy.github.io/posts/dark_side/</link>
     <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/dark_side/</guid>
+    </author><guid>https://nozyzy.github.io/posts/dark_side/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -24,10 +24,10 @@ This person tells that all the answers for the following exams are behind an onl
 Your turn to find this answers!</p>]]></description>
 </item><item>
     <title>Projet FOX   Trouble From the East</title>
-    <link>http://localhost:1313/posts/projet-fox---trouble-from-the-east/</link>
+    <link>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</link>
     <pubDate>Sun, 22 Oct 2023 15:29:41 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/projet-fox---trouble-from-the-east/</guid>
+    </author><guid>https://nozyzy.github.io/posts/projet-fox---trouble-from-the-east/</guid>
     <description><![CDATA[<h1 id="flag4all---projet-fox-trouble-from-the-east" class="headerLink">
     <a href="#flag4all---projet-fox-trouble-from-the-east" class="header-mark"></a>Flag4All - Projet FOX Trouble From the East</h1><hr>
 <h2 id="category" class="headerLink">
@@ -38,10 +38,10 @@ Your turn to find this answers!</p>]]></description>
 <p>Format du flag : FLAG{nom de l&rsquo;entreprise/nom de l&rsquo;entreprise/nom de l&rsquo;entreprise} (par ordre alphabétique)</p>]]></description>
 </item><item>
     <title>La Vie De Claude</title>
-    <link>http://localhost:1313/posts/ozint.eu---la-vie-de-claude/</link>
+    <link>https://nozyzy.github.io/posts/ozint.eu---la-vie-de-claude/</link>
     <pubDate>Sun, 22 Oct 2023 14:32:55 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/ozint.eu---la-vie-de-claude/</guid>
+    </author><guid>https://nozyzy.github.io/posts/ozint.eu---la-vie-de-claude/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT</p>
@@ -65,10 +65,10 @@ Your turn to find this answers!</p>]]></description>
 <p>Nope, for this one, only google the words of the documentary: <strong>documentaire 2010 esclaves ile</strong></p>]]></description>
 </item><item>
     <title>HeadShot</title>
-    <link>http://localhost:1313/posts/headshot/</link>
+    <link>https://nozyzy.github.io/posts/headshot/</link>
     <pubDate>Sun, 22 Oct 2023 13:58:04 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/headshot/</guid>
+    </author><guid>https://nozyzy.github.io/posts/headshot/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -89,10 +89,10 @@ Your turn to find this answers!</p>]]></description>
 And that are the files that will interest us first. Each of <code>level.dat</code> and <code>playerdata/5435ace1-00d5-437c-862f-77d8bacfa86e.dat</code> had the same parts of the flag:</p>]]></description>
 </item><item>
     <title>Gishadb</title>
-    <link>http://localhost:1313/posts/gishadb/</link>
+    <link>https://nozyzy.github.io/posts/gishadb/</link>
     <pubDate>Sun, 22 Oct 2023 03:13:42 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/gishadb/</guid>
+    </author><guid>https://nozyzy.github.io/posts/gishadb/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Realistic</p>

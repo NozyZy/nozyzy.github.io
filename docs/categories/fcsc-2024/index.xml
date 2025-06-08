@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>FCSC 2024 - Category - NozZy</title>
-        <link>http://localhost:1313/categories/fcsc-2024/</link>
+        <link>https://nozyzy.github.io/categories/fcsc-2024/</link>
         <description>FCSC 2024 - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 11 Apr 2024 09:32:53 -0400</lastBuildDate><atom:link href="http://localhost:1313/categories/fcsc-2024/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 11 Apr 2024 09:32:53 -0400</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/fcsc-2024/" rel="self" type="application/rss+xml" /><item>
     <title>SOC Simulator</title>
-    <link>http://localhost:1313/posts/soc-simulator/</link>
+    <link>https://nozyzy.github.io/posts/soc-simulator/</link>
     <pubDate>Thu, 11 Apr 2024 09:32:53 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/soc-simulator/</guid>
+    </author><guid>https://nozyzy.github.io/posts/soc-simulator/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -20,10 +20,10 @@
 <p>Note : Les 5 parties sont numérotées dans l&rsquo;ordre chronologique de l&rsquo;attaque mais il n&rsquo;est pas nécessaire de les résoudre dans l&rsquo;ordre.</p>]]></description>
 </item><item>
     <title>FCSC prechall 2024</title>
-    <link>http://localhost:1313/posts/fcsc_prechall_2024/</link>
+    <link>https://nozyzy.github.io/posts/fcsc_prechall_2024/</link>
     <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/fcsc_prechall_2024/</guid>
+    </author><guid>https://nozyzy.github.io/posts/fcsc_prechall_2024/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Intro</p>

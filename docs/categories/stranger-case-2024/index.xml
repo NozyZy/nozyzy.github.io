@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Stranger Case 2024 - Category - NozZy</title>
-        <link>http://localhost:1313/categories/stranger-case-2024/</link>
+        <link>https://nozyzy.github.io/categories/stranger-case-2024/</link>
         <description>Stranger Case 2024 - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 05 May 2024 17:33:47 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/categories/stranger-case-2024/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 05 May 2024 17:33:47 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/stranger-case-2024/" rel="self" type="application/rss+xml" /><item>
     <title>Stranger Case 2024</title>
-    <link>http://localhost:1313/posts/stranger_case-2024/</link>
+    <link>https://nozyzy.github.io/posts/stranger_case-2024/</link>
     <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/stranger_case-2024/</guid>
+    </author><guid>https://nozyzy.github.io/posts/stranger_case-2024/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/stranger_case-2024/banner_eclipse.png" referrerpolicy="no-referrer">
             </div><h2 id="category" class="headerLink">
@@ -21,10 +21,10 @@
 <p>Cette phase mélange OSINT et Social Enginnering, puisque les informations que nous trouverons proviendront à grande majorité de sources ouvertes. Pour le reste, cela proviendra d&rsquo;intéractions avec des personnes, évidemment fictives ici.</p>]]></description>
 </item><item>
     <title>Stranger Case Intro</title>
-    <link>http://localhost:1313/posts/stranger-case-intro/</link>
+    <link>https://nozyzy.github.io/posts/stranger-case-intro/</link>
     <pubDate>Tue, 23 Apr 2024 09:33:02 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/stranger-case-intro/</guid>
+    </author><guid>https://nozyzy.github.io/posts/stranger-case-intro/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/stranger-case-intro/banner.png" referrerpolicy="no-referrer">
             </div><h2 id="category" class="headerLink">

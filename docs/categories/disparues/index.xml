@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Disparue(s) - Category - NozZy</title>
-        <link>http://localhost:1313/categories/disparues/</link>
+        <link>https://nozyzy.github.io/categories/disparues/</link>
         <description>Disparue(s) - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/disparues/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/disparues/" rel="self" type="application/rss+xml" /><item>
     <title>Disparue(s)</title>
-    <link>http://localhost:1313/posts/disparues/</link>
+    <link>https://nozyzy.github.io/posts/disparues/</link>
     <pubDate>Sat, 04 Nov 2023 23:05:52 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/disparues/</guid>
+    </author><guid>https://nozyzy.github.io/posts/disparues/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/disparues/img.png" referrerpolicy="no-referrer">
             </div><h2 id="category" class="headerLink">

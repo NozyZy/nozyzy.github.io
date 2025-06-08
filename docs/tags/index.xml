@@ -1,78 +1,78 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - NozZy</title>
-        <link>http://localhost:1313/tags/</link>
+        <link>https://nozyzy.github.io/tags/</link>
         <description>Tags - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/" rel="self" type="application/rss+xml" /><item>
     <title>OSINT</title>
-    <link>http://localhost:1313/tags/osint/</link>
+    <link>https://nozyzy.github.io/tags/osint/</link>
     <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/osint/</guid>
+    </author><guid>https://nozyzy.github.io/tags/osint/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Forensics</title>
-    <link>http://localhost:1313/tags/forensics/</link>
+    <link>https://nozyzy.github.io/tags/forensics/</link>
     <pubDate>Sat, 21 Sep 2024 21:13:10 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/forensics/</guid>
+    </author><guid>https://nozyzy.github.io/tags/forensics/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Hunt</title>
-    <link>http://localhost:1313/tags/hunt/</link>
+    <link>https://nozyzy.github.io/tags/hunt/</link>
     <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/hunt/</guid>
+    </author><guid>https://nozyzy.github.io/tags/hunt/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Social Engineering</title>
-    <link>http://localhost:1313/tags/social-engineering/</link>
+    <link>https://nozyzy.github.io/tags/social-engineering/</link>
     <pubDate>Sun, 05 May 2024 17:33:47 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/social-engineering/</guid>
+    </author><guid>https://nozyzy.github.io/tags/social-engineering/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Disk</title>
-    <link>http://localhost:1313/tags/disk/</link>
+    <link>https://nozyzy.github.io/tags/disk/</link>
     <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/disk/</guid>
+    </author><guid>https://nozyzy.github.io/tags/disk/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Image</title>
-    <link>http://localhost:1313/tags/image/</link>
+    <link>https://nozyzy.github.io/tags/image/</link>
     <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/image/</guid>
+    </author><guid>https://nozyzy.github.io/tags/image/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Steganography</title>
-    <link>http://localhost:1313/tags/steganography/</link>
+    <link>https://nozyzy.github.io/tags/steganography/</link>
     <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/steganography/</guid>
+    </author><guid>https://nozyzy.github.io/tags/steganography/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Network</title>
-    <link>http://localhost:1313/tags/network/</link>
+    <link>https://nozyzy.github.io/tags/network/</link>
     <pubDate>Sun, 28 Apr 2024 09:08:52 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/network/</guid>
+    </author><guid>https://nozyzy.github.io/tags/network/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Prog</title>
-    <link>http://localhost:1313/tags/prog/</link>
+    <link>https://nozyzy.github.io/tags/prog/</link>
     <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/prog/</guid>
+    </author><guid>https://nozyzy.github.io/tags/prog/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Reverse</title>
-    <link>http://localhost:1313/tags/reverse/</link>
+    <link>https://nozyzy.github.io/tags/reverse/</link>
     <pubDate>Tue, 02 Apr 2024 05:03:14 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/tags/reverse/</guid>
+    </author><guid>https://nozyzy.github.io/tags/reverse/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Image - Tag - NozZy</title>
-        <link>http://localhost:1313/tags/image/</link>
+        <link>https://nozyzy.github.io/tags/image/</link>
         <description>Image - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/tags/image/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/image/" rel="self" type="application/rss+xml" /><item>
     <title>Silent Hill 2</title>
-    <link>http://localhost:1313/posts/silent_hill_2/</link>
+    <link>https://nozyzy.github.io/posts/silent_hill_2/</link>
     <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/silent_hill_2/</guid>
+    </author><guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -31,10 +31,10 @@
 <p>It appears for the three colors, so there might be <strong>LSB 3-Bits RGB</strong></p>]]></description>
 </item><item>
     <title>S0uS_l3s_r4d4r</title>
-    <link>http://localhost:1313/posts/s0us_l3s_r4d4r/</link>
+    <link>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</link>
     <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/s0us_l3s_r4d4r/</guid>
+    </author><guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -74,10 +74,10 @@
           <p class="tw-select-none !tw-my-1">bash</p>]]></description>
 </item><item>
     <title>MyFace</title>
-    <link>http://localhost:1313/posts/myface/</link>
+    <link>https://nozyzy.github.io/posts/myface/</link>
     <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/myface/</guid>
+    </author><guid>https://nozyzy.github.io/posts/myface/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>

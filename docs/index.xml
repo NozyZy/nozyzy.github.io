@@ -1,17 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>NozZy</title>
-        <link>http://localhost:1313/</link>
+        <link>https://nozyzy.github.io/</link>
         <description>French Cybersecurity Analyst and CTF enjoyer.</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
             <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</lastBuildDate>
-            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://nozyzy.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Traque Au Scammer</title>
-    <link>http://localhost:1313/posts/traque/</link>
+    <link>https://nozyzy.github.io/posts/traque/</link>
     <pubDate>Sun, 01 Dec 2024 20:31:00 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/traque/</guid>
+    </author><guid>https://nozyzy.github.io/posts/traque/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT</p>

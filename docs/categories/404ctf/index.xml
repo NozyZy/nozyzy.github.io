@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>404CTF - Category - NozZy</title>
-        <link>http://localhost:1313/categories/404ctf/</link>
+        <link>https://nozyzy.github.io/categories/404ctf/</link>
         <description>404CTF - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/categories/404ctf/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/404ctf/" rel="self" type="application/rss+xml" /><item>
     <title>OSINTABLES</title>
-    <link>http://localhost:1313/posts/osintables/</link>
+    <link>https://nozyzy.github.io/posts/osintables/</link>
     <pubDate>Sun, 04 Jun 2023 23:34:58 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/osintables/</guid>
+    </author><guid>https://nozyzy.github.io/posts/osintables/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>OSINT</p>
@@ -19,10 +19,10 @@
 Débutante dans la démarche postale, elle s&rsquo;est trompée sur les informations nécessaires, elle en a même oublié l&rsquo;adresse du destinataire, n&rsquo;écrivant que la sienne. Elle vous montre la photo ci-jointe et vous met au défi de trouver d&rsquo;où elle l&rsquo;a écrite.</p>]]></description>
 </item><item>
     <title>Avez-vous vu les cascades du hérisson ?</title>
-    <link>http://localhost:1313/posts/cascades_herisson/</link>
+    <link>https://nozyzy.github.io/posts/cascades_herisson/</link>
     <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/cascades_herisson/</guid>
+    </author><guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
     <description><![CDATA[<h1 id="404ctf---avez-vous-vu-les-cascades-du-hérisson-" class="headerLink">
     <a href="#404ctf---avez-vous-vu-les-cascades-du-h%c3%a9risson-" class="header-mark"></a>404CTF - Avez-vous vu les cascades du hérisson ?</h1><hr>
 <h2 id="category" class="headerLink">
@@ -33,10 +33,10 @@ Débutante dans la démarche postale, elle s&rsquo;est trompée sur les informat
 Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.</p>]]></description>
 </item><item>
     <title>404CTF - Notes de bas de page</title>
-    <link>http://localhost:1313/posts/notesdebasdepage/</link>
+    <link>https://nozyzy.github.io/posts/notesdebasdepage/</link>
     <pubDate>Wed, 24 May 2023 00:48:44 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/notesdebasdepage/</guid>
+    </author><guid>https://nozyzy.github.io/posts/notesdebasdepage/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>

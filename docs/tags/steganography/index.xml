@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Steganography - Tag - NozZy</title>
-        <link>http://localhost:1313/tags/steganography/</link>
+        <link>https://nozyzy.github.io/tags/steganography/</link>
         <description>Steganography - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/tags/steganography/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/steganography/" rel="self" type="application/rss+xml" /><item>
     <title>Silent Hill 2</title>
-    <link>http://localhost:1313/posts/silent_hill_2/</link>
+    <link>https://nozyzy.github.io/posts/silent_hill_2/</link>
     <pubDate>Tue, 30 Apr 2024 21:58:48 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/silent_hill_2/</guid>
+    </author><guid>https://nozyzy.github.io/posts/silent_hill_2/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -31,10 +31,10 @@
 <p>It appears for the three colors, so there might be <strong>LSB 3-Bits RGB</strong></p>]]></description>
 </item><item>
     <title>S0uS_l3s_r4d4r</title>
-    <link>http://localhost:1313/posts/s0us_l3s_r4d4r/</link>
+    <link>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</link>
     <pubDate>Mon, 29 Apr 2024 23:17:07 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/s0us_l3s_r4d4r/</guid>
+    </author><guid>https://nozyzy.github.io/posts/s0us_l3s_r4d4r/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -74,10 +74,10 @@
           <p class="tw-select-none !tw-my-1">bash</p>]]></description>
 </item><item>
     <title>MyFace</title>
-    <link>http://localhost:1313/posts/myface/</link>
+    <link>https://nozyzy.github.io/posts/myface/</link>
     <pubDate>Mon, 29 Apr 2024 20:36:40 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/myface/</guid>
+    </author><guid>https://nozyzy.github.io/posts/myface/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -105,10 +105,10 @@
     <a href="#myface" class="header-mark"></a>MyFace</h3><p>We are given a website, with few messages between two people. The first ones are in plain text, while the two lasts are in base64.</p>]]></description>
 </item><item>
     <title>Le grand écart</title>
-    <link>http://localhost:1313/posts/grand-ecart/</link>
+    <link>https://nozyzy.github.io/posts/grand-ecart/</link>
     <pubDate>Fri, 26 Apr 2024 05:40:26 -0400</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/grand-ecart/</guid>
+    </author><guid>https://nozyzy.github.io/posts/grand-ecart/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Stéganographie</p>
@@ -130,10 +130,10 @@
 <p><img class="tw-inline" loading="lazy" src='/posts/grand-ecart/mobydick.png' srcset="/posts/grand-ecart/mobydick_hu_bb00929ea79073e1.webp 800w, /posts/grand-ecart/mobydick_hu_e6af142ec2bd6308.webp 1200w, /posts/grand-ecart/mobydick_hu_7e328396a7d41518.webp 1600w"   height="844" width="413"></p>]]></description>
 </item><item>
     <title>The Shakespearean Mouse</title>
-    <link>http://localhost:1313/posts/the-shakespearean-mouse/</link>
+    <link>https://nozyzy.github.io/posts/the-shakespearean-mouse/</link>
     <pubDate>Mon, 18 Dec 2023 23:57:11 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/the-shakespearean-mouse/</guid>
+    </author><guid>https://nozyzy.github.io/posts/the-shakespearean-mouse/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -155,10 +155,10 @@
 <p>I rapidly think of a so of <a href="https://esolangs.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer">esoteric language</a>, like <a href="https://esolangs.org/wiki/Poetic" target="_blank" rel="noopener noreferrer">Poetic</a> or <a href="https://esolangs.org/wiki/Whitespace" target="_blank" rel="noopener noreferrer">Whitespace</a>, which are programming languages hidden in sor of &ldquo;normal&rdquo; text.</p>]]></description>
 </item><item>
     <title>Dark Side</title>
-    <link>http://localhost:1313/posts/dark_side/</link>
+    <link>https://nozyzy.github.io/posts/dark_side/</link>
     <pubDate>Mon, 23 Oct 2023 18:06:28 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/dark_side/</guid>
+    </author><guid>https://nozyzy.github.io/posts/dark_side/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -173,10 +173,10 @@ This person tells that all the answers for the following exams are behind an onl
 Your turn to find this answers!</p>]]></description>
 </item><item>
     <title>Avez-vous vu les cascades du hérisson ?</title>
-    <link>http://localhost:1313/posts/cascades_herisson/</link>
+    <link>https://nozyzy.github.io/posts/cascades_herisson/</link>
     <pubDate>Wed, 31 May 2023 19:09:23 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/cascades_herisson/</guid>
+    </author><guid>https://nozyzy.github.io/posts/cascades_herisson/</guid>
     <description><![CDATA[<h1 id="404ctf---avez-vous-vu-les-cascades-du-hérisson-" class="headerLink">
     <a href="#404ctf---avez-vous-vu-les-cascades-du-h%c3%a9risson-" class="header-mark"></a>404CTF - Avez-vous vu les cascades du hérisson ?</h1><hr>
 <h2 id="category" class="headerLink">
@@ -187,10 +187,10 @@ Your turn to find this answers!</p>]]></description>
 Vous arrivez dans un lieu qui lui est cher, un lieu d’enfance rempli de souvenirs. C’est ici qu’elle passait ces vacances d’Été, dans le parc de Meyrignac, fondé en 1880 par son grand père Ernest BERTRAND DE BEAUVOIR.</p>]]></description>
 </item><item>
     <title>EMD</title>
-    <link>http://localhost:1313/posts/emd/</link>
+    <link>https://nozyzy.github.io/posts/emd/</link>
     <pubDate>Tue, 23 May 2023 23:22:43 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/emd/</guid>
+    </author><guid>https://nozyzy.github.io/posts/emd/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -207,10 +207,10 @@ Good luck!</li>
 <p>This challenge uses the most basic &ldquo;Exploiting Modification Direction&rdquo; technique described by Xinpeng Zhang and Shuozhong Wang in their paper &ldquo;Efﬁcient Steganographic Embedding by Exploiting Modiﬁcation Direction&rdquo;</p>]]></description>
 </item><item>
     <title>Spirale</title>
-    <link>http://localhost:1313/posts/spirale/</link>
+    <link>https://nozyzy.github.io/posts/spirale/</link>
     <pubDate>Thu, 03 Nov 2022 23:38:54 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/spirale/</guid>
+    </author><guid>https://nozyzy.github.io/posts/spirale/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -233,10 +233,10 @@ Good luck!</li>
 <figure><a class="lightgallery" href="/Spirale/spirale_solved.png" title="Solved" data-thumbnail="/Spirale/spirale_solved.png" data-sub-html="<h2>Solved</h2><p>Solved</p>]]></description>
 </item><item>
     <title>Pyramide</title>
-    <link>http://localhost:1313/posts/pyramide/</link>
+    <link>https://nozyzy.github.io/posts/pyramide/</link>
     <pubDate>Thu, 03 Nov 2022 23:38:48 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/pyramide/</guid>
+    </author><guid>https://nozyzy.github.io/posts/pyramide/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>

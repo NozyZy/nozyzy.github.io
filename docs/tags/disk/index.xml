@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Disk - Tag - NozZy</title>
-        <link>http://localhost:1313/tags/disk/</link>
+        <link>https://nozyzy.github.io/tags/disk/</link>
         <description>Disk - Tag - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Wed, 01 May 2024 13:35:11 &#43;0200</lastBuildDate><atom:link href="http://localhost:1313/tags/disk/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Wed, 01 May 2024 13:35:11 &#43;0200</lastBuildDate><atom:link href="https://nozyzy.github.io/tags/disk/" rel="self" type="application/rss+xml" /><item>
     <title>Croissanted</title>
-    <link>http://localhost:1313/posts/croissanted/</link>
+    <link>https://nozyzy.github.io/posts/croissanted/</link>
     <pubDate>Wed, 01 May 2024 13:35:11 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/croissanted/</guid>
+    </author><guid>https://nozyzy.github.io/posts/croissanted/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -19,10 +19,10 @@
 <p>EN: A backdoor seems to have been placed on a virtual machine. Files have been added to the filesystem. Although the user regularly changes their password, the intrusions continue. Identify why. A copy of the VM has been provided to you.</p>]]></description>
 </item><item>
     <title>How to decrypt LUKS1 with key in memory</title>
-    <link>http://localhost:1313/articles/decrypt-luks1-with-key-in-memory/</link>
+    <link>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</link>
     <pubDate>Mon, 10 Jul 2023 17:15:29 &#43;0200</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/articles/decrypt-luks1-with-key-in-memory/</guid>
+    </author><guid>https://nozyzy.github.io/articles/decrypt-luks1-with-key-in-memory/</guid>
     <description><![CDATA[<h1 id="how-to-decrypt-luks1-with-key-in-memory" class="headerLink">
     <a href="#how-to-decrypt-luks1-with-key-in-memory" class="header-mark"></a>How to decrypt LUKS1 with key in memory</h1><hr>
 <p>LUKS is a standard for Linux disk encryption, and exists in two version. The latest version LUKS2 can be strong and a trusted solution when paired with strong password and algorithm, whereas LUKS1 suffers from a severe <strong>vulnerability</strong>. The master key, used to encrypt and decrypt the whole disk, <strong>can be retrieved in the memory</strong> of the running machine.

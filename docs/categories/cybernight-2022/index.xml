@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Cybernight 2022 - Category - NozZy</title>
-        <link>http://localhost:1313/categories/cybernight-2022/</link>
+        <link>https://nozyzy.github.io/categories/cybernight-2022/</link>
         <description>Cybernight 2022 - Category - NozZy</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>nozzy@club-rezo.net (NozZy)</managingEditor>
-            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 03 Nov 2022 23:39:48 &#43;0100</lastBuildDate><atom:link href="http://localhost:1313/categories/cybernight-2022/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>nozzy@club-rezo.net (NozZy)</webMaster><lastBuildDate>Thu, 03 Nov 2022 23:39:48 &#43;0100</lastBuildDate><atom:link href="https://nozyzy.github.io/categories/cybernight-2022/" rel="self" type="application/rss+xml" /><item>
     <title>Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</title>
-    <link>http://localhost:1313/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/</link>
+    <link>https://nozyzy.github.io/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/</link>
     <pubDate>Thu, 03 Nov 2022 23:39:48 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/</guid>
+    </author><guid>https://nozyzy.github.io/posts/vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Web</p>
@@ -33,10 +33,10 @@ on dirait juste le bruit du roomba qui aspire
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>]]></description>
 </item><item>
     <title>Leaderboard</title>
-    <link>http://localhost:1313/posts/leaderboard/</link>
+    <link>https://nozyzy.github.io/posts/leaderboard/</link>
     <pubDate>Thu, 03 Nov 2022 23:39:23 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/leaderboard/</guid>
+    </author><guid>https://nozyzy.github.io/posts/leaderboard/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Web</p>
@@ -61,10 +61,10 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>]]></description>
 <p>(PS : récupérer les 6 billes est déjà un challenge en soi avec son propre flag)</p>]]></description>
 </item><item>
     <title>Cooking Roomba</title>
-    <link>http://localhost:1313/posts/cooking_roomba/</link>
+    <link>https://nozyzy.github.io/posts/cooking_roomba/</link>
     <pubDate>Thu, 03 Nov 2022 23:39:16 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/cooking_roomba/</guid>
+    </author><guid>https://nozyzy.github.io/posts/cooking_roomba/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Web</p>
@@ -88,10 +88,10 @@ On se crée un petit compte, et on se connecte</p>
 <p>Là deux cookies apparaissent: <code>auth : un-truc-du-style-123456789</code> et surtout <code>can_i_haz_flag : no</code></p>]]></description>
 </item><item>
     <title>Spirale</title>
-    <link>http://localhost:1313/posts/spirale/</link>
+    <link>https://nozyzy.github.io/posts/spirale/</link>
     <pubDate>Thu, 03 Nov 2022 23:38:54 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/spirale/</guid>
+    </author><guid>https://nozyzy.github.io/posts/spirale/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -114,10 +114,10 @@ On se crée un petit compte, et on se connecte</p>
 <figure><a class="lightgallery" href="/Spirale/spirale_solved.png" title="Solved" data-thumbnail="/Spirale/spirale_solved.png" data-sub-html="<h2>Solved</h2><p>Solved</p>]]></description>
 </item><item>
     <title>Pyramide</title>
-    <link>http://localhost:1313/posts/pyramide/</link>
+    <link>https://nozyzy.github.io/posts/pyramide/</link>
     <pubDate>Thu, 03 Nov 2022 23:38:48 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/pyramide/</guid>
+    </author><guid>https://nozyzy.github.io/posts/pyramide/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Steganography</p>
@@ -140,10 +140,10 @@ On se crée un petit compte, et on se connecte</p>
 <p>Comme toujours quand j&rsquo;ai des chall stegano avec image, je l&rsquo;importe dans <a href="https://www.aperisolve.com/" target="_blank" rel="noopener noreferrer">https://www.aperisolve.com/</a>, et je ne trouve <strong>rien d&rsquo;intéressant malheuresement</strong> (retenez bien)</p>]]></description>
 </item><item>
     <title>Identify, Find, Listen</title>
-    <link>http://localhost:1313/posts/identify_find_listen/</link>
+    <link>https://nozyzy.github.io/posts/identify_find_listen/</link>
     <pubDate>Thu, 03 Nov 2022 23:38:25 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/identify_find_listen/</guid>
+    </author><guid>https://nozyzy.github.io/posts/identify_find_listen/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Hardware</p>
@@ -158,10 +158,10 @@ N’hésitez pas à fouiller sur d’autres étages.
 Pas besoin d’aller demander la caméra au gardien.</p>]]></description>
 </item><item>
     <title>Xray</title>
-    <link>http://localhost:1313/posts/xray/</link>
+    <link>https://nozyzy.github.io/posts/xray/</link>
     <pubDate>Thu, 03 Nov 2022 23:37:49 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/xray/</guid>
+    </author><guid>https://nozyzy.github.io/posts/xray/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Forensics</p>
@@ -185,10 +185,10 @@ Celui-ci demande un pdf en input et essaie de sortir du texte et des images</p>
 <figure><a class="lightgallery" href="/Xray/img.png" title="Embedded Image" data-thumbnail="/Xray/img.png" data-sub-html="<h2>Embedded Image</h2><p>Embedded Image</p>]]></description>
 </item><item>
     <title>J&#39;ai pas ROTé</title>
-    <link>http://localhost:1313/posts/jai_pas_rote/</link>
+    <link>https://nozyzy.github.io/posts/jai_pas_rote/</link>
     <pubDate>Thu, 03 Nov 2022 23:37:33 &#43;0100</pubDate><author>
         <name>NozZy</name>
-    </author><guid>http://localhost:1313/posts/jai_pas_rote/</guid>
+    </author><guid>https://nozyzy.github.io/posts/jai_pas_rote/</guid>
     <description><![CDATA[<h2 id="category" class="headerLink">
     <a href="#category" class="header-mark"></a>Category</h2><blockquote>
   <p>Cryptography</p>
