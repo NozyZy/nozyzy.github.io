@@ -1,14 +1,12 @@
 ---
 title: "HeadShot"
+subtitle: "Flag4All - HeadShot"
 date: 2023-10-22T13:58:04+02:00
 draft: false
 tags: ['Forensics']
 categories:
   - 'Writeups'
   - 'Flag4All'
----
-
-# Flag4All - HeadShot
 ---
 
 ## Category

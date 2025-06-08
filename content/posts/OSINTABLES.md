@@ -1,14 +1,12 @@
 ---
-title: "404CTF - OSINTABLES"
+title: "OSINTABLES"
+subtitle: "404CTF - OSINTABLES"
 date: 2023-06-04T23:34:58+02:00
 draft: false
 tags: ['OSINT']
 categories:
   - 'Writeups'
   - '404CTF'
----
-
-# 404CTF - OSINTABLES
 ---
 
 ## Category

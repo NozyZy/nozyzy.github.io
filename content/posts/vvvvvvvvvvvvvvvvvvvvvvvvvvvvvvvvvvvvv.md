@@ -1,14 +1,12 @@
 ---
 title: "Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv"
+subtitle: "Cybernight 2022 - Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv"
 date: 2022-11-03T23:39:48+01:00
 draft: false
 tags: ['Web']
 categories:
   - 'Writeups'
   - 'Cybernight 2022'
----
-
-# Cybernight 2022 - Vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 ---
 
 ## Category

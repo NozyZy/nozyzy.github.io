@@ -1,14 +1,12 @@
 ---
 title: "Invest Now !"
+subtitle: "Cybernight 2023 - Invest Now !"
 date: 2023-11-25T15:17:45+01:00
 draft: false
 tags: ['']
 categories:
   - 'Writeups'
   - 'Cybernight 2023'
----
-
-# Cybernight 2023 - Invest Now !
 ---
 
 ## Category

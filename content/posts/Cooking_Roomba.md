@@ -1,14 +1,12 @@
 ---
 title: "Cooking Roomba"
+subtitle: "Cybernight 2022 - Cooking Roomba"
 date: 2022-11-03T23:39:16+01:00
 draft: false
 tags: ['Web']
 categories:
   - 'Writeups'
   - 'Cybernight 2022'
----
-
-# Cybernight 2022 - Cooking Roomba
 ---
 
 ## Category

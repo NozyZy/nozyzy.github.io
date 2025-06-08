@@ -1,14 +1,17 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+subtitle: "xxxCTF - {{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+lastmod: {{ .Lastmod }}
 draft: true
 tags: ['']
 categories:
   - 'Writeups'
   - 'xxxCTF'
----
 
-# xxxCTF - {{ replace .Name "-" " " | title }}
+lightgallery: true
+rssFullText: false
+
 ---
 
 ## Category

@@ -1,14 +1,12 @@
 ---
 title: "Dark Side"
+subtitle: "Flag4All - Dark Side"
 date: 2023-10-23T18:06:28+02:00
 draft: false
 tags: ['Forensics', 'Steganography']
 categories:
   - 'Writeups'
   - 'Flag4All'
----
-
-# Flag4All - Dark Side
 ---
 
 ## Category

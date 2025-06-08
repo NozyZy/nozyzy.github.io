@@ -1,14 +1,12 @@
 ---
 title: "Croissanted"
+subtitle: "Midnight Flag 2024 - Croissanted"
 date: 2024-05-01T13:35:11+02:00
 draft: false
 tags: ['Forensics', 'Disk']
 categories:
   - 'Writeups'
   - 'Midnight Flag 2024'
----
-
-# Midnight Flag 2024 - Croissanted
 ---
 
 ## Category

@@ -1,14 +1,12 @@
 ---
 title: "Stranger Case 2023"
+subtitle: "Stranger Case 2023"
 date: 2023-07-10T19:25:30+02:00
 draft: false
 tags: ['OSINT', 'Hunt', 'Social Engineering']
 categories:
   - 'Writeups'
   - 'Stranger Case'
----
-
-# Stranger Case 2023
 ---
 
 ## Category

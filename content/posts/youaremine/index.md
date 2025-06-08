@@ -1,14 +1,12 @@
 ---
 title: "You are mine!"
+subtitle: "Cybernight 2023 - You are mine!"
 date: 2023-11-25T05:38:54+01:00
 draft: false
 tags: ['Forensics']
 categories:
   - 'Writeups'
   - 'Cybernight 2023'
----
-
-# Cybernight 2023 - You are mine!
 ---
 
 ## Category

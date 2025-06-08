@@ -1,14 +1,12 @@
 ---
-title: "HeroCTF v5 - EMD"
+title: "EMD"
+subtitle: "HeroCTF v5 - EMD"
 date: 2023-05-23T23:22:43+02:00
 draft: false
 tags: ['Steganography', 'Images']
 categories:
   - 'Writeups'
   - 'HeroCTFv5'
----
-
-# HeroCTF v5 - EMD
 ---
 
 ## Category

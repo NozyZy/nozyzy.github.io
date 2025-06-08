@@ -1,14 +1,12 @@
 ---
 title: "Pyramide"
+subtitle: "Cybernight 2022 - Pyramide"
 date: 2022-11-03T23:38:48+01:00
 draft: false
 tags: ['Steganography']
 categories:
   - 'Writeups'
   - 'Cybernight 2022'
----
-
-# Cybernight 2022 - Pyramide
 ---
 
 ## Category

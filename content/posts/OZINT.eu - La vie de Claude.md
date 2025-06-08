@@ -1,14 +1,12 @@
 ---
-title: "OZINT.eu   La Vie De Claude"
+title: "La Vie De Claude"
+subtitle: "Flag4All - OZINT.eu La Vie De Claude"
 date: 2023-10-22T14:32:55+02:00
 draft: false
 tags: ['OSINT']
 categories:
   - 'Writeups'
   - 'Flag4All'
----
-
-# Flag4All - OZINT.eu La Vie De Claude
 ---
 
 ## Category

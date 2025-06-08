@@ -1,14 +1,12 @@
 ---
 title: "SOC Simulator"
+subtitle: "FCSC 2024 - SOC Simulator"
 date: 2024-04-11T09:32:53-04:00
 draft: false
 tags: ['Forensics']
 categories:
   - 'Writeups'
   - 'FCSC 2024'
----
-
-# FCSC 2024 - SOC Simulator
 ---
 
 ## Category

@@ -1,14 +1,12 @@
 ---
 title: "Xray"
+subtitle: "Cybernight 2022 - Xray"
 date: 2022-11-03T23:37:49+01:00
 draft: false
 tags: ['Forensics', 'Steganography']
 categories:
   - 'Writeups'
   - 'Cybernight 2022'
----
-
-# Cybernight 2022 - Xray
 ---
 
 ## Category

@@ -1,14 +1,12 @@
 ---
 title: "404CTF - Notes de bas de page"
+subtitle: "404CTF - Notes de bas de page"
 date: 2023-05-24T00:48:44+02:00
 draft: false
 tags: ['Forensics']
 categories:
   - 'Writeups'
   - '404CTF'
----
-
-# 404CTF - Notes de bas de page
 ---
 
 ## Category
@@ -60,10 +58,10 @@ We can see at the bottom a `404CTF{`, which is our track. But how to recover it 
 ### Acropalypse
 
 In order to understand how we can recover it, following the recent cyber news should have helped a lot. Indeed, in March, a new vulnerability on Google Pixels cropped screenshot came, with a POC of how we can recover the original non-cropped image.
-{{< tweet user="ItsSimonTimeItsSimonTime" id=1636857478263750656 >}}
+{{< x user="ItsSimonTimeItsSimonTime" id=1636857478263750656 >}}
 
 Few days after, the same kind of vulnerability was found on Windows Snipping Tool :
-{{< tweet user="David3141593" id=1638222624084951040 >}}
+{{< x user="David3141593" id=1638222624084951040 >}}
 
 {{< admonition info "What is acropalypse ?" true >}}
 Instead of **erasing** cropped data from the file, an **IEND chunk is added** in the file to cut the rest of the image.

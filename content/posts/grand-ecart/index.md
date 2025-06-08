@@ -1,14 +1,12 @@
 ---
 title: "Le grand écart"
+subtitle: "404CTF - Grand Ecart"
 date: 2024-04-26T05:40:26-04:00
 draft: false
 tags: ['Steganography']
 categories:
   - 'Writeups'
   - '404CTF 2024'
----
-
-# 404CTF - Grand Ecart
 ---
 
 ## Category

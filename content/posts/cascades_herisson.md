@@ -1,5 +1,6 @@
 ---
-title: "404CTF - Avez-vous vu les cascades du hérisson ?"
+title: "Avez-vous vu les cascades du hérisson ?"
+subtitle: "404CTF - Avez-vous vu les cascades du hérisson ?"
 date: 2023-05-31T19:09:23+02:00
 draft: false
 tags: ['Radio-frequency', 'Steganography']

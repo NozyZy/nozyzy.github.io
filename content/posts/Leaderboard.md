@@ -1,14 +1,12 @@
 ---
 title: "Leaderboard"
+subtitle: "Cybernight 2022 - Leaderboard"
 date: 2022-11-03T23:39:23+01:00
 draft: false
 tags: ['Web']
 categories:
   - 'Writeups'
   - 'Cybernight 2022'
----
-
-# Cybernight - Leaderboard
 ---
 
 ## Category

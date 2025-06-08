@@ -1,5 +1,6 @@
 ---
 title: "Projet FOX   Trouble From the East"
+subtitle: "Flag4All - Projet FOX Trouble From the East"
 date: 2023-10-22T15:29:41+02:00
 draft: false
 tags: ['OSINT']

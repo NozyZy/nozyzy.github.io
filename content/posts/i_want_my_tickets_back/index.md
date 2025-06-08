@@ -1,14 +1,12 @@
 ---
 title: "I want my tickets back"
+subtitle: "Midnight Flag 2024 - I want my tickets back"
 date: 2024-04-30T20:48:58+02:00
 draft: false
 tags: ['Forensics']
 categories:
   - 'Writeups'
   - 'Midnight Flag 2024'
----
-
-# Midnight Flag 2024 - I want my tickets back
 ---
 
 ## Category

@@ -1,14 +1,12 @@
 ---
 title: "MyFace"
+subtitle: "Midnight Flag 2024 - MyFace"
 date: 2024-04-29T20:36:40+02:00
 draft: false
 tags: ['Steganography', 'Image']
 categories:
   - 'Writeups'
   - 'Midnight Flag 2024'
----
-
-# Midnight Flag 2024 - MyFace
 ---
 
 ## Category
@@ -57,7 +55,7 @@ I browsed the default ``favico.ico`` and `favicon.ico` but not found. So we need
 
 That's our image:
 
-![MyFace.ico](MyFace.ico.png)[^1]
+![MyFace.ico](MyFace.png)[^1]
 [^1]: I renamed it Myface.ico**.png**, which totally works, because my website couldn't handle ``.ico`` extension.
 
 Two more images were loaded by the website, but full of false tracks.

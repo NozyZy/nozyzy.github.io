@@ -1,14 +1,12 @@
 ---
 title: "Silent Hill 2"
+subtitle: "Midnight Flag 2024 - Silent Hill 2"
 date: 2024-04-30T21:58:48+02:00
 draft: false
 tags: ['Steganography', 'Image']
 categories:
   - 'Writeups'
   - 'Midnight Flag 2024'
----
-
-# Midnight Flag 2024 - Silent Hill 2
 ---
 
 ## Category
@@ -23,8 +21,6 @@ categories:
 ## Files
 
 [Silent_hill_2.png](Silent_hill_2.png)
-
-## Difficulty
 
 - Author: **kuorashi**
 ---
